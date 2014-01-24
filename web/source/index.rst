@@ -88,7 +88,7 @@ Building Your Own Packages
 You can easily build your own packages for conda, and upload them to `Binstar
 <https://binstar.org>`_, a free service for hosting packages for conda, as
 well as other package managers.  To build a package, create a recipe.  See
-http://github.com/conda/conda-recipes for many example recipes, and
+https://github.com/conda/conda-recipes for many example recipes, and
 http://docs.continuum.io/conda/build.html for documentation on how to build
 recipes.
 
