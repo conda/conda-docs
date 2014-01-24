@@ -22,3 +22,7 @@ after you have built the docs to upload it to the test site, and
 
 to upload it to the conda.pydata.org site. You will need ssh access to
 pydata.org to do these (obviously).
+
+To check that the links are correct, use
+
+    make linkcheck
