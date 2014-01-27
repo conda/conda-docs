@@ -7,8 +7,6 @@
 # channel_alias key; see below).
 channels:
   - binstar_username
-  - http://repo.continuum.io/pkgs/free
-  - http://repo.continuum.io/pkgs/pro
   - http://some.custom/channel
   - defaults
 
