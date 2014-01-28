@@ -34,6 +34,9 @@
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
 
+MD5 sums for the downloads can be found `here
+<http://repo.continuum.io/miniconda/>`_.
+
 These Miniconda installers contain the conda package manager and Python. Once
 Miniconda is installed, you can use the conda command to install any other
 packages and create environments, etc. For example:
