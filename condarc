@@ -37,7 +37,7 @@ allow_softlinks: False
 # change ps1 when using activate (default True)
 changeps1: False
 
-# use pip when installing and listing packages (default True)
+# use pip when listing packages (default True)
 use_pip: False
 
 # binstar.org upload (not defined here means ask)
