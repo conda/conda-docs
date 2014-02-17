@@ -57,3 +57,9 @@ disallow:
 # enable certain features to be tracked by default
 track_features:
   - mkl
+
+# Conda Build Options
+conda-build:
+  # Build output directory. (default <CONDA_PREFIX>/conda-bld/<OS_ARCH>)
+  build_dest: ~/conda-builds
+
