@@ -165,11 +165,11 @@ doctest:
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
 test:
-	rsync -rvzch --delete-after -e ssh --exclude docs build/html/ pydata.org:/www/conda-test/ && \
+	rsync -rvzch --delete-after -e ssh --exclude docs conda-test.conf build/html/ pydata.org:/www/conda-test/ && \
 	$(LAUNCH) http://conda-test.pydata.org/
 
 live:
-	rsync -rvzchP --delete-after -e ssh --exclude docs build/html/ pydata.org:/www/conda/
+	rsync -rvzchP --delete-after -e ssh --exclude docs conda.conf build/html/ pydata.org:/www/conda/
 	$(LAUNCH) http://conda.pydata.org
 
 livehtml:
