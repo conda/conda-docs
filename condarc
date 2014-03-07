@@ -22,7 +22,11 @@ proxy_servers:
 # directory in which conda root is located (used by `conda init`)
 root_dir: ~/.local/conda_root
 
-# directories in which environments are located
+# directories in which environments are located. If this key is set, the root
+# prefix envs dir is not used unless explicitly included. This key also
+# determines where the package caches will be located. For each envs here,
+# envs/.pkgs will be used as the pkgs cache, except for standard the envs
+# directory in the root directory, for which the normal root_dir/pkgs is used.
 envs_dirs:
   - ~/my-envs
   - /opt/anaconda/envs
@@ -62,4 +66,3 @@ track_features:
 conda-build:
   # Build output directory. (default <CONDA_PREFIX>/conda-bld/<OS_ARCH>)
   build_dest: ~/conda-builds
-
