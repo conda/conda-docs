@@ -61,6 +61,10 @@ create_default_packages:
 disallow:
   - anaconda
 
+# show channel URLs when displaying what is going to be downloaded, and
+# in conda list
+show_channel_urls: True
+
 # enable certain features to be tracked by default
 track_features:
   - mkl
