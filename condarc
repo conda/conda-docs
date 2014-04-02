@@ -6,8 +6,9 @@
 # interpreted as binstar usernames (this can be changed by modifying the
 # channel_alias key; see below).
 channels:
-  - binstar_username
+  - <binstar_username>
   - http://some.custom/channel
+  - file:///some/local/directory
   - defaults
 
 # Alias to use for non-url channels used with the -c flag. Default is https://conda.binstar.org/
@@ -59,6 +60,10 @@ create_default_packages:
 # disallowed specification names
 disallow:
   - anaconda
+
+# show channel URLs when displaying what is going to be downloaded, and
+# in conda list
+show_channel_urls: True
 
 # enable certain features to be tracked by default
 track_features:
