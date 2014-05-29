@@ -16,7 +16,7 @@
    |          |Windows            |Mac OS X         |Linux            |
    +----------+-------------------+-----------------+-----------------+
    |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
-   |2**       |installer)         |installer)       |installer)       |
+   |2.7**     |installer)         |installer)       |installer)       |
    |          |<Windows-py2-64_>`_|<Mac-py2-64_>`_  |<Linux-py2-64_>`_|
    |          |                   |                 |                 |
    |          |`32-bit (exe       |                 |`32-bit (bash    |
@@ -25,7 +25,7 @@
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
    |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
-   |3**       |installer)         |installer)       |installer)       |
+   |3.4**     |installer)         |installer)       |installer)       |
    |          |<Windows-py3-64_>`_|<Mac-py3-64_>`_  |<Linux-py3-64_>`_|
    |          |                   |                 |                 |
    |          |`32-bit (exe       |                 |`32-bit (bash    |
