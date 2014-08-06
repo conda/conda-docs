@@ -78,6 +78,7 @@ User Guide
    config
    build
    admin
+   custom-channels
 
 Reference Guide
 ---------------
