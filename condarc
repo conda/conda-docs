@@ -71,5 +71,6 @@ track_features:
 
 # Conda Build Options
 conda-build:
-  # Build output directory. (default <CONDA_PREFIX>/conda-bld/<OS_ARCH>)
-  build_dest: ~/conda-builds
+  # Build output root directory. (default <CONDA_PREFIX>/conda-bld/)
+  # This can also be set with the CONDA_BLD_PATH environment variable.
+  root-dir: ~/conda-builds
