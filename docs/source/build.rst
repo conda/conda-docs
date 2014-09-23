@@ -70,7 +70,8 @@ All the metadata in the recipe is specified in the ``meta.yaml`` file. All secti
       sha256: 5a022ff4c1d1de87232b1c70bde50afbb98212fd246be4a867d8737173cf1f8f
       # or from git:
       git_url: git@github.com:ilanschnell/bsdiff4.git
-      git_tag: 1.1.4
+      # git_rev can be any string that git knows how to checkout
+      git_rev: 1.1.4
       # or from hg:
       hg_url: ssh://hg@bitbucket.org/ilanschnell/bsdiff4
       hg_tag: 1.1.4
@@ -406,6 +407,8 @@ When the source is a git repository, the following variables are defined:
    * - ``GIT_BUILD_STR``
      - a string that joins ``GIT_DESCRIBE_NUMBER`` and ``GIT_DESCRIBE_HASH``
        by an underscore.
+   * - ``GIT_FULL_HASH``
+     - string with the full SHA1 of the current HEAD
 
 These can be used in conjunction with templated meta.yaml files to set things
 like the build string based on the state of the git repository.
@@ -429,6 +432,7 @@ so the ``git_url`` is ``../``:
 
      source:
        git_url: ../
+       git_rev: {{ environ('GIT_FULL_HASH') }}
 
 All of the above environment variables are also set during the test process,
 except with the test prefix instead of the build prefix everywhere.

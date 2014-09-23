@@ -188,7 +188,7 @@ The easiest way to do this is to start from an existing example from the
       name: pyfaker
 
     source:
-      git_tag: 0.3.2
+      git_rev: 0.3.2
       git_url: https://github.com/tpn/faker.git
 
     requirements:
@@ -217,7 +217,7 @@ choices for substitutions, you get a makeshift .yaml for ``pyinstrument``:
       name: pyinstrument
 
     source:
-      git_tag: 0.12
+      git_rev: 0.12
       git_url: https://github.com/joerick/pyinstrument.git
 
     requirements:
@@ -252,7 +252,7 @@ whereas this one was built using a git url and a git tag:
 
 .. code-block:: yaml
 
-      git_tag: 0.12
+      git_rev: 0.12
       git_url: https://github.com/joerick/pyinstrument.git
 
 Both ways should work just fine. As the source should be identical. For some C
