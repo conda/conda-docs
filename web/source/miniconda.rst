@@ -37,6 +37,10 @@
 MD5 sums for the downloads can be found `here
 <http://repo.continuum.io/miniconda/>`_.
 
+See the `change log
+<https://github.com/conda/conda/blob/master/CHANGELOG.txt>`_ for conda for a
+list of changes.
+
 These Miniconda installers contain the conda package manager and Python. Once
 Miniconda is installed, you can use the conda command to install any other
 packages and create environments, etc. For example:
