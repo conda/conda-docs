@@ -15,6 +15,14 @@ channels:
 
 channel_alias: https://your.repo/
 
+# When the channel alias is binstar.org or an Anaconda Server GUI, this will
+# use the binstar command line client (which can be installed with 'conda
+# install binstar' to automatically add the token to the channel urls, so that
+# you can see private packages). The default is True, but it is only enabled
+# if the binstar command line client is installed and you are logged in
+# ('binstar login').
+add_binstar_token: False
+
 # Proxy settings: http://[username]:[password]@[server]:[port]
 proxy_servers:
     http: http://user:pass@corp.com:8080
