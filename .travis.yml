@@ -1,0 +1,34 @@
+language: python
+matrix:
+  include:
+      env:
+        - DOCS="true"
+      env:
+        - WEBSITE="true"
+before_install:
+  - sudo apt-get update
+  - wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O miniconda.sh;
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda config --add channels asmeurer
+  - conda update -q conda
+  - conda info -a
+
+  - if [[ "${DOCS}" = "true" ]]; then
+      conda create -q -n build-environment -c asmeurer sphinx numpydoc continuum_sphinx_theme;
+      cd docs;
+    fi
+  - if [["${WEBSITE}" = "true" ]]; then
+      conda create -q -n build-environment -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme;
+      cd web;
+    fi
+  - source activate build-environment
+
+script:
+  - make html
+notifications:
+  email: false
+# after_success:
+#   - bin/build_doc.sh
