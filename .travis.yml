@@ -20,7 +20,7 @@ before_install:
       conda create -q -n build-environment -c asmeurer sphinx numpydoc continuum-sphinx-theme;
       cd docs;
     fi
-  - if [["${WEBSITE}" = "true" ]]; then
+  - if [[ "${WEBSITE}" = "true" ]]; then
       conda create -q -n build-environment -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme;
       cd web;
     fi
