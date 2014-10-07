@@ -4,12 +4,6 @@ python:
 env:
   - DOCS="true"
   - WEBSITE="true"
-matrix:
-  include:
-      env:
-        - DOCS="true"
-      env:
-        - WEBSITE="true"
 before_install:
   - sudo apt-get update
   - wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O miniconda.sh;
