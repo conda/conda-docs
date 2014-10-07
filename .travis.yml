@@ -27,7 +27,7 @@ before_install:
   - source activate build-environment
 
 script:
-  - make html
+  - make html-errors
 notifications:
   email: false
 # after_success:
