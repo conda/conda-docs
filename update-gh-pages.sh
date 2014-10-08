@@ -68,9 +68,7 @@ set +x
 
 ACTUAL_TRAVIS_JOB_NUMBER=`echo $TRAVIS_JOB_NUMBER| cut -d'.' -f 2`
 
-if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
-    # docs
-
+if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo -e "Setting git attributes"
     git config --global user.email "conda@continuum.io"
     git config --global user.name "Conda (Travis CI)"
@@ -83,48 +81,33 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     git checkout origin_token/gh-pages
     echo "Done"
 
-    echo -e $(pwd)
+    if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
+        # docs
+        echo -e "Moving built docs into place"
+        rm -rf website/docs
+        cp -R docs/build/html website/docs
+        git add -A docs/
 
-    echo -e "Moving built docs into place"
-    rm -rf website/docs
-    cp -R docs/build/html website/docs
-    git add -A docs/
+        echo -e "Committing"
+        git commit -am "Update docs after building $TRAVIS_BUILD_NUMBER"
+        echo -e "Pushing commit"
+        git push -fq origin_token gh-pages > /dev/null 2>&1
+    fi
 
-    echo -e "Committing"
-    git commit -am "Update docs after building $TRAVIS_BUILD_NUMBER"
-    echo -e "Pushing commit"
-    git push -fq origin_token gh-pages > /dev/null 2>&1
-fi
+    if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2" ]; then
+        # web
+        echo -e "Moving built website into place"
+        mv website/docs docs_
+        rm -rf website
+        cp -R web/build/html website/
+        mv docs_ website/docs
+        git add -A website
 
-
-if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2" ]; then
-    # web
-
-    echo -e "Setting git attributes"
-    git config --global user.email "conda@continuum.io"
-    git config --global user.name "Conda (Travis CI)"
-
-    echo -e "Adding token remote"
-    git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
-    echo -e "Fetching token remote"
-    git fetch origin_token > /dev/null 2>&1
-    echo -e "Checking out gh-pages"
-    git checkout origin_token/gh-pages
-    echo -e "Done"
-
-    echo -e $(pwd)
-
-    echo -e "Moving built website into place"
-    mv website/docs docs_
-    rm -rf website
-    cp -R web/build/html website/
-    mv docs_ website/docs
-    git add -A website
-
-    echo -e "Committing"
-    git commit -am "Update website after building $TRAVIS_BUILD_NUMBER"
-    echo -e "Pushing commit"
-    git push -fq origin_token gh-pages > /dev/null 2>&1
+        echo -e "Committing"
+        git commit -am "Update website after building $TRAVIS_BUILD_NUMBER"
+        echo -e "Pushing commit"
+        git push -fq origin_token gh-pages > /dev/null 2>&1
+    fi
 fi
 
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
