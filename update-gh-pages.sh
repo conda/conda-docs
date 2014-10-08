@@ -82,7 +82,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     echo -e "Checking out gh-pages"
     git checkout origin_token/gh-pages
 
-    ls
+    echo -e $(ls)
 
     rm -rf website/docs
     cp -R docs/build/html website/docs
@@ -108,7 +108,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     echo -e "Checking out gh-pages"
     git checkout origin_token/gh-pages
 
-    ls
+    echo -e $(ls)
 
     mv website/docs docs_
     rm -rf website
