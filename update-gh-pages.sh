@@ -81,6 +81,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     git checkout origin_token/gh-pages
     echo "Done"
 
+    cd ..
+
     if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
         # docs
         echo -e "Moving built docs into place"
