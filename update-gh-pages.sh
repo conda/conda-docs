@@ -78,7 +78,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo -e "Fetching token remote"
     git fetch origin_token > /dev/null 2>&1
     echo -e "Checking out gh-pages"
-    git checkout origin_token/gh-pages
+    git checkout -b gh-pages --track origin_token/gh-pages
     echo "Done"
 
     cd ..
