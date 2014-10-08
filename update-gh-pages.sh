@@ -81,13 +81,16 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     git fetch origin_token > /dev/null 2>&1
     echo -e "Checking out gh-pages"
     git checkout origin_token/gh-pages
+    echo "Done"
 
     echo -e $(ls)
 
+    echo -e "Moving built docs into place"
     rm -rf website/docs
     cp -R docs/build/html website/docs
     git add -A docs/
 
+    echo -e "Committing"
     git commit -am "Update docs after building $TRAVIS_BUILD_NUMBER"
     echo -e "Pushing commit"
     git push -fq origin_token gh-pages > /dev/null 2>&1
@@ -107,15 +110,18 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     git fetch origin_token > /dev/null 2>&1
     echo -e "Checking out gh-pages"
     git checkout origin_token/gh-pages
+    echo -e "Done"
 
     echo -e $(ls)
 
+    echo -e "Moving built website into place"
     mv website/docs docs_
     rm -rf website
     cp -R web/build/html website/
     mv docs_ website/docs
     git add -A website
 
+    echo -e "Committing"
     git commit -am "Update website after building $TRAVIS_BUILD_NUMBER"
     echo -e "Pushing commit"
     git push -fq origin_token gh-pages > /dev/null 2>&1
