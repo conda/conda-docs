@@ -76,7 +76,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     git config --global user.name "Conda (Travis CI)"
 
     git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
-    git checkout origin/gh-pages
+    git fetch origin_token > /dev/null 2>&1
+    git checkout origin_token/gh-pages
+
     rm -rf website/docs
     cp -R docs/build/html website/docs
     git add -A docs/
@@ -95,7 +97,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     git config --global user.name "Conda (Travis CI)"
 
     git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
-    git checkout origin/gh-pages
+    git fetch origin_token > /dev/null 2>&1
+    git checkout origin_token/gh-pages
+
     mv website/docs docs_
     rm -rf website
     cp -R web/build/html website/
