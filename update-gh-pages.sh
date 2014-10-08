@@ -83,7 +83,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     git checkout origin_token/gh-pages
     echo "Done"
 
-    echo -e $(ls)
+    echo -e $(pwd)
 
     echo -e "Moving built docs into place"
     rm -rf website/docs
@@ -112,7 +112,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     git checkout origin_token/gh-pages
     echo -e "Done"
 
-    echo -e $(ls)
+    echo -e $(pwd)
 
     echo -e "Moving built website into place"
     mv website/docs docs_
