@@ -82,6 +82,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     echo "Done"
 
     cd ..
+    echo -e $(pwd)
 
     if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
         # docs
