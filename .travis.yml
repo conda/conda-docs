@@ -3,6 +3,7 @@ python:
   - "3.4"
 env:
   matrix:
+    # Do not change this order
     - DOCS="true"
     - WEBSITE="true"
 before_install:
@@ -30,5 +31,5 @@ script:
   - make html-errors
 notifications:
   email: false
-# after_success:
-#   - bin/build_doc.sh
+after_success:
+  - build_doc.sh
