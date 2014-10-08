@@ -75,9 +75,14 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     git config --global user.email "conda@continuum.io"
     git config --global user.name "Conda (Travis CI)"
 
-    git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
+    echo -e "Adding token remote"
+    git remote add origin_token https://${GH_TOKEN}@ github.com/sympy/sympy_doc.git > /dev/null 2>&1
+    echo -e "Fetching token remote"
     git fetch origin_token > /dev/null 2>&1
+    echo -e "Checking out gh-pages"
     git checkout origin_token/gh-pages
+
+    ls
 
     rm -rf website/docs
     cp -R docs/build/html website/docs
@@ -96,9 +101,14 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     git config --global user.email "conda@continuum.io"
     git config --global user.name "Conda (Travis CI)"
 
-    git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
+    echo -e "Adding token remote"
+    git remote add origin_token https://${GH_TOKEN}@ github.com/sympy/sympy_doc.git > /dev/null 2>&1
+    echo -e "Fetching token remote"
     git fetch origin_token > /dev/null 2>&1
+    echo -e "Checking out gh-pages"
     git checkout origin_token/gh-pages
+
+    ls
 
     mv website/docs docs_
     rm -rf website
