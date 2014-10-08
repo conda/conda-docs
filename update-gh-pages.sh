@@ -76,7 +76,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1"
     git config --global user.name "Conda (Travis CI)"
 
     echo -e "Adding token remote"
-    git remote add origin_token https://${GH_TOKEN}@ github.com/sympy/sympy_doc.git > /dev/null 2>&1
+    git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
     echo -e "Fetching token remote"
     git fetch origin_token > /dev/null 2>&1
     echo -e "Checking out gh-pages"
@@ -102,7 +102,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     git config --global user.name "Conda (Travis CI)"
 
     echo -e "Adding token remote"
-    git remote add origin_token https://${GH_TOKEN}@ github.com/sympy/sympy_doc.git > /dev/null 2>&1
+    git remote add origin_token https://${GH_TOKEN}@github.com/sympy/sympy_doc.git > /dev/null 2>&1
     echo -e "Fetching token remote"
     git fetch origin_token > /dev/null 2>&1
     echo -e "Checking out gh-pages"
