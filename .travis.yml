@@ -23,10 +23,10 @@ before_install:
       cd web;
     fi
   - source activate build-environment
-  - ../update-gh-pages.sh
 
 script:
   - make html-errors
+  - ../update-gh-pages.sh
 notifications:
   email: false
 dd:
