@@ -3,6 +3,7 @@ python:
   - "3.4"
 env:
   matrix:
+    # Do not change this order
     - DOCS="true"
     - WEBSITE="true"
 before_install:
@@ -30,5 +31,7 @@ script:
   - make html-errors
 notifications:
   email: false
-# after_success:
-#   - bin/build_doc.sh
+after_success:
+  - ../update-gh-pages.sh
+dd:
+  secure: i1jxt0rTp9DQay0i0TTzthOMouzUvQwBr08JV/6eYd6b0gV8xqd5P410lE7HwIoJ+bn1LpYMyeZpxAzy9DuZ3FuMfSn0G786s6VDP81WU0qXWMGyksJIdym0QsP5xQrnB/03g/j3MtxaQ3rkYT5WmdofP9UX1TLqp1ZP03zs4O0=
