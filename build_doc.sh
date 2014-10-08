@@ -106,3 +106,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2"
     echo -e "Pushing commit"
     git push -fq origin_token gh-pages > /dev/null 2>&1
 fi
+
+if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+    echo -e "The website is not pushed to gh-pages on pull requests"
+fi
