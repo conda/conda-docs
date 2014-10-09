@@ -81,6 +81,10 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     git checkout -b gh-pages --track origin_token/gh-pages
     echo "Done"
 
+    if [[ -z "$GH_TOKEN" ]]; then
+        echo -e "GH_TOKEN is not set"
+    fi
+
     cd ..
     echo -e $(pwd)
 
