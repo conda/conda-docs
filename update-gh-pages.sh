@@ -97,7 +97,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         git add -A docs/
 
         echo -e "Committing"
-        git commit -am "Update docs after building $TRAVIS_BUILD_NUMBER"
+        git commit -am "Update docs after building Travis build $TRAVIS_BUILD_NUMBER"
         echo -e "Pushing commit"
         git push -q origin_token gh-pages > /dev/null 2>&1
     fi
@@ -112,7 +112,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         git add -A website
 
         echo -e "Committing"
-        git commit -am "Update website after building $TRAVIS_BUILD_NUMBER"
+        git commit -am "Update website after building Travis build $TRAVIS_BUILD_NUMBER"
         echo -e "Pushing commit"
         git push -q origin_token gh-pages > /dev/null 2>&1
     fi
