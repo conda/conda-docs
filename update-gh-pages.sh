@@ -92,9 +92,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
         # docs
         echo -e "Moving built docs into place"
-        rm -rf website/docs
-        cp -R docs/build/html website/docs
-        git add -A website/docs/
+        rm -rf docs
+        cp -R docs/build/html docs
+        git add -A docs/
 
         echo -e "Committing"
         git commit -am "Update docs after building Travis build $TRAVIS_BUILD_NUMBER"
