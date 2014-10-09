@@ -7,8 +7,8 @@ env:
     secure: "C8iqfA7L8nqYAIl+q6cF++wzjkxfz4UZsupt+Sqmv9yy483zpLEKN8u5alVM9Ni42ziWYLCXmXnDhnIHHfANsTIQB0PlP7D4nf+Vj0XFTLPtcMIbJBxTKEySY8XQNHp9H/EfO7lqoChGBHUkVJ62CREqSvVjdqUOWOvyEbaQSds="
 before_install:
   - sudo apt-get update
-  - wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O miniconda.sh;
-  - bash miniconda.sh -b -p $HOME/miniconda
+  - wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh;
+  - bash ~/miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no --set show_channel_urls yes
