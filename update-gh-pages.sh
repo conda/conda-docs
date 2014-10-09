@@ -107,7 +107,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         echo -e "Moving built website into place"
         rm -rf docs
         git checkout docs
-        rsync -rvh --delete --exclude-from=exclusions web/build/html .
+        rsync -rvh --delete --exclude-from=exclusions web/build/html/* .
         rm -rf web
         git add -A .
 
