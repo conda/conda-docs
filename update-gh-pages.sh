@@ -92,8 +92,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
         # docs
         echo -e "Moving built docs into place"
+        cp -R docs/build/html docs_
         rm -rf docs
-        cp -R docs/build/html docs
+        mv docs_ docs/
         git add -A docs/
 
         echo -e "Committing"
