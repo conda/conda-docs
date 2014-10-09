@@ -105,11 +105,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2" ]; then
         # web
         echo -e "Moving built website into place"
-        mv website/docs docs_
-        rm -rf website
-        cp -R web/build/html website/
-        mv docs_ website/docs
-        git add -A website
+        rsync -rvh --delete --exclude-from=exclusions web/build/html . -
+        git add -A .
 
         echo -e "Committing"
         git commit -am "Update website after building Travis build $TRAVIS_BUILD_NUMBER"
