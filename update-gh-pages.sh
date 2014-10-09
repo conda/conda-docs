@@ -113,7 +113,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         echo -e "Committing"
         git commit -am "Update website after building $TRAVIS_BUILD_NUMBER"
         echo -e "Pushing commit"
-        git push -q origin_token gh-pages
+        git push -q origin_token gh-pages > /dev/null 2>&1
     fi
 fi
 
