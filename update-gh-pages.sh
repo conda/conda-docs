@@ -83,6 +83,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
     if [[ -z "$GH_TOKEN" ]]; then
         echo -e "GH_TOKEN is not set"
+        exit 1
     fi
 
     cd ..
