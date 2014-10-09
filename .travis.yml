@@ -30,4 +30,4 @@ script:
 notifications:
   email: false
 dd:
-  secure: i1jxt0rTp9DQay0i0TTzthOMouzUvQwBr08JV/6eYd6b0gV8xqd5P410lE7HwIoJ+bn1LpYMyeZpxAzy9DuZ3FuMfSn0G786s6VDP81WU0qXWMGyksJIdym0QsP5xQrnB/03g/j3MtxaQ3rkYT5WmdofP9UX1TLqp1ZP03zs4O0=
+  secure: "P5WgoVThPdXMAbSD6nJ0RNfUlpl4uZeOkJEVUxaNbpFhZLzGlPAWpGNtkw4lTTonrIsHuA1wrDuWMF17OidJQrXBF38Kx8vHIzkRSeTChd2ymrVQcxsN743RdLOzhaE2EdaNNJRGfH7wt9JvqQ6854UCCkDvv4CxlHbyTBr3qAs="
