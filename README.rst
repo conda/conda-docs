@@ -34,6 +34,11 @@ The docs have several dependencies. You can install them all with
 
     conda install -c asmeurer conda-docs-deps
 
+Furthermore you will need to have conda-build installed to generate the help
+pages for the conda-build commands.
+
+    conda install -n root conda-build
+
 Unfortunately the conda-docs-deps package is not available for Windows because
 we do not have a conda package for perl on Windows yet.
 
