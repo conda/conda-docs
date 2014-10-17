@@ -30,10 +30,9 @@ To check that the links are correct, use
 Docs
 ====
 
-To build the docs you need the `continuum_sphinx_theme`. You can install this
-with
+The docs have several dependencies. You can install them all with
 
-    conda install -c asmeurer continuum_sphinx_theme
+    conda install -c asmeurer conda-docs-deps
 
 Then run
 

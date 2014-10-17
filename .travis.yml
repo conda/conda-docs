@@ -17,7 +17,7 @@ before_install:
   - conda info -a
 
   - if [[ "${DOCS}" = "true" ]]; then
-      conda create -q -n build-environment -c asmeurer sphinx numpydoc continuum-sphinx-theme;
+      conda create -q -n build-environment -c asmeurer conda-docs-deps;
       cd docs;
     fi
   - if [[ "${WEBSITE}" = "true" ]]; then
