@@ -34,6 +34,9 @@ The docs have several dependencies. You can install them all with
 
     conda install -c asmeurer conda-docs-deps
 
+Unfortunately the conda-docs-deps package is not available for Windows because
+we do not have a conda package for perl on Windows yet.
+
 Then run
 
     make html
