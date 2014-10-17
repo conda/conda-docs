@@ -10,13 +10,36 @@ from os.path import join, dirname, abspath, isdir
 from os import makedirs, chdir, pathsep
 from collections import OrderedDict
 
+from concurrent.futures import ThreadPoolExecutor
+
 import sys
 import json
+
+
+manpath = join(dirname(__file__), 'build', 'man')
+if not isdir(manpath):
+    makedirs(manpath)
+rstpath = join(dirname(__file__), 'source', 'commands')
+if not isdir(rstpath):
+    makedirs(rstpath)
+
+RST_HEADER = """
+.. _{command}_ref:
+
+conda {command}
+=======================
+
+.. raw:: html
+
+"""
+
+def str_check_output(*args, **kwargs):
+    return check_output(*args, **kwargs).decode('utf-8')
 
 def conda_help(cache=[]):
     if cache:
         return cache[0]
-    cache.append(check_output(['conda', '--help']))
+    cache.append(str_check_output(['conda', '--help']))
     return cache[0]
 
 def conda_commands():
@@ -56,27 +79,25 @@ def external_commands():
 def man_replacements():
     # XXX: We should use conda-api for this, but it's currently annoying to set the
     # root prefix with.
-    info = json.loads(check_output(['conda', 'info', '--json']))
+    info = json.loads(str_check_output(['conda', 'info', '--json']))
     # We need to use an ordered dict because the root prefix should be
     # replaced last, since it is typically a substring of the default prefix
     r = OrderedDict([
-        (info['default_prefix'], r'default prefix'),
-        (pathsep.join(info['envs_dirs']), r'envs dirs'),
+        (info['default_prefix'].encode('utf-8'), rb'default prefix'),
+        (pathsep.join(info['envs_dirs']).encode('utf-8'), rb'envs dirs'),
         # For whatever reason help2man won't italicize these on its own
-        (info['rc_path'], r'\fI\,user .condarc path\/\fP'),
+        (info['rc_path'].encode('utf-8'), rb'\fI\,user .condarc path\/\fP'),
         # Note this requires at conda > 3.7.1
-        (info['sys_rc_path'], r'\fI\,system .condarc path\/\fP'),
-        (info['root_prefix'], r'root prefix'),
+        # Workaround for earlier versions in Travis CI. Remove when 3.7.2 is released.
+        (info.get('sys_rc_path', '/home/travis/miniconda.condarc').encode('utf-8'), rb'\fI\,system .condarc path\/\fP'),
+        (info['root_prefix'].encode('utf-8'), rb'root prefix'),
         ])
+
     return r
 
-manpath = join(dirname(__file__), 'build', 'man')
-
 def generate_man(command):
-    if not isdir(manpath):
-        makedirs(manpath)
     conda_version = check_output(['conda', '--version'])
-    print("Generating manpage for conda %s" % command)
+
     manpage = check_output([
         'help2man',
         '--name', 'conda %s' % command,
@@ -90,11 +111,12 @@ def generate_man(command):
     replacements = man_replacements()
     for text in replacements:
         manpage = manpage.replace(text, replacements[text])
-    with open(join(manpath, 'conda-%s.1' % command), 'w') as f:
+    with open(join(manpath, 'conda-%s.1' % command), 'wb') as f:
         f.write(manpage)
 
+    print("Generated manpage for conda %s" % command)
+
 def generate_html(command):
-    print("Generating html for conda %s" % command)
     # Use abspath so that it always has a path separator
     man = Popen(['man', abspath(join(manpath, 'conda-%s.1' % command))], stdout=PIPE)
     htmlpage = check_output([
@@ -106,16 +128,46 @@ def generate_html(command):
         ],
         stdin=man.stdout)
 
-    with open(join(manpath, 'conda-%s.html' % command), 'w') as f:
+    with open(join(manpath, 'conda-%s.html' % command), 'wb') as f:
         f.write(htmlpage)
+    print("Generated html for conda %s" % command)
 
+
+def write_rst(command, sep=None):
+    with open(join(manpath, 'conda-%s.html' % command), 'r') as f:
+        html = f.read()
+
+    rp = rstpath
+    if sep:
+        rp = join(rp, sep)
+    if not isdir(rp):
+        makedirs(rp)
+    with open(join(rp, 'conda-%s.rst' % command), 'w') as f:
+        f.write(RST_HEADER.format(command=command))
+        for line in html.splitlines():
+            f.write('   ')
+            f.write(line)
+            f.write('\n')
+    print("Generated rst for conda %s" % command)
 
 def main():
-    commands = sys.argv[1:] or conda_commands()
+    core_commands = conda_commands()
+    build_commands = external_commands()
 
-    for command in commands:
+    commands = sys.argv[1:] or core_commands + build_commands
+
+    def gen_command(command):
         generate_man(command)
         generate_html(command)
+
+    with ThreadPoolExecutor(len(commands)) as executor:
+        # list() is needed to force exceptions to be raised
+        list(executor.map(gen_command, commands))
+
+    for command in [c for c in core_commands if c in commands]:
+        write_rst(command)
+    for command in [c for c in build_commands if c in commands]:
+        write_rst(command, sep='build')
 
 if __name__ == '__main__':
     sys.exit(main())

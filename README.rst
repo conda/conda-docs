@@ -30,10 +30,17 @@ To check that the links are correct, use
 Docs
 ====
 
-To build the docs you need the `continuum_sphinx_theme`. You can install this
-with
+The docs have several dependencies. You can install them all with
 
-    conda install -c asmeurer continuum_sphinx_theme
+    conda install -c asmeurer conda-docs-deps
+
+Furthermore you will need to have conda-build installed to generate the help
+pages for the conda-build commands.
+
+    conda install -n root conda-build
+
+Unfortunately the conda-docs-deps package is not available for Windows because
+we do not have a conda package for perl on Windows yet.
 
 Then run
 
