@@ -5,9 +5,9 @@
 # conda is distributed under the terms of the BSD 3-clause license.
 # Consult LICENSE.txt or http://opensource.org/licenses/BSD-3-Clause.
 
-from subprocess import check_output, PIPE, Popen
+from subprocess import check_output, PIPE, Popen, STDOUT
 from os.path import join, dirname, abspath, isdir
-from os import makedirs, chdir, pathsep
+from os import makedirs, pathsep
 from collections import OrderedDict
 
 from concurrent.futures import ThreadPoolExecutor
@@ -83,8 +83,8 @@ def man_replacements():
     # We need to use an ordered dict because the root prefix should be
     # replaced last, since it is typically a substring of the default prefix
     r = OrderedDict([
-        (info['default_prefix'].encode('utf-8'), rb'default prefix'),
-        (pathsep.join(info['envs_dirs']).encode('utf-8'), rb'envs dirs'),
+        (info['default_prefix'].encode('utf-8'), b'default prefix'),
+        (pathsep.join(info['envs_dirs']).encode('utf-8'), b'envs dirs'),
         # For whatever reason help2man won't italicize these on its own
         # Note these require conda > 3.7.1
         (info['user_rc_path'].encode('utf-8'), rb'\fI\,user .condarc path\/\fP'),
@@ -96,7 +96,7 @@ def man_replacements():
     return r
 
 def generate_man(command):
-    conda_version = check_output(['conda', '--version'])
+    conda_version = check_output(['conda', '--version'], stderr=STDOUT)
 
     manpage = check_output([
         'help2man',
