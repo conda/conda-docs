@@ -67,8 +67,9 @@ set -e
 set +x
 
 ACTUAL_TRAVIS_JOB_NUMBER=`echo $TRAVIS_JOB_NUMBER| cut -d'.' -f 2`
+GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+if [[ "$GIT_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
     echo -e "Setting git attributes"
     git config --global user.email "conda@continuum.io"
     git config --global user.name "Conda (Travis CI)"
@@ -119,6 +120,10 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     fi
 fi
 
+if [ "$GIT_BRANCH" != "master" ]; then
+    echo -e "The website and docs are only pushed to gh-pages from master"
+fi
+
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
-    echo -e "The website is not pushed to gh-pages on pull requests"
+    echo -e "The website and docs are not pushed to gh-pages on pull requests"
 fi
