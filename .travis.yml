@@ -31,4 +31,4 @@ script:
   - make html-errors
   - ../update-gh-pages.sh
 notifications:
-  email: false
+  flowdock: ef3821a08a791106512ccfc04c92eccb
