@@ -19,6 +19,7 @@ You will need to
 
 Use
 
+    cd web
     make html
 
 to build the site.  The result will be in web/build/html.
@@ -44,6 +45,7 @@ we do not have a conda package for perl on Windows yet.
 
 Then run
 
+    cd docs
     make html
 
 The result will be in docs/build/html.
