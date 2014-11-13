@@ -122,6 +122,7 @@ fi
 
 if [ "$GIT_BRANCH" != "master" ]; then
     echo -e "The website and docs are only pushed to gh-pages from master"
+    echo -e "This is the $GIT_BRANCH branch"
 fi
 
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
