@@ -11,6 +11,9 @@ channels:
   - file:///some/local/directory
   - defaults
 
+# filters out all channels URL's which do not start with 'file:'
+offline: True
+
 # Alias to use for non-url channels used with the -c flag. Default is https://conda.binstar.org/
 
 channel_alias: https://your.repo/
