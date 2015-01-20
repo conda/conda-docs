@@ -2,3 +2,4 @@
 build/
 docs/source/commands/
 *.swp
+__pycache__
