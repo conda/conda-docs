@@ -19,7 +19,7 @@ Appveyor.
 The lastest version of the Miniconda installer can be found `in the repo <http://repo.continuum.io/miniconda/>`_. In any
 case, an out of date installation can be updated with a simple:
 
-.. code-block:: console
+.. code-block:: bash
 
     conda update conda
 
