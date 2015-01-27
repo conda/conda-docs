@@ -24,6 +24,19 @@ libraries, Python modules, executable programs, or other components. Conda
 keeps track of dependencies between packages and platform specifics, making it
 simple to install sets of packages.
 
+A typical package file name could be something like:
+
+    ``gevent-websocket-0.3.6-py27_0.tar.bz2``
+
+    <package-name>-<version>-<build_string>.tar.bz2
+
+.. seealso::
+
+   - `Installing a package <commands/conda-install>`_
+   - `Updating packages <conda-update.html>`_
+   - :doc:`package-name`
+   - :doc:`spec`
+
 
 .. _meta_package:
 
@@ -55,8 +68,12 @@ However, conda has a notion of `locations` which are also simply directories
 that are known to conda, and contain environments within. Conda environments
 created in such locations are said to be "known", and can be displayed for
 easy reference. Conda has a default system location, but additional locations
-may be specified (see `Directory Structure`_ and :ref:`config`, respectively,
-for more details).
+may be specified.
+
+.. seealso::
+
+   - `Creating environments <commands/conda-create>`_
+   - :doc:`config`
 
 
 .. _channel:
@@ -85,7 +102,7 @@ repositories. A channel is a simple URL to a folder containing conda packages.
 Conda comes with a default set of channels to search and install packages
 from. However, these can be changed easily, additional default channels can
 be configured or a specific channel can be specified *ad hoc* when installing a
-package (see :ref:`config` for details).
+package (see :doc:`config` for details).
 
 Channels can be private, public, based on a single machine or local network or
 hosted online.
