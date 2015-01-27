@@ -36,6 +36,7 @@ Building packages
    build
    custom-channels
    build-commands
+   package-name
    spec
    travis
    bdist_conda
