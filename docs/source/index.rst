@@ -20,9 +20,9 @@ Installing packages/environments
    quick-start
    examples
    pip-comparison
+   config
    faq
    troubleshooting
-   config
    admin
    commands
 
