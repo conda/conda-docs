@@ -21,9 +21,9 @@ Installing packages/environments
    examples
    pip-comparison
    config
+   admin
    faq
    troubleshooting
-   admin
    commands
 
 
@@ -36,11 +36,11 @@ Building packages
    build_tutorials
    build
    custom-channels
-   build-commands
    package-name
    spec
    travis
    bdist_conda
+   build-commands
 
 Presentations & Blog Posts
 --------------------------

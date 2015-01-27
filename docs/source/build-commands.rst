@@ -1,6 +1,6 @@
-======================
- conda-build commands
-======================
+=====================================
+Command reference (building packages)
+=====================================
 
 The following commands are part of the ``conda-build`` package, which can be
 installed with ``conda install conda-build``.
