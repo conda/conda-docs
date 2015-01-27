@@ -1,15 +1,13 @@
-========================================================================
- Administrative channel management for a centralized conda installation
-========================================================================
+=================================
+System-wide channel configuration
+=================================
 
 By default, conda (and all packages it installs, including Anaconda) installs
 locally with a user-specific configuration. No administrative privileges are
-required, and no upstream files or other users are affected by the
-installation.
+required, and no upstream files or other users are affected by the installation.
 
 However, it is also possible to install conda (and packages) in an
-admin-controlled location that a group of users have access to. In this
-configuration, each user may use the central conda installation with a
+admin-controlled location that a group of users have access to. In thisconfiguration, each user may use the central conda installation with a
 personalized configuration specified by a .condarc file located in their $HOME
 directory. This user configuration is governed by a "system" .condarc file
 located in the top-level conda installation directory given by ``$PREFIX``

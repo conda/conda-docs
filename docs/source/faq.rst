@@ -1,9 +1,9 @@
-=========
-Conda FAQ
-=========
+==========================
+Frequently asked questions
+==========================
 
-Table of contents:
-==================
+Contents
+========
 
 #. :ref:`general-questions`
 #. :ref:`getting-help`

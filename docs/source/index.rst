@@ -21,7 +21,6 @@ Installing packages/environments
    examples
    pip-comparison
    config
-   admin
    faq
    troubleshooting
    commands
