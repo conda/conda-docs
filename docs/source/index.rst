@@ -19,6 +19,7 @@ Installing packages/environments
    installation
    quick-start
    examples
+   pip-comparison
    faq
    troubleshooting
    config
