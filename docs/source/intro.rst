@@ -2,14 +2,17 @@
 Introduction
 ============
 
-The `conda` command is the primary interface for managing installations
-of various packages.  It can query and search the package index and current
-installation, create new environments, and install and update packages
-into existing conda environments.
+Conda is a cross-platform, Python-agnostic binary package manager. Conda can:
 
-------------------
+- `Search <commands/conda-search.html>`_ for packages in a repository/package
+  index/channel or a current installation.
+- `Create <commands/conda-create.html>`_ conda environments.
+- `Install <commands/conda-install>`_ and `update <conda-update.html>`_
+  packages into new and existing environments.
+
+
 Conda Overview
-------------------
+--------------
 
 .. _package:
 .. index::
@@ -19,12 +22,18 @@ Conda Overview
 .. index::
     pair: terminology; environment
 
-conda is an application for finding and installing software packages.
-A conda `package` is a binary tarball containing system-level libraries,
-Python modules, executable programs, or other components.
-conda keeps track of dependencies between packages and platform
-specifics, making it simple to create working environments from different
-sets of packages.
+
+Packages
+~~~~~~~~
+
+A conda `package` is a binary archive (tarball) containing system-level
+libraries, Python modules, executable programs, or other components. Conda
+keeps track of dependencies between packages and platform specifics, making it
+simple to install sets of packages.
+
+
+Environments
+~~~~~~~~~~~~
 
 A `conda environment` is a filesystem directory that contains a specific
 collection of conda packages.  As a concrete example, you might want to
@@ -32,6 +41,15 @@ have one environment that provides NumPy 1.7, and another environment that
 provides NumPy 1.6 for legacy testing.  conda makes this kind of mixing
 and matching easy.  To begin using an environment, simply set
 your **PATH** variable to point to its `bin` directory.
+
+Since conda environments are simply directories, they may be created anywhere.
+However, conda has a notion of `locations` which are also simply directories
+that are known to conda, and contain environments within. Conda environments
+created in such locations are said to be "known", and can be displayed for
+easy reference. Conda has a default system location, but additional locations
+may be specified (see `Directory Structure`_ and :ref:`config`, respectively,
+for more details).
+
 
 .. _channel:
 .. index::
@@ -50,22 +68,34 @@ your **PATH** variable to point to its `bin` directory.
     pair: terminology; deactivated
 
 
-Conda packages are downloaded from remote ``channels``, which are simply URLs
-to directories containing conda packages.
-The conda command starts with a default set of channels to search, but users may exert control over this list; for example, if they wish to maintain a private or internal channel (see :ref:`config` for details).
+Channels
+~~~~~~~~
+
+Conda packages can be installed from local or remote ``channels`` within
+repositories. A channel is a simple URL to a folder containing conda packages.
+
+Conda comes with a default set of channels to search and install packages
+from. However, these can be changed easily, additional default channels can
+be configured or a specific channel can be specified *ad hoc* when installing a
+package (see :ref:`config` for details).
+
+Channels can be private, public, based on a single machine or local network or
+hosted online.
 
 Continuum provides the following standard channels:
- * ``http://repo.continuum.io/pkgs/dev`` - Experimental or developmental versions of packages
+
+ * ``http://repo.continuum.io/pkgs/dev`` - Experimental or developmental
+   versions of packages
  * ``http://repo.continuum.io/pkgs/gpl`` - GPL licensed packages
  * ``http://repo.continuum.io/pkgs/free`` - non GPL open source packages
 
-To view all available packages, you can use ``conda search``.  See the :ref:`search command examples <search_example>` for more information.
+To view all available packages, you can use ``conda search``.  See the
+:ref:`search command examples <search_example>` for more information.
 
-Once a conda package has been downloaded, it is said to
-be `locally available`.
+Once a conda package has been downloaded, it is said to be "locally available".
 A locally available package that has been linked into an conda environment
-is said to be `linked`.
-Conversely, unlinking a package from an environment causes it to be `unlinked`.
+is said to be "linked". Conversely, unlinking a package from an environment
+causes it to be "unlinked".
 
 
 .. _location:
@@ -76,16 +106,7 @@ Conversely, unlinking a package from an environment causes it to be `unlinked`.
 .. index::
     pair: terminology; known
 
-Since conda environments are simply directories, they may be created
-anywhere.  However, conda has a notion of `locations` which are also
-simply directories that are known to conda, and contain environments
-within.  Conda environments created in such locations are said to
-be `known`, and can be displayed for easy reference.  Conda has a default
-system location, but additional locations may be specified (see `Directory
-Structure`_ and :ref:`config`, respectively, for more details).
 
-
---------------------------
 Package Naming Conventions
 --------------------------
 
@@ -165,7 +186,6 @@ In usage documentation, these will be referred to by `package_spec`.
 .. _meta_package:
 
 
--------------
 Meta-Packages
 -------------
 
@@ -176,7 +196,6 @@ meta-package is with the ``conda metapackage`` command.
 .. _directory_structure:
 
 
--------------------
 Directory Structure
 -------------------
 
@@ -204,7 +223,7 @@ The conda system has the following directory structure:
 Other conda environments usually contain the same subdirectories as the
 default environment.
 
-----------------------------------------------
+
 Creating Python 3.4 or Python 2.6 environments
 ----------------------------------------------
 
@@ -262,22 +281,6 @@ its previous state, use:
 
 On Windows, this is just ``deactivate``.
 
----------------------------------
-Update Anaconda to latest version
----------------------------------
-
-To update to the latest version of Anaconda, it is best to first
-ensure you have the latest version of conda:
-
-.. code-block:: bash
-
-    $ conda update conda
-
-    # Now you are ready to update Anaconda
-
-    $ conda update anaconda
-
-Look here for additional :ref:`update examples <update_example>`.
 
 
 .. _YAML syntax: http://en.wikipedia.org/wiki/YAML
