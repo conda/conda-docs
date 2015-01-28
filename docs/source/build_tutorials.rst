@@ -1,5 +1,5 @@
 =================
- Build tutorials
+ Build Tutorials
 =================
 
 .. toctree::

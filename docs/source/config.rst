@@ -1,9 +1,12 @@
-
-.. _config:
-
--------------
+=============
 Configuration
--------------
+=============
+
+.. toctree::
+   :maxdepth: 1
+
+   admin
+   tab-completion
 
 There is very little user configuration that conda requires; however, conda
 will read minimal configuration from a ``$HOME/.condarc`` file, if it is
@@ -30,33 +33,3 @@ Here is an example:
 
 You can use the ``conda config`` command to modify configuration options in
 ``.condarc`` from the command line.
-
---------------
-Tab Completion
---------------
-
-``conda`` supports tab completion in bash shells via the ``argcomplete``
-package. First, make sure that ``argcomplete`` is installed
-
-.. code-block:: bash
-
-   $ conda install argcomplete
-
-Then add
-
-.. code-block:: bash
-
-   eval "$(register-python-argcomplete conda)"
-
-to your bash profile. You can test that it works by opening a new terminal
-window and typing
-
-.. code-block:: bash
-
-   $ conda ins<TAB>
-
-It should complete to
-
-.. code-block:: bash
-
-   $ conda install

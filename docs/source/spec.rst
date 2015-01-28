@@ -1,4 +1,4 @@
-Conda package specification
+Conda Package Specification
 ===========================
 
 A conda package is a bzipped tar archive (``.tar.bz2``) which contains

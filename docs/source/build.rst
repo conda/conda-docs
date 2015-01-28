@@ -1,6 +1,6 @@
 .. _build:
 
-conda build Recipe Reference
+Conda Build Recipe Reference
 ============================
 
 Building a package requires a recipe.  A recipe is flat directory which
@@ -43,7 +43,6 @@ recipes for common repositories, such as
 
 The meta.yaml file
 ------------------
-
 
 All the metadata in the recipe is specified in the ``meta.yaml`` file. All
 sections are optional except for package/name and package/version.
@@ -499,8 +498,8 @@ Pre/Post link/unlink scripts
 ----------------------------
 .. TODO: Add post-unlink
 
-You can add scripts `pre-link.sh`, `post-link.sh`, or `pre-unlink.sh` (or
-`.bat` for Windows) to the recipe, which will be run before the package is
+You can add scripts ``pre-link.sh``, ``post-link.sh``, or ``pre-unlink.sh`` (or
+``.bat`` for Windows) to the recipe, which will be run before the package is
 installed, after it is installed, and before it is removed, respectively. If
 these scripts exit nonzero the installation/removal will fail.
 

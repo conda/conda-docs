@@ -10,8 +10,8 @@ Conda can also be installed as a stand-alone packages known as
 available on `the Conda site <http://conda.pydata.org/miniconda.html#miniconda>`_.
 
 
-Silent installation
--------------------
+Silent/unattended installation
+------------------------------
 
 Silent installation of Miniconda can be used for deployment or testing or building services such as Travis CI and
 Appveyor.
@@ -19,7 +19,7 @@ Appveyor.
 The lastest version of the Miniconda installer can be found `in the repo <http://repo.continuum.io/miniconda/>`_. In any
 case, an out of date installation can be updated with a simple:
 
-.. code-block:: console
+.. code-block:: bash
 
     conda update conda
 
