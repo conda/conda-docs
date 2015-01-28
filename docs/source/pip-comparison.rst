@@ -1,5 +1,5 @@
 ===================
-Conda for pip users
+Conda for pip Users
 ===================
 
 If you've used `pip` and `virtualenv` in the past, you can use conda to perform

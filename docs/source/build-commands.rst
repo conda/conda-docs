@@ -1,5 +1,5 @@
 =====================================
-Command reference (building packages)
+Command Reference (Building Packages)
 =====================================
 
 The following commands are part of the ``conda-build`` package, which can be

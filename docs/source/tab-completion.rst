@@ -1,5 +1,5 @@
 ==============
-Tab completion
+Tab Completion
 ==============
 
 ``conda`` supports tab completion in bash shells via the ``argcomplete``

@@ -1,5 +1,5 @@
 ==========================
-Frequently asked questions
+Frequently Asked Questions
 ==========================
 
 Contents

@@ -1,5 +1,5 @@
 =================================
-System-wide channel configuration
+System-wide Channel Configuration
 =================================
 
 By default, conda (and all packages it installs, including Anaconda) installs

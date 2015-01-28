@@ -1,5 +1,5 @@
 ===================================
-Command Reference (package manager)
+Command Reference (Package Manager)
 ===================================
 
 Conda provides many commands for managing packages and environments.  The

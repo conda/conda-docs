@@ -1,6 +1,6 @@
 .. _build:
 
-Conda build recipe reference
+Conda Build Recipe Reference
 ============================
 
 Building a package requires a recipe.  A recipe is flat directory which
