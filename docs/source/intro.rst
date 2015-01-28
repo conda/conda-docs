@@ -40,12 +40,12 @@ A typical package file name could be something like:
 
 .. _meta_package:
 
-Meta-Packages
--------------
+Metapackages
+------------
 
-conda also provides the notion of `meta-packages`.  A meta-package is a conda
+conda also provides the notion of `metapackages`.  A metapackage is a conda
 package that only has dependencies, no files. An easy way to make a
-meta-package is with the ``conda metapackage`` command.
+metapackage is with the ``conda metapackage`` command.
 
 
 .. _environment:
@@ -177,9 +177,9 @@ command.
     $ conda create -n py34 python=3.4 anaconda
 
 Here, 'py34' is the name of the environment to create, and 'anaconda' is the
-meta-package that includes all of the actual Python packages comprising
+metapackage that includes all of the actual Python packages comprising
 the Anaconda distribution.  When creating a new environment and installing
-the Anaconda meta-package, the NumPy and Python versions can be specified,
+the Anaconda metapackage, the NumPy and Python versions can be specified,
 e.g. `numpy=1.7` or `python=3.4`.
 
 .. code-block:: bash
