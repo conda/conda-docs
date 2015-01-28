@@ -1,6 +1,3 @@
-.. NOTE: This file serves both as the README on GitHub and the index.html for
-   conda.pydata.org. If you update this file, be sure to cd to the web
-   directory and run ``make html; make live``
 
 =====
 Conda
