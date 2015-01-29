@@ -80,6 +80,14 @@ update``. For instance
 
 will update conda.
 
+.. _images:
+
+Try images with miniconda for cloud services
+--------------------------------------------
+
+More information about this topic You can find `here <http://docs.continuum.io/anaconda/images.html>`_
+
+
 .. |Linux| replace:: :fonticon:`icon-linux icon-4x`
 
 .. |Mac| replace:: :fonticon:`icon-apple icon-4x`
