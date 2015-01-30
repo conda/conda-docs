@@ -85,7 +85,7 @@ will update conda.
 Try images with miniconda for cloud services
 --------------------------------------------
 
-More information about this topic You can find `here <http://docs.continuum.io/anaconda/images.html>`_
+You can find more information about this topic `here <http://docs.continuum.io/anaconda/images.html>`_
 
 
 .. |Linux| replace:: :fonticon:`icon-linux icon-4x`

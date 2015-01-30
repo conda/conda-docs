@@ -129,8 +129,8 @@ code and issue tracker for conda are on `GitHub <https://github.com/conda/conda>
 Try images with miniconda for cloud services
 --------------------------------------------
 
-If You are using cloud services and want to very easily check Miniconda through one of
-already prepared by Us images, then please read `this information <http://docs.continuum.io/anaconda/images.html>`_
+If you are using some of cloud services then you might want to try one of our Minconda's images.
+For more information please read `this <http://docs.continuum.io/anaconda/images.html>`_
 
 --------
 
