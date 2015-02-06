@@ -126,6 +126,12 @@ subscribe to the `conda mailing list
 <https://groups.google.com/a/continuum.io/forum/#!forum/conda>`_.  The source
 code and issue tracker for conda are on `GitHub <https://github.com/conda/conda>`_.
 
+Try images with miniconda for cloud services
+--------------------------------------------
+
+If you are using some of cloud services then you might want to try one of our Minconda's images.
+For more information please read `this <http://docs.continuum.io/anaconda/images.html>`_
+
 --------
 
 Contents:
