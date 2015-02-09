@@ -196,6 +196,21 @@ sections are optional except for package/name and package/version.
         - bin/file1
         - lib/file2
 
+      # Using this files have to be installed into $DESTDIR instead of
+      # $PREFIX.  However the application needs to be configured as if
+      # they would be installed directly into $PREFIX.  This is only
+      # useful if the package being build has a build-dependency on
+      # itself, e.g. like gcc would.  Otherwise such package would not
+      # contain any files as all files are already installed in $PREFIX
+      # before building begins.
+      # One usual way to do this for projects using autotools is:
+      #    ./configure --prefix=$PREFIX
+      #    make
+      #    make install DESTDIR=$DESTDIR
+      # Or for a python package:
+      #    python setup.py install --root=$DESTDIR
+      use_destdir: true  # (defaults to false)
+
     # the build and runtime requirements. Dependencies of these requirements
     # are included automatically.
     requirements:
@@ -356,6 +371,8 @@ Windows (``bld.bat``) during the build process:
       source file.
   * - ``PREFIX``
     - Build prefix where build script should install to.
+  * - ``DESTDIR``
+    - The directory to install into when ``build/destdir`` is set to ``true``.
   * - ``RECIPE_DIR``
     - Directory of recipe.
   * - ``PKG_NAME``
