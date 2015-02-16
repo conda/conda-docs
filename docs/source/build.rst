@@ -201,8 +201,12 @@ sections are optional except for package/name and package/version.
     requirements:
       # Packages required to build the package. python and numpy must be
       # listed explicitly if they are required.
+      # The requirements versions should follow the Conda match specification.
       build:
         - python
+        - numpy 0.7*
+        - bokeh 0.7.1
+        - numba >=0.17
       # Packages required to run the package. These are the dependencies that
       # will be installed automatically whenever the package is installed.
       # Package names should be any valid conda spec (see "Specifying versions
