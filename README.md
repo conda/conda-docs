@@ -13,10 +13,11 @@ changes are welcome, from typo fixes to new documents to refactoring.
 
 You will need to
 
-    conda install -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme
+    conda create -n conda-website -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme
 
 Use
 
+    source activate conda-website
     cd web
     make html
 
@@ -30,7 +31,7 @@ To check that the links are correct, use
 
 The docs have several dependencies. You can install them all with
 
-    conda install -c asmeurer conda-docs-deps
+    conda create -n conda-docs -c asmeurer conda-docs-deps
 
 Furthermore you will need to have conda-build installed to generate the help
 pages for the conda-build commands.
@@ -42,6 +43,7 @@ we do not have a conda package for perl on Windows yet.
 
 Then run
 
+    source activate conda-docs
     cd docs
     make html
 
