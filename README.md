@@ -31,7 +31,7 @@ To check that the links are correct, use
 
 The docs have several dependencies. You can install them all with
 
-    conda create -n conda-docs -c asmeurer conda-docs-deps
+    conda create -n conda-docs -c asmeurer conda-docs-deps python=3
 
 Furthermore you will need to have conda-build installed to generate the help
 pages for the conda-build commands.
