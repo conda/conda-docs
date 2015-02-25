@@ -1,6 +1,5 @@
-===================
-Conda documentation
-===================
+# Conda documentation
+
 
 This repository includes documentation for all of conda, including
 conda-build.
@@ -10,8 +9,7 @@ The website is at http://conda.pydata.org/ and the docs are at http://conda.pyda
 Feel free to make pull requests against this repo for suggested changes. All
 changes are welcome, from typo fixes to new documents to refactoring.
 
-Website
-=======
+## Website
 
 You will need to
 
@@ -28,8 +26,7 @@ To check that the links are correct, use
 
     make linkcheck
 
-Docs
-====
+## Docs
 
 The docs have several dependencies. You can install them all with
 
@@ -50,8 +47,7 @@ Then run
 
 The result will be in docs/build/html.
 
-Deploying
-=========
+## Deploying
 
 The website and docs are deployed automatically to GitHub pages (the
 `gh-pages` branch on this repo) with Travis CI when commits are pushed to
