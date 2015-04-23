@@ -49,6 +49,10 @@ Then run
 
 The result will be in docs/build/html.
 
+To skip the generation of command docs (much faster), run
+
+    make just-html
+
 ## Deploying
 
 The website and docs are deployed automatically to GitHub pages (the
