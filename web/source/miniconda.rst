@@ -35,7 +35,7 @@
    +----------+-------------------+-----------------+-----------------+
 
 MD5 sums for the downloads can be found `here
-<http://repo.continuum.io/miniconda/>`_.
+<https://repo.continuum.io/miniconda/>`_.
 
 See the `change log
 <https://github.com/conda/conda/blob/master/CHANGELOG.txt>`_ for conda for a
