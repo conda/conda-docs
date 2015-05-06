@@ -29,8 +29,6 @@ changeps1: False
 # command 'conda list'. The default is True.
 use_pip: False
 
-#############################################################################
-
 # Proxy settings: http://[username]:[password]@[server]:[port]. By default,
 # proxy settings are pulled from the HTTP_PROXY and HTTPS_PROXY environment
 # variables. If you do not include the username and passwor, of if
@@ -38,6 +36,8 @@ use_pip: False
 proxy_servers:
     http: http://user:pass@corp.com:8080
     https: https://user:pass@corp.com:8080
+
+#############################################################################
 
 # Disable ssl verification. The default is True.
 ssl_verify: False
