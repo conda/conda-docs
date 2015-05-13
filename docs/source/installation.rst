@@ -19,7 +19,7 @@ it from the `Miniconda downloads page <http://conda.pydata.org/miniconda.html#mi
 and follow the rest of the instructions below.
 
 Windows Anaconda installation
--------------------
+~~~~~~~
 
 In your browser, download the Anaconda installer for Windows from the `Anaconda downloads 
 page <https://store.continuum.io/cshop/anaconda/>`_ then double click the .exe file and follow 
@@ -31,7 +31,7 @@ window, then click Start - Run - Command Prompt. The install will not take effec
 until AFTER you close and re-open your terminal window.
 
 Macintosh Anaconda installation
--------------------
+~~~~~~~
 
 In your browser, download the Anaconda installer for Macintosh from the `Anaconda downloads 
 page <https://store.continuum.io/cshop/anaconda/>`_  then double click 
@@ -42,7 +42,7 @@ NOTE: The install will not take effect until AFTER you close and reopen your ter
 window.
 
 Linux Anaconda installation
--------------------
+~~~~~~~
 
 In your browser, download the Anaconda installer for Linux from the `Anaconda downloads 
 page <https://store.continuum.io/cshop/anaconda/>`_ then in your terminal 
@@ -65,7 +65,7 @@ Appveyor.
 
 
 Windows silent installation
--------------------
+~~~~~~~
 
 The Windows installer of Miniconda can be run in silent mode using the ``/S`` argument. The following optional arguments
 are supported:
@@ -88,7 +88,7 @@ The following command installs Miniconda for all users without registering Pytho
 
 
 Linux and OS X silent installation
--------------------
+~~~~~~~
 
 Silent installation of Miniconda for Linux and OS X is a simple as specifying the ``-b`` and ``-p`` arguments of the
 bash installer. The following arguments are supported:
