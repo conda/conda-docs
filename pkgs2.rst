@@ -25,11 +25,11 @@ This tutorial includes the following:
 #. :ref:`Optional: Upload new packages to Binstar.org`
 #. :ref:`More resources`
 
+
 .. _before-you-start:
 
 #. Before you start
 =================
-
 
 You should already have conda and conda-build by downloading and installing Miniconda or Anaconda. 
 Conda-build is not automatically installed, so let's do that now. 
