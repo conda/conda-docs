@@ -1,57 +1,65 @@
 # Conda documentation
 
-
 This repository includes documentation for all of conda, including
-conda-build.
+conda-build and conda-docs.
 
-The website is at http://conda.pydata.org/ and the docs are at http://conda.pydata.org/docs/.
+The website is at http://conda.pydata.org/ and the documentation is at http://conda.pydata.org/docs/.
 
 Feel free to make pull requests against this repo for suggested changes. All
 changes are welcome, from typo fixes to new documents to refactoring.
 
 ## Website
 
-You will need to
+You will need to:
 
     conda create -n conda-website -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme
 
-Use
+To build the site, use:
 
     source activate conda-website
     cd web
     make html
 
-to build the site.  The result will be in web/build/html.
+The result will be in web/build/html.
 
-To check that the links are correct, use
+To check that the links are correct, use:
 
     make linkcheck
 
 ## Docs
 
-The docs have several dependencies. You can install them all with
+The documentation has several dependencies. Linux or Macintosh is recommended
+-- the conda-docs-deps package is not available for Windows because
+we do not have a conda package for perl on Windows.
+
+Install conda. See instructions on docs website.
+
+Then install documentation and dependencies:
 
     conda create -n conda-docs -c asmeurer conda-docs-deps python=3
+    
+After editing files, test in browser by inserting this URL
+in front of the Github URL: http://rawgit.com/
 
-Furthermore you will need to have conda-build installed to generate the help
-pages for the conda-build commands.
+To check that the links are correct, use:
+
+    make linkcheck
+    
+Before you generate documentation for the first time, install conda-build:
 
     conda install -n root conda-build
 
-Unfortunately the conda-docs-deps package is not available for Windows because
-we do not have a conda package for perl on Windows yet.
+To generate documentation but skip the generation of command docs (much faster), run:
 
-Then run
+    make just-html
+
+To generate the documentation and all the help pages for the conda-build commands, run:
 
     source activate conda-docs
     cd docs
     make html
 
 The result will be in docs/build/html.
-
-To skip the generation of command docs (much faster), run
-
-    make just-html
 
 ## Deploying
 
