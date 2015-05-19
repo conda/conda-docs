@@ -31,7 +31,7 @@ use_pip: False
 
 # Proxy settings: http://[username]:[password]@[server]:[port]. By default,
 # proxy settings are pulled from the HTTP_PROXY and HTTPS_PROXY environment
-# variables. If you do not include the username and passwor, of if
+# variables. If you do not include the username and password, of if
 # authentication fails, conda will prompt for a username and password.
 proxy_servers:
     http: http://user:pass@corp.com:8080
@@ -66,7 +66,7 @@ add_binstar_token: False
 # Directories in which environments are located. If this key is set, the root
 # prefix envs dir is not used unless explicitly included. This key also
 # determines where the package caches will be located. For each envs here,
-# envs/.pkgs will be used as the pkgs cache, except for standard the envs
+# envs/.pkgs will be used as the pkgs cache, except for the standard envs
 # directory in the root directory, for which the normal root_dir/pkgs is used.
 # The CONDA_ENVS_PATH environment variable, which is a colon separated list,
 # allows overwriting this setting here.
@@ -106,9 +106,9 @@ track_features:
 # default is False.
 binstar_upload: True
 
+# Build output root directory. (default <CONDA_PREFIX>/conda-bld/, or
+# ~/conda-bld if you do not have write permissions to
+# <CONDA_PREFIX>/conda-bld) This can also be set with the CONDA_BLD_PATH
+# environment variable.
 conda-build:
-  # Build output root directory. (default <CONDA_PREFIX>/conda-bld/, or
-  # ~/conda-bld if you do not have write permissions to
-  # <CONDA_PREFIX>/conda-bld) This can also be set with the CONDA_BLD_PATH
-  # environment variable.
   root-dir: ~/conda-builds
