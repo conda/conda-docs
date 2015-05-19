@@ -220,7 +220,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'Conda.tex', 'Conda',
-   'Continuum Anaytics', 'manual'),
+   'Continuum Analytics', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -250,7 +250,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'conda', 'Conda',
-     ['Continuum Anaytics'], 1)
+     ['Continuum Analytics'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -264,7 +264,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'Conda', 'Conda',
-   'Continuum Anaytics', 'Conda', 'One line description of project.',
+   'Continuum Analytics', 'Conda', 'One line description of project.',
    'Miscellaneous'),
 ]
 
