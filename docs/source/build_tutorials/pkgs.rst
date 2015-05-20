@@ -16,11 +16,11 @@ This is the first of three tutorials on building conda packages.
 Conda build summary
 ~~~~~~~~~~~~~~~~~~~
 
-Building a simple conda package can be done in three steps, with an optional step:
+Building a simple conda package can be done in two steps, with two optional steps:
 
 #. Before you start: make sure you have all the requirements.
 #. Build a simple package with conda skeleton and PyPI: generate a simple package.
-#. Convert conda package for other platforms: convert your simple package so it can be used on on Linux, Mac and Windows.
+#. Optional - Convert conda package for other platforms: convert your simple package so it can be used on on Linux, Mac and Windows.
 #. Optional - Upload package to Binstar.org: upload to a public or private repository so others can share your package.
 
 
@@ -77,9 +77,9 @@ Next, edit the new 50-line file meta.yaml.  This skeleton file can be fleshed ou
 commands, but for pyinstrument, any changes are optional.  
 
 What are these three files?
-    **meta.yaml:** contains all the metadata in the recipe. Only package/name and package/version are required; everything else is optional.
-    **build.sh:** environment and other variables for Unix and Mac - whether 32 or 64-bit, path info, etc.
-    **bld.bat:** the same environment and other variables for Windows.
+    **meta.yaml:** Contains all the metadata in the recipe. Only package/name and package/version are required; everything else is optional.
+    **build.sh:** Environment and other variables for Unix and Mac - whether 32 or 64-bit, path info, etc.
+    **bld.bat:** The same environment and other variables for Windows.
 
 Now that you have the skeleton ready, you can use the conda build tool. Let’s try it:
 
