@@ -126,9 +126,9 @@ Presentations & Blog Posts
 
 `Python Packages and Environments with conda - Bryan Van de Ven <http://continuum.io/blog/conda>`_
 
-`Advanced features of Conda, part 1 - Aaron Meurer <http://continuum.io/blog/advanced-conda-part-1>`_
+`Advanced features of Conda, Part 1 - Aaron Meurer <http://continuum.io/blog/advanced-conda-part-1>`_
 
-`Advanced features of Conda, part 2 - Aaron Meurer <http://continuum.io/blog/advanced-conda-part-2>`_
+`Advanced features of Conda, Part 2 - Aaron Meurer <http://continuum.io/blog/advanced-conda-part-2>`_
 
 Requirements
 ------------
