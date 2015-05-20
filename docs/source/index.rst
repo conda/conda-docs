@@ -89,10 +89,12 @@ User Guide
    :maxdepth: 2
 
    intro
+   quick-install
    installation
    examples
    faq
    troubleshooting
+   glossary
    config
    build
    build_tutorials
