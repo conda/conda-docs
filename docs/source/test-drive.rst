@@ -450,8 +450,8 @@ Remove the Anaconda OR Miniconda install directory:
 
    rm -rf ~/miniconda OR  rm -rf ~/anaconda
  
-* Windows:  Go to Control Panel, click “Add or remove Program,” select “Python 2.7 (Anaconda)” OR “Python 2.7 
-(Miniconda)” and click Remove Program.
+* Windows:  Go to Control Panel, click “Add or remove Program,” select “Python 2.7 (Anaconda)” OR “Python 2.7 Miniconda)” and click Remove Program.
+
 
 **More resources**
 
