@@ -114,6 +114,7 @@ Reference Guide
    spec
    travis
    bdist_conda
+   requirements
 
 Presentations & Blog Posts
 --------------------------
