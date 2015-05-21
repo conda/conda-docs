@@ -89,6 +89,7 @@ User Guide
    :maxdepth: 2
 
    intro
+   download
    quick-install
    installation
    examples
