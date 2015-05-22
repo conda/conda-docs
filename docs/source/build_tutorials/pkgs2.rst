@@ -275,7 +275,7 @@ Save this new file ``bld.bat`` to the same directory where you put your new ``me
 More information on environment variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For more information on build files, see `Conda Build Recipe Reference <http://conda.pydata.org/docs/build.html/>`_ 
+For more information on build files, see `Conda Build Recipe Reference <http://conda.pydata.org/docs/build.html>`_ 
 
 .. _build-and-install:
 
