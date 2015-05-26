@@ -92,9 +92,7 @@ User Guide
    quick-install
    installation
    test-drive
-   examples
-   faq
-   troubleshooting
+   get-more-help
    glossary
    config
    build
