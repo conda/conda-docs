@@ -41,6 +41,7 @@ Table of Contents
    :maxdepth: 2
 
    intro
+   download
    quick-install
    installation
    test-drive
