@@ -47,11 +47,19 @@ Table of Contents
    py2or3
    glossary
    config
-   build
+   building/build
    build_tutorials
    admin
    custom-channels
    get-more-help
+
+
+..
+   This is a messy compromise, but to keep the links from outside this repository in 
+   to build.html and its anchor linked sections from breaking, we're going to leave 
+   that one file in the root directory instead of putting it at building/recipe.rst the 
+   way we really should. In the future, we may explore html redirects as a better 
+   option. -Will Warner 2015-06-04
 
 
 Reference Guide
