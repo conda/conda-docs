@@ -1,6 +1,6 @@
-============
-Introduction
-============
+================
+Getting started
+================
 
 The `conda` command is the primary interface for managing installations
 of various packages.  It can query and search the package index and current
