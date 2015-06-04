@@ -41,15 +41,13 @@ Table of Contents
    :maxdepth: 2
 
    intro
-   quick-install
-   installation
+   install/install
    test-drive
    glossary
-   config
    build
    build_tutorials
    custom-channels
-   get-more-help
+   help/help
 
 
 Reference Guide
@@ -63,7 +61,6 @@ Reference Guide
    env-commands
    build-commands
    spec
-   travis
    bdist_conda
    license
 
