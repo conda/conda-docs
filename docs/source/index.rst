@@ -49,6 +49,7 @@ Table of Contents
    build
    build_tutorials
    custom-channels
+   get-involved
    get-more-help
 
 
