@@ -45,4 +45,3 @@ installed with ``conda install conda-build``.
    :maxdepth: 2
 
    commands/build/*
-
