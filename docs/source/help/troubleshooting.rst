@@ -9,7 +9,7 @@ Table of contents:
 #. :ref:`DistributionNotFound`
 #. :ref:`unknown-locale`
 #. :ref:`AttributeError-getproxies`
-
+#. :ref:`shell-command-location`
 
 .. _permission-denied:
 
@@ -192,3 +192,43 @@ The ``requests`` version can be updated with ``pip install -U requests``.
 On Windows ``PYTHONPATH`` can be cleared in the environment variable settings.
 On OS X and Linux it can typically be cleared by removing it from the bash
 profile and restarting the shell.
+
+.. _shell-command-location:
+
+
+Issue:  Shell commands open from wrong location
+===============================================
+
+When I run a command within a conda environment, conda does not access the correct package executable.
+
+Resolution:  Reactivate the environment or run ``hash -r`` (in bash) or ``rehash`` (in zsh)
+-------------------------------------------------------------------------------------------
+
+The way both bash and zsh work is that when you enter a command, the shell 
+searches the paths in ``PATH`` one by one until it finds the command. The shell 
+then caches the location (this is called "hashing" in shell terminology), so that 
+when you type the command again, the shell doesn't have to search the ``PATH`` 
+again.
+
+The problem is that before you conda installed the program, you ran the command 
+which loaded and hashed the one in some other location on the ``PATH`` (such as
+``/usr/bin``). Then you installed the program using ``conda install``, but the 
+shell still had the old instance hashed.
+
+When you run ``source activate``, conda automatically runs ``hash -r`` in bash and
+``rehash`` in zsh to clear the hashed commands, so conda will find things in the
+new path on the ``PATH``. But there is no way to do this when ``conda install``
+is run (the command must be run inside the shell itself, meaning either you
+have to type the command yourself or source a file that contains the command).
+
+This is a relatively rare problem, since this will only happen if you activate
+an environment or use the root environment, run a command from somewhere else,
+then conda install a program and try to run the program again without running ``source
+activate`` or ``source deactivate``.
+
+The command ``type command_name`` will always tell you exactly what is being
+run (this is better than ``which command_name``, which ignores hashed commands
+and searches the ``PATH`` directly), and ``hash -r`` (in bash) or ``rehash``
+(in zsh) will reset the hash, or you can run ``source activate``.
+
+
