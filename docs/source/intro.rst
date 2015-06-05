@@ -52,14 +52,14 @@ your **PATH** variable to point to its `bin` directory.
 
 Conda packages are downloaded from remote ``channels``, which are simply URLs
 to directories containing conda packages.
-The conda command starts with a default set of channels to search, but users may exert control over this list; for example, if they wish to maintain a private or internal channel (see :ref:`config` for details).
+The conda command starts with a default set of channels to search, but users may exert control over this list; for example, if they wish to maintain a private or internal channel (see :doc:`install/config` for details).
 
 Continuum provides the following standard channels:
  * ``http://repo.continuum.io/pkgs/dev`` - Experimental or developmental versions of packages
  * ``http://repo.continuum.io/pkgs/gpl`` - GPL licensed packages
  * ``http://repo.continuum.io/pkgs/free`` - non GPL open source packages
 
-To view all available packages, you can use ``conda search``.  See the :ref:`search command examples <search_example>` for more information.
+To view all available packages, you can use ``conda search``.  See the :doc:`search command examples <help/examples/search>` for more information.
 
 .. _location:
 .. index::
@@ -75,4 +75,4 @@ simply directories that are known to conda, and contain environments
 within.  Conda environments created in such locations are said to
 be `known`, and can be displayed for easy reference.  Conda has a default
 system location, but additional locations may be specified (see :doc:`building/dirs` 
-and :ref:`config`, respectively, for more details).
+and :doc:`install/config`, respectively, for more details).
