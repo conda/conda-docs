@@ -87,9 +87,3 @@ Open a terminal window with Start - Run - Command Prompt, navigate to the anacon
 **Windows Miniconda Uninstall**
 
 Go to Control Panel, click “Add or remove Program,” select “Python 2.7 (Miniconda)” and click Remove Program. 
-<<<<<<< HEAD:docs/source/install/quick.rst
-=======
-
-
-
->>>>>>> master:docs/source/quick-install.rst
