@@ -16,7 +16,7 @@ before_install:
   - conda info -a
 
   - if [[ "${DOCS}" = "true" ]]; then
-      conda install conda-build;
+      conda install conda-build pycrypto;
       conda create -q -n build-environment -c asmeurer conda-docs-deps;
       cd docs;
     fi
