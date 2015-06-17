@@ -1,11 +1,6 @@
-========================
- General conda commands
-========================
+Commands
+========
 
-The following commands are part of conda.
+.. raw:: html
 
-.. toctree::
-   :glob:
-   :maxdepth: 2
-
-   commands/*
+        <html><head><meta http-equiv="refresh" content="0; URL='commands.html'" /></head><body></body></html>

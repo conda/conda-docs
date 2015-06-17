@@ -1,5 +1,5 @@
 ============================
- Using Conda with Travis CI
+ Using conda with Travis CI
 ============================
 
 If you are already using Travis CI, using conda is a preferable alternative
@@ -62,12 +62,12 @@ Additional Steps
 ================
 
 If you wish to support a package that doesn't have official Continuum builds,
-you can build it yourself, and add it to a Binstar channel. You can
+you can build it yourself, and add it to a Anaconda.org channel. You can
 then add
 
 .. code-block:: yaml
 
-   - conda config --add channels your_binstar_username
+   - conda config --add channels your_Anaconda_dot_org_username
 
 to the install steps in ``.travis.yml`` so that it finds the packages on that
 channel.

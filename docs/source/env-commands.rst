@@ -1,12 +1,6 @@
-====================
- conda-env commands
-====================
+Commands
+========
 
-The following commands are part of the ``conda-env`` package, which is
-installed automatically with conda.
+.. raw:: html
 
-.. toctree::
-   :glob:
-   :maxdepth: 2
-
-   commands/env/*
+        <html><head><meta http-equiv="refresh" content="0; URL='commands.html'" /></head><body></body></html>

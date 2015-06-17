@@ -7,7 +7,7 @@ Get more help
 
    faq
    troubleshooting
-   conda-pip-virtualenv-translator
    examples/examples
-   travis
    support
+
+Please see also the :doc:`/using/cheatsheet`.

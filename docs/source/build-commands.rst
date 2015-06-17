@@ -1,12 +1,6 @@
-======================
- conda-build commands
-======================
+Commands
+========
 
-The following commands are part of the ``conda-build`` package, which can be
-installed with ``conda install conda-build``.
+.. raw:: html
 
-.. toctree::
-   :glob:
-   :maxdepth: 2
-
-   commands/build/*
+        <html><head><meta http-equiv="refresh" content="0; URL='commands.html'" /></head><body></body></html>
