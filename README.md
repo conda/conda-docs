@@ -36,7 +36,7 @@ The docs have several dependencies. You can install them all with
 Furthermore you will need to have conda-build installed to generate the help
 pages for the conda-build commands.
 
-    conda install -n root conda-build
+    conda install -n root conda-build pycrypto
 
 Unfortunately the conda-docs-deps package is not available for Windows because
 we do not have a conda package for perl on Windows yet.
