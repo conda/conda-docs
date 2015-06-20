@@ -2,7 +2,7 @@
 Managing Python
 =====================
 
-Conda treats Python the same as any other package, so it’s very easy to manage and update multiple installations. 
+Conda treats Python the same as any other package, so it’s very easy to manage and update multiple installations.
 
 Check Python versions
 ----------------------
@@ -11,7 +11,7 @@ Check to see which versions of Python are available to install:
 
 .. code::
 
-   conda search python 
+   conda search python
 
 Install a different version of Python
 ----------------------------------------
@@ -20,9 +20,9 @@ So now let’s say you need Python 3 to learn programming, but you don’t want 
 
 .. code::
 
-   conda create --name snakes python=3   
+   conda create --name snakes python=3
 
-**Linux, Mac:** ``source activate snakes``
+**Linux, OSX:** ``source activate snakes``
 
 **Windows:**  ``activate snakes``
 
@@ -45,9 +45,9 @@ Verify that the snakes environment uses python version 3:
 Use a different version of Python
 ----------------------------------------
 
-To switch to the new environment with a different version of Python, you simply need to activate it. Let’s switch back to the default, 2.7: 
+To switch to the new environment with a different version of Python, you simply need to activate it. Let’s switch back to the default, 2.7:
 
-**Linux, Mac:** ``source activate snowflakes``
+**Linux, OSX:** ``source activate snowflakes``
 
 **Windows:**  ``activate snowflakes``
 
@@ -57,7 +57,7 @@ Verify that the snowflakes environment uses Python version 2:
 
    python --version
 
-After you are finished working in the snowflakes environment, to close it you can either deactivate it, or activate a new environment. 
+After you are finished working in the snowflakes environment, to close it you can either deactivate it, or activate a new environment.
 
 
 Create Python 2 or 3 environments
@@ -66,13 +66,13 @@ Create Python 2 or 3 environments
 Anaconda supports Python 2.6, 2.7, 3.3, and 3.4.  The default is Python 2.7 or
 3.4, depending on which installer you used. If the installer you used is Anaconda
 or Miniconda, the default is 2.7. If the installer you used is Anaconda3 or Miniconda3,
-the default is 3.4. 
+the default is 3.4.
 
 
 Create a Python 3.4 environment
 ````````````````````````````````
 
-To create a new environment with a different version of Python, use the :doc:`conda create </help/examples/create>` command. In this example, we'll make the new environment for Python 3.4: 
+To create a new environment with a different version of Python, use the :doc:`conda create </help/examples/create>` command. In this example, we'll make the new environment for Python 3.4:
 
 .. code-block:: bash
 
@@ -80,13 +80,13 @@ To create a new environment with a different version of Python, use the :doc:`co
 
 Here, the 'py34' is the name of the environment you want to create, and 'anaconda' is the
 meta-package that includes all of the actual Python packages comprising
-the Anaconda distribution.  When creating a new environment and installing Anaconda, 
+the Anaconda distribution.  When creating a new environment and installing Anaconda,
 you can specify the exact package and Python versions, for example, ``numpy=1.7`` or ``python=3.4``.
 
 Create a Python 2.6 environment
 ````````````````````````````````
 
-In this example, we'll make a new environment for Python 2.6: 
+In this example, we'll make a new environment for Python 2.6:
 
 .. code-block:: bash
 
