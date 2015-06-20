@@ -16,12 +16,12 @@ Table of contents:
 Issue:  permission denied errors during install
 ===============================================
 
-umask is a command that determines the mask settings that control how file permissions are set for newly created files. If you have a very restrictive umask (such as 077), you will see "permission denied" errors. 
+umask is a command that determines the mask settings that control how file permissions are set for newly created files. If you have a very restrictive umask (such as 077), you will see "permission denied" errors.
 
 Resolution:  set less restrictive umask before calling conda commands.
 ----------------------------------------------------------------------
 
-Conda was intended as a user space tool, but often users need to use it in a global environment. One place this can go awry is with restrictive file permissions.  Conda creates links when you install files that have to be read by others on the system. 
+Conda was intended as a user space tool, but often users need to use it in a global environment. One place this can go awry is with restrictive file permissions.  Conda creates links when you install files that have to be read by others on the system.
 
 To give yourself full permissions for files and directories, but prevent the group and other users from having access, before installing set the umask to 007, install conda, then return the umask to the original setting afterwards:
 
@@ -85,8 +85,8 @@ site-specific packages can be found is in `PEP 370
 Python may try importing packages from this directory, which can cause
 issues. The recommended fix is to remove the site-specific directory.
 
-Resolution: For C libraries, unset the environment variables ``LD_LIBRARY_PATH`` on Linux and ``DYLD_LIBRARY_PATH`` on Mac OS X.
---------------------------------------------------------------------------------------------------------------------------------
+Resolution: For C libraries, unset the environment variables ``LD_LIBRARY_PATH`` on Linux and ``DYLD_LIBRARY_PATH`` on OSX.
+---------------------------------------------------------------------------------------------------------------------------
 
 These act similarly to ``PYTHONPATH`` for Python. If they are set, they can
 cause libraries to be loaded from locations other than the Conda
@@ -142,13 +142,13 @@ not a git checkout (the version should not include any hashes).
 
 .. _unknown-locale:
 
-Issue: ``ValueError unknown locale: UTF-8`` on Mac OS X
-=======================================================
+Issue: ``ValueError unknown locale: UTF-8`` on OSX
+==================================================
 
 Resolution: Uncheck "set locale environment variables on startup" setting in Terminal settings
 ----------------------------------------------------------------------------------------------
 
-This is a bug in the OS X Terminal app that only shows up in certain locales
+This is a bug in the OSX Terminal app that only shows up in certain locales
 (country/language combinations). Open Terminal in /Applications/Utilities and
 uncheck the box "Set locale environment variables on startup".
 
@@ -190,7 +190,7 @@ variables such as ``PYTHONPATH``.
 The ``requests`` version can be updated with ``pip install -U requests``.
 
 On Windows ``PYTHONPATH`` can be cleared in the environment variable settings.
-On OS X and Linux it can typically be cleared by removing it from the bash
+On OSX and Linux it can typically be cleared by removing it from the bash
 profile and restarting the shell.
 
 .. _shell-command-location:
@@ -204,15 +204,15 @@ When I run a command within a conda environment, conda does not access the corre
 Resolution:  Reactivate the environment or run ``hash -r`` (in bash) or ``rehash`` (in zsh)
 -------------------------------------------------------------------------------------------
 
-The way both bash and zsh work is that when you enter a command, the shell 
-searches the paths in ``PATH`` one by one until it finds the command. The shell 
-then caches the location (this is called "hashing" in shell terminology), so that 
-when you type the command again, the shell doesn't have to search the ``PATH`` 
+The way both bash and zsh work is that when you enter a command, the shell
+searches the paths in ``PATH`` one by one until it finds the command. The shell
+then caches the location (this is called "hashing" in shell terminology), so that
+when you type the command again, the shell doesn't have to search the ``PATH``
 again.
 
-The problem is that before you conda installed the program, you ran the command 
+The problem is that before you conda installed the program, you ran the command
 which loaded and hashed the one in some other location on the ``PATH`` (such as
-``/usr/bin``). Then you installed the program using ``conda install``, but the 
+``/usr/bin``). Then you installed the program using ``conda install``, but the
 shell still had the old instance hashed.
 
 When you run ``source activate``, conda automatically runs ``hash -r`` in bash and
@@ -230,5 +230,3 @@ The command ``type command_name`` will always tell you exactly what is being
 run (this is better than ``which command_name``, which ignores hashed commands
 and searches the ``PATH`` directly), and ``hash -r`` (in bash) or ``rehash``
 (in zsh) will reset the hash, or you can run ``source activate``.
-
-

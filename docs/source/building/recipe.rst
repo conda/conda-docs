@@ -110,7 +110,7 @@ sections are optional except for package/name and package/version.
         - bspatch4 = bsdiff4.cli:main_bspatch4
 
       # If osx_is_app is set, entry points will use python.app instead of
-      # python in Mac OS X
+      # python in OSX
       osx_is_app: yes # (defaults to no)
 
       # See the Features section below for more information on features
@@ -161,7 +161,7 @@ sections are optional except for package/name and package/version.
       #########################################################################
 
       # Whether binary files should be made relocatable using install_name_tool
-      # on OS X or patchelf on Linux.
+      # on OSX or patchelf on Linux.
       binary_relocation: false # (defaults to true)
 
       # Binary files may contain the build prefix and need it replaced with the
@@ -219,7 +219,7 @@ sections are optional except for package/name and package/version.
       imports:
         - bsdiff4
 
-      # The script run_test.sh (or .bat/.py/.pl) will be run automatically 
+      # The script run_test.sh (or .bat/.py/.pl) will be run automatically
       # if it is part of the recipe.
       # (.py/.pl scripts are only valid as part of Python/Perl packages, respectively)
 
@@ -277,9 +277,9 @@ variables are defined. Unless otherwise stated, the variables are booleans.
    * - ``armv6``
      - True if the platform is Linux and the Python architecture is armv6l
    * - ``osx``
-     - True if the platform is OS X
+     - True if the platform is OSX
    * - ``unix``
-     - True if the platform is Unix (OS X or Linux)
+     - True if the platform is Unix (OSX or Linux)
    * - ``win``
      - True if the platform is Windows
    * - ``win32``
@@ -408,7 +408,7 @@ defined in Windows:
   * - ``CYGWIN_PREFIX``
     - Same as ``PREFIX``, but as a unix-style path, e.g. ``/cygdrive/c/path/to/prefix``
 
-On non-Windows (Linux and Mac OS X), we have:
+On non-Windows (Linux and OSX), we have:
 
 .. list-table::
 
@@ -421,7 +421,7 @@ On non-Windows (Linux and Mac OS X), we have:
   * - ``LIBRARY_PATH``
     - ``<build prefix>/lib``
 
-On Mac OS X, we have:
+On OSX, we have:
 
 .. list-table::
 
@@ -509,13 +509,13 @@ additional environment variables by adding them to ``meta.yaml``:
         - LD_LIBRARY_PATH # [linux]
         - DYLD_LIBRARY_PATH # [osx]
 
-If an inherited variable was missing from your shell environment, it will be 
+If an inherited variable was missing from your shell environment, it will be
 assigned the value ``<UNDEFINED>``.
 
 .. note::
 
    Inheriting environment variables like this can make it difficult for others
-   to reproduce binaries from source with your recipe. This feature should be 
+   to reproduce binaries from source with your recipe. This feature should be
    used with caution or avoided altogether.
 
 .. _build-envs:
@@ -645,7 +645,7 @@ Conda build does the following things automatically to make packages
 relocatable:
 
 - Binary object files are converted to use relative paths using
-  ``install_name_tool`` on Mac OS X and ``patchelf`` on Linux.
+  ``install_name_tool`` on OSX and ``patchelf`` on Linux.
 
 - Any text file (containing no NULL bytes) containing the build prefix or the
   placeholder prefix ``/opt/anaconda1anaconda2anaconda3`` is registered in the

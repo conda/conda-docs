@@ -2,15 +2,15 @@
 Bdist_conda
 ===========
 
-You can use conda build to build packages for Python to install rather than 
-conda, by using ``setup.py bdist_conda``. This is a “quick and dirty” way to 
-build packages without using a recipe, but it has limitations. The script 
-is limited to the Python version used in the build. And it is not as 
-reproducible as using a recipe. We recommend using a recipe with conda 
-build. 
+You can use conda build to build packages for Python to install rather than
+conda, by using ``setup.py bdist_conda``. This is a “quick and dirty” way to
+build packages without using a recipe, but it has limitations. The script
+is limited to the Python version used in the build. And it is not as
+reproducible as using a recipe. We recommend using a recipe with conda
+build.
 
-NOTE: If you use Setuptools, you must first import Setuptools and then 
-import ``distutils.command.bdist_conda``, because Setuptools monkeypatches 
+NOTE: If you use Setuptools, you must first import Setuptools and then
+import ``distutils.command.bdist_conda``, because Setuptools monkeypatches
 ``distutils.dist.Distribution``.
 
 Example
@@ -35,14 +35,14 @@ A minimal setup.py file using setup options name and version:
 Setup options
 =============
 
-Options that can be passed to ``setup()`` (must include 
+Options that can be passed to ``setup()`` (must include
 ``distclass=distutils.command.bdist_conda.CondaDistribution)``:
 
 Build number
 --------------
 
-The number of the build. Can be overridden on the command line with the ``--buildnum`` flag. 
-Defaults to 0. 
+The number of the build. Can be overridden on the command line with the ``--buildnum`` flag.
+Defaults to 0.
 
 .. code::
 
@@ -52,7 +52,7 @@ Defaults to 0.
 Build string
 -------------
 
-The build string. Default is generated automatically from the Python version, NumPy version 
+The build string. Default is generated automatically from the Python version, NumPy version
 if relevant, and the build number, like ``py34_0``.
 
 .. code::
@@ -62,8 +62,8 @@ if relevant, and the build number, like ``py34_0``.
 Import tests
 -------------
 
-Whether to automatically run import tests. The default is True, which runs import tests for the all 
-the modules in “packages”. Also allowed are False, which runs no tests, or a list of module names to 
+Whether to automatically run import tests. The default is True, which runs import tests for the all
+the modules in “packages”. Also allowed are False, which runs no tests, or a list of module names to
 be tested on import.
 
 .. code::
@@ -73,8 +73,8 @@ be tested on import.
 Command line tests
 -------------------
 
-Command line tests to run. Default is True, which runs ``command --help`` for each command in the 
-``console_scripts`` and ``gui_scripts entry_points``. Also allowed are False, which doesn’t run any 
+Command line tests to run. Default is True, which runs ``command --help`` for each command in the
+``console_scripts`` and ``gui_scripts entry_points``. Also allowed are False, which doesn’t run any
 command tests, or a list of command tests to run.
 
 .. code::
@@ -84,8 +84,8 @@ command tests, or a list of command tests to run.
 Binary files relocatable
 ------------------------
 
-Whether binary files should be made relocatable (using ``install_name_tool`` on OS X or ``patchelf`` on Linux). 
-The default is True. 
+Whether binary files should be made relocatable (using ``install_name_tool`` on OSX or ``patchelf`` on Linux). 
+The default is True.
 
 .. code::
 
@@ -96,7 +96,7 @@ SEE ALSO:  :ref:`relocatable`  section in the conda build documentation for more
 Preserve egg directory
 -----------------------
 
-Whether to preserve the egg directory as installed by Setuptools. The default is True if the package depends 
+Whether to preserve the egg directory as installed by Setuptools. The default is True if the package depends
 on Setuptools or has Setuptools ``entry_points`` other than ``console_scripts`` and ``gui_scripts``.
 
 .. code::
@@ -106,11 +106,11 @@ on Setuptools or has Setuptools ``entry_points`` other than ``console_scripts`` 
 Features
 -------------
 
-List of features for the package. 
+List of features for the package.
 
 .. code::
 
-   conda_features=['mkl'] 
+   conda_features=['mkl']
 
 SEE ALSO:  :ref:`features` section of the conda build documentation for more information about features in conda.
 
@@ -118,13 +118,13 @@ SEE ALSO:  :ref:`features` section of the conda build documentation for more inf
 Track features
 -----------------
 
-List of features that this package should track (enable when installed). 
+List of features that this package should track (enable when installed).
 
 .. code::
 
-   conda_track_features=['mkl'] 
+   conda_track_features=['mkl']
 
-SEE ALSO:  :ref:`features` section of the conda build documentation for more information about 
+SEE ALSO:  :ref:`features` section of the conda build documentation for more information about
 features in conda.
 
 Command line options
@@ -153,4 +153,3 @@ Notes
 - ``bdist_conda`` uses the metadata provided to the ``setup()`` function.
 
 - If you want to pass any ``bdist_conda`` specific options to ``setup()``, in ``setup()`` you must set ``distclass=distutils.command.bdist_conda.CondaDistribution``.
-

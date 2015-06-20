@@ -9,9 +9,9 @@ Conda
 
 Conda is an open source package management system and environment management system for installing multiple
 versions of software packages and their dependencies and switching easily between them. It works on
-Windows, OS X, and Linux, and was created for Python programs but can package and distribute any software.
+Windows, OSX, and Linux, and was created for Python programs but can package and distribute any software.
 
-Conda is included in all versions of Anaconda, Anaconda Server, and Miniconda, and is not available separately. 
+Conda is included in all versions of Anaconda, Anaconda Server, and Miniconda, and is not available separately.
 
 * Miniconda is a small “bootstrap” version that includes only conda and conda-build, and installs Python. About
   279 scientific packages and their dependencies can be installed individually from the Continuum repository with
@@ -85,4 +85,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`search`
-
