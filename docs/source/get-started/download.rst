@@ -8,7 +8,7 @@ can be downloaded with Python 2.7 (most popular and stable), or Python 3.4 (most
 can choose a version with a GUI or a command line installer. 
 
 TIP: If you are unsure, we recommend the most recent version of Anaconda - that automatically includes 
-Python 2.7, the most popular version of Python. If you are on Windows or OS X, we recommend you also choose 
+Python 2.7, the most popular version of Python. If you are on Windows or OSX, we recommend you also choose 
 the version with GUI installer. 
 
 Should I download Anaconda or Miniconda? 
@@ -40,7 +40,7 @@ Which version of Anaconda or Miniconda should I choose?
 Should I choose GUI installer or command line installer?
 --------------------------------------------------------
 
-Whether you are on Mac, Windows or Linux, there is an installer to make it easy for you. 
+Whether you are on Linux, OSX or Windows, there is an installer to make it easy for you. 
 
 * If you do not wish to enter commands in a terminal window, choose the GUI installer. 
 * If GUIs slow you down, choose the command line version. 
@@ -74,7 +74,7 @@ Note: replace md5sum or sha1sum with the actual sum.
 
 Note: replace the path/to/filename.ext with the actual path, filename and extension. 
 
-**Mac users:**
+**OSX users:**
 
 * MD5: ``md5 path/to/filename.ext``
 * SHA1: ``sha1 path/to/filename.ext``
@@ -97,4 +97,3 @@ Navigate to the file, then enter the following command:
 Note: replace md5sum or sha1sum with the actual sum. 
 
 Note: replace the C:\path\to\file.ext with the actual path, filename and extension. 
-
