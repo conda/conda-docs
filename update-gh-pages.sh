@@ -98,7 +98,7 @@ if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
         git add -A docs/
 
         # Only push if there were changes
-        if git diff-index --quiet HEAD --
+        if ! git diff-index --quiet HEAD --
         then
             echo -e "Committing"
             git commit -am "Update docs after building Travis build $TRAVIS_BUILD_NUMBER"
@@ -119,7 +119,7 @@ if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
         git add -A .
 
         # Only push if there were changes
-        if git diff-index --quiet HEAD --
+        if ! git diff-index --quiet HEAD --
         then
             echo -e "Committing"
             git commit -am "Update website after building Travis build $TRAVIS_BUILD_NUMBER"
