@@ -97,12 +97,16 @@ if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
         mv docs_ docs/
         git add -A docs/
 
-        echo -e "Committing"
-        git commit -am "Update docs after building Travis build $TRAVIS_BUILD_NUMBER"
-        echo -e "Pulling"
-        git pull
-        echo -e "Pushing commit"
-        git push -q origin_token gh-pages > /dev/null 2>&1
+        # Only push if there were changes
+        if git diff-index --quiet HEAD --
+        then
+            echo -e "Committing"
+            git commit -am "Update docs after building Travis build $TRAVIS_BUILD_NUMBER"
+            echo -e "Pulling"
+            git pull
+            echo -e "Pushing commit"
+            git push -q origin_token gh-pages > /dev/null 2>&1
+        fi
     fi
 
     if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2" ]; then
@@ -114,12 +118,16 @@ if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
         rm -rf web
         git add -A .
 
-        echo -e "Committing"
-        git commit -am "Update website after building Travis build $TRAVIS_BUILD_NUMBER"
-        echo -e "Pulling"
-        git pull
-        echo -e "Pushing commit"
-        git push -q origin_token gh-pages > /dev/null 2>&1
+        # Only push if there were changes
+        if git diff-index --quiet HEAD --
+        then
+            echo -e "Committing"
+            git commit -am "Update website after building Travis build $TRAVIS_BUILD_NUMBER"
+            echo -e "Pulling"
+            git pull
+            echo -e "Pushing commit"
+            git push -q origin_token gh-pages > /dev/null 2>&1
+        fi
     fi
 fi
 
