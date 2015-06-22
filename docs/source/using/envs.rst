@@ -38,7 +38,7 @@ TIP:  Many frequently used options after two dashes (--) can be abbreviated with
 Change environments (activate/deactivate)
 ----------------------------------------------------
 
-**Linux, OSX:** ``source activate snowflakes``
+**Linux, OS X:** ``source activate snowflakes``
 
 **Windows:**  ``activate snowflakes``
 
@@ -48,7 +48,7 @@ TIP: Environments are installed by default into the envs directory in your conda
 
 Deactivate the environment with the following:
 
-**Linux, OSX:** ``source deactivate snowflakes``
+**Linux, OS X:** ``source deactivate snowflakes``
 
 **Windows:**  ``deactivate snowflakes``
 
@@ -153,7 +153,7 @@ To enable another person to create an exact copy of your environment, you will e
 
 Activate the environment you wish to export:
 
-**Linux, OSX:** ``source activate peppermint``
+**Linux, OS X:** ``source activate peppermint``
 
 **Windows:** ``activate peppermint``
 
@@ -174,7 +174,7 @@ To create a copy of another developer’s environment from their environment.yml
 
 Deactivate your current environment:
 
-**Linux, OSX:** ``source deactivate starfish``
+**Linux, OS X:** ``source deactivate starfish``
 
 **Windows:** ``deactivate starfish``
 
@@ -198,7 +198,7 @@ In the same directory as the environment.yml file, create the new environment:
 
 Activate the new environment:
 
-**Linux, OSX:** ``source activate peppermint``
+**Linux, OS X:** ``source activate peppermint``
 
 **Windows:** ``activate peppermint``
 

@@ -100,7 +100,7 @@ a text file with the default placeholder, ``/opt/anaconda1anaconda2anaconda3``,
 or a space-separated list of ``placeholder``, ``mode``, ``path``, where
 ``placeholder`` is the build or placeholder prefix, ``mode`` is either ``text``
 or ``binary``, and ``path`` is the relative path of the file to be updated. For
-instance, on Linux or OSX
+instance, on Linux or OS X
 
 ::
 

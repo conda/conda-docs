@@ -141,7 +141,7 @@ variable will overwrite this configuration file setting.
     - /opt/anaconda/envs
    
 
-* **Linux, OSX:** ``CONDA_ENVS_PATH=~/my-envs:/opt/anaconda/envs``
+* **Linux, OS X:** ``CONDA_ENVS_PATH=~/my-envs:/opt/anaconda/envs``
 * **Windows:** ``set CONDA_ENVS_PATH=C:\Users\joe\envs;C:\Anaconda\envs``
 
 
