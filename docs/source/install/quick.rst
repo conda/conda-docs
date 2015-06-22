@@ -14,7 +14,7 @@ and 250 packages that can be installed with the simple ``conda install`` command
 You can be using Python in two minutes or less with this quick install guide - including 
 install, update and uninstall. If you have any problems, please see the full installation instructions.
 
-QUICK TIP: If you prefer to have the 150+ open source packages included with Anaconda, 
+TIP: If you prefer to have the 150+ open source packages included with Anaconda, 
 and have 10 minutes and disk space required, you can download Anaconda simply by 
 replacing the word “Miniconda” with “Anaconda” in the examples below.
 
@@ -25,7 +25,7 @@ replacing the word “Miniconda” with “Anaconda” in the examples below.
 Miniconda quick install requirements
 ------------------------------------
 
-32 or 64 bit computer, 32MB available, Linux, Macintosh or Windows.
+32- or 64-bit computer, 32MB available, Linux, Macintosh or Windows.
 
 NOTE: If you choose to install the full Anaconda package, it requires 300+ MB for 
 the download plus another 300+ to install it. 
@@ -34,7 +34,7 @@ the download plus another 300+ to install it.
 Linux Miniconda install
 -----------------------
 
-In your browser download the `Miniconda installer <http://conda.pydata.org/miniconda.html>`_ for Linux, then in your terminal 
+In your browser download the `Miniconda installer for Linux <http://conda.pydata.org/miniconda.html>`_, then in your terminal 
 window type the following and follow the prompts on the installer screens. If unsure 
 about any setting, simply accept the defaults as they all can be changed later:
 
@@ -62,7 +62,7 @@ your terminal window, remove the entire miniconda install directory: ``rm -rf ~/
 OSX Miniconda install
 ---------------------
 
-In your browser download the `Miniconda installer <http://conda.pydata.org/miniconda.html>`_ for OSX, then in your terminal 
+In your browser download the `Miniconda installer for OSX <http://conda.pydata.org/miniconda.html>`_, then in your terminal 
 window type the following and follow the prompts on the installer screens. If unsure about any setting, 
 simply accept the defaults as they all can be changed later.
 
@@ -90,7 +90,7 @@ your terminal window, remove the entire miniconda install directory: ``rm -rf ~/
 Windows Miniconda install
 -------------------------
 
-In your browser download the `Miniconda installer <http://conda.pydata.org/miniconda.html>`_ for Windows, then double click 
+In your browser download the `Miniconda installer for Windows <http://conda.pydata.org/miniconda.html>`_, then double click 
 the .exe file and follow the instructions on the screen.  If unsure about any setting, 
 simply accept the defaults as they all can be changed later.
 
