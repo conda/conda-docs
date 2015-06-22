@@ -99,6 +99,8 @@ if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
 
         echo -e "Committing"
         git commit -am "Update docs after building Travis build $TRAVIS_BUILD_NUMBER"
+        echo -e "Pulling"
+        git pull
         echo -e "Pushing commit"
         git push -q origin_token gh-pages > /dev/null 2>&1
     fi
@@ -114,6 +116,8 @@ if [[ "$TRAVIS_BRANCH" == "master" && "$TRAVIS_PULL_REQUEST" == "false" ]]; then
 
         echo -e "Committing"
         git commit -am "Update website after building Travis build $TRAVIS_BUILD_NUMBER"
+        echo -e "Pulling"
+        git pull
         echo -e "Pushing commit"
         git push -q origin_token gh-pages > /dev/null 2>&1
     fi
