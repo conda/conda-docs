@@ -84,7 +84,7 @@ command tests, or a list of command tests to run.
 Binary files relocatable
 ------------------------
 
-Whether binary files should be made relocatable (using ``install_name_tool`` on OS X or ``patchelf`` on Linux). 
+Whether binary files should be made relocatable (using ``install_name_tool`` on OSX or ``patchelf`` on Linux). 
 The default is True. 
 
 .. code::
@@ -153,4 +153,3 @@ Notes
 - ``bdist_conda`` uses the metadata provided to the ``setup()`` function.
 
 - If you want to pass any ``bdist_conda`` specific options to ``setup()``, in ``setup()`` you must set ``distclass=distutils.command.bdist_conda.CondaDistribution``.
-

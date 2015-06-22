@@ -85,7 +85,7 @@ site-specific packages can be found is in `PEP 370
 Python may try importing packages from this directory, which can cause
 issues. The recommended fix is to remove the site-specific directory.
 
-Resolution: For C libraries, unset the environment variables ``LD_LIBRARY_PATH`` on Linux and ``DYLD_LIBRARY_PATH`` on Mac OS X.
+Resolution: For C libraries, unset the environment variables ``LD_LIBRARY_PATH`` on Linux and ``DYLD_LIBRARY_PATH`` on OSX.
 --------------------------------------------------------------------------------------------------------------------------------
 
 These act similarly to ``PYTHONPATH`` for Python. If they are set, they can
@@ -142,13 +142,13 @@ not a git checkout (the version should not include any hashes).
 
 .. _unknown-locale:
 
-Issue: ``ValueError unknown locale: UTF-8`` on Mac OS X
+Issue: ``ValueError unknown locale: UTF-8`` on OSX
 =======================================================
 
 Resolution: Uncheck "set locale environment variables on startup" setting in Terminal settings
 ----------------------------------------------------------------------------------------------
 
-This is a bug in the OS X Terminal app that only shows up in certain locales
+This is a bug in the OSX Terminal app that only shows up in certain locales
 (country/language combinations). Open Terminal in /Applications/Utilities and
 uncheck the box "Set locale environment variables on startup".
 
@@ -190,7 +190,7 @@ variables such as ``PYTHONPATH``.
 The ``requests`` version can be updated with ``pip install -U requests``.
 
 On Windows ``PYTHONPATH`` can be cleared in the environment variable settings.
-On OS X and Linux it can typically be cleared by removing it from the bash
+On OSX and Linux it can typically be cleared by removing it from the bash
 profile and restarting the shell.
 
 .. _shell-command-location:
@@ -230,5 +230,3 @@ The command ``type command_name`` will always tell you exactly what is being
 run (this is better than ``which command_name``, which ignores hashed commands
 and searches the ``PATH`` directly), and ``hash -r`` (in bash) or ``rehash``
 (in zsh) will reset the hash, or you can run ``source activate``.
-
-
