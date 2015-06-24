@@ -34,6 +34,9 @@
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
 
+See the `Quick install <http://conda.pydata.org/docs/install/quick.html>`_
+page for installation instructions.
+
 MD5 sums for the downloads can be found `here
 <https://repo.continuum.io/miniconda/>`_.
 
