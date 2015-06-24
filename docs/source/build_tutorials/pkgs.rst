@@ -7,7 +7,7 @@ makes it simple to install the program in any location. Many packages can be bui
 skeleton command with a few minor edits. Building conda packages can also be complex, especially if many 
 dependencies are involved. 
 
-TIP: A skeleton command generates a template that may be used as-is or with very few edits. See `skeleton (computer programming) <https://en.wikipedia.org/wiki/Skeleton_(computer_programming)/>`_.
+TIP: A skeleton command generates a template that may be used as-is or with very few edits. See `skeleton (computer programming) <https://en.wikipedia.org/wiki/Skeleton_(computer_programming)>`_.
  
 This is the first of three tutorials on building conda packages.
 
@@ -59,7 +59,7 @@ upload it to Anaconda.org.
 
 Pyinstrument is a Python statistical profiler that records the whole call stack once each millisecond, so 
 programmers can see which parts of their code are slowest and how to make them faster. More information about
-Pyinstrument: `https://github.com/joerick/pyinstrument <https://github.com/joerick/pyinstrument>`_
+Pyinstrument: https://github.com/joerick/pyinstrument
 
 First, in your user home directory, run the conda skeleton command: 
 
@@ -75,8 +75,11 @@ Next, edit the new 50-line file meta.yaml.  This skeleton file can be fleshed ou
 commands, but for pyinstrument, any changes are optional.  
 
 What are these three files?
+
     **meta.yaml:** Contains all the metadata in the recipe. Only package/name and package/version are required; everything else is optional.
+    
     **build.sh:** Environment and other variables for Linux and OS X - whether 32 or 64-bit, path info, etc.
+    
     **bld.bat:** The same environment and other variables for Windows.
 
 Now that you have the skeleton ready, you can use the conda build tool. Let’s try it:
@@ -101,7 +104,7 @@ OS X example file path:
 
 Windows example file path: 
 
-.. code-block:: bash
+.. code-block:: none
 
     C:\Users\jsmith\Miniconda\conda-bld\win-64\pyinstrument-0.13.1-py27_0.tar.bz2
 
