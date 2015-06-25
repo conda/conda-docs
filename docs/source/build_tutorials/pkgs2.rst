@@ -141,7 +141,7 @@ is hosted on PyPI and Github, you can easily find a script on  PyPI instead of G
 
 .. code-block:: bash
 
-    git_tag: 0.12
+    git_rev: 0.12
     git_url: https://github.com/joerick/pyinstrument.git
 
 With the following:
@@ -172,8 +172,10 @@ Later when you are finished, you can rename the file meta.yaml.
 To create a new meta.yaml file, open your favorite editor. Create a new text file and insert the following
 information. A blank sample meta.yaml follows to make it easier to match up the information.
 
+We now use git_rev instead of git_tag, since git_rev can be any string that git knows how to checkout.
+
 #. Package name: pyinstrument
-#. Source Git tag: 0.13
+#. Source Git rev: 0.13
 #. Source Git URL: https://github.com/joerick/pyinstrument.git
 #. Test - Imports: pyinstrument
 #. About home: https://github.com/joerick/pyinstrument
@@ -186,7 +188,7 @@ information. A blank sample meta.yaml follows to make it easier to match up the 
     name:
 
     source:
-      git_tag:
+      git_rev:
       git_url:
 
   requirements:
