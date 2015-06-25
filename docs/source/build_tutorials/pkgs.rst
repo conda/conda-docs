@@ -160,20 +160,19 @@ Next, log into your Anaconda.org account with the command:
 
 Now you can upload the new local packages to Anaconda.org, as in this example:
 
-binstar upload /home/jsmith/miniconda/conda-bld/linux-64/pyinstrument-0.12-py27_0.tar.bz
+``binstar upload /home/jsmith/miniconda/conda-bld/linux-64/pyinstrument-0.12-py27_0.tar.bz``
 
 NOTE: Change your path and filename to the exact path and filename you saved in Step 2.
 
 TIP: If you want to always automatically upload a successful build to Anaconda.org, run:
-conda config --set binstar_upload yes
+
+``conda config --set binstar_upload yes``
 
 You can log out of your Anaconda.org account with the command:
 
-binstar logout
+``binstar logout``
 
 For more information about Anaconda.org, see the Anaconda.org documentation page.
 
-This completes the tutorial Intro to building conda packages using conda skeleton. 
-
-Please see our next tutorial, Building conda packages part 2, to learn more about the files that 
+Please see our next tutorial, :doc:`pkgs2`, to learn more about the files that 
 go into each conda build and how to edit them manually. 
