@@ -2,6 +2,8 @@
 Signing conda packages
 ======================
 
+**PREVIEW RELEASE**
+
 Conda has the ability to verify RSA signatures on conda packages, and conda-build can generate key pairs, sign conda packages, and add the required package metadata to the conda repository index. Any key size is supported, and the default is 2048 bits.
 
 Given any public/private key pair, you may sign any file using the private key, and the other person who receives the file must verify the signature against the public key in order to use the file. The person verifying the signature is assured that the signature was indeed created using the private key.
