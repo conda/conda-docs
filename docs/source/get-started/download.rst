@@ -57,7 +57,7 @@ What about MD5 or SHA verification?
 
 If you download Anaconda, you can use MD5 or SHA to verify your download. 
 
-NOTE: MD5 or SHA verification is not available for Miniconda.
+MD5 sums for Miniconda can be found here: http://repo.continuum.io/miniconda/
 
 Get the actual MD5 or SHA1 sum for your Anaconda package here: http://continuum.io/md5
 
