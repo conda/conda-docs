@@ -62,26 +62,20 @@ MD5 sums for Miniconda can be found here: http://repo.continuum.io/miniconda/
 Get the actual MD5 or SHA1 sum for your Anaconda package here: http://continuum.io/md5
 
 You will use this actual sum in the next step. 
+Note what the sum should be, then use the following steps to confirm that
+the package that you download has the exact same sum.
 
 Download the package, then before installing, do the following to verify the package: 
 
 **Linux users:**
 
-* MD5:  ``md5sum path/to/filename.ext``
-* SHA1: ``sha1sum path/to/filename.ext``
-
-NOTE: replace md5sum or sha1sum with the actual sum. 
-
-NOTE: replace the path/to/filename.ext with the actual path, filename and extension. 
+* MD5:  ``md5sum <path_to_download_package>``
+* SHA1: ``sha1sum <path_to_download_package>``
 
 **OS X users:**
 
-* MD5: ``md5 path/to/filename.ext``
-* SHA1: ``sha1 path/to/filename.ext``
-
-NOTE: replace md5sum or sha1sum with the actual sum. 
-
-NOTE: replace the path/to/filename.ext with the actual path, filename and extension. 
+* MD5: ``md5 <path_to_download_package>``
+* SHA1: ``sha1 <path_to_download_package>``
 
 **Windows users:**
 
@@ -91,9 +85,5 @@ Download and extract the file, then open a Command Prompt window.
 
 Navigate to the file, then enter the following command: 
 
-* MD5:  fciv.exe C:\path\to\file.ext
-* SHA1: fciv.exe –sha1 C:\path\to\file.ext
-
-NOTE: replace md5sum or sha1sum with the actual sum. 
-
-NOTE: replace the C:\path\to\file.ext with the actual path, filename and extension. 
+* MD5:  ``fciv.exe <path_to_download_package>``
+* SHA1: ``fciv.exe –sha1 <path_to_download_package>``
