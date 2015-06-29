@@ -242,7 +242,6 @@ shown:
 
 .. code-block:: bash
 
-    #!/bin/bash                 # This “shebang” tells what program to use to interpret the script.
     $PYTHON setup.py install     # Python command to install the script.
 
 That's it! Save your new build.sh file to the same directory where you put the meta.yaml file.
@@ -255,11 +254,11 @@ new file named bld.bat and enter the text exactly as shown:
     "%PYTHON%" setup.py install
     if errorlevel 1 exit 1
 
-Bld.bat doesn't need the shebang, because it only has to work on Windows. But it must be formatted differently,
-and needs the command that tells it to exit if it encounters an error.
+bld.bat must be formatted differently, and needs the command that tells it to
+exit if it encounters an error.
 
-NOTE: In bld.bat, the best practice is to to add the ``if errorlevel 1 exit 1`` so if the build fails,
-the command fails.
+NOTE: In bld.bat, the best practice is to to add the ``if errorlevel 1 exit 1`` after every command so if the commnand fails,
+the build fails.
 
 Save this new file ``bld.bat`` to the same directory where you put your new ``meta.yaml`` and ``build.sh`` files.
 
