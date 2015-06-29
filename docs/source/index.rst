@@ -35,12 +35,13 @@ conda environments.
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UaIvrDWrIWM" frameborder="0" allowfullscreen></iframe>
 
 
-Table of Contents
+Table of contents
 -----------------
 .. toctree::
    :maxdepth: 2
 
    get-started/get-started
+   get-started/download
    install/install
    using/index
    building/build
@@ -48,7 +49,7 @@ Table of Contents
    get-involved
    help/help
 
-Presentations & Blog Posts
+Presentations & blog posts
 --------------------------
 
 `Packaging and Deployment with conda - Travis Oliphant <https://speakerdeck.com/teoliphant/packaging-and-deployment-with-conda>`_
@@ -72,10 +73,15 @@ Requirements
 * requests
 
 
-License Agreement
+License agreement
 -----------------
 
 conda is distributed under the `BSD license <http://opensource.org/licenses/bsd-license.php>`_.
+
+What’s new in the latest version?  
+---------------------------------
+
+The latest changes in each new version are published at <https://github.com/conda/conda/blob/master/CHANGELOG.txt>`_. 
 
 
 Indices and tables
