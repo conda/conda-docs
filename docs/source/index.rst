@@ -42,6 +42,7 @@ Table of contents
 
    get-started/get-started
    get-started/download
+   get-started/license
    install/install
    using/index
    building/build
@@ -72,11 +73,6 @@ Requirements
 * pyyaml
 * requests
 
-
-License agreement
------------------
-
-conda is distributed under the `BSD license <http://opensource.org/licenses/bsd-license.php>`_.
 
 What’s new in the latest version?  
 ---------------------------------
