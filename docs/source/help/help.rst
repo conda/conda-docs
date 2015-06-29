@@ -7,7 +7,6 @@ Get more help
 
    faq
    troubleshooting
-   examples/examples
    support
 
 Please see also the :doc:`/using/cheatsheet`.
