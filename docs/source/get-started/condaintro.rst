@@ -56,8 +56,7 @@ Continuum provides the following standard channels:
  * ``http://repo.continuum.io/pkgs/gpl`` - GPL licensed packages
  * ``http://repo.continuum.io/pkgs/free`` - non GPL open source packages
 
-To view all available packages, you can use ``conda search``.  See the 
-:doc:`search command examples </help/examples/search>` for more information.
+To view all available packages, you can use ``conda search``.
 
 .. _location:
 .. index::
@@ -83,4 +82,3 @@ What's new in version 3.13.0
 ----------------------------
 
 The latest changes in each new version are published at https://github.com/conda/conda/blob/master/CHANGELOG.txt .
-
