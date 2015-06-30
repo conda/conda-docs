@@ -1,6 +1,9 @@
-Advanced examples
-=================
+===========================
+Advanced Package Management
+===========================
 
-.. raw:: html
+.. warning::
+    These conda commands perform low level operations on Anaconda installations and environments, and can potentially leave Anaconda environments in inconsistent or unusable states. They should not be needed for any common tasks.
 
-        <html><head><meta http-equiv="refresh" content="0; URL='../help/examples/advanced.html'" /></head><body></body></html>
+.. toctree::
+

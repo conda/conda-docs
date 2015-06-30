@@ -5,7 +5,7 @@ Using conda
 
    using
    envs
-   py
+   /py2or3
    pkgs
-   test-drive
+   /test-drive
    cheatsheet
