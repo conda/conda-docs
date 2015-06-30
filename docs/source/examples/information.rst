@@ -1,6 +1,9 @@
-Information examples
-====================
+======================
+Informational Commands
+======================
 
-.. raw:: html
+.. toctree::
 
-        <html><head><meta http-equiv="refresh" content="0; URL='../help/examples/information.html'" /></head><body></body></html>
+    info
+    list
+    search

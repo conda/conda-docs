@@ -40,10 +40,10 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
 
-   get-started/get-started
-   get-started/license
-   get-started/download
-   install/install
+   get-started
+   license
+   download
+   install
    using/index
    building/build
    commands

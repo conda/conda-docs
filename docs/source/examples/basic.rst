@@ -1,6 +1,10 @@
-Basic examples
-==============
+========================
+Basic Package Management
+========================
 
-.. raw:: html
+.. toctree::
 
-        <html><head><meta http-equiv="refresh" content="0; URL='../help/examples/basic.html'" /></head><body></body></html>
+    create
+    install
+    update
+    remove

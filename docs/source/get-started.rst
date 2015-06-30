@@ -3,5 +3,5 @@ Get started
 
 .. toctree::
 
-   condaintro
+   intro
    glossary

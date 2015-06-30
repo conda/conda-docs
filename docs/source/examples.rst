@@ -1,6 +1,14 @@
+==================
 Examples
-========
+==================
 
-.. raw:: html
+Below are a few examples using conda commands with a variety of optional arguments.
 
-        <html><head><meta http-equiv="refresh" content="0; URL='help/examples/examples.html'" /></head><body></body></html>
+Contents:
+
+.. toctree::
+   :maxdepth: 7
+
+   examples/information
+   examples/basic
+   examples/advanced
