@@ -205,7 +205,36 @@ Getting info about environments
 
 SEE ALSO: the :doc:`/using/envs` section of our documentation site. 
 
-2. How can I list all installed packages in a specific environment, for example, ``myenv``?
+2. How can I show the name of the active environment in my command prompt?
+
+   The anaconda (or miniconda) installer asks whether it should always add the name 
+   of the active environment to the command prompt by inserting it into the environment 
+   variable called PATH in the Bash shell. The default is no.
+
+   To turn it on later:
+   
+     .. code-block:: bash
+        
+        source deactivate
+        conda config --set changeps1 true
+
+   To see how it works:
+   
+     .. code-block:: bash
+        
+        source activate environmentname
+        source deactivate
+   
+   NOTE: Replace environmentname with an actual environment name.
+
+   To turn it back off:
+   
+     .. code-block:: bash
+     
+        source deactivate
+        conda config --set changeps1 false
+
+3. How can I list all installed packages in a specific environment, for example, ``myenv``?
 
    If ``myenv`` is not activated:
 
@@ -219,7 +248,7 @@ SEE ALSO: the :doc:`/using/envs` section of our documentation site.
 
         conda list
 
-3. How can I check if package (for example, SciPy) is already installed in an existing environment such as ``myenv``?
+4. How can I check if a package (for example, SciPy) is already installed in an existing environment such as ``myenv``?
 
      .. code-block:: bash
 
