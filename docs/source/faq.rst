@@ -205,7 +205,13 @@ Getting info about environments
 
 SEE ALSO: the :doc:`/using/envs` section of our documentation site. 
 
-2. How can I list all installed packages in a specific environment, for example, ``myenv``?
+2. How can I set whether my command prompt shows the name of the active environment?
+
+   This option can be disabled with ``conda config --set changeps1 false`` and enabled 
+   with ``conda config --set changeps1 true``. It is enabled by default and can be 
+   tested by activating and then deactivating any environment.
+
+3. How can I list all installed packages in a specific environment, for example, ``myenv``?
 
    If ``myenv`` is not activated:
 
@@ -219,7 +225,7 @@ SEE ALSO: the :doc:`/using/envs` section of our documentation site.
 
         conda list
 
-3. How can I check if package (for example, SciPy) is already installed in an existing environment such as ``myenv``?
+4. How can I check if a package (for example, SciPy) is already installed in an existing environment such as ``myenv``?
 
      .. code-block:: bash
 
@@ -288,7 +294,7 @@ Activate and deactivate
 
 **Linux, OS X:** ``source activate myenv``
 
-**Windows:** activate myenv``
+**Windows:** ``activate myenv``
 
 SEE ALSO: the :doc:`/using/envs` section of our documentation site. 
 
@@ -296,9 +302,9 @@ SEE ALSO: the :doc:`/using/envs` section of our documentation site.
 
 **Linux, OS X:** ``source deactivate myenv``
 
-**Windows:** deactivate myenv``
+**Windows:** ``deactivate myenv``
 
-NOTE: It is good practice to deactivate one environment before activating another.
+NOTE: In Windows it is good practice to deactivate one environment before activating another.
 
 Installing packages
 -------------------
