@@ -83,7 +83,7 @@ Open a terminal window, navigate to the anaconda directory, then type ``conda up
 **OS X Miniconda uninstall**
 
 Because Miniconda is contained in one directory, uninstalling Miniconda is simple -- in 
-your terminal window, remove the entire miniconda install directory: ``rm -rf ~/miniconda``
+your terminal window, remove the entire miniconda install directory: ``rm -rf ~/miniconda``. Besides, revert the modification that Miniconda installer made to the ``PATH`` environment variable in ``~/.bash_profile``.
 
 
 Windows Miniconda install
