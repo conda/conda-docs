@@ -3,10 +3,10 @@
 # channel locations. These override conda defaults, i.e., conda will
 # search *only* the channels listed here, in the order given. Use "defaults" to
 # automatically include all default channels. Non-url channels will be
-# interpreted as binstar usernames (this can be changed by modifying the
+# interpreted as anaconda.org usernames (this can be changed by modifying the
 # channel_alias key; see below). The default is just 'defaults'.
 channels:
-  - <binstar_username>
+  - <anaconda_username>
   - http://some.custom/channel
   - file:///some/local/directory
   - defaults
@@ -47,7 +47,7 @@ ssl_verify: False
 offline: True
 
 # Alias to use for non-url channels used with the -c flag. The default is
-# https://conda.binstar.org/
+# https://conda.anaconda.org/
 channel_alias: https://your.repo/
 
 # Package specifications to disallow installing. The default is to allow all
@@ -55,13 +55,13 @@ channel_alias: https://your.repo/
 disallow:
   - anaconda
 
-# When the channel alias is binstar.org or an Anaconda Server GUI, this will
-# use the binstar command line client (which can be installed with 'conda
-# install binstar') to automatically add the token to the channel urls, so
+# When the channel alias is anaconda.org or an Anaconda Server GUI, this will
+# use the anaconda command line client (which can be installed with 'conda
+# install anaconda-client') to automatically add the token to the channel urls, so
 # that you can see private packages. The default is True, but it is only
-# enabled if the binstar command line client is installed and you are logged
-# in ('binstar login').
-add_binstar_token: False
+# enabled if the anaconda command line client is installed and you are logged
+# in ('anaconda login').
+add_anaconda_token: False
 
 # Directories in which environments are located. If this key is set, the root
 # prefix envs dir is not used unless explicitly included. This key also
@@ -102,9 +102,9 @@ track_features:
 
 # Conda Build Options
 
-# Automatically upload packages built with conda build to binstar.org. The
+# Automatically upload packages built with conda build to anaconda.org. The
 # default is False.
-binstar_upload: True
+anaconda_upload: True
 
 # Build output root directory. (default <CONDA_PREFIX>/conda-bld/, or
 # ~/conda-bld if you do not have write permissions to
