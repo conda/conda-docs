@@ -166,7 +166,7 @@ When ``ssl_verify`` is ``False``, conda will not verify certificates for SSL con
 
 ``ssl_verify`` can also be set to a string path to a certificate to be used to verify SSL connections.
 
-The default is ``True`
+The default is ``True``
 
 .. code-block:: yaml
 
