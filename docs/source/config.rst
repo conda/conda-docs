@@ -137,6 +137,8 @@ as follows: https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_rese
 
 Note: Be careful not to use ``http`` when you mean ``https``, or ``https`` when you mean ``http``.
 
+Note: If you are behind a proxy that does SSL inspection such as a Cisco IronPort Web Security Appliance (WSA), it may be necessary to override the SSL verification settings using ``ssl_verify``.
+
 
 Offline mode only
 ^^^^^^^^^^^^^^^^^
@@ -151,6 +153,24 @@ default is ``False``.
 
 Advanced configuration
 ======================
+
+
+Disable or Override SSL Certificate Verification
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When ``ssl_verify`` is ``False``, conda will not verify certificates for SSL connections.
+
+.. code-block:: yaml
+
+  ssl_verify: False
+
+``ssl_verify`` can also be set to a string path to a certificate to be used to verify SSL connections.
+
+The default is ``True``
+
+.. code-block:: yaml
+
+  ssl_verify: corp.crt
 
 
 Disallow soft-linking
