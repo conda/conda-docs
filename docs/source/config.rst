@@ -2,6 +2,8 @@
 Configuration
 =============
 
+.. contents::
+
 The conda configuration file  (.condarc) is an OPTIONAL runtime configuration
 file which allows advanced users to configure various aspects of conda, such as which
 channels it searches for packages, proxy settings, environment directories, etc.
@@ -44,10 +46,6 @@ Conda supports :doc:`tab completion<install/tab-completion>` with external packa
 instead of internal configuration.
 
 For more configuration information see: http://continuum.io/blog/advanced-conda-part-1#configuration
-
-
-.. contents::
-
 
 General configuration
 =====================

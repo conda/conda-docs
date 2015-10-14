@@ -4,7 +4,7 @@ Download conda
 
 Conda can be downloaded with an array of options. This page is to help you decide among the various options.  
 To download conda, you will download Anaconda or Miniconda (both are free), or purchase Anaconda Server. All 
-can be downloaded with legacy Python 2.7 or current Python 3.4. You 
+can be downloaded with legacy Python 2.7 or current Python 3.5. You 
 can choose a version with a GUI or a command line installer. 
 
 TIP: If you are unsure, we recommend the most recent version of Anaconda - that automatically includes 
@@ -49,7 +49,7 @@ What version of Python should I choose?
 ---------------------------------------
 
 * The most popular version of Python is 2.7, and that is included with Anaconda and Miniconda. 
-* The newest stable version of Python is 3.4, and that is included with Anaconda3 and Miniconda3. 
+* The newest stable version of Python is 3.5, and that is included with Anaconda3 and Miniconda3. 
 * You can easily set up additional versions of Python such as 2.6 or 3.3 by downloading any version and creating a new environment with just a few clicks. (See our :doc:`test-drive`.)
 
 What about MD5 or SHA verification?

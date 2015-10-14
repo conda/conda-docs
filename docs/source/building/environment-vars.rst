@@ -3,6 +3,8 @@
 Environment variables
 =====================
 
+.. contents::
+
 Environment variables set during the build process
 --------------------------------------------------
 
