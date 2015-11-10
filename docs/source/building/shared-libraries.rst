@@ -27,13 +27,12 @@ Therefore, we discourage the inclusion of conda environment paths in ``LD_LIBRAR
 Shared libraries in Windows
 ---------------------------
 
-Windows does not have the same concept of embedding links into binaries. Here are the rules for Windows:
+Windows does not have the same concept of embedding links into binaries. Instead, Windows depends primarily on searching directories for matching filenames, as documented at https://msdn.microsoft.com/en-us/library/7d83bc18.aspx. 
 
-https://msdn.microsoft.com/en-us/library/7d83bc18.aspx
+There is an alternate configuration, called `side-by-side assemblies <https://en.wikipedia.org/wiki/Side-by-side_assembly>`_, that requires specification of DLL versions in either an embedded manifest, or an appropriately named xml file alongside the binary in question. Conda does not currently use side-by-side assemblies, but may turn towards that in the future to resolve complications with multiple versions of the same library on one system.
 
-Most DLLs go into ``(install prefix)\Library\bin``. This now gets added to ``os.environ["PATH"]`` for all Python processes. 
+For now, most DLLs are installed into (install prefix)\Library\bin. As of 2015/11/09, this path is added to os.environ["PATH"] for all Python processes, so that DLLs can be located, regardless of the value of the system's PATH environment variable.
 
-Set ``PATH`` dynamically for your application, so that the RIGHT DLL gets found. Windows is weak in this regard, and you must manage ``PATH`` very carefully as a result.
-
+Note that PATH is searched from left to right, with the first DLL name match being picked up (in the absence of a manifest specifying otherwise). This means that installing software with other matching DLLs may give you a system that crashes in unpredictable ways. When troubleshooting or asking for support on Windows, always consider PATH as a potential source of issues.
 
 
