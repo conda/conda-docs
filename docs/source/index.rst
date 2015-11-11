@@ -53,13 +53,8 @@ Presentations & Blog Posts
 
 `Python 3 support in Anaconda - Ilan Schnell <http://continuum.io/blog/anaconda-python-3>`_
 
-`New Advances in conda - Ilan Schnell <http://continuum.io/blog/new-advances-in-conda>`_
-
-`Python Packages and Environments with conda - Bryan Van de Ven <http://continuum.io/blog/conda>`_
-
 `Advanced features of Conda, part 1 - Aaron Meurer <http://continuum.io/blog/advanced-conda-part-1>`_
 
-`Advanced features of Conda, part 2 - Aaron Meurer <http://continuum.io/blog/advanced-conda-part-2>`_
 
 Requirements
 ------------
