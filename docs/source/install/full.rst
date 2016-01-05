@@ -52,6 +52,8 @@ In your terminal window, type the following:  ``conda update conda``
 Because Anaconda is contained in one directory, uninstalling Anaconda is simple -- in your terminal 
 window, remove the entire anaconda install directory: ``rm -rf ~/anaconda``
 
+You can also remove the small hidden directories that may have been created in the 
+home folder: ``rm -rf ~/.conda`` and ``rm -rf ~/.continuum`` as well as ``rm .condarc``
 
 OS X Anaconda install
 ~~~~~~~~~~~~~~~~~~~~~
