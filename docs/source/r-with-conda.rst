@@ -1,6 +1,6 @@
-===================================
-Using R and R Essentials with conda
-===================================
+==================
+Using R with conda
+==================
 
 For Linux, OS X and Windows
 
@@ -23,9 +23,9 @@ Create and share your own custom R bundle
 
 Building and sharing your own custom R bundles with others is like building and sharing conda packages.
 
-For example, create a simple custom R bundle meta-package named "Custom-R-Bundle" containing several popular programs and their dependencies with the command:
+For example, create a simple custom R bundle meta-package named "Custom-R-Bundle" containing several popular programs and their dependencies with the command::
 
-``conda metapackage custom-r-bundle 0.1.0 --dependencies r-irkernel jupyter r-ggplot2 r-dplyr --summary "My custom R bundle"``
+  conda metapackage custom-r-bundle 0.1.0 --dependencies r-irkernel jupyter r-ggplot2 r-dplyr --summary "My custom R bundle"
 
 Now you can easily share your new meta-package with friends and colleagues by uploading it to your channel on `Anaconda Cloud <https://anaconda.org>`_::
 
@@ -33,10 +33,10 @@ Now you can easily share your new meta-package with friends and colleagues by up
   anaconda login
   anaconda upload path/to/custom-r-bundle-0.1.0-0.tar.bz2
 
-Your friends and colleagues now have access to your Custom-R-Bundle from any computer with the command:
+Your friends and colleagues now have access to your Custom-R-Bundle from any computer with the command::
 
-``conda install -c <your anaconda.org username> custom-r-bundle``
+  conda install -c <your anaconda.org username> custom-r-bundle
 
 For more information, see Christine Doig's blog post `Jupyter and conda for R <https://www.continuum.io/blog/developer/jupyter-and-conda-r>`_.
 
-Next, let's take a look at :doc:`using/pkgs`.
+Next, let's look at :doc:`mro`.
