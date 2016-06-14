@@ -11,6 +11,10 @@ Building a conda package with conda build involves creating a conda recipe. The 
 is a flat directory holding metadata and the scripts needed to build the package. 
 The conda package is then built from the conda recipe using the ``conda build`` command.
 
+Conda packages can be built from a variety of source code projects, most notably Python.
+Please refer to the `Setuptools documentation <https://setuptools.readthedocs.io/en/latest/>`_
+for help packing a Python project.
+
 TIP: If you are new to building packages with conda, we recommend taking our series 
 of three :doc:`build tutorials </build_tutorials>`.
 
@@ -28,6 +32,21 @@ Please follow the :doc:`Quick install</install/quick>` instructions.
 
 OPTIONAL: If you wish to upload packages to Anaconda.org , an `Anaconda.org <http://anaconda.org>`_ 
 account and client are required.
+
+Update conda build
+~~~~~~~~~~~~~~~~~~
+
+It is important to keep your version of ``conda build`` up to date to take advantage of
+bug fixes and new features.
+
+**All platforms:** Upgrade conda-build:
+
+.. code-block:: bash
+
+  conda update conda
+  conda update conda-build
+
+Release notes are available on the `conda-build Github page. <https://github.com/conda/conda-build/releases>`_
 
 Conda recipe files overview
 ===========================

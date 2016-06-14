@@ -64,13 +64,11 @@ Source from tarball
 .. code-block:: yaml
 
   source:
-    fn: bsdiff-1.1.14.tar.gz
     url: https://pypi.python.org/packages/source/b/bsdiff4/bsdiff4-1.1.4.tar.gz
     md5: 29f6089290505fc1a852e176bd276c43
     sha1: f0a2c9a30073449cfb7d171c57552f3109d93894
     sha256: 5a022ff4c1d1de87232b1c70bde50afbb98212fd246be4a867d8737173cf1f8f
 
-NOTE: If you use ``url`` above, then ``fn`` is also required.
 
 Source from git
 ~~~~~~~~~~~~~~~
@@ -215,7 +213,7 @@ A list of globs for files that should always be copied and never soft linked or 
 
   build:
     no_link:
-      - bin/*.py # Don't link any .py files in bin/
+      - bin/\*.py # Don't link any .py files in bin/
 
 Script
 ~~~~~~
@@ -313,6 +311,18 @@ Default is False.
 
   build:
     skip: True  # [not win]
+
+Architecture independent packages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The conda build system allows you to specify "no architecture" when building a package, thus making it compatible
+with all platforms and architectures. Noarch packages can be installed on any platform.
+
+
+.. code-block:: yaml
+
+     build:
+       noarch_python: True
 
 Requirements section
 --------------------
