@@ -16,6 +16,7 @@ NOTE: All headers should appear exactly once. If they appear multiple times, onl
 the last will be remembered. For example, the "package:" header should only appear 
 once in the file.
 
+
 Package section
 ---------------
 
@@ -44,12 +45,10 @@ string.
 
 NOTE: The version cannot contain a dash '-' character.
 
+
 NOTE: Post-build versioning: In some cases, you may not know the version, build 
 number, or build string of the package until after it is built. In this case, you 
-can write files named ``__conda_version__.txt``, ``__conda_buildnum__.txt``, or 
-``__conda_buildstr__.txt`` to the source directory, and the contents of the file 
-will be used as the version, build number, or build string, respectively (and the 
-respective metadata from the ``meta.yaml`` will be ignored).
+can perform :ref:`jinja-templates` or utilize :ref:`git-env` and :ref:`inherited-env-vars`.
 
 Source section
 --------------
@@ -123,6 +122,10 @@ Patches may optionally be applied to the source:
     patches:
       - my.patch # the patch file is expected to be found in the recipe
 
+NOTE: Conda-build will automatically determine the patch strip level.
+
+
+.. _meta-build:
 
 Build section
 -------------
@@ -301,6 +304,27 @@ Text files (files containing no NULL bytes) may contain the build prefix and nee
       - bin/file1
       - lib/file2
 
+Ignore prefix files
+~~~~~~~~~~~~~~~~~~~
+
+The ``ignore_prefix_files`` can be used to exclude some or all of the files in the build recipe
+from the list of files that have the build prefix replaced with the install prefix.
+
+To ignore all files in the build recipe use
+
+.. code-block:: yaml
+
+    build:
+      ignore_prefix_files: True
+
+To specify individual file names use
+
+.. code-block:: yaml
+
+    build:
+      ignore_prefix_files:
+        - file1
+
 Skipping builds
 ~~~~~~~~~~~~~~~
 
@@ -323,6 +347,19 @@ with all platforms and architectures. Noarch packages can be installed on any pl
 
      build:
        noarch_python: True
+
+
+Include build recipe
+~~~~~~~~~~~~~~~~~~~~
+
+The full conda build recipe and rendered ``meta.yaml`` file is included in the :ref:`package_metadata`
+by default. This can be disabled with
+
+.. code-block:: yaml
+
+    build:
+      include_recipe: False
+
 
 Requirements section
 --------------------
@@ -435,6 +472,8 @@ The script run_test.sh (or .bat/.py/.pl) will be run automatically if it is part
 
 NOTE: Python or Perl .py/.pl scripts are only valid as part of Python/Perl packages, respectively.
 
+.. _about:
+
 About section
 -------------
 
@@ -515,6 +554,19 @@ For example, to store recipe maintainer information, one could do:
     maintainers:
      - name of maintainer
 
+.. _jinja-templates:
+
+Templating with Jinja
+---------------------
+
+Conda build supports Jinja templating in the ``meta.yaml`` file.
+
+See the `Jinja2 template documentation <http://jinja.pocoo.org/docs/dev/templates/>`_
+for more information.
+
+Jinja templates are evaluated during the build process. To retrieve a fully rendered ``meta.yaml``
+use the :doc:`../commands/build/conda-render`.
+
 
 Preprocessing selectors
 -----------------------
@@ -523,6 +575,8 @@ In addition, you can add selectors to any line, which are used as part of a
 preprocessing stage. Before the yaml file is read, each selector is evaluated,
 and if it is False, the line that it is on is removed.  A selector is of the
 form ``# [<selector>]`` at the end of a line.
+
+NOTE: Preprocessing selectors are evaluated after Jinja templates.
 
 For example
 
@@ -537,6 +591,10 @@ variables are defined. Unless otherwise stated, the variables are booleans.
 
 .. list-table::
 
+   * - ``x86``
+     - True if the system architecture is x86 (32-bit and 64-bit) for Intel or AMD chips
+   * - ``x86_64``
+     - True if the system architecture is x86_64 (64-bit) for Intel or AMD chips
    * - ``linux``
      - True if the platform is Linux
    * - ``linux32``
@@ -601,6 +659,8 @@ need to put the same selector on multiple lines.
 
 Features
 --------
+
+See also :ref:`build-features`.
 
 Features are a way to track differences in two packages that have the same
 name and version.  For example, a feature might indicate a specialized

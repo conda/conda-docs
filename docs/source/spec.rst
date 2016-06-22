@@ -128,6 +128,27 @@ with spaces.
 ``info/no_link``: This optional file lists all files which cannot be linked
 (either soft or hard) into environments, and are copied instead.
 
+``info/about.json``: This optional file contains the entries in the :ref:`about` section
+of :doc:`./building/meta-yaml` file. The following keys will be added to ``info/about.json``
+if present in the build recipe
+
+::
+
+  home
+  dev_url
+  doc_url
+  license_url
+  license
+  summary
+  description
+  license_family
+
+``info/recipe``: This directory will contain the full contents of the build recipe.
+
+    ``meta.yaml.rendered``: This is the fully rendered build recipe. See :doc:`../commands/build/conda-render`.
+
+    This directory is only present when the the ``include_recipe`` flag is true in the :ref:`meta-build`.
+
 
 Link and unlink scripts
 ------------------------
