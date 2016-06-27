@@ -18,12 +18,12 @@ Conda is included in Anaconda and Miniconda. Conda is also included in the Conti
 of Anaconda, which provide on-site enterprise package and environment management for Python, R, Node.js, Java, and other application
 stacks. Conda is also available on pypi, although that approach may not be as up-to-date.
 
-* Miniconda is a small “bootstrap” version that includes only conda and conda-build, and installs Python. Over 720
+* Miniconda is a small "bootstrap" version that includes only conda and conda-build, and installs Python. Over 720
   scientific packages and their dependencies can be installed individually from the Continuum repository with
-  the “conda install” command.
+  the "conda install" command.
 * Anaconda includes conda, conda-build, Python, and over 150 automatically installed scientific packages and
   their dependencies. As with Miniconda, over 250 additional scientific packages can be installed individually with
-  the “conda install” command.
+  the "conda install" command.
 * pip install conda uses the released version on pypi.  This version allows you to create new conda environments using
   any python installation, and a new version of Python will then be installed into those environments.  These environments
   are still considered "Anaconda installations."
@@ -71,3 +71,69 @@ Requirements
 * pycosat
 * pyyaml
 * requests
+
+What's new in conda 4.1?
+------------------------
+
+This release contains many small bug fixes for all operating systems, and a few 
+special fixes for Windows behavior. The 
+`changelog <https://github.com/conda/conda/releases/tag/4.1.0>`_ contains a 
+complete list of changes. 
+
+**Notable changes for all systems Windows, OS X and Linux:**
+
+* **Channel order now matters.** The most significant conda change is that 
+  when you add channels, channel order matters. If you have a list of channels 
+  in a .condarc file, conda installs the package from the first channel where 
+  it's available, even if it's available in a later channel with a higher 
+  version number.
+* **No version downgrades.** Conda remove no longer performs version 
+  downgrades on any remaining packages that might be suggested to resolve 
+  dependency losses; the package will just be removed instead.
+* **New YAML parser/emitter.** PyYAML is replaced with ruamel.yaml, 
+  which gives more robust control over yaml document use. 
+  `More on ruamel.yaml <http://yaml.readthedocs.io/en/latest/>`_
+* **Shebang lines over 127 characters are now truncated (Linux, OS X 
+  only).** `Shebangs <https://en.wikipedia.org/wiki/Shebang_(Unix)>`_ are
+  the first line of the many executable scripts that tell the operating 
+  system how to execute the program.  They start with ``#!``. Most OSes
+  don't support these lines over 127 characters, so conda now checks 
+  the length and replaces the full interpreter path in long lines with 
+  ``/usr/bin/env``. When you're working in a conda environment that
+  is deeply under many directories, or you otherwise have long paths
+  to your conda environment, make sure you activate that environment
+  now.
+* **Changes to conda list command.** When looking for packages that 
+  aren’t installed with conda, conda list now examines the Python 
+  site-packages directory rather than relying on pip.
+* **Changes to conda remove command.** The command  ``conda remove --all`` 
+  now removes a conda environment without fetching information from a remote 
+  server on the packages in the environment.
+* **Conda update can be turned off and on.** When turned off, conda will 
+  not update itself unless the user manually issues a conda update command. 
+  Previously conda updated any time a user updated or installed a package 
+  in the root environment. Use the option ``conda config set auto_update_conda false``.
+* **Improved support for BeeGFS.** BeeGFS is a parallel cluster file 
+  system for performance and designed for easy installation and 
+  management. `More on BeeGFS <http://www.beegfs.com/content/documentation/>`_
+
+**Windows-only changes include:**
+
+* **Shortcuts are no longer installed by default on Windows.** Shortcuts can 
+  now be installed with the ``--shortcuts`` option. Example 1: Install a shortcut 
+  to Spyder with ``conda install spyder --shortcut``. Note if you have Anaconda 
+  (not Miniconda), you already have this shortcut and Spyder. Example 2: 
+  Install the open source package named ``console_shortcut``. When you click 
+  the shortcut icon, a terminal window will open with the environment 
+  containing the ``console_shortcut`` package already activated. ``conda install 
+  console_shortcut --shortcuts``
+* **Skip binary replacement on Windows.** Linux & OS X have binaries that 
+  are coded with library locations, and this information must sometimes be 
+  replaced for relocatability, but Windows does not generally embed prefixes 
+  in binaries, and was already relocatable. We skip binary replacement on 
+  Windows.
+
+
+
+See the `changelog <https://github.com/conda/conda/releases/tag/4.1.0>`_ for 
+a complete list of changes. 
