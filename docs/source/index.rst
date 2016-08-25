@@ -168,8 +168,8 @@ complete list of changes.
   the shortcut icon, a terminal window will open with the environment 
   containing the ``console_shortcut`` package already activated. ``conda install 
   console_shortcut --shortcuts``
-* **Skip binary replacement on Windows.** Linux & OS X have binaries that 
-  are coded with library locations, and this information must sometimes be 
+* **Skip binary replacement on Windows.** Linux & OS X have binaries that are 
+  coded with library locations, and this information must sometimes be 
   replaced for relocatability, but Windows does not generally embed prefixes 
   in binaries, and was already relocatable. We skip binary replacement on 
   Windows.
