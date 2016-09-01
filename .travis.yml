@@ -18,8 +18,8 @@ before_install:
   - conda info -a
 
   - if [[ "${DOCS}" = "true" ]]; then
-      conda install conda-build=1.21.11 pycrypto doctr;
-      conda create -q -n build-environment -c asmeurer conda-docs-deps;
+      conda install conda-build=1.21.11 pycrypto;
+      conda create -q -n build-environment -c asmeurer conda-docs-deps doctr;
       cd docs;
     fi
   - if [[ "${WEBSITE}" = "true" ]]; then
