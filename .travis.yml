@@ -30,10 +30,10 @@ before_install:
 
 script:
   - make html-errors
-  - if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
+  - if [[ "${DOCS}" = "true" ]]; then
       doctr deploy --built-docs docs --gh-pages-docs docs;
     fi
-  - if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2" ]; then
+  - if [[ "${WEBSITE}" = "true" ]]; then
       doctr deploy --built-docs web --gh-pages-docs .;
     fi
 notifications:
