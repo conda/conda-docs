@@ -29,6 +29,7 @@ before_install:
   - source activate build-environment
 
 script:
+  - set -e # Fail if any of the below errors
   - make html-errors
   - if [[ "${DOCS}" = "true" ]]; then
       doctr deploy --built-docs docs --gh-pages-docs docs;
