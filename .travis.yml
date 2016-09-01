@@ -4,7 +4,9 @@ env:
     - DOCS="true"
     - WEBSITE="true"
   global:
-    secure: "5ElZf1fy+lG3qaL0fsUziva0Z2GHRg3xVVh1vssBXSlWifvACz2XU0VA0CE3URuLeBnwQLUYs+z11T2YmXTg5BoJI2wYDBaETXqk4Sb5qK6ecv2KIquvREavHPFoVdmHYoeYhDcHZufYgQn/Dx1E79xep4A+R/T8SdtDk2OxPWw="before_install:
+    secure: "5ElZf1fy+lG3qaL0fsUziva0Z2GHRg3xVVh1vssBXSlWifvACz2XU0VA0CE3URuLeBnwQLUYs+z11T2YmXTg5BoJI2wYDBaETXqk4Sb5qK6ecv2KIquvREavHPFoVdmHYoeYhDcHZufYgQn/Dx1E79xep4A+R/T8SdtDk2OxPWw="
+
+before_install:
   - wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh;
   - bash ~/miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
