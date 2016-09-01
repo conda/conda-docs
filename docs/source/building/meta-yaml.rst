@@ -110,6 +110,14 @@ will be copied to the work directory before building:
   source:
     path: ../src
 
+If the local path is a git or svn repository, you will get the corresponding environment
+variables defined in your build environment.  The only practical difference between
+``git_url`` or ``hg_url`` and ``path`` as source arguments is that ``git_url`` and ``hg_url``
+would be clones of a repository and ``path`` would be a copy of the repository.  Using
+``path`` will allow you to build packages with unstaged/uncommitted changes in
+the working directory. ``git_url`` can only build up to the latest commit.
+
+
 Patches
 ~~~~~~~
 
@@ -418,6 +426,21 @@ Test files which are copied from the recipe into the (temporary) test directory 
     files:
       - test-data.txt
 
+Source files
+~~~~~~~~~~~~
+
+Test files which are copied from the source work directory into the (temporary) test directory which are needed during testing:
+
+.. code-block:: yaml
+
+  test:
+    source_files:
+      - test-data.txt
+      - some/directory
+      - some/directory/pattern*.sh
+
+This capability was added in conda-build 2.0.
+
 Test requirements
 ~~~~~~~~~~~~~~~~~
 
@@ -560,10 +583,75 @@ For example, to store recipe maintainer information, one could do:
 Templating with Jinja
 ---------------------
 
-Conda build supports Jinja templating in the ``meta.yaml`` file.
+Conda build supports Jinja templating in the ``meta.yaml`` file. For example, here's a meta.yaml that
+would work with the GIT values defined for git repositores. In this example, the recipe is included
+at the base directory of the git repository, so the ``git_url`` is ``../``:
+
+.. code-block:: yaml
+
+     package:
+       name: mypkg
+       version: {{ GIT_DESCRIBE_TAG }}
+
+     build:
+       number: {{ GIT_DESCRIBE_NUMBER }}
+
+       # Note that this will override the default build string with the Python
+       # and NumPy versions
+       string: {{ GIT_BUILD_STR }}
+
+     source:
+       git_url: ../
+
+Conda-build will make sure the jinja2 variables you use are defined and produces
+a clear error if it is not.
+
+It is also possible to use a different syntax for these environment variables
+that allows default values to be set, although it is somewhat more verbose.  This is the
+example above using the syntax that allows defaults:
+
+.. code-block:: yaml
+
+     package:
+       name: mypkg
+       version: {{ environ.get('GIT_DESCRIBE_TAG', '') }}
+
+     build:
+       number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
+
+       # Note that this will override the default build string with the Python
+       # and NumPy versions
+       string: {{ environ.get('GIT_BUILD_STR', '') }}
+
+     source:
+       git_url: ../
+
+One further possibility using templating is obtaining data from your downloaded
+source code.  For example, we can process a project's setup.py and obtain the
+version and other metadata:
+
+.. code-block:: yaml
+
+    {% set data = load_setup_py_data() %}
+
+    package:
+      name: conda-build-test-source-setup-py-data
+      version: {{ data.get('version') }}
+
+    # source will be downloaded prior to filling in jinja templates
+    # Example assumes that this folder has setup.py in it
+    source:
+      path_url: ../
+
+These functions are completely compatible with any other variables (git, mercurial, or whatever.)
+
+Extending this to arbitrary other functions requires that functions be predefined before jinja
+processing, which in practice means changing the conda-build source code.  Please inquire at the
+`conda-build issue tracker <https://github.com/conda/conda-build/issues>`_.
 
 See the `Jinja2 template documentation <http://jinja.pocoo.org/docs/dev/templates/>`_
-for more information.
+for more information, or `the list of available environment
+variables <http://conda.pydata.org/docs/building/environment-vars.html>`_.
 
 Jinja templates are evaluated during the build process. To retrieve a fully rendered ``meta.yaml``
 use the :doc:`../commands/build/conda-render`.
@@ -751,10 +839,12 @@ relocatable:
   prefix at install time.  This works by padding the install prefix with null
   terminators, such that the length of the binary file remains the same.  The
   build prefix must therefore be long enough to accommodate any reasonable
-  installation prefix. Whenever the ``build/binary_has_prefix_files`` list is
-  not empty or ``build/detect_binary_files_with_prefix`` is set, conda will pad
+  installation prefix.  On Linux and Mac, conda-build will pad
   the build prefix (appending ``_placehold``\'s to the end of the build
-  directory name) to 80 characters.
+  directory name) to 255 characters.  Note that the prefix length was changed
+  in conda-build 2.0 from 80 characters to 255 characters.  Legacy packages with
+  80 character prefixes will need to be rebuilt to take advantage of the
+  longer prefix.
 
 - There may be cases where conda identified a file as binary, but it needs to
   have the build prefix replaced as if it were text (no padding with null

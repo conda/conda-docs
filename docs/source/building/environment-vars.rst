@@ -162,59 +162,27 @@ or ``path``, the following variables are defined:
 These can be used in conjunction with templated meta.yaml files to set things
 like the build string based on the state of the git repository.
 
-For example, here's a meta.yaml that would work with these values. In this
-example, the recipe is included at the base directory of the git repository,
-so the ``git_url`` is ``../``:
+.. _mercurial-env-vars:
 
-.. code-block:: yaml
+Mercurial Environment Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-     package:
-       name: mypkg
-       version: {{ GIT_DESCRIBE_TAG }}
+When the source is a mercurial repository, the following variables are defined:
 
-     build:
-       number: {{ GIT_DESCRIBE_NUMBER }}
+.. list-table::
 
-       # Note that this will override the default build string with the Python
-       # and NumPy versions
-       string: {{ GIT_BUILD_STR }}
-
-     source:
-       git_url: ../
-
-It is also possible to use the older syntax for these environment variables,
-although it is somewhat more verbose, and the newer syntax checks to make sure
-the variable is defined and produces a clear error if it is not. This is the
-example above using the older syntax:
-
-.. code-block:: yaml
-
-     package:
-       name: mypkg
-       version: {{ environ.get('GIT_DESCRIBE_TAG', '') }}
-
-     build:
-       number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
-
-       # Note that this will override the default build string with the Python
-       # and NumPy versions
-       string: {{ environ.get('GIT_BUILD_STR', '') }}
-
-     source:
-       git_url: ../
-
-All of the above environment variables are also set during the test process,
-except with the test prefix instead of the build prefix everywhere.
-
-Note that build.sh is run with ``bash -x -e`` (the ``-x`` makes it echo each
-command that is run, and the ``-e`` makes it exit whenever a command in the
-script returns nonzero exit status).  You can revert this in the script if you
-need to by using the ``set`` command.
-
-The only practical difference between ``git_url`` and ``path`` as source arguments
-is that git_url is a clone of a repository and path is copy of the repository.
-Using path will allow you to build packages with unstaged/uncommited changes in
-working directory. git_url can only build up to the latest commit.
+   * - ``HG_BRANCH``
+     - string denoting the presently active branch
+   * - ``HG_BUILD_STR``
+     - a string that joins ``HG_NUM_ID`` and ``HG_SHORT_ID`` by an underscore
+   * - ``HG_LATEST_TAG``
+     - string denoting the most recent tag from the current commit
+   * - ``HG_LATEST_TAG_DISTANCE``
+     - string denoting number of commits since most recent tag
+   * - ``HG_NUM_ID``
+     - string denoting the revision number
+   * - ``HG_SHORT_ID``
+     - string denoting the hash of the commit
 
 .. _inherited-env-vars:
 
@@ -273,3 +241,11 @@ These three variables control :ref:`features` as defined in :doc:`meta-yaml`.
    * - ``FEATURE_OPT``
      - Adds the ``opt`` feature to the built package
      - Accepts ``0`` for off and ``1`` for on.
+
+.. _test-envs:
+
+Environment variables that affect the test process
+--------------------------------------------------
+
+All of the above environment variables are also set during the test process,
+except with the test prefix instead of the build prefix everywhere.
