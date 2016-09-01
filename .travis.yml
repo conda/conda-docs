@@ -4,31 +4,36 @@ env:
     - DOCS="true"
     - WEBSITE="true"
   global:
-    secure: "C8iqfA7L8nqYAIl+q6cF++wzjkxfz4UZsupt+Sqmv9yy483zpLEKN8u5alVM9Ni42ziWYLCXmXnDhnIHHfANsTIQB0PlP7D4nf+Vj0XFTLPtcMIbJBxTKEySY8XQNHp9H/EfO7lqoChGBHUkVJ62CREqSvVjdqUOWOvyEbaQSds="
-before_install:
+    secure: "5ElZf1fy+lG3qaL0fsUziva0Z2GHRg3xVVh1vssBXSlWifvACz2XU0VA0CE3URuLeBnwQLUYs+z11T2YmXTg5BoJI2wYDBaETXqk4Sb5qK6ecv2KIquvREavHPFoVdmHYoeYhDcHZufYgQn/Dx1E79xep4A+R/T8SdtDk2OxPWw="before_install:
   - wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh;
   - bash ~/miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no --set show_channel_urls yes
   - conda config --add channels asmeurer
+  - conda config --add channels conda-forge
   - conda update -q conda
   - conda info -a
 
   - if [[ "${DOCS}" = "true" ]]; then
-      conda install conda-build=1.21.11 pycrypto;
+      conda install conda-build=1.21.11 pycrypto doctr;
       conda create -q -n build-environment -c asmeurer conda-docs-deps;
       cd docs;
     fi
   - if [[ "${WEBSITE}" = "true" ]]; then
-      conda create -q -n build-environment -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme;
+      conda create -q -n build-environment -c asmeurer sphinxjp.themes.basicstrap cloud_sptheme doctr;
       cd web;
     fi
   - source activate build-environment
 
 script:
   - make html-errors
-  - ../update-gh-pages.sh
+  - if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "1" ]; then
+      doctr deploy --built-docs docs --gh-pages-docs docs;
+    fi
+  - if [ "$ACTUAL_TRAVIS_JOB_NUMBER" == "2" ]; then
+      doctr deploy --built-docs web --gh-pages-docs .;
+    fi
 notifications:
   flowdock: ef3821a08a791106512ccfc04c92eccb
 
