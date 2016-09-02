@@ -30,6 +30,7 @@ before_install:
 
 script:
   - set -e # Fail if any of the below errors
+  - set -x # Show the commands that are run
   - make html-errors
   - cd ..
   - if [[ "${DOCS}" = "true" ]]; then
