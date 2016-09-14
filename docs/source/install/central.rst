@@ -62,6 +62,9 @@ Normally the default repository is repo.continuum.io, but if default_channels is
 defined it will set the new list of default channels. This is especially useful 
 for air gap and enterprise installations.
 
+To ensure that all users only pull packages from an on-premises repository an
+administrator can set both ``channel_alias`` and ``default_channels``.
+
 .. code-block:: yaml
 
   channels:
@@ -104,7 +107,14 @@ Offline mode filters out all channels URLs which do not start with ``file:``. Th
 Channel alias (channel_alias)
 -----------------------------
 
-Alias for non-url channels used with the -c or --channel flag. The default is ``https://conda.anaconda.org/``
+Alias for non-url channels used with the -c or --channel flag. The default
+is ``https://conda.anaconda.org/``. If ``channel_alias`` is set
+to ``https://my.anaconda.repo:8080/conda/`` then a user who runs the
+command ``conda install -c conda-forge some-package`` will install the
+package ``some-package`` from ``https://my.anaconda.repo:8080/conda/conda-forge``.
+
+To ensure that all users only pull packages from an on-premises repository an
+administrator can set both ``channel_alias`` and ``default_channels``.
 
 .. code-block:: yaml
 
