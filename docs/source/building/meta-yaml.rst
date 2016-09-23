@@ -614,14 +614,14 @@ example above using the syntax that allows defaults:
 
      package:
        name: mypkg
-       version: {{ environ.get('GIT_DESCRIBE_TAG', '') }}
+       version: {{ os.environ.get('GIT_DESCRIBE_TAG', '') }}
 
      build:
-       number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
+       number: {{ os.environ.get('GIT_DESCRIBE_NUMBER', 0) }}
 
        # Note that this will override the default build string with the Python
        # and NumPy versions
-       string: {{ environ.get('GIT_BUILD_STR', '') }}
+       string: {{ os.environ.get('GIT_BUILD_STR', '') }}
 
      source:
        git_url: ../
