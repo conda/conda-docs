@@ -304,7 +304,7 @@ first creating a conda recipe for some-package using conda skeleton and then bui
 
 .. code-block:: bash
 
-    conda skeleton sgp4
+    conda skeleton pypi sgp4
     conda build sgp4
 
 You may also try using the --recursive flag with conda skeleton, but this will attempt to make conda
