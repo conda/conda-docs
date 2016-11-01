@@ -647,6 +647,39 @@ and then create a special metapackage
 
 .. or use conda install --features, blocking on https://github.com/conda/conda/issues/543
 
+Note that your package that provides some feature may not be installable if you
+do not provide a way to activate that feature (most often, by adding a runtime
+or test time dependency on something that has the appropriate track_feature.)
+
+For example, a recipe that only defines:
+
+.. code-block:: yaml
+
+   build:
+     features:
+       - vc14
+
+for Visual Studio 14 will not actually be installable unless some runtime or
+test time dependency that activates the correct feature is provided:
+
+.. code-block:: yaml
+
+   build:
+     features:
+       - vc14
+
+   requirements:
+     run:
+       - vc 14
+
+For Visual Studio in particular, it is common to use either a particular Python
+version (since we adhere to the python.org standards of which VS version is used
+to build which python version) or the vc package, which `originated at
+Conda-Forge<https://github.com/conda-forge/staged-recipes/pull/363>`_. Keep in
+mind that this is different from the vc feature - and the vc package is being
+pinned to a particular version, while vc9, vc10 and vc14 are actually each
+distinct features that are activated by the appropriately versioned vc package.
+
 .. _relocatable:
 
 Making packages relocatable
