@@ -42,6 +42,9 @@ override this behavior.)
   * - ``PYTHON``
     - Path to Python executable in build prefix (note that Python is only
       installed in the build prefix when it is listed as a build requirement)
+  * - ``SYS_PYTHON``
+    - Path to Python executable in root environment.  Useful when Python is used as a tool in building a
+      package, but that package is not actually a Python package.
   * - ``PY3K``
     - ``1`` when Python 3 is installed in build prefix, else ``0``
   * - ``STDLIB_DIR``
