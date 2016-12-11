@@ -50,7 +50,7 @@ What version of Python should I choose?
 ---------------------------------------
 
 * The newest stable version of Python is 3.5, and that is included with Anaconda3 and Miniconda3. 
-* The last version of legacy Python 2 is 2.7, and that is included with Anaconda and Miniconda. 
+* The last version of Python 2 is 2.7, and that is included with Anaconda and Miniconda. 
 * You can easily set up additional versions of Python such as 3.4 by downloading any version and creating a new environment with just a few clicks. (See our :doc:`test-drive`.)
 
 What about cryptographic hash verification?
