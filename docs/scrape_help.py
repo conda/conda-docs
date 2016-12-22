@@ -113,9 +113,10 @@ def external_commands():
         command_help[command] = conda_command_help(command)
         print("Checked for subcommand help for %s" % command)
 
-    with ThreadPoolExecutor(len(commands)) as executor:
-        # list() is needed for force exceptions to be raised
-        list(executor.map(get_help, commands))
+    if commands:
+        with ThreadPoolExecutor(len(commands)) as executor:
+            # list() is needed for force exceptions to be raised
+            list(executor.map(get_help, commands))
 
     for command in command_help:
         help = command_help[command]
