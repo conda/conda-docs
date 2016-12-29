@@ -149,6 +149,44 @@ if present in the build recipe
 
     This directory is only present when the the ``include_recipe`` flag is true in the :ref:`meta-build`.
 
+``info/paths.json``: This file contains basic information about each file contained in the package.
+It appeared in conda 4.3 and is intended to replace ``info/files``, ``info/has_prefix``, and
+``info/no_link``.
+The json object is a dictionary with two keys, ``paths_version``,
+which holds the file format version (currently 1)
+and ``paths``, which contains a list with one dictionary per file.
+The per-file dictionary contains the following keys:
+
+   ``_path``: string
+      The path to the file.
+
+   ``sha256``: string
+      The SHA-256 checksum of the file.
+
+   ``size_in_bytes``: int
+      The size of the files in number of bytes.
+
+   ``path_type``: string
+      The type of link. Could be ``hardlink``, ``softlink``, or ``directory``.
+
+   ``no_link``: boolean
+      Is set to ``True`` for files that cannot be linked (either soft or hard)
+      into environments, and are copied instead.
+
+   ``prefix_placeholder``: string (optional)
+      Hard coded prefix placeholder in the file. The default prefix placeholder is
+      ``/opt/anaconda1anaconda2anaconda3``, but others may be used.
+
+   ``file_mode``: string (optional)
+      Whether the file is a binary file or text file. Could be ``text`` or ``binary`` (default).
+      Primarily used in conjunction with ``prefix_placeholder``, in order to determine
+      how that prefix placeholder is to be replaced.
+
+   ``inode_paths``: list of strings (optional)
+      List of other files which share the same inode (i.e. they are hard links).
+
+
+
 
 Link and unlink scripts
 ------------------------
