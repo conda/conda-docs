@@ -174,7 +174,7 @@ test:
 
 live:
 	rsync -rvzchP --delete-after -e ssh --exclude docs conda.conf build/html/ pydata.org:/www/conda/
-	$(LAUNCH) http://conda.pydata.org
+	$(LAUNCH) https://conda.io
 
 livehtml:
 	livereload build/html
