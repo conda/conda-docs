@@ -86,52 +86,6 @@ def conda_commands():
                 commands.append(line.split()[0])
     return commands
 
-def external_commands():
-    print("Getting list of external commands")
-    help = conda_help()
-    commands = []
-    start = False
-    for line in help.splitlines():
-        # Commands start after "command" header
-        if line.strip() == 'other commands:':
-            start = True
-            continue
-        if start:
-            # The end of the commands
-            if not line:
-                break
-            if line[4] != ' ':
-                commands.append(line.split()[0])
-
-    # TODO: Parallelize this
-    print("Getting list of external subcommands")
-    subcommands_re = re.compile(r'\s*\{(.*)\}\s*')
-    # Check for subcommands (like conda skeleton pypi)
-    command_help = {}
-
-    def get_help(command):
-        command_help[command] = conda_command_help(command)
-        print("Checked for subcommand help for %s" % command)
-
-    with ThreadPoolExecutor(len(commands)) as executor:
-        # list() is needed for force exceptions to be raised
-        list(executor.map(get_help, commands))
-
-    for command in command_help:
-        help = command_help[command]
-        start = False
-        for line in help.splitlines():
-            if line.strip() == "positional arguments:":
-                start = True
-                continue
-            if start:
-                m = subcommands_re.match(line)
-                if m:
-                    commands.extend(['%s %s' % (command, i) for i in
-                        m.group(1).split(',')])
-                break
-    return commands
-
 def man_replacements():
     # XXX: We should use conda-api for this, but it's currently annoying to set the
     # root prefix with.
@@ -218,9 +172,8 @@ def write_rst(command, sep=None):
 
 def main():
     core_commands = conda_commands()
-    build_commands = external_commands()
 
-    commands = sys.argv[1:] or core_commands + build_commands
+    commands = sys.argv[1:] or core_commands
 
     def gen_command(command):
         generate_man(command)
@@ -232,11 +185,6 @@ def main():
 
     for command in [c for c in core_commands if c in commands]:
         write_rst(command)
-    for command in [c for c in build_commands if c in commands]:
-        if 'env' in command:
-            write_rst(command, sep='env')
-        else:
-            write_rst(command, sep='build')
 
 if __name__ == '__main__':
     sys.exit(main())
