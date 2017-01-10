@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Conda'
-copyright = '2016, Continuum Analytics'
+copyright = '2017, Continuum Analytics'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
