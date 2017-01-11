@@ -12,13 +12,14 @@ before_install:
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no --set show_channel_urls yes
-  - conda config --add channels asmeurer
-  - conda config --add channels conda-forge
-  - conda update -q conda
+  - conda update -yq conda
+  - conda install -yq conda-build
   - conda info -a
+  - conda config --append channelsconda-forge
+  - conda config --append channels asmeurer
 
   - if [[ "${DOCS}" = "true" ]]; then
-      conda install conda-build=1.21.11 pycrypto;
+      conda install pycrypto;
       conda create -q -n build-environment -c asmeurer conda-docs-deps doctr;
       cd docs;
     fi
