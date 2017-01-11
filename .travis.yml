@@ -15,7 +15,7 @@ before_install:
   - conda update -yq conda
   - conda install -yq conda-build
   - conda info -a
-  - conda config --append channelsconda-forge
+  - conda config --append channels conda-forge
   - conda config --append channels asmeurer
 
   - if [[ "${DOCS}" = "true" ]]; then
