@@ -5,3 +5,5 @@ docs/source/commands/
 __pycache__
 .idea  # Pycharm
 env
+*.pyc
+
