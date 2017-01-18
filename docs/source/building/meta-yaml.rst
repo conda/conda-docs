@@ -286,17 +286,52 @@ Advanced features. The following four keys (binary_relocation, has_prefix_files 
 Binary relocation
 ~~~~~~~~~~~~~~~~~
 
-Whether binary files should be made relocatable using install_name_tool on OS X or patchelf on Linux. Default is True.
+Whether binary files should be made relocatable using install_name_tool on OS X
+or patchelf on Linux. Default is True. Accepts False (no relocation for any
+files) or a list of files (relocation only for listed files.)
 
 .. code-block:: yaml
 
   build:
     binary_relocation: False
 
+Detect binary files with prefix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Binary files may contain the build prefix and need it replaced with the install
+prefix at installation time. Conda can automatically identify and register such
+files. Default is ``True``. Note that this default changed from ``False`` to
+``True`` in conda-build 2.0. Setting this to ``False`` means that binary
+relocation (RPATH) replacement will still be done, but hard-coded prefixes in
+binaries will not be replaced. Prefixes in text files will still be replaced.
+
+.. code-block:: yaml
+
+  build:
+    detect_binary_files_with_prefix: False
+
+Windows handles binary prefix replacement very differently than Unix systems
+such as Linux and macOS. At this time, we are unaware of any executable or
+library that uses hardcoded embedded paths for locating other libraries or
+program data on Windows. Instead, Windows follows `DLL search path rules
+<https://msdn.microsoft.com/en-us/library/7d83bc18.aspx>`_, or more natively
+supports relocatability using relative paths. Because of this, conda ignores
+most prefixes. However, pip creates executables for Python entry points that
+*do* use embedded paths on Windows. Conda-build thus detects prefixes in all
+files and records them by default. If you are getting errors about path length
+on Windows, you should try to disable ``detect_binary_files_with_prefix``. Newer
+versions of Conda (recent 4.2.x series releases and up) should have no problems
+here, but earlier versions of conda do erroneously try to apply any binary
+prefix replacement.
+
+
 Binary has prefix files
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, conda-build tries to detect prefixes in all files.  You may also elect to specify files with binary prefixes individually.  This allows you to specify the type of file as binary, when it may be incorrectly detected as text for some reason.  Binary files are those containing NULL bytes.
+By default, conda-build tries to detect prefixes in all files. You may also
+elect to specify files with binary prefixes individually. This allows you to
+specify the type of file as binary, when it may be incorrectly detected as text
+for some reason. Binary files are those containing NULL bytes.
 
 .. code-block:: yaml
 
@@ -308,7 +343,12 @@ By default, conda-build tries to detect prefixes in all files.  You may also ele
 Text files with prefix files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Text files (files containing no NULL bytes) may contain the build prefix and need it replaced with the install prefix at installation time.  Conda will automatically register such files.  Binary files that contain the  build prefix are generally handled differently (see binary_has_prefix_files), but there may be cases where such a binary file needs to be treated as an ordinary text file, in which case they need to be identified:
+Text files (files containing no NULL bytes) may contain the build prefix and
+need it replaced with the install prefix at installation time. Conda will
+automatically register such files. Binary files that contain the build prefix
+are generally handled differently (see binary_has_prefix_files), but there may
+be cases where such a binary file needs to be treated as an ordinary text file,
+in which case they need to be identified:
 
 .. code-block:: yaml
 
@@ -338,7 +378,8 @@ To specify individual file names use
       ignore_prefix_files:
         - file1
 
-Files that are ignored from prefix detection are also ignored from RPATH replacement, similar to the binary_relocation setting, but with finer granularity.
+This setting is independent of RPATH replacement. Use the
+``detect_binary_files_with_prefix`` setting to control that behavior.
 
 Skipping builds
 ~~~~~~~~~~~~~~~
