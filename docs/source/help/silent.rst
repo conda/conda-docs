@@ -45,7 +45,7 @@ Linux and OS X
 Silent installation of Miniconda for Linux and OS X is a simple as specifying the ``-b`` and ``-p`` arguments of the
 bash installer. The following arguments are supported:
 
-- ``-b``, batch mode
+- ``-b``, batch mode, no PATH modifications to ``~/.bashrc``
 - ``-p``, installation prefix/path
 - ``-f``, force installation even if prefix ``-p`` already exists
 
@@ -59,3 +59,17 @@ A complete example:
     wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O ~/miniconda.sh
     bash ~/miniconda.sh -b -p $HOME/miniconda
     export PATH="$HOME/miniconda/bin:$PATH"
+
+NOTE: This only sets the PATH for the current session, not permanently. Trying
+to use conda when conda is not in your PATH will cause errors such as "command
+not found".
+
+We recommend running ``source $HOME/miniconda3/bin/activate`` in each new
+bash session before using conda, which will set the PATH and run the activation
+scripts of your conda packages. Replace ``$HOME/miniconda3/bin/activate``
+with the path to the activate script in your conda installation.
+
+It is also possible to set the PATH permanently by adding a line to your
+``.bashrc`` file such as ``export PATH="$HOME/miniconda3/bin:$PATH"``.
+However, this makes it possible to use conda without running the activation
+scripts of your conda packages, which may produce errors.
