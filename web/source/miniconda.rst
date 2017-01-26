@@ -16,15 +16,6 @@
    |          |Windows            |Mac OS X         |Linux            |
    +----------+-------------------+-----------------+-----------------+
    |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
-   |2.7**     |installer)         |installer)       |installer)       |
-   |          |<Windows-py2-64_>`_|<Mac-py2-64_>`_  |<Linux-py2-64_>`_|
-   |          |                   |                 |                 |
-   |          |`32-bit (exe       |                 |`32-bit (bash    |
-   |          |installer)         |                 |installer)       |
-   |          |<Windows-py2-32_>`_|                 |<Linux-py2-32_>`_|
-   |          |                   |                 |                 |
-   +----------+-------------------+-----------------+-----------------+
-   |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
    |3.5**     |installer)         |installer)       |installer)       |
    |          |<Windows-py3-64_>`_|<Mac-py3-64_>`_  |<Linux-py3-64_>`_|
    |          |                   |                 |                 |
@@ -33,6 +24,16 @@
    |          |<Windows-py3-32_>`_|                 |<Linux-py3-32_>`_|
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
+   |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
+   |2.7**     |installer)         |installer)       |installer)       |
+   |          |<Windows-py2-64_>`_|<Mac-py2-64_>`_  |<Linux-py2-64_>`_|
+   |          |                   |                 |                 |
+   |          |`32-bit (exe       |                 |`32-bit (bash    |
+   |          |installer)         |                 |installer)       |
+   |          |<Windows-py2-32_>`_|                 |<Linux-py2-32_>`_|
+   |          |                   |                 |                 |
+   +----------+-------------------+-----------------+-----------------+
+
 
 See the `Quick install <http://conda.pydata.org/docs/install/quick.html>`_
 page for installation instructions.
