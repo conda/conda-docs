@@ -4,7 +4,7 @@
 This repository includes documentation for all of conda, including
 conda-build.
 
-The website is at http://conda.pydata.org/ and the docs are at http://conda.pydata.org/docs/.
+The website is at https://conda.io/ and the docs are at https://conda.io/docs/.
 
 Feel free to make pull requests against this repo for suggested changes. All
 changes are welcome, from typo fixes to new documents to refactoring.
@@ -64,4 +64,4 @@ The website and docs are deployed automatically to GitHub pages (the
 master. Travis will build docs on pull requests to make sure there are no
 build warnings or errors, but it only deploys it on master.
 
-The site http://conda.pydata.org points to the GitHub pages of this repo.
+The site https://conda.io points to the GitHub pages of this repo.
