@@ -16,21 +16,21 @@
    |          |Windows            |Mac OS X         |Linux            |
    +----------+-------------------+-----------------+-----------------+
    |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
+   |3.6**     |installer)         |installer)       |installer)       |
+   |          |<Windows-py3-64_>`_|<Mac-py3-64_>`_  |<Linux-py3-64_>`_|
+   |          |                   |                 |                 |
+   |          |`32-bit (exe       |                 |`32-bit (bash    |
+   |          |installer)         |                 |installer)       |
+   |          |<Windows-py3-32_>`_|                 |<Linux-py3-32_>`_|
+   |          |                   |                 |                 |
+   +----------+-------------------+-----------------+-----------------+
+   |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
    |2.7**     |installer)         |installer)       |installer)       |
    |          |<Windows-py2-64_>`_|<Mac-py2-64_>`_  |<Linux-py2-64_>`_|
    |          |                   |                 |                 |
    |          |`32-bit (exe       |                 |`32-bit (bash    |
    |          |installer)         |                 |installer)       |
    |          |<Windows-py2-32_>`_|                 |<Linux-py2-32_>`_|
-   |          |                   |                 |                 |
-   +----------+-------------------+-----------------+-----------------+
-   |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
-   |3.5**     |installer)         |installer)       |installer)       |
-   |          |<Windows-py3-64_>`_|<Mac-py3-64_>`_  |<Linux-py3-64_>`_|
-   |          |                   |                 |                 |
-   |          |`32-bit (exe       |                 |`32-bit (bash    |
-   |          |installer)         |                 |installer)       |
-   |          |<Windows-py3-32_>`_|                 |<Linux-py3-32_>`_|
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
 
@@ -67,7 +67,7 @@ instance, the behavior of
    $ conda create -n myenv python
 
 will be to install Python 2.7 with the Python 2 Miniconda and to install
-Python 3.5 with the Python 3 Miniconda. You can override the default by
+Python 3.6 with the Python 3 Miniconda. You can override the default by
 explicitly setting ``python=2`` or ``python=3``. It also determines the
 default value of ``CONDA_PY`` when using ``conda build``.
 
