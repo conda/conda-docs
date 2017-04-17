@@ -52,6 +52,8 @@ Open a terminal window with Start - Run - Command Prompt, navigate to the anacon
 
 Go to Control Panel, click “Add or remove Program,” select “Python 2.7 (Miniconda)” and click Remove Program. 
 
+You can also remove the small hidden directories that may have been created in the 
+home folder: ``rm -rf ~/.conda`` and ``rm -rf ~/.continuum`` as well as ``rm .condarc``
 
 OS X Anaconda install
 ~~~~~~~~~~~~~~~~~~~~~
