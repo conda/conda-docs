@@ -33,9 +33,9 @@
    +----------+-------------------+-----------------+-----------------+
 
 We also offer 
-`Miniconda with Python 3.6 for Power8 <Miniconda3-latest-Linux-ppc64le.sh>`_ 
+`Miniconda with Python 3.6 for Power8 <https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_ 
 and 
-`Miniconda with Python 2.7 for Power8 <Miniconda2-latest-Linux-ppc64le.sh>`_.
+`Miniconda with Python 2.7 for Power8 <https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`_.
 
 See the `Quick install <https://conda.io/docs/install/quick.html>`_
 page for installation instructions.
