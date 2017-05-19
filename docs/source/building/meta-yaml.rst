@@ -701,6 +701,8 @@ The script run_test.sh (or .bat/.py/.pl) will be run automatically if it is part
 NOTE: Python or Perl .py/.pl scripts are only valid as part of Python/Perl packages, respectively.
 
 
+.. _package-outputs:
+
 Outputs section
 ---------------
 
