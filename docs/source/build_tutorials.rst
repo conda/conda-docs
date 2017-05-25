@@ -10,3 +10,5 @@
    build_tutorials/postgis
    build_tutorials/windows
    build_tutorials/app
+   build_tutorials/build_nltk
+   
