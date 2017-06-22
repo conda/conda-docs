@@ -392,6 +392,7 @@ Default is False.
   build:
     skip: True  # [not win]
 
+
 Architecture independent packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -437,6 +438,55 @@ If a listed environment variable is missing from the environment seen
 by the ``conda build`` process itself, then a ``UserWarning`` will be
 emitted during the build process and the variable will remain
 undefined.
+
+
+.. _run_exports:
+
+Pin downstream
+~~~~~~~~~~~~~~
+
+It is often useful to require a particular runtime library to be present at
+runtime when a particular library or package is used at build time. For example,
+if you use a C++ compiler to build a package with dynamic linkage, then it is
+likely that you also need to include the C++ runtime package corresponding to
+that compiler as a runtime requirement. Generally, these imposed pinnings should
+be added to the tool (compiler) or library (jpeg, bzip2, and so on) used at build
+time, rather than to the package using those tools or libraries.
+
+.. code-block:: yaml
+
+  build:
+    run_exports:
+      - libstdc++
+
+You can express version constraints directly, or use any of the jinja2 helper
+functions listed at :ref:`extra_jinja2`.
+
+For example, you may use :ref:`pinning_expressions` to obtain flexible version
+pinning relative to versions present at build time:
+
+.. code-block:: yaml
+
+  build:
+    run_exports:
+      - libstdc++  {{ pin_compatible('g++', 'x') }}
+
+
+With this example, if g++ were version 5.3.0, this pinning expression would
+evaluate to ``>=5.3.0,<6``.
+
+Note that ``run_exports`` can be specified both in the build section, and on
+a per-output basis for split packages.
+
+
+The potential downside of this feature is that it takes some control over constraints away from downstream users.  If an upstream package has a problematic run_exports constraint, you can ignore it in your recipe by listing the upstream package name in the ``build/ignore_run_exports`` section:
+
+
+.. code-block:: yaml
+
+  build:
+    ignore_run_exports:
+      - libstdc++
 
 
 Requirements section
@@ -581,7 +631,9 @@ dependencies. This support was added in conda-build 2.1.0.
 
    outputs:
      - name: some-subpackage
+       version: 1.0
      - name: some-other-subpackage
+       version: 2.0
 
 
 NOTE: If any output is specified in the outputs section, the default packaging
@@ -589,7 +641,9 @@ behavior of conda-build is bypassed. In other words, if any subpackage is
 specified, then you will not get the normal top-level build for this recipe
 without explicitly defining a subpackage for it. This is an alternative to the
 existing behavior, not an addition to it. See the :ref:`implicit_metapackages`
-section below for more information.
+section below for more information. Each output may have its own version and
+requirements. Additionally, subpackages may impose downstream pinning similarly
+to `Pin downstream`_ to help keep your packages aligned.
 
 
 Specifying files to include in output
@@ -661,23 +715,25 @@ requirements/build section.
        requirements:
          - some-dep
 
-
-Subpackage dependencies propagate to the top-level package if and only if the
-subpackage is listed as a requirement.
+You can also impose runtime dependencies whenever a given (sub)package is
+installed as a build dependency. For example, if we had an overarching
+"compilers" package, and within that, had ``gcc`` and ``libgcc`` outputs, we
+could force recipes that use gcc to include a matching libgcc runtime
+requirement:
 
 .. code-block:: none
 
-   requirements:
-     run:
-       - some-dep-that-will-propagate
-
    outputs:
-     - name: some-dep-that-will-propagate
-       requirements:
-         - some-dep
+     - name: gcc
+       run_exports:
+         - libgcc 2.*
+     - name: libgcc
 
-In this instance, the top-level package will depend on both
-``some-dep-that-will-propagate`` and ``some-dep`` as runtime requirements.
+
+Note: Variant expressions are very powerful here. You can express the version
+requirement in the run_exports entry as a jinja function to insert values
+based on the actual version of libgcc produced by the recipe. Read more about
+them at :ref:`referencing_subpackages`.
 
 .. _implicit_metapackages:
 
