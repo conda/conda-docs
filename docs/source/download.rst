@@ -60,11 +60,11 @@ MD5 checksums are available for `Miniconda <http://repo.continuum.io/miniconda/>
 
 Download the package and before installing verify it as follows:
 
-**Linux:** ``md5sum filename`` or ``sha256sum filename``
+**Linux:** Open a terminal window and enter ``md5sum filename`` or ``sha256sum filename``
 
 NOTE: Replace "filename" with the actual path and name of the downloaded package file.
 
-**OS X:** ``md5 filename`` or ``shasum -a 256 filename``
+**OS X:** `Open iTerm or a terminal window and enter `md5 filename`` or ``shasum -a 256 filename``
 
 NOTE: Replace "filename" with the actual path and name of the downloaded package file.
 
