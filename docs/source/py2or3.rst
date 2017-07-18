@@ -75,7 +75,7 @@ the default is 3.6.
 Create a Python 3.6 environment
 ````````````````````````````````
 
-To create a new environment with a different version of Python, use the ``conda create`` command. In this example, we'll make the new environment for Python 3.5:
+To create a new environment with a different version of Python, use the ``conda create`` command. In this example, we'll make the new environment for Python 3.6:
 
 .. code-block:: bash
 
