@@ -37,14 +37,14 @@ simply accept the defaults as they all can be changed later.
 
 NOTE: When finished, a new terminal window will open. If not, click Start - Run - Command Prompt. 
 
-To test your installation, enter the command ``conda list.`` If installed 
+To test your installation, enter the command ``conda list``. If installed 
 correctly, you will see a list of packages that were installed. 
 
 Next, go to our :doc:`30-minute conda test drive </test-drive>`.
 
 **Windows Miniconda update**
 
-Open a terminal window with Start - Run - Command Prompt, navigate to the anaconda folder, then type ``conda update conda``
+Open a terminal window with Start - Run - Command Prompt, navigate to the anaconda folder, then type ``conda update conda``.
 
 **Windows Miniconda Uninstall**
 
@@ -64,7 +64,7 @@ simply accept the defaults as they all can be changed later.
 
 Now close and re-open your terminal window for the changes to take effect.
 
-To test your installation, enter the command ``conda list.`` If installed 
+To test your installation, enter the command ``conda list``. If installed 
 correctly, you will see a list of packages that were installed. 
 
 Next, go to our :doc:`30-minute conda test drive </test-drive>`.
@@ -95,7 +95,7 @@ about any setting, simply accept the defaults as they all can be changed later:
 
 Now close and re-open your terminal window for the changes to take effect.
 
-To test your installation, enter the command ``conda list`` If installed 
+To test your installation, enter the command ``conda list``. If installed 
 correctly, you will see a list of packages that were installed. 
 
 Next, go to our :doc:`30-minute conda test drive </test-drive>`.
