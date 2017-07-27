@@ -8,34 +8,44 @@
    :widths: 1 3 3 3
    :column-alignment: center center center center
 
-   +----------+-------------------+-----------------+-----------------+
-   |          ||Windows|          ||Mac|            ||Linux|          |
-   |          |                   |                 |                 |
-   |          |Windows            |Mac OS X         |Linux            |
-   +----------+-------------------+-----------------+-----------------+
-   |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
-   |3.6**     |installer)         |installer)       |installer)       |
-   |          |<Windows-py3-64_>`_|<Mac-py3-64_>`_  |<Linux-py3-64_>`_|
-   |          |                   |                 |                 |
-   |          |`32-bit (exe       |                 |`32-bit (bash    |
-   |          |installer)         |                 |installer)       |
-   |          |<Windows-py3-32_>`_|                 |<Linux-py3-32_>`_|
-   |          |                   |                 |                 |
-   +----------+-------------------+-----------------+-----------------+
-   |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
-   |2.7**     |installer)         |installer)       |installer)       |
-   |          |<Windows-py2-64_>`_|<Mac-py2-64_>`_  |<Linux-py2-64_>`_|
-   |          |                   |                 |                 |
-   |          |`32-bit (exe       |                 |`32-bit (bash    |
-   |          |installer)         |                 |installer)       |
-   |          |<Windows-py2-32_>`_|                 |<Linux-py2-32_>`_|
-   |          |                   |                 |                 |
-   +----------+-------------------+-----------------+-----------------+
+   +----------+----------------------+------------------+-------------------+
+   |          ||Windows|             ||Mac|             ||Linux|            |
+   |          |                      |                  |                   |
+   |          |Windows               |Mac OS X          |Linux              |
+   +----------+----------------------+------------------+-------------------+
+   |**Python  |`64-bit (exe          |`64-bit (bash     |`64-bit (bash      |
+   |3.6**     |installer)            |installer)        |installer)         |
+   |          |<Windows-py3-64_>`_   |<Mac-py3-64_>`_   |<Linux-py3-64_>`_  |
+   |          |                      |                  |                   |
+   |          |`32-bit (exe          |                  |`32-bit (bash      |
+   |          |installer)            |                  |installer)         |
+   |          |<Windows-py3-32_>`_   |                  |<Linux-py3-32_>`_  |
+   |          |                      |                  |                   |
+   +----------+----------------------+------------------+-------------------+
+   |**Python  |`64-bit (exe          |`64-bit (bash     |`64-bit (bash      |
+   |2.7**     |installer)            |installer)        |installer)         |
+   |          |<Windows-py2-64_>`_   |<Mac-py2-64_>`_   |<Linux-py2-64_>`_  |
+   |          |                      |                  |                   |
+   |          |`32-bit (exe          |                  |`32-bit (bash      |
+   |          |installer)            |                  |installer)         |
+   |          |<Windows-py2-32_>`_   |                  |<Linux-py2-32_>`_  |
+   |          |                      |                  |                   |
+   +----------+----------------------+------------------+-------------------+
+   |**Python  |`64-bit (exe          |`64-bit (bash     |`64-bit (bash      |
+   |3.6**     |installer)            |installer)        |installer)         |
+   |(beta)    |<Windows-py3-beta_>`_ |<Mac-py3-beta_>`_ |<Linux-py3-beta_>`_|
+   +----------+----------------------+------------------+-------------------+
+   |**Python  |`64-bit (exe          |`64-bit (bash     |`64-bit (bash      |
+   |2.7**     |installer)            |installer)        |installer)         |
+   |(beta)    |<Windows-py2-beta_>`_ |<Mac-py2-beta_>`_ |<Linux-py2-beta_>`_|
+   +----------+----------------------+------------------+-------------------+
 
-We also offer 
-`Miniconda with Python 3.6 for Power8 <https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_ 
-and 
+We also offer
+`Miniconda with Python 3.6 for Power8 <https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_
+and
 `Miniconda with Python 2.7 for Power8 <https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`_.
+
+Check our miniconda Docker images `here <https://hub.docker.com/r/conda/>`_.
 
 See the `Quick install <https://conda.io/docs/install/quick.html>`_
 page for installation instructions.
@@ -120,3 +130,15 @@ For more information about this topic, please read `this documentation <http://d
 .. _Windows-py3-32: https://repo.continuum.io/miniconda/Miniconda3-latest-Windows-x86.exe
 
 .. _Linux-py3-32: https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86.sh
+
+.. _Linux-py2-beta: https://repo.continuum.io/miniconda/Miniconda2-beta-Linux-x86.sh
+
+.. _Linux-py3-beta: https://repo.continuum.io/miniconda/Miniconda3-beta-Linux-x86.sh
+
+.. _Windows-py2-beta: https://repo.continuum.io/miniconda/Miniconda2-beta-Windows-x86.sh
+
+.. _Windows-py3-beta: https://repo.continuum.io/miniconda/Miniconda3-beta-Windows-x86.sh
+
+.. _Mac-py2-beta: https://repo.continuum.io/miniconda/Miniconda2-beta-MacOSX-x86.sh
+
+.. _Mac-py3-beta: https://repo.continuum.io/miniconda/Miniconda3-beta-MacOSX-x86.sh
