@@ -9,7 +9,8 @@ Building conda packages
    meta-pkg
    dirs
    meta-yaml
-   environment-vars
    build-scripts
    variants
+   environment-vars
+   link-scripts
    /spec

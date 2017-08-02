@@ -1,35 +1,41 @@
-Pre/Post link/unlink scripts
-============================
+Build scripts (build.sh, bld.bat)
+=================================
 
-.. TODO: Add post-unlink
+The ``build.sh`` file is the build script for Linux and Mac, while ``bld.bat``
+is the script for Windows.  These scripts contain the logic that carries out
+your build steps. Traditionally, it has also included install steps. With the
+traditional one-package-per-recipe way of doing things, Anything that your build
+script copies into the ``$PREFIX`` / ``%PREFIX%`` folder will be included in
+your output package. For example, a build.sh:
 
-You can add scripts `pre-link.sh`, `post-link.sh`, or `pre-unlink.sh` (or
-`.bat` for Windows) to the recipe, which will be run before the package is
-installed, after it is installed, and before it is removed, respectively. If
-these scripts exit nonzero the installation/removal will fail.
+.. code-block:: bash
 
-We strongly recommend that post-link (and pre-unlink) scripts should:
+  mkdir -p $PREFIX/bin
+  cp $RECIPE_DIR/my_script_with_recipe.sh $PREFIX/bin/super-cool-script.sh
 
-1. be avoided whenever possible,
-2. not touch anything other than the files being installed,
-3. not write anything to stdout (or stderr), unless an error occurs,
-4. not depend on any installed (or to be installed) conda packages, and
-5. only depend on simple system tools such as ``rm``, ``cp``, ``mv``, ``ln``,
-   and so on.
 
-The scripts should not write to stdout or stderr unless an error occurs, but
-they may write to ``$PREFIX/.messages.txt``, which is shown after conda
-completes all actions.
+If you don't care about deploying your package via pip on PyPI, this can save
+you a lot of time in figuring out the proper way to include additional files
+with setup.py.
 
-Environment variables are set in these scripts:
+There are many environment variables defined for you to use in build.sh and
+bld.bat. Please see :ref:`env-vars` for more information.
 
-.. list-table::
+As of conda-build 2.1, you can also define multiple output packages. Each
+package has its own script or list of files to include. The rules for these
+outputs are documented at :ref:`package-outputs`. When any output is defined,
+this overrides the default "bundle anything in ``$PREFIX`` behavior. Thus, when
+you want to output multiple packages from a single recipe, you should remove any
+installation steps from ``build.sh`` / ``bld.bat`` and do them instead in your
+install script(s) for each output.
 
-   * - ``PREFIX``
-     - The install prefix.
-   * - ``PKG_NAME``
-     - The name of the package.
-   * - ``PKG_VERSION``
-     - The version of the package.
-   * - ``PKG_BUILDNUM``
-     - The build number of the package.
+build.sh and bld.bat are optional - you can instead use the ``build/script`` key
+in your meta.yaml, with a value being either a string command, or a list of
+string commands. However, whatever commands you put there should be able to run
+on all platforms that you anticipate building for. You can't, for example, use
+the ``cp`` command, because cmd.exe won't understand it in Windows.
+
+``build.sh`` is run with bash, while bld.bat is run with cmd.exe.
+
+There is some development towards the ability to use bash scripts in Windows,
+but this is not currently supported.
