@@ -77,6 +77,10 @@ override this behavior.)
     - Name of the package being built
   * - ``PKG_VERSION``
     - Version of the package being built
+  * - ``PKG_BUILD_STRING``
+    - Complete build string (including hash) package being built (e.g. py27h21422ab_0). Conda-build 3.0+
+  * - ``PKG_HASH``
+    - Hash of the package being built, without leading h.  e.g. 21422ab.  Conda-build 3.0+
   * - ``PYTHON``
     - Path to Python executable in build prefix (note that Python is only
       installed in the build prefix when it is listed as a build requirement)
