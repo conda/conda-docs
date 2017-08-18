@@ -1,13 +1,6 @@
-=================
- Build tutorials
-=================
+build_tutorials
+===============
 
-.. toctree::
-   :maxdepth: 1
+.. raw:: html
 
-   build_tutorials/pkgs
-   build_tutorials/pkgs2
-   build_tutorials/postgis
-   build_tutorials/windows
-   build_tutorials/app
-   build_tutorials/build_nltk
+        <html><head><meta http-equiv="refresh" content="0; URL='user-guide/tutorials/index.html'" /></head><body></body></html>
