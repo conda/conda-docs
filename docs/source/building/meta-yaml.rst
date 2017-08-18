@@ -569,7 +569,10 @@ Note that ``run_exports`` can be specified both in the build section, and on
 a per-output basis for split packages.
 
 
-The potential downside of this feature is that it takes some control over constraints away from downstream users.  If an upstream package has a problematic run_exports constraint, you can ignore it in your recipe by listing the upstream package name in the ``build/ignore_run_exports`` section:
+The potential downside of this feature is that it takes some control over
+constraints away from downstream users. If an upstream package has a problematic
+run_exports constraint, you can ignore it in your recipe by listing the upstream
+package name in the ``build/ignore_run_exports`` section:
 
 
 .. code-block:: yaml
@@ -577,6 +580,34 @@ The potential downside of this feature is that it takes some control over constr
   build:
     ignore_run_exports:
       - libstdc++
+
+
+Pin runtime dependencies
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ``pin_depends`` build key can be used to enforce pinning behavior on the output recipe or built package.  There are two possible behaviors:
+
+.. code-block:: yaml
+
+  build:
+    pin_depends: record
+
+
+With a value of ``record``, conda-build will record all requirements exactly as they
+would be installed in a file called info/requires. These pins will not show up
+in the output of ``conda render``, nor will they affect the actual run
+dependencies of the output package. It is only adding in this new file.
+
+.. code-block:: yaml
+
+  build:
+    pin_depends: strict
+
+With a value of ``strict``, conda-build applies the pins to the actual metadata.
+This does affect the output of ``conda render`` and also affects the end result
+of the build - the package dependencies will be strictly pinned down to the
+build string level. This will supersede any dynamic or compatible pinning that
+conda-build may otherwise be doing.
 
 
 Requirements section
