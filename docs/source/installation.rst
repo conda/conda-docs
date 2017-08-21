@@ -1,11 +1,6 @@
-============
-Installation
+installation
 ============
 
-.. toctree::
-   :maxdepth: 2
+.. raw:: html
 
-   install/quick
-   install/full
-   config
-   install/central
+        <html><head><meta http-equiv="refresh" content="0; URL='user-guide/install/index.html'" /></head><body></body></html>

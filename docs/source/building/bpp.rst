@@ -1,15 +1,6 @@
-Building conda packages
-=======================
+building/bpp
+============
 
-.. toctree::
-   :maxdepth: 2
+.. raw:: html
 
-   recipe
-   pkg-name-conv
-   meta-pkg
-   dirs
-   meta-yaml
-   environment-vars
-   build-scripts
-   variants
-   /spec
+        <html><head><meta http-equiv="refresh" content="0; URL='../user-guide/tasks/build-packages/index.html'" /></head><body></body></html>

@@ -1,5 +1,5 @@
-Commands
-========
+general-commands
+================
 
 .. raw:: html
 

@@ -1,9 +1,6 @@
-=================
- Support options
-=================
+help/support
+============
 
-Need help from a person? The open source community is usually ready to help at no 
-charge, Continuum Analytics offers hourly support packages, and support is included 
-in some purchases. See 
-the `Continuum Analytics support page <http://continuum.io/support>`_ for 
-current support options.
+.. raw:: html
+
+        <html><head><meta http-equiv="refresh" content="0; URL='../help-support.html'" /></head><body></body></html>

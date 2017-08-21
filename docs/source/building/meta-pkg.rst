@@ -1,5 +1,6 @@
-Metapackages
-------------
+building/meta-pkg
+=================
 
-Conda `metapackages` are conda packages that have only dependencies and no files. 
-They can be made with the ``conda metapackage`` command.
+.. raw:: html
+
+        <html><head><meta http-equiv="refresh" content="0; URL='../glossary.html'" /></head><body></body></html>

@@ -1,14 +1,6 @@
-Help & reference
-================
+help/help
+=========
 
-.. toctree::
-   :maxdepth: 1
+.. raw:: html
 
-   /using/cheatsheet
-   /glossary
-   /commands
-   /faq
-   /troubleshooting
-   support
-   /changelog
-   /license
+        <html><head><meta http-equiv="refresh" content="0; URL='../help-support.html'" /></head><body></body></html>

@@ -1,11 +1,6 @@
-Using conda
+using/index
 ===========
 
-.. toctree::
+.. raw:: html
 
-   using
-   envs
-   /py2or3
-   pkgs
-   /r-with-conda
-   /mro
+        <html><head><meta http-equiv="refresh" content="0; URL='../user-guide/tasks/index.html'" /></head><body></body></html>

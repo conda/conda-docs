@@ -1,13 +1,6 @@
-Building packages
-=================
+building/build
+==============
 
-.. toctree::
-   :maxdepth: 1
+.. raw:: html
 
-   /build_tutorials
-   bpp
-   shared-libraries
-   /custom-channels
-   /signed-packages
-   /bdist_conda
-   sample-recipes
+        <html><head><meta http-equiv="refresh" content="0; URL='../user-guide/tasks/build-packages/index.html'" /></head><body></body></html>

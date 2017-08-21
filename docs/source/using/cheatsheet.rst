@@ -1,5 +1,6 @@
-Conda cheat sheet
-=================
+using/cheatsheet
+================
 
-The 1MB pdf :download:`conda cheat sheet <conda-cheatsheet.pdf>` is a single page summary 
-of all the most important information about using conda.
+.. raw:: html
+
+        <html><head><meta http-equiv="refresh" content="0; URL='../user-guide/cheatsheet.html'" /></head><body></body></html>
