@@ -647,6 +647,34 @@ package name in the ``build/ignore_run_exports`` section:
        - libstdc++
 
 
+Pin runtime dependencies
+------------------------
+
+The ``pin_depends`` build key can be used to enforce pinning behavior on the
+output recipe or built package.  There are two possible behaviors:
+
+.. code-block:: yaml
+
+  build:
+    pin_depends: record
+
+With a value of ``record``, conda-build will record all requirements exactly as
+they would be installed in a file called info/requires. These pins will not
+show up in the output of ``conda render`` and they will not affect the actual
+run dependencies of the output package. It is only adding in this new file.
+
+.. code-block:: yaml
+
+  build:
+    pin_depends: strict
+
+With a value of ``strict``, conda-build applies the pins to the actual metadata.
+This does affect the output of ``conda render`` and also affects the end result
+of the build. The package dependencies will be strictly pinned down to the
+build string level. This will supersede any dynamic or compatible pinning that
+conda-build may otherwise be doing.
+
+
 Requirements section
 ====================
 
