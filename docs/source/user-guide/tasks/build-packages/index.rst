@@ -29,10 +29,11 @@ Anaconda Cloud, you will need an
    package-naming-conv
    recipe
    define-metadata
+   build-scripts
    features
    environment-variables
    make-relocatable
-   add-scripts
+   link-scripts
    variants
    use-shared-libraries
    sign-packages
