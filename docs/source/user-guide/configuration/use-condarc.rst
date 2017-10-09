@@ -496,7 +496,7 @@ logged in with the ``anaconda login`` command.
 Specify environment and package directories (envs_dirs, pkgs_dirs)
 -------------------------------------------
 
-Specify directories in which environments and package caches are located. If this
+Specify directories in which environments (``envs_dirs``) and package caches (``pkgs_dirs``) are located. If this
 key is set, the root prefix ``envs_dir`` and ``pkgs_dir`` are not used unless
 explicitly included. 
 
