@@ -493,16 +493,15 @@ the Anaconda command-line client is installed and you are
 logged in with the ``anaconda login`` command.
 
 
-Specify environment directories (envs_dirs)
+Specify environment and package directories (envs_dirs, pkgs_dirs)
 -------------------------------------------
 
-Specify directories in which environments are located. If this
-key is set, the root prefix ``envs_dir`` is not used unless
-explicitly included. This key also determines where the package
-caches are located.
+Specify directories in which environments and package caches are located. If this
+key is set, the root prefix ``envs_dir`` and ``pkgs_dir`` are not used unless
+explicitly included. 
 
-For each envs here, ``envs/pkgs`` is used as the pkgs cache,
-except for the standard ``envs`` directory in the root
+If the ``pkgs_dirs`` key is not set, then ``envs/pkgs`` is used 
+as the pkgs cache, except for the standard ``envs`` directory in the root
 directory, for which the normal ``root_dir/pkgs`` is used.
 
 EXAMPLE:
@@ -512,8 +511,11 @@ EXAMPLE:
   envs_dirs:
     - ~/my-envs
     - /opt/anaconda/envs
+  pkgs_dirs:
+    - ~/my-pkgs
+    - /opt/anaconda/pkgs
 
-The CONDA_ENVS_PATH environment variable overwrites this setting:
+The CONDA_ENVS_PATH environment variable overwrites ``envs_dirs`` setting:
 
 * For macOS and Linux:
   ``CONDA_ENVS_PATH=~/my-envs:/opt/anaconda/envs``
