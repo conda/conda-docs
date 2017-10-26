@@ -152,6 +152,11 @@ so you do not need to install them separately.
 NOTE: Conda environments replace virtualenv, so there is no need
 to activate a virtualenv before using pip.
 
+NOTE: It's recommended to install pip inside the environment
+as discussed in the section 'Managing environments' under 
+'Using pip in an environment'. Otherwise you will be 
+installing the package globablly (most likely unintentional).
+
 To install a non-conda package:
 
 #. Activate the environment where you want to put the program:
@@ -170,7 +175,8 @@ To install a non-conda package:
    .. code::
 
       conda list
-
+   If the package isn't listed there you should probably install pip inside the environment
+   first as explained in subsection 'Using pip in an environment' of 'Managing environments'.
 
 Installing commercial packages
 ==============================
