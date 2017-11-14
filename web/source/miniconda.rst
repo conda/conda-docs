@@ -68,8 +68,6 @@ Python 3.6 with the Python 3 Miniconda. You can override the default by
 explicitly setting ``python=2`` or ``python=3``. It also determines the
 default value of ``CONDA_PY`` when using ``conda build``.
 
-We have 32-bit Mac OS X binaries available, please contact us for more details at sales@continuum.io.
-
 **Note**: If you already have Miniconda or Anaconda installed, and you just
 want to upgrade, you should not use the installer. Just use ``conda
 update``. For instance
