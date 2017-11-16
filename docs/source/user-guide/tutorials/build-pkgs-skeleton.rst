@@ -388,10 +388,13 @@ And on Windows systems:
     > set SSL_NO_VERIFY=1
     > conda skeleton pypi a_package
     > set SSL_NO_VERIFY=
-
+    
 It is recommended to unset this environment variable immediately after use since
 some other tools may recognize it when you still want verified SSL connections.
-Using this feature will cause ``conda skeleton`` to emit warnings to STDERR.
+
+Using this feature will cause ``requests`` to emit warnings to STDERR about
+insecure settings. As long as you know (or have been advised by your IT
+department) that what you're doing is safe, it's OK to ignore these warnings.
 
 
 .. _`help1`:
