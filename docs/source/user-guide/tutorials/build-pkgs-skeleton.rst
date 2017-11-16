@@ -360,18 +360,25 @@ packages, even those that are already available to conda install.
 Working Around MITM Proxies
 ===========================
 
-Some users in corporate environments may encounter cases where SSL connections
-can be difficult to work with due to proxy services that use Man-In-The-Middle
-attacks to sniff encrypted traffic. While not recommended, it is possible to
-bypass SSL certificate verification to allow this traffic to continue. The
-``conda skeleton pypi`` is capable of disabling SSL verification when pulling
-packages from a PyPI server over HTTPS. WARNING: Use this feature at your own
-risk and only if necessary. This feature causes your computer to download and
-execute arbitrary code over a connection that it can not verify as secure. This
-should only be used in cases where it is difficult to set up the proxy service's
-certificates so that the ``requests`` package can recognize and use.
+Some corporate environments use proxy services that use Man-In-The-Middle
+(MITM) attacks to sniff encrypted traffic. These services can interfere with
+SSL connections such as those used by conda and pip to download packages from
+repositories such as PyPI.
 
-To disable SSL verification when using ``conda skeleton pypi``, simply set the
+Whenever possible, you should set up the proxy service's certificates so that
+the ``requests`` package used by conda can recognize and use the certificates.
+
+When this is not possible, there is an option that bypasses SSL certificate
+verification and allows this traffic to continue.
+
+``conda skeleton pypi`` can disable SSL verification when pulling packages
+from a PyPI server over HTTPS.
+
+WARNING: This option is not recommended. Use this option at your own risk and
+only if necessary. This option causes your computer to download and execute
+arbitrary code over a connection that it cannot verify as secure.
+
+To disable SSL verification when using ``conda skeleton pypi``, set the
 ``SSL_NO_VERIFY`` environment variable to either ``1`` or ``True`` (case
 insensitive).
 
@@ -379,22 +386,24 @@ On \*nix systems:
 
 .. code-block:: bash
 
-    $ SSL_NO_VERIFY=1 conda skeleton pypi a_package
+    SSL_NO_VERIFY=1 conda skeleton pypi a_package
 
 And on Windows systems:
 
 .. code-block:: batch
 
-    > set SSL_NO_VERIFY=1
-    > conda skeleton pypi a_package
-    > set SSL_NO_VERIFY=
-    
-It is recommended to unset this environment variable immediately after use since
-some other tools may recognize it when you still want verified SSL connections.
+    set SSL_NO_VERIFY=1
+    conda skeleton pypi a_package
+    set SSL_NO_VERIFY=
 
-Using this feature will cause ``requests`` to emit warnings to STDERR about
-insecure settings. As long as you know (or have been advised by your IT
-department) that what you're doing is safe, it's OK to ignore these warnings.
+We recommend that you unset this environment variable immediately after use.
+If it is not unset, some other tools may recognize it and incorrectly use
+unverified SSL connections.
+
+Using this option will cause ``requests`` to emit warnings to STDERR about
+insecure settings. If you know that what you're doing is safe, or have been
+advised by your IT department that what you're doing is safe, you may ignore
+these warnings.
 
 
 .. _`help1`:
