@@ -368,8 +368,9 @@ repositories such as PyPI.
 Whenever possible, you should set up the proxy service's certificates so that
 the ``requests`` package used by conda can recognize and use the certificates.
 
-When this is not possible, there is an option that bypasses SSL certificate
-verification and allows this traffic to continue.
+When this is not possible, conda-build versions 3.0.31 and higher have an
+option that bypasses SSL certificate verification and allows this traffic to
+continue.
 
 ``conda skeleton pypi`` can disable SSL verification when pulling packages
 from a PyPI server over HTTPS.
