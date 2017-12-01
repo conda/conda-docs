@@ -8,8 +8,7 @@ Building conda packages from scratch
    :depth: 1
 
 This tutorial describes how to build a conda package for
-Pyinstrument by writing the required
-files in the conda build recipe.
+click by writing the required files in the conda build recipe.
 
 Who is this for?
 ================
@@ -34,13 +33,13 @@ Before you start
 Editing the meta.yaml file
 ===========================
 
-#. Make a new directory for this tutorial named ``pyinstrument``,
+#. Make a new directory for this tutorial named ``click``,
    and then change to the new directory:
 
    .. code-block:: bash
 
-     mkdir pyinstrument
-     cd pyinstrument
+     mkdir click
+     cd click
 
 #. To create a new ``meta.yaml`` file, open your favorite editor.
    Create a new text file and insert the information shown below.
@@ -54,19 +53,19 @@ Editing the meta.yaml file
       :widths: 10 90
 
       * - name
-        - pyinstrument
+        - click
       * - version
-        - "0.13.1" (or latest from
-          https://github.com/joerick/pyinstrument/releases)
+        - "6.7" (or latest from
+          https://github.com/pallets/click/releases)
       * - git_rev
-        - v0.13.1 (or latest from
-          https://github.com/joerick/pyinstrument/releases)
+        - 6.7 (or latest from
+          https://github.com/pallets/click/releases)
       * - git_url
-        - https://github.com/joerick/pyinstrument.git
+        - https://github.com/pallets/click.git
       * - imports
-        - pyinstrument
+        - click
       * - home
-        - https://github.com/joerick/pyinstrument
+        - https://github.com/pallets/click
       * - license
         - BSD
       * - license_file
@@ -99,7 +98,7 @@ Editing the meta.yaml file
        license:
        license_file:
 
-#. Save the file in the same ``pyinstrument``
+#. Save the file in the same ``click``
    directory as ``meta.yaml``. It should match :download:`this
    meta.yaml file <meta.yaml>`.
 
@@ -170,7 +169,7 @@ on your local computer.
 
    .. code-block:: bash
 
-      conda-build pyinstrument
+      conda-build click
 
    When conda build is finished, it displays the package filename
    and location.
@@ -179,7 +178,7 @@ on your local computer.
 
    .. code-block:: bash
 
-      ~/anaconda/conda-bld/linux-64/pyinstrument-0.13.1-py27_0.tar.bz2
+      ~/anaconda/conda-bld/linux-64/click-6.7-py27_0.tar.bz2
 
 
    NOTE: Save this path and file information for the next task.
@@ -222,7 +221,7 @@ EXAMPLE: Using the platform specifier ``all``:
 
 .. code-block:: bash
 
-     conda convert --platform all ~/anaconda/conda-bld/linux-64/pyinstrument-0.13.1-py27_0.tar.bz2 -o outputdir/
+     conda convert --platform all ~/anaconda/conda-bld/linux-64/click-6.7-py27_0.tar.bz2 -o outputdir/
 
 
 NOTE: Change your path and filename to the path and
@@ -244,20 +243,19 @@ Replace this ``source`` section:
 
 .. code-block:: bash
 
-   git_rev: v0.13.1
-   git_url: https://github.com/joerick/pyinstrument.git
+   git_rev: v0.6.7
+   git_url: https://github.com/pallets/click.git
 
 With the following:
 
 .. code-block:: bash
 
-    fn: pyinstrument-0.13.1.tar.gz
-    md5: e347036acc50720c0903dc2221b2605d
-    url: https://pypi.python.org/packages/source/p/pyinstrument/pyinstrument-0.13.1.tar.gz
+    url: https://files.pythonhosted.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz
+    sha256: f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b
 
 
-NOTE: The ``md5`` is found on the `PyPI Pyinstrument page
-<https://pypi.python.org/pypi/pyinstrument>`_.
+NOTE: The ``url`` and ``sha256`` is found on the `PyPI click page
+<https://pypi.org/project/click/#files>`_.
 
 
 .. _anaconda-org:

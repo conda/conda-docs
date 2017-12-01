@@ -52,33 +52,32 @@ In this section you are going to use conda skeleton to generate a
 conda recipe, which informs conda build about where the source
 files are located and how to build and install the package.
 
-You'll be working with a package named Pyinstrument_ that is
-hosted on PyPI. Pyinstrument is a Python statistical profiler
-that records the whole call stack once each millisecond, so
-programmers can see which parts of their code are slowest and how
-to make them faster.
+You'll be working with a package named Click_ that is hosted on PyPI. Click is a
+tool for exposing python functions to create command line interfaces.
 
-.. _Pyinstrument: https://github.com/joerick/pyinstrument
+.. _Click: https://github.com/pallets/click
 
 First, in your user home directory, run the ``conda skeleton``
 command:
 
 .. code-block:: bash
 
-    conda skeleton pypi pyinstrument
+    conda skeleton pypi click
 
 The two arguments to ``conda skeleton`` are the hosting location,
 in this case ``pypi``, and the name of the package.
 
-This creates a directory named ``Pyinstrument`` and creates three
-skeleton files in that directory: ``meta.yaml``, ``build.sh``,
-and ``bld.bat``. Use the ``ls`` command on OS X or Linux or the
-``dir`` command on Windows to verify that these files have been
-created. The three files have been populated with information
-from the PyPI metadata and in most cases will not need to be
-edited.
+This creates a directory named ``click`` and creates one
+skeleton file in that directory: ``meta.yaml``. Many other files can be added
+there as necessary, such as ``build.sh``, and ``bld.bat``, test scripts, or
+anything else you need to build your software. For simple, pure-python recipes,
+these extra files are unnecessary, and the build/script section in the meta.yaml
+is sufficient. Use the ``ls`` command on OS X or Linux or the ``dir`` command on
+Windows to verify that this file has been created. The meta.yaml file has been
+populated with information from the PyPI metadata and in many cases will not
+need to be edited.
 
-These three files are collectively referred to as the "conda
+Files in the folder with meta.yaml are collectively referred to as the "conda
 build recipe":
 
 * ``meta.yaml``---Contains all the metadata in the recipe. Only
@@ -94,7 +93,7 @@ build to create the package:
 
 .. code-block:: bash
 
-    conda-build pyinstrument
+    conda-build click
 
 When conda build is finished, it displays the exact path and
 filename of the conda package. See :ref:`troubleshooting` if the
@@ -104,20 +103,20 @@ Windows example file path:
 
 .. code-block:: text
 
-    C:\Users\jsmith\Miniconda\conda-bld\win-64\pyinstrument-0.13.1-py27_0.tar.bz2
+    C:\Users\jsmith\Miniconda\conda-bld\win-64\click-6.7-py27_0.tar.bz2
 
 OS X example file path:
 
 .. code-block:: text
 
-    /Users/jsmith/miniconda/conda-bld/osx-64/pyinstrument-0.13.1-py27_0.tar.bz2
+    /Users/jsmith/miniconda/conda-bld/osx-64/click-6.7-py27_0.tar.bz2
 
 
 Linux example file path:
 
 .. code-block:: text
 
-    /home/jsmith/miniconda/conda-bld/linux-64/pyinstrument-0.13.1-py27_0.tar.bz2
+    /home/jsmith/miniconda/conda-bld/linux-64/click-6.7-py27_0.tar.bz2
 
 
 NOTE: Your path and filename will vary depending on your
@@ -129,15 +128,15 @@ environment by using the use-local flag:
 
 .. code-block:: bash
 
-    conda install --use-local pyinstrument
+    conda install --use-local click
 
-Now verify that Pyinstrument installed successfully:
+Now verify that click installed successfully:
 
 .. code-block:: bash
 
     conda list
 
-At this point you now have a conda package for pyinstrument that
+At this point you now have a conda package for click that
 can be installed in any conda environment of the same Python
 version as your root environment. The remaining optional sections
 show you how to make packages for other Python versions, other
@@ -152,11 +151,11 @@ By default, conda build creates packages for the version of
 Python installed in the root environment. To build packages for
 other versions of Python, you use the ``--python`` flag, followed
 by a version. For example, to explicitly build a version of the
-Pyinstrument package for Python 3.3, use:
+click package for Python 3.3, use:
 
 .. code-block:: bash
 
-    conda-build --python 3.3 pyinstrument
+    conda-build --python 3.3 click
 
 Notice that the file printed at the end of the ``conda-build``
 output has changed to reflect the requested version of Python.
@@ -167,21 +166,21 @@ Windows example file path:
 
 .. code-block:: text
 
-    C:\Users\jsmith\Miniconda\conda-bld\win-64\pyinstrument-0.13.1-py33_0.tar.bz2
+    C:\Users\jsmith\Miniconda\conda-bld\win-64\click-6.7-py33_0.tar.bz2
 
 
 OS X example file path:
 
 .. code-block:: text
 
-    /Users/jsmith/miniconda/conda-bld/osx-64/pyinstrument-0.13.1-py33_0.tar.bz2
+    /Users/jsmith/miniconda/conda-bld/osx-64/click-6.7-py33_0.tar.bz2
 
 
 Linux example file path:
 
 .. code-block:: text
 
-    /home/jsmith/miniconda/conda-bld/linux-64/pyinstrument-0.13.1-py33_0.tar.bz2
+    /home/jsmith/miniconda/conda-bld/linux-64/click-6.7-py33_0.tar.bz2
 
 
 NOTE: Your path and filename will vary depending on your
@@ -213,14 +212,14 @@ Windows:
 
 .. code-block:: text
 
-    conda convert -f --platform all C:\Users\jsmith\Miniconda\conda-bld\win-64\pyinstrument-0.13.1-py27_0.tar.bz2
+    conda convert -f --platform all C:\Users\jsmith\Miniconda\conda-bld\win-64\click-6.7-py27_0.tar.bz2
     -o outputdir\
 
 macOS and Linux:
 
 .. code-block:: text
 
-    conda convert --platform all /home/jsmith/miniconda/conda-bld/linux-64/pyinstrument-0.13.1-py27_0.tar.bz2
+    conda convert --platform all /home/jsmith/miniconda/conda-bld/linux-64/click-6.7-py27_0.tar.bz2
     -o outputdir/
 
 
@@ -265,14 +264,14 @@ Windows:
 
 .. code-block:: text
 
-    anaconda upload C:\Users\jsmith\Miniconda\conda-bld\win-64\pyinstrument-0.13.1-py27_0.tar.bz2
+    anaconda upload C:\Users\jsmith\Miniconda\conda-bld\win-64\click-6.7-py27_0.tar.bz2
 
 
 macOS and Linux:
 
 .. code-block:: text
 
-    anaconda upload /home/jsmith/miniconda/conda-bld/linux-64/pyinstrument-0.13.1-py27_0.tar.bz2
+    anaconda upload /home/jsmith/miniconda/conda-bld/linux-64/click-6.7-py27_0.tar.bz2
 
 
 NOTE: Change your path and filename to the exact path and
