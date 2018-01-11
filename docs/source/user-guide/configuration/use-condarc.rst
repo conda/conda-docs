@@ -434,11 +434,11 @@ its dependencies to the latest versions.
 
 If you prefer to update only the packages given explicitly at
 the command line and avoid updating existing installed packages
-as much as possible, set update_dependencies to ``True``:
+as much as possible, set update_dependencies to ``False``:
 
 .. code-block:: yaml
 
-   update_dependencies: True
+   update_dependencies: False
 
 NOTE: Conda still ensures that dependency specifications are
 satisfied. Thus, some dependencies may still be updated or,
