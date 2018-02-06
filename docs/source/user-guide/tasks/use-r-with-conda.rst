@@ -23,12 +23,13 @@ Use the Terminal or an Anaconda Prompt for the following steps.
     conda update r-essentials
 
 * If a new version of a package is available in the R channel,
-  you can update that package in R Essentials with the following
-  command::
+  you can use ``conda update`` to also update specific packages.
 
-    conda update r-XXXX
-
-  NOTE: Replace ``XXXX`` with the version number.
+As of early 2018, the default R interpreter installed into new
+environments is MRO. For environments with R already installed,
+conda won't switch to MRO without explicitly instructing conda
+to use the ``r-base`` package. To explicitly request MRO as
+the R interpreter for an environment, use the ``mro-base`` package.
 
 
 Installing R Essentials
@@ -42,8 +43,51 @@ Installing R Essentials
    in your Terminal window or an Anaconda Prompt, run:
 
    .. code::
-
       conda install r-essentials
+
+
+Create a new environment with Anaconda R instead of MRO
+=======================================================
+
+When creating a new environment, you can opt for Anaconda R rather than
+MRO by explicitly including ``r-base`` in your list of packages. For example,
+with conda 4.4,
+
+   .. code::
+      conda create -n anaconda-r r-essentials r-base
+      conda activate anaconda-r
+
+will give you an environment that uses Anaconda R as the R interpreter.
+
+
+Switch an existing R environment to MRO
+=======================================
+
+Using conda 4.4 or later, executing
+
+   .. code::
+      conda install mro-base
+
+in an existing environment containing R will ensure that the R interpreter
+for that environment is MRO.  If using conda 4.3, switching to MRO is a
+two step process:
+
+   .. code::
+      conda remove --force r-base _r-mutex
+      conda install mro-base
+
+
+Make Anaconda R the default R instead of MRO
+============================================
+
+Using conda 4.4 or later (check ``conda info``, or ``conda update conda``!)
+executing the command
+
+    .. code::
+       conda config --system --set pinned_packages _r-mutex=*=anacondar*
+
+will exclude MRO as the default R and force Anaconda R as the default.
+
 
 
 Creating and sharing your own custom R bundle
