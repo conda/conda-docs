@@ -43,6 +43,7 @@ Installing R Essentials
    in your Terminal window or an Anaconda Prompt, run:
 
    .. code::
+
       conda install r-essentials
 
 
