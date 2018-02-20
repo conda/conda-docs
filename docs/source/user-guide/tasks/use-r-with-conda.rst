@@ -55,6 +55,7 @@ MRO by explicitly including ``r-base`` in your list of packages. For example,
 with conda 4.4,
 
    .. code::
+
       conda create -n anaconda-r r-essentials r-base
       conda activate anaconda-r
 
@@ -67,6 +68,7 @@ Switch an existing R environment to MRO
 Using conda 4.4 or later, executing
 
    .. code::
+
       conda install mro-base
 
 in an existing environment containing R will ensure that the R interpreter
@@ -74,6 +76,7 @@ for that environment is MRO.  If using conda 4.3, switching to MRO is a
 two step process:
 
    .. code::
+
       conda remove --force r-base _r-mutex
       conda install mro-base
 
@@ -85,6 +88,7 @@ Using conda 4.4 or later (check ``conda info``, or ``conda update conda``!)
 executing the command
 
     .. code::
+
        conda config --system --set pinned_packages _r-mutex=*=anacondar*
 
 will exclude MRO as the default R and force Anaconda R as the default.
