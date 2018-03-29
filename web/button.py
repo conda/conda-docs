@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 from docutils import nodes
 import jinja2
-from sphinx.util.compat import Directive
 from docutils.parsers.rst.directives import unchanged
+from docutils.parsers.rst import Directive
 
 BUTTON_TEMPLATE = jinja2.Template(u"""
 <a href="{{ link }}">
