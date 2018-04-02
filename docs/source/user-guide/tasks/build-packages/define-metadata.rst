@@ -92,6 +92,7 @@ The git_url can also be a relative path to the recipe directory.
    source:
      git_url: https://github.com/ilanschnell/bsdiff4.git
      git_rev: 1.1.4
+     git_depth: 1  # (Defaults to -1/not shallow)
 
 
 Source from hg
