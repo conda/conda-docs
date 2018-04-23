@@ -338,6 +338,8 @@ Anaconda Prompt, run:
    conda list -n myenv scipy
 
 
+.. _pip-in-env:
+
 Using pip in an environment
 ===========================
 
