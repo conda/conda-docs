@@ -618,22 +618,54 @@ package may not be testable, because the hashes will differ.
 
 .. _run_exports:
 
-Pin downstream
---------------
+Export runtime requirements
+---------------------------
 
-It is often useful to require a particular runtime library to be present at
-runtime when a particular library or package is used at build time. For example,
-if you use a C++ compiler to build a package with dynamic linkage, then it is
-likely that you also need to include the C++ runtime package corresponding to
-that compiler as a runtime requirement. Generally, these imposed pinnings should
-be added to the tool (compiler) or library (jpeg, bzip2, and so on) used at build
-time, rather than to the package using those tools or libraries.
+Some build or host :ref:`requirements` will impose a runtime requirement.
+Most commonly this is true for shared libraries (e.g. libpng), which are
+required for linking at build time, and for resolving the link at run time.
+With ``run_exports`` (new in conda-build 3) such a runtime requirement can be
+implicitly added by host requirements (e.g. libpng exports libpng), and with
+``run_exports/strong`` even by build requirements (e.g. gcc exports libgcc).
 
 .. code-block:: yaml
 
+   # meta.yaml of libpng
    build:
      run_exports:
-       - libstdc++
+       - libpng
+
+Here, because no specific kind of run_exports is specified, libpng's run_exports
+are considered "weak." This means they will only apply when libpng is in the
+host section, when they will add their export to the run section.  If libpng were
+listed in the build section, the run_exports would not apply to the run section.
+
+.. code-block:: yaml
+
+   # meta.yaml of gcc compiler
+   build:
+     run_exports:
+       strong:
+         - libgcc
+
+Strong run_exports are used for things like runtimes, where the same runtime
+needs to be present in the host and the run environment, and exactly which
+runtime that should be is determined by what's present in the build section.
+This mechanism is how we line up appropriate software on windows, where we must
+match MSVC versions used across all of the shared libraries in an environment.
+
+.. code-block:: yaml
+
+   # meta.yaml of some package using gcc and libpng
+   requirements:
+     build:
+       - gcc            # has a strong run export
+     host:
+       - libpng         # has a (weak) run export
+       # - libgcc       <-- implicitly added by gcc
+     run:
+       # - libgcc       <-- implicitly added by gcc
+       # - libpng       <-- implicitly added by libpng
 
 You can express version constraints directly, or use any of the jinja2 helper
 functions listed at :ref:`extra_jinja2`.
@@ -645,10 +677,10 @@ pinning relative to versions present at build time:
 
   build:
     run_exports:
-      - libstdc++  {{ pin_compatible('g++', 'x') }}
+      - {{ pin_subpackage('libpng', max_pin='x.x') }}
 
-With this example, if g++ were version 5.3.0, this pinning expression would
-evaluate to ``>=5.3.0,<6``.
+With this example, if libpng were version 1.6.34, this pinning expression would
+evaluate to ``>=1.6.34,<1.7``.
 
 Note that ``run_exports`` can be specified both in the build section, and on
 a per-output basis for split packages.
@@ -677,6 +709,8 @@ package name in the ``build/ignore_run_exports`` section:
        - libstdc++
 
 
+.. _requirements:
+
 Requirements section
 ====================
 
@@ -690,14 +724,21 @@ specification. See :ref:`build-version-spec` .
 Build
 -----
 
-Packages required to build the package. Python and NumPy must be
-listed explicitly if they are required.
+Tools required to build the package. These packages are run on
+the build system and include things such as revision control systems
+(git, svn) make tools (GNU make, Autotool, CMake) and compilers
+(real cross, pseudo-cross, or native when not cross-compiling)
+and any source pre-processors.
+Packages which provide "sysroot" files, like the ``CDT`` packages (see below)
+also belong in the build section.
+
 
 .. code-block:: yaml
 
    requirements:
      build:
-       - python
+       - git
+       - cmake
 
 Host
 ----
@@ -708,12 +749,16 @@ the same as the native build platform. For example, in order for a recipe to
 "cross-capable", shared libraries requirements must be listed in the host
 section, rather than the build section, so that the shared libraries that get
 linked are ones for the target platform, rather than the native build platform.
+You should also include the base interpreter for packages that need one. In other
+words, a Python package would list ``python`` here and an R package would list
+``mro-base`` or ``r-base``.
 
 .. code-block:: yaml
 
    requirements:
      build:
        - {{ compiler('c') }}
+       - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
      host:
        - python
 
@@ -722,14 +767,48 @@ thought of as "build tools" - things that run on the native platform, but output
 results for the target platform. For example, a cross-compiler that runs on
 linux-64, but targets linux-armv7.
 
-When building on the native platform for the native platform, build and host
-sections are merged. When building for a non-native platform, the host
-requirements are installed into a separate prefix from the build requirements.
 The PREFIX environment variable points to the host prefix.  With respect to
 activation during builds, both the host and build environments are activated.
 The build prefix is activated before the host prefix, so that the host prefix
 has priority over the build prefix. Executables that don't exist in the host
 prefix should be found in the build prefix.
+
+As of conda-build 3.1.4, the build and host prefixes are always separate when
+both are defined, or when ``{{ compiler() }}`` jinja2 functions are used. The
+only time that build and host are merged is when the host section is absent, and
+no ``{{ compiler() }}`` jinja2 functions are used in meta.yaml. Because these
+are separate, you may see some build failures when migrating your recipes. For
+example, let's say you have a recipe to build a python extension. If you add the
+compiler jinja2 functions to the build section, but you do not move your python
+dependency from the build section to the host section, your recipe will fail. It
+will fail because the host environment is where new files are detected, but
+because you have python only in the build environment, your extension will be
+installed into the build environment. No files will be detected. Also, variables
+such as PYTHON will not be defined when python is not installed into the host
+environment.
+
+On Linux, using the compiler packages provided by Anaconda Inc. in the ``defaults``
+meta-channel you can prevent your build system leaking into the built software by
+using our ``CDT`` (Core Dependency Tree) packages for any "system" dependencies.
+These packages are repackaged libraries and headers from CentOS6 and are unpacked
+into the sysroot of our pseudo-cross compilers and are found by them automatically.
+
+Note that what qualifies as a "system" dependency is a matter of opinion. The
+Anaconda Distribution chose not to provide X11 or GL packages, so we use CDT
+packages for X11. Conda-forge chose to provide X11 and GL packages.
+
+On macOS, you can use the equivalent compiler packages in conjunction with the standard
+MACOSX_DEPLOYMENT_TARGET environment variable and set the CONDA_BUILD_SYSROOT environment variable.
+This will specify a folder containing a macOS SDK. This achieves backwards compatability
+while still providing access to C++14 and C++1z.
+
+**TL;DR**: If you use the new ``{{ compiler() }}`` jinja2 to utilize our new
+compilers, you also must move anything that is not strictly a build tool into
+your host dependencies. This includes python, python libraries, and any shared
+libraries that you need to link against in your build. Examples of build tools
+include any {{ compiler() }}, make, autoconf, perl (for running scripts, not
+installing perl software), python (for running scripts, not for installing
+software).
 
 Run
 ---
@@ -765,6 +844,10 @@ The line in the ``meta.yaml`` file should literally say
        - python
        - numpy x.x
 
+**NOTE**: Instead of manually specifying run requirements, since
+conda-build 3 you can augment the packages used in your build and host
+sections with :ref:`run_exports <run_exports>` which are then automatically
+added to the run requirements for you.
 
 .. _meta-test:
 
@@ -858,14 +941,6 @@ Run test script
 
 The script ``run_test.sh``---or ``.bat``, ``.py`` or
 ``.pl``---is run automatically if it is part of the recipe.
-
-.. code-block:: bash
-
-   test:
-     run_test.sh
-     run_test.bat
-     run_test.py
-     run_test.pl
 
 NOTE: Python .py and Perl .pl scripts are valid only
 as part of Python and Perl packages, respectively.
@@ -1347,6 +1422,57 @@ Jinja templates are evaluated during the build process. To
 retrieve a fully rendered ``meta.yaml`` use the
 :doc:`../../../commands/build/conda-render`.
 
+.. _extra_jinja2_meta:
+
+Conda-build specific Jinja2 functions
+-------------------------------------
+
+Besides the default Jinja2 functionality, additional Jinja functions are
+available during the conda-build process: ``pin_compatible``,
+``pin_subpackage``, ``compiler``, and ``resolved_packages``. Please see
+:ref:`extra_jinja2` for the definition of the first three functions. Definition
+of ``resolved_packages`` is given below:
+
+* ``resolved_packages('environment_name')``: Returns the final list of packages
+  (in the form of ``package_name version build_string``) that are listed in
+  ``requirements:host`` or ``requirements:build``. This includes all packages
+  (including the indirect dependencies) that will be installed in the host or
+  build environment. ``environment_name`` must be either ``host`` or ``build``.
+  This function is useful for creating meta packages that will want to pin all
+  of their *direct* and *indirect* dependencies to their exact match. For
+  example::
+
+      requirements:
+        host:
+          - curl 7.55.1
+        run:
+        {% for package in resolved_packages('host') %}
+          - {{ package }}
+        {% endfor %}
+
+  might render to (depending on package dependencies and the platform)::
+
+      requirements:
+          host:
+              - ca-certificates 2017.08.26 h1d4fec5_0
+              - curl 7.55.1 h78862de_4
+              - libgcc-ng 7.2.0 h7cc24e2_2
+              - libssh2 1.8.0 h9cfc8f7_4
+              - openssl 1.0.2n hb7f436b_0
+              - zlib 1.2.11 ha838bed_2
+          run:
+              - ca-certificates 2017.08.26 h1d4fec5_0
+              - curl 7.55.1 h78862de_4
+              - libgcc-ng 7.2.0 h7cc24e2_2
+              - libssh2 1.8.0 h9cfc8f7_4
+              - openssl 1.0.2n hb7f436b_0
+              - zlib 1.2.11 ha838bed_2
+
+  Here, output of ``resolved_packages`` was::
+
+      ['ca-certificates 2017.08.26 h1d4fec5_0', 'curl 7.55.1 h78862de_4',
+      'libgcc-ng 7.2.0 h7cc24e2_2', 'libssh2 1.8.0 h9cfc8f7_4',
+      'openssl 1.0.2n hb7f436b_0', 'zlib 1.2.11 ha838bed_2']
 
 .. _preprocess-selectors:
 

@@ -150,18 +150,17 @@ file. See :ref:`channel-alias`.
 Default channels (default_channels)
 -----------------------------------
 
-Normally the default repository is `repo.continuum.io
-<http:repo.continuum.io>`_, but if default_channels is defined,
-it sets the new list of default channels. This is especially
-useful for air gap and enterprise installations:
+Normally the defaults channel points to several channels at the
+`repo.continuum.io <http:repo.continuum.io>`_ repository, but if
+default_channels is defined, it sets the new list of default channels.
+This is especially useful for air gap and enterprise installations:
 
 .. code-block:: yaml
 
-  channels:
+  default_channels:
     - <anaconda_dot_org_username>
     - http://some.custom/channel
     - file:///some/local/directory
-    - defaults
 
 Update conda automatically (auto_update_conda)
 ----------------------------------------------
@@ -520,6 +519,28 @@ The CONDA_ENVS_PATH environment variable overwrites this setting:
 * For Windows:
   ``set CONDA_ENVS_PATH=C:\Users\joe\envs;C:\Anaconda\envs``
 
+
+Specify package directories (pkgs_dirs)
+---------------------------------------
+
+Specify directories in which packages are located. If this
+key is set, the root prefix ``pkgs_dirs`` is not used unless
+explicitly included.
+
+EXAMPLE:
+
+.. code-block:: yaml
+
+  pkgs_dirs:
+    - /opt/anaconda/pkgs
+
+The CONDA_PKGS_DIRS environment variable overwrites this setting:
+
+* For macOS and Linux:
+  ``CONDA_PKGS_DIRS=/opt/anaconda/pkgs``
+
+* For Windows:
+  ``set CONDA_PKGS_DIRS=C:\Anaconda\pkgs``
 
 Conda build configuration
 =========================
