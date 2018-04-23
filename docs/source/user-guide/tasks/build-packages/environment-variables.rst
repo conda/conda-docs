@@ -106,9 +106,9 @@ inherited from the shell environment in which you invoke
      - Hash of the package being built, without leading h. EXAMPLE: 21422ab .
        Conda-build 3.0+.
    * - PYTHON
-     - Path to the Python executable in the build prefix. Python
-       is installed only in the build prefix when it is listed as
-       a build requirement.
+     - Path to the Python executable in the host prefix. Python
+       is installed only in the host prefix when it is listed as
+       a host requirement.
    * - PY3K
      - ``1`` when Python 3 is installed in the build prefix,
        otherwise ``0``.
@@ -125,7 +125,7 @@ inherited from the shell environment in which you invoke
        file is not a recognized file type---zip, tar, tar.bz2, or
        tar.xz---this is a directory containing a copy of the
        source file.
-   * - STDLIB_DI
+   * - STDLIB_DIR
      - Python standard library location.
 
 Unix-style packages on Windows, which are usually statically
@@ -281,6 +281,11 @@ no value assigned.
 NOTE: Inheriting environment variables can make it difficult for
 others to reproduce binaries from source with your recipe. Use
 this feature with caution or avoid it.
+
+NOTE: If you split your build and test phases with ``--no-test`` and ``--test``,
+you need to ensure that the environment variables present at build time and test
+time match. If you do not, the package hashes may use different values, and your
+package may not be testable, because the hashes will differ.
 
 
 .. _build-envs:
