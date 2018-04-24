@@ -440,7 +440,7 @@ set update_dependencies to ``True``:
 
 .. code-block:: yaml
 
-   update_dependencies: True
+   update_dependencies: False
 
 NOTE: Conda still ensures that dependency specifications are
 satisfied. Thus, some dependencies may still be updated or,
