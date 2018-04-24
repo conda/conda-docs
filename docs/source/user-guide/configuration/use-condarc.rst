@@ -436,11 +436,15 @@ packages to the latest version.
 
 In this case, if you would prefer that conda update all dependencies
 to the latest version that is compatible with the environment,
-set update_dependencies to ``True``:
+set update_dependencies to ``True``.
+
+The default is ``False``.
+
+EXAMPLE:
 
 .. code-block:: yaml
 
-   update_dependencies: False
+   update_dependencies: True
 
 NOTE: Conda still ensures that dependency specifications are
 satisfied. Thus, some dependencies may still be updated or,
