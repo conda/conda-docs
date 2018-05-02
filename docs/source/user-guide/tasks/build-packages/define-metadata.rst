@@ -41,7 +41,7 @@ spaces.
 Package version
 ---------------
 
-The version number of the package. Use the PEP-386 verlib
+The version number of the package. Use the `PEP 440 <https://www.python.org/dev/peps/pep-0440/>`_ verlib
 conventions. Cannot contain "-". YAML interprets version numbers
 such as 1.0 as floats, meaning that 0.10 will be the same as 0.1.
 To avoid this, put the version number in quotes so that it is
