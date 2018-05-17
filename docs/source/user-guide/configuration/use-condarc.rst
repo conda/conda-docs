@@ -111,7 +111,8 @@ EXAMPLE:
     - defaults
 
 To select channels for a single environment, put a ``.condarc``
-file in the root directory of that environment.
+file in the root directory of that environment (or use the
+``--env`` option when using ``conda config``).
 
 EXAMPLE: If you have installed Miniconda with Python 3 in your
 home directory and the environment is named "flowers", the
