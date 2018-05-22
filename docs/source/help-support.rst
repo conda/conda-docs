@@ -81,9 +81,10 @@ Conda announcements list
 ========================
 
 Conda Announcements is a low-traffic email list for news and
-updates directly from the conda core team. It is not a marketing
-list. We never sell, give away or distribute your email address
-to third parties.
+updates directly from the conda core team. By proividing your 
+email address below, you conset to join Conda Announcements. It 
+is not a marketing list. We never sell, give away or distribute 
+your email address to third parties.
 
 * No more than 1 email per week, usually less.
 * Project announcements relevant to all conda users.
@@ -93,6 +94,12 @@ to third parties.
 For convenience, we use MailChimp to manage subscriptions,
 including `archived announcements
 <http://us13.campaign-archive1.com/home/?u=28f85eefa68de727efcbd93f9&id=cb4ca49e7d>`_.
+
+Upon clicking the "Consent and Subscribe" button, you will receive and email that
+contains a link to confirm your subscription. You must click this link to activate
+your subscription. You can opt-out at any time by clicking the "Unsubscribe" link
+included in any email we send through this announcement list, or by contacting
+privacy@anaconda.com.
 
 .. raw:: html
 
@@ -112,20 +119,12 @@ including `archived announcements
    </label>
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
    </div>
-   <div class="mc-field-group">
-    <label for="mce-NAME">Name </label>
-    <input type="text" value="" name="NAME" class="" id="mce-NAME" placeholder="(optional)">
-   </div>
-   <div class="mc-field-group">
-    <label for="mce-AFFILIATIO">Affiliations (for example, company, projects) </label>
-    <input type="text" value="" name="AFFILIATIO" class="" id="mce-AFFILIATIO" placeholder="(optional)">
-   </div>
     <div id="mce-responses" class="clear">
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_28f85eefa68de727efcbd93f9_cb4ca49e7d" tabindex="-1" value=""></div>
-       <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+       <div class="clear"><input type="submit" value="Consent and Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
        </div>
    </form>
    </div>
