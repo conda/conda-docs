@@ -81,8 +81,8 @@ Conda announcements list
 ========================
 
 Conda Announcements is a low-traffic email list for news and
-updates directly from the conda core team. By proividing your 
-email address below, you conset to join Conda Announcements. It 
+updates directly from the conda core team. By providing your 
+email address below, you consent to join Conda Announcements. It 
 is not a marketing list. We never sell, give away or distribute 
 your email address to third parties.
 
@@ -95,7 +95,7 @@ For convenience, we use MailChimp to manage subscriptions,
 including `archived announcements
 <http://us13.campaign-archive1.com/home/?u=28f85eefa68de727efcbd93f9&id=cb4ca49e7d>`_.
 
-Upon clicking the "Consent and Subscribe" button, you will receive and email that
+Upon clicking the "Consent and Subscribe" button, you will receive an email that
 contains a link to confirm your subscription. You must click this link to activate
 your subscription. You can opt-out at any time by clicking the "Unsubscribe" link
 included in any email we send through this announcement list, or by contacting
