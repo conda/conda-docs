@@ -32,12 +32,10 @@
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
 
-Installation Instructions
--------------------------
-* `Installation instructions <https://conda.io/docs/user-guide/install/index.html>`_
+`Installation instructions <https://conda.io/docs/user-guide/install/index.html>`_
 
-Other resources
----------------
+Other resources:
+
 * `Miniconda with Python 3.6 for Power8 <https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_
 * `Miniconda with Python 2.7 for Power8 <https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`_
 * `Miniconda Docker images <https://hub.docker.com/r/conda/>`_
