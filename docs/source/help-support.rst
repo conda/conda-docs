@@ -48,15 +48,14 @@ repository are released into the public domain.
 Report bugs
 ==============
 
-Issues with conda are tracked on GitHub at
-https://github.com/conda/conda/issues, and issues with conda
-build are tracked at https://github.com/conda/conda-build/issues.
+If you find a bug, search to see if it has already been reported,
+and then report it if no one else has.
 
 Issues with the conda documentation are tracked on GitHub at
 https://github.com/conda/conda-docs/issues.
 
-If you find a bug, search to see if it has already been reported,
-and then report it if no one else has.
+For issues with conda, conda-build, repo.anaconda.com, anaconda.org,
+and specific conda packages, please see :ref:`new-issues`.
 
 Presentations and blog posts
 ============================

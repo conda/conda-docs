@@ -1,6 +1,8 @@
 Contributing
 ============
 
+.. _new-issues:
+
 New Issues
 ----------
 
