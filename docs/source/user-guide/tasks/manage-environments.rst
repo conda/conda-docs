@@ -382,12 +382,12 @@ Windows
 -------
 
 #. Locate the directory for the conda environment in your
-   Anaconda Prompt, such as ``C:\Users\jsmith\Anaconda3\envs\analytics``.
+   Anaconda Prompt by running in the command shell `%CONDA_PREFIX%`.
 
 #. Enter that directory and create these subdirectories and
    files::
 
-    cd C:\Users\jsmith\Anaconda3\envs\analytics
+    cd %CONDA_PREFIX%
     mkdir .\etc\conda\activate.d
     mkdir .\etc\conda\deactivate.d
     type NUL > .\etc\conda\activate.d\env_vars.bat
