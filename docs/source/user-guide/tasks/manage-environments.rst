@@ -247,7 +247,7 @@ To deactivate an environment:
 
 * On macOS and Linux, in your Terminal Window, run ``source deactivate``
 
-Conda removes the path name ``myenv`` from your system command.
+The environment ``myenv`` is deactivated, and ``base`` environment is set as active.
 
 TIP: In Windows, it is good practice to deactivate one
 environment before activating another.
