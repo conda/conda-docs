@@ -78,10 +78,6 @@ is available at the Terminal or Anaconda Prompt by running
 TIP: Conda supports :doc:`tab completion <enable-tab-completion>`
 with external packages instead of internal configuration.
 
-For more information, see the `Configuration section of Advanced
-Features of conda Part 1
-<http://continuum.io/blog/advanced-conda-part-1#configuration>`_.
-
 
 General configuration
 =====================
