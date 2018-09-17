@@ -127,11 +127,11 @@ name. For details see :ref:`Creating an environment file manually
 
    NOTE: Replace ``myenv`` with the name of the environment.
 
-#. Verify that the new environment was installed correctly:
+#. Verify that the new environment was installed correctly, active environment is shown with '*':
 
    .. code::
 
-      conda list
+      conda env list
 
 
 Cloning an environment
