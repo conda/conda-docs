@@ -4,19 +4,7 @@ Adding pre-link, post-link and pre-unlink scripts
 
 .. TODO: Add post-unlink
 
-You can add scripts to a recipe. These scripts are executed in a subprocess by
-conda, using ``/bin/bash <script>`` on Linux and macOS, and
-``%COMSPEC% /c <script>`` on Windows.
-
-The convention for the path and filenames of these scripts on Windows is::
-
-  Scripts/.<name>-<action>.bat
-
-On Linux and macOS, the convention is::
-
-  bin/.<name>-<action>.sh
-
-``<name>`` is the package name and ``<action>`` is one of the following:
+You can add scripts to a recipe. They must be located in the same directory as the meta.yaml file. The following scripts can be added:
 
 * ``pre-link``---Executed before the package is installed. An error is
   indicated by a nonzero exit and causes conda to stop and causes the
@@ -27,8 +15,19 @@ On Linux and macOS, the convention is::
 * ``pre-unlink``---Executed before the package is removed. An error is
   indicated by a nonzero exist and causes the removal to fail.
 
-EXAMPLE: When there is a script named ``/bin/.foo-post-link.sh`` in the package
-``foo-1.0-0.tar.bz2``, it is executed after the package is installed.
+In addition to being co-located with the meta.yaml file, they must be named simply ``post-link.sh`` or ``post-link.bat``. conda-build will rename them to .<name>-<action>.sh (or .bat) where ``<name>`` is the package name and ``<action>`` is one of the preceeding actions.
+
+These scripts are executed in a subprocess by
+conda, using ``/bin/bash <script>`` on Linux and macOS, and
+``%COMSPEC% /c <script>`` on Windows.
+
+The convention for the path and filenames of these scripts on Windows is::
+
+  Scripts/.<name>-<action>.bat
+
+On Linux and macOS, the convention is::
+
+  bin/.<name>-<action>.sh
 
 The scripts set the following environment variables:
 
