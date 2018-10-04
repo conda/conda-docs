@@ -1550,6 +1550,8 @@ variables are booleans.
      - True if the Python version is 3.5.
    * - py36
      - True if the Python version is 3.6.
+   * - py37
+     - True if the Python version is 3.7.
    * - np
      - The NumPy version as an integer such as ``111``. See the
        CONDA_NPY :ref:`environment variable <build-envs>`.
