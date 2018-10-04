@@ -298,7 +298,7 @@ Environment variables that affect the build process
 
    * - CONDA_PY
      - The Python version used to build the package. Should
-       be ``27``, ``34``, ``35`` or ``36``.
+       be ``27``, ``35``, ``36`` or ``37``.
    * - CONDA_NPY
      - The NumPy version used to build the package, such as
        ``19``, ``110`` or ``111``.
