@@ -338,3 +338,81 @@ This example is a little contrived, because the ``m2w64-gcc_win-64`` package is
 not available. You'd need to create a metapackage ``m2w64-gcc_win-64`` to
 point at the ``m2w64-gcc`` package, which does exist on the msys2 channel on
 `repo.continuum.io <https://repo.continuum.io/>`_ .
+
+Build tool customizations and workarounds for common problems
+=============================================================
+
+Our Linux compilation toolchains are somewhat exotic in nature. We refer to them as being
+psuedo-cross compilers. What we mean by this is that the compilers and linkers do not look
+for `system` headers and libraries in the usual places (``/usr/include`` and ``/usr/lib*``) and
+instead use their own ``sysroot`` directory. This causes some build tools to misbehave and we've
+either had (or decided it best) to make certain customizations to some of our build tools in the
+interests of compatibility and also to allow recipes to remain free from these concerns. As
+such when building conda packages (and indeed when using these toolchains and our libraries at all)
+it is recommended to use conda to install them. Bugs reported when using system-provided versions
+will result in a recommendation to use ours instead. We are actively working to make sure that
+conda-forge also provides these tools.
+
+CMake
+-----
+
+``CMake`` has support for sysroots but no facility to query the compiler for the value of the ``sysroot``.
+Any GCC based cross-compiler will happily return this folder. Instead, at worst it will find system
+headers and libraries and your software will not work on older ditributions or on any distribution
+where that library is not installed and at best, it will not look in our ``sysroot`` directory and
+therefore not find the headers and libraries. This is most frequently seen in libraries that use
+``find_library(LIBRT rt)`` and ``find_library(PTHREADS pthreads)``; ironically neither of these need to be
+linked to explicitly on Linux these days!
+
+In this instance we feel that ``CMake`` should query the compilers to determine the ``sysroot`` by calling
+``${CC} --print-sysroot``. We have filed an issue with ``CMake`` at https://gitlab.kitware.com/cmake/cmake/issues/17483
+to explore this but have not found time to write this feature and make a PR yet. Instead we use a
+``CMAKE_TOOLCHAIN_FILE``. An example of using a toolchain file can be found at
+https://github.com/AnacondaRecipes/libnetcdf-feedstock/tree/master/recipe
+
+pkg-config
+----------
+
+``pkg-config`` will not, by default look in ``${CONDA_PREFIX}``. In the past, to correct this we had been setting
+various environment variables in each ``build.sh``. This was brittle and messy so instead we've consolidated this
+into ``pkg-config``. It is now a bash script that sets the appropriate variables before calling the real
+``pkg-config`` executable and returning the result. The code for this can be seen at
+https://github.com/AnacondaRecipes/pkg-config-feedstock/blob/master/recipe/pkg-config
+
+Qt (macOS)
+----------
+
+The ``Anaconda Distribution`` does not require installing ``Xcode``. The entire distribution can be built from
+source without it. Unfortunately ``Qt`` hard-codes the use of ``/usr/bin/xcodebuild`` and ``/usr/bin/xcrun``.
+We have changed this in patches to the source for our ``Qt`` packages (https://github.com/AnacondaRecipes/qt-feedstock/blob/master/recipe/0001-qtwebengine-allow-any-xcblah-in-PATH.patch
+and https://github.com/AnacondaRecipes/qt-feedstock/blob/master/recipe/0011-osx-allow-any-xcrun-in-PATH.patch)
+so that ``xcodebuild`` and ``xcrun`` are used instead (and ``PATH`` lookup finds them). For this to work, we
+have created fake ``xcodebuild`` and ``xcrun`` scripts (https://github.com/AnacondaRecipes/qt-feedstock/blob/master/recipe/xcodebuild and https://github.com/AnacondaRecipes/qt-feedstock/blob/master/recipe/xcrun)
+that return values needed to achieve compatibiltiy with the ``Anaconda Distribution``. These scripts cannot
+live in ``${CONDA_PREFIX}/bin`` without risking disruption to ``Xcode`` users, therefore they are installed
+in ``${CONDA_PREFIX}/bin/xc-avoidance``. To use them you should add this to ``PATH`` in ``build.sh``. An
+example of this can be seen at https://github.com/AnacondaRecipes/pyqt-feedstock/blob/master/recipe/build.sh#L8
+
+libtool
+-------
+
+There is a feature in various linkers which is most commonly called 'as-needed'. When the linker detects that
+no symbols are referenced in a consumer executable (exe) or dynamically shared objects (DSO) it elides this
+``DT_NEEDED`` entry from the ``ELF dynamic section``. We do this so that our software loads more quickly. It
+also leads to the possibility of implementing a new feature in ``conda-build`` whereby it would warn when a
+'library' package (identified via some heuristics, a ``lib`` prefix perhaps; existence of DSOs?) ends up in
+the runtime requirements but is not actually used in any of the exes or DSOs. This would allow us to consider
+these as candidates for removal thus making the package less heavy-weight. For the curious, there's a function
+in `conda-build` called `check_overlinking` and the original intention for this function was to do this but
+it ended up checking for the opposite (worse!) problem of `underlinking`. This we define as missing
+dependencies, which happens frequently when something gets installed in the ``host prefix`` through a
+transitive dependency and is therefore not listed as a direct run dependency despite being directly linked to
+some exe(s) and/or DSO(s) in the package (build systems are sometimes 'greedy' linking to whatever they can
+find). We denote this as `worse` because when someone installs these two packages (3 including the dependency)
+and then removes (and cleans/prunes the environment) the one that directly depends upon the third package, the
+third package will also be removed because conda has no idea your package needs it and it will no longer load.
+
+Unfortunately in most linkers the flag used to enable this ( ``--as-needed``) only takes effect for libraries
+that appear after it on the command-line. We have patched our ``libtool`` package (with a modified patch
+sourced from Gentoo) so this flag, if found, is moved to before any libraries in this linker command-line.
+The patch can be found at https://github.com/AnacondaRecipes/libtool-feedstock/blob/master/recipe/0001-link-as-needed.patch
