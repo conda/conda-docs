@@ -382,7 +382,7 @@ https://github.com/AnacondaRecipes/pkg-config-feedstock/blob/master/recipe/pkg-c
 Qt (macOS)
 ----------
 
-The ``Anaconda Distribution`` does not require installing ``Xcode``. The entire distribution can be built from
+The ``Anaconda Distribution`` does not require installing ``Xcode``. The distribution can (almost) be built from
 source without it. Unfortunately ``Qt`` hard-codes the use of ``/usr/bin/xcodebuild`` and ``/usr/bin/xcrun``.
 We have changed this in patches to the source for our ``Qt`` packages (https://github.com/AnacondaRecipes/qt-feedstock/blob/master/recipe/0001-qtwebengine-allow-any-xcblah-in-PATH.patch
 and https://github.com/AnacondaRecipes/qt-feedstock/blob/master/recipe/0011-osx-allow-any-xcrun-in-PATH.patch)
