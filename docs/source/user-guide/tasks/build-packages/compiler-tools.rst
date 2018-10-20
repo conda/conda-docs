@@ -346,9 +346,9 @@ Our Linux compilation toolchains are somewhat exotic in nature. We refer to them
 psuedo-cross compilers. What we mean by this is that the compilers and linkers do not look
 for `system` headers and libraries in the usual places (``/usr/include`` and ``/usr/lib*``) and
 instead use their own ``sysroot`` directory. This causes some build tools to misbehave and we've
-either had (or decided it best) to make certain customizations to some of our build tools in the
+either had (or decided it is best) to make certain customizations to some of our build tools in the
 interests of compatibility and also to allow recipes to remain free from these concerns. As
-such when building conda packages (and indeed when using these toolchains and our libraries at all)
+such, when building conda packages (and indeed when using these toolchains and our libraries at all)
 it is recommended to use conda to install them. Bugs reported when using system-provided versions
 will result in a recommendation to use ours instead. We are actively working to make sure that
 conda-forge also provides these tools.
@@ -403,12 +403,12 @@ also leads to the possibility of implementing a new feature in ``conda-build`` w
 'library' package (identified via some heuristics, a ``lib`` prefix perhaps; existence of DSOs?) ends up in
 the runtime requirements but is not actually used in any of the exes or DSOs. This would allow us to consider
 these as candidates for removal thus making the package less heavy-weight. For the curious, there's a function
-in `conda-build` called `check_overlinking` and the original intention for this function was to do this but
-it ended up checking for the opposite (worse!) problem of `underlinking`. This we define as missing
+in ``conda-build`` called ``check_overlinking`` and the original intention for this function was to do this but
+it ended up checking for the opposite (worse!) problem of 'underlinking'. This we define as missing
 dependencies, which happens frequently when something gets installed in the ``host prefix`` through a
 transitive dependency and is therefore not listed as a direct run dependency despite being directly linked to
 some exe(s) and/or DSO(s) in the package (build systems are sometimes 'greedy' linking to whatever they can
-find). We denote this as `worse` because when someone installs these two packages (3 including the dependency)
+find). We denote this as 'worse' because when someone installs these two packages (3 including the dependency)
 and then removes (and cleans/prunes the environment) the one that directly depends upon the third package, the
 third package will also be removed because conda has no idea your package needs it and it will no longer load.
 
