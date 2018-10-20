@@ -408,7 +408,7 @@ it ended up checking for the opposite (worse!) problem of 'underlinking'. This w
 dependencies, which happens frequently when something gets installed in the ``host prefix`` through a
 transitive dependency and is therefore not listed as a direct run dependency despite being directly linked to
 some exe(s) and/or DSO(s) in the package (build systems are sometimes 'greedy' linking to whatever they can
-find). We denote this as 'worse' because when someone installs these two packages (3 including the dependency)
+find). We denote this as `worse` because when someone installs these two packages (3 including the dependency)
 and then removes (and cleans/prunes the environment) the one that directly depends upon the third package, the
 third package will also be removed because conda has no idea your package needs it and it will no longer load.
 
@@ -416,3 +416,8 @@ Unfortunately in most linkers the flag used to enable this ( ``--as-needed``) on
 that appear after it on the command-line. We have patched our ``libtool`` package (with a modified patch
 sourced from Gentoo) so this flag, if found, is moved to before any libraries in this linker command-line.
 The patch can be found at https://github.com/AnacondaRecipes/libtool-feedstock/blob/master/recipe/0001-link-as-needed.patch
+
+To ensure we take advantage of this flag, it is necessary to run ``autoreconf -vfi`` so that the ``libtool``
+script is regenerated. Before running ``configure``. For this you will need to add some dependencies to
+``meta.yaml``: ``libtool``, ``autoconf``, ``automake``, ``make`` and occasionallty for good measure:
+``pkg-config`` and ``bison``, depending on whether the package needs them or not.
