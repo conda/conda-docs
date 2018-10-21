@@ -2,6 +2,8 @@
 Installing on Windows
 =====================
 
+Note : Python is already included in this installer, one do not have to install it explicitly.
+
 #. Download the installer:
 
    * `Miniconda installer for
