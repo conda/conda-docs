@@ -412,7 +412,7 @@ find). We denote this as 'worse' because when someone installs these two package
 and then removes (and cleans/prunes the environment) the one that directly depends upon the third package, the
 third package will also be removed because conda has no idea your package needs it and it will no longer load.
 
-Unfortunately in most linkers the flag used to enable this ( ``--as-needed``) only takes effect for libraries
+Unfortunately in most linkers the flag used to enable this (``--as-needed``) only takes effect for libraries
 that appear after it on the command-line. We have patched our ``libtool`` package (with a modified patch
 sourced from Gentoo) so this flag, if found, is moved to before any libraries in this linker command-line.
 The patch can be found at https://github.com/AnacondaRecipes/libtool-feedstock/blob/master/recipe/0001-link-as-needed.patch
