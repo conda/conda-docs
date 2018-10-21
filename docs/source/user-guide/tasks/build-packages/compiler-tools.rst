@@ -408,7 +408,7 @@ it ended up checking for the opposite (worse!) problem of 'underlinking'. This w
 dependencies, which happens frequently when something gets installed in the ``host prefix`` through a
 transitive dependency and is therefore not listed as a direct run dependency despite being directly linked to
 some exe(s) and/or DSO(s) in the package (build systems are sometimes 'greedy' linking to whatever they can
-find). We denote this as `worse` because when someone installs these two packages (3 including the dependency)
+find). We denote this as 'worse' because when someone installs these two packages (3 including the dependency)
 and then removes (and cleans/prunes the environment) the one that directly depends upon the third package, the
 third package will also be removed because conda has no idea your package needs it and it will no longer load.
 
