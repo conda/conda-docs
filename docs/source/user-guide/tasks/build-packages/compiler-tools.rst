@@ -421,3 +421,20 @@ To ensure we take advantage of this flag, it is necessary to run ``autoreconf -v
 script is regenerated. Before running ``configure``. For this you will need to add some dependencies to
 ``meta.yaml``: ``libtool``, ``autoconf``, ``automake``, ``make`` and occasionallty for good measure:
 ``pkg-config`` and ``bison``, depending on whether the package needs them or not.
+
+RPATHs (specifically rpath-link)
+--------------------------------
+
+On Linux, transitive DSOs are not searched for by the static linker in any `rpath` entries. Instead, for the
+linker to find these DSOs, it needs prompting via adding `-Wl,-rpath-link,$PREFIX/lib` to `LDFLAGS`. In the
+future we may add this to the Linux compiler activation script. These transitive DSOs are not added as `DT_NEEDED`
+entries in the top-level DSO, theya re inspected by the static linker for symbol resolution purposes only so it
+is generally safe to add this flag.
+
+CDT packages
+------------
+
+`CDT` packages are an 'Anaconda Distribution' invention. They consist of repackaged 'CentOS6' packages for libraries
+such as the `X11` and `OpenGL` stacks, unpacked into our compilers inbuilt sysroot. These allow us to link to these
+system libraries in an way that pins the compatibility level to that of 'CentOS6'. 'conda-forge' provide their own
+`X11` libraries and what to do with `OpenGL` is currently a subject of discussion.
