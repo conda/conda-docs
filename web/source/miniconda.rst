@@ -17,18 +17,18 @@
    |3.7**     |installer)         |installer)       |installer)       |
    |          |<Windows-py3-64_>`_|<Mac-py3-64_>`_  |<Linux-py3-64_>`_|
    |          |                   |                 |                 |
-   |          |`32-bit (exe       |                 |`32-bit (bash    |
-   |          |installer)         |                 |installer)       |
-   |          |<Windows-py3-32_>`_|                 |<Linux-py3-32_>`_|
+   |          |`32-bit (exe       |`64-bit (.pkg    |`32-bit (bash    |
+   |          |installer)         |installer)       |installer)       |
+   |          |<Windows-py3-32_>`_|<Mac-py3p-64_>`_ |<Linux-py3-32_>`_|
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
    |**Python  |`64-bit (exe       |`64-bit (bash    |`64-bit (bash    |
    |2.7**     |installer)         |installer)       |installer)       |
    |          |<Windows-py2-64_>`_|<Mac-py2-64_>`_  |<Linux-py2-64_>`_|
    |          |                   |                 |                 |
-   |          |`32-bit (exe       |                 |`32-bit (bash    |
-   |          |installer)         |                 |installer)       |
-   |          |<Windows-py2-32_>`_|                 |<Linux-py2-32_>`_|
+   |          |`32-bit (exe       |`64-bit (.pkg    |`32-bit (bash    |
+   |          |installer)         |installer)       |installer)       |
+   |          |<Windows-py2-32_>`_|<Mac-py2p-64_>`_ |<Linux-py2-32_>`_|
    |          |                   |                 |                 |
    +----------+-------------------+-----------------+-----------------+
 
