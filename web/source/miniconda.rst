@@ -36,12 +36,12 @@
 
 Other resources:
 
-* `Miniconda with Python 3.7 for Power8 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_
-* `Miniconda with Python 2.7 for Power8 <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`_
+* `Miniconda with Python 3.7 for Power8 & Power9 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_
+* `Miniconda with Python 2.7 for Power8 & Power9 <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`_
 * `Miniconda Docker images <https://hub.docker.com/r/continuumio/>`_
 * `Miniconda AWS images <https://aws.amazon.com/marketplace/seller-profile?id=29f81979-a535-4f44-9e9f-6800807ad996>`_
 * `Archive and MD5 sums for the installers <https://repo.anaconda.com/miniconda/>`_
-* `conda change log <https://github.com/conda/conda/blob/master/CHANGELOG.md>`_
+* `conda change log <https://conda.io/docs/release-notes.html>`_
 
 These Miniconda installers contain the conda package manager and Python. Once
 Miniconda is installed, you can use the conda command to install any other
