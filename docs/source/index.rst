@@ -50,6 +50,8 @@ that approach may not be as up to date.
    :hidden:
    :maxdepth: 1
 
+   conda
+   conda-build
    help-support
    contributing
    license
