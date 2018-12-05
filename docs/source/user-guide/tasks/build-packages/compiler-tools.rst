@@ -343,7 +343,7 @@ Build tool customizations and workarounds for common problems
 =============================================================
 
 Our Linux compilation toolchains are somewhat exotic in nature. We refer to them as being
-psuedo-cross compilers. What we mean by this is that the compilers and linkers do not look
+pseudo-cross compilers. What we mean by this is that the compilers and linkers do not look
 for `system` headers and libraries in the usual places (``/usr/include`` and ``/usr/lib*``) and
 instead use their own ``sysroot`` directory. This causes some build tools to misbehave and we've
 either had (or decided it is best) to make certain customizations to some of our build tools in the
