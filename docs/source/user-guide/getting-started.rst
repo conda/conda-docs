@@ -140,7 +140,7 @@ Create separate environments to keep your programs isolated from each other.
 #. To use, or "activate" the new environment, type the following:
 
      * Windows:  ``activate snowflakes``
-     * Linux and macOS: ``source activate snowflakes``
+     * Linux and macOS: ``conda activate snowflakes``
 
    Now that you are in your ``snowflakes`` environment, any conda
    commands you type will go to that environment until
@@ -166,7 +166,7 @@ Create separate environments to keep your programs isolated from each other.
 #. Change your current environment back to the default (base):
 
      * Windows:  ``deactivate``
-     * Linux, macOS: ``source deactivate``
+     * Linux, macOS: ``conda deactivate``
 
    TIP: When the environment is deactivated, its name is no
    longer shown in your prompt, and the asterisk (*) returns to base.
