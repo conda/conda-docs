@@ -12,10 +12,10 @@ Using the .condarc conda configuration file
 Overview
 ========
 
-The conda configuration file, ``.condarc``, is an optional
+The conda configuration file, ``.condarc``, is an optional,
 runtime configuration file that allows advanced users to
 configure various aspects of conda, such as which channels it
-searches for packages, proxy settings and environment
+searches for packages, proxy settings, and environment
 directories.
 
 The ``.condarc`` file is not included by default, but it is
@@ -46,7 +46,7 @@ The ``.condarc`` file can change many parameters, including:
 * Whether user-built packages should be uploaded to
   `Anaconda.org <http://anaconda.org>`_.
 
-* Default packages or features to include in new environments.
+* Which default packages or features to include in new environments.
 
 To create or modify a ``.condarc`` file, use
 the ``conda config`` command or use a text editor to create a
@@ -271,7 +271,7 @@ authentication fails, conda prompts for a user name and password.
 
 If your password contains special characters, you need escape
 them as described in `Percent-encoding reserved characters
-<https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters>`_ ,
+<https://en.wikipedia.org/wiki/Percent-encoding#Percent-encoding_reserved_characters>`_,
 on Wikipedia.
 
 Be careful not to use ``http`` when you mean https or
@@ -426,8 +426,8 @@ Disable updating of dependencies (update_dependencies)
 ------------------------------------------------------
 
 By default, ``conda install`` updates the given package to the
-latest version, and installs any dependencies necessary for
-that package. However if dependencies that satisfy the package's
+latest version and installs any dependencies necessary for
+that package. However, if dependencies that satisfy the package's
 requirements are already installed, conda will not update those
 packages to the latest version.
 
@@ -680,7 +680,7 @@ Disable activation of environments during build/test (conda-build 3.0+) (activat
 ----------------------------------------------------------------------------------
 
 By default, conda-build activates the build and test environments prior to
-executing the build or test scripts. This adds necessary PATH entries, and also
+executing the build or test scripts. This adds necessary PATH entries and 
 runs any activate.d scripts you may have. If you disable activation, the PATH
 will still be modified, but the activate.d scripts will not run. This is not
 recommended, but some people prefer this.
