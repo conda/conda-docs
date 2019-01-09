@@ -35,7 +35,7 @@ To run the the Windows installer for Miniconda in
 :ref:`silent mode <silent-mode-glossary>`, use the ``/S``
 argument. The following optional arguments are supported:
 
-* ``/InstallationType=[JustMe|AllUsers]``---Default is``JustMe``.
+* ``/InstallationType=[JustMe|AllUsers]``---Default is ``JustMe``.
 * ``/AddToPath=[0|1]``---Default is ``1``'
 * ``/RegisterPython=[0|1]``---Make this the system's default
   Python.
@@ -53,7 +53,7 @@ current user without registering Python as the system's default:
 
 .. code-block:: bat
 
-   start /wait "" Miniconda4-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3
+   start /wait "" Miniconda3-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniconda3
 
 
 Updating conda
