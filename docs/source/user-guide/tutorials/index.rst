@@ -2,7 +2,7 @@
 Tutorials
 ===========
 
-Before you start the tutorials, you should already have
+The featured tutorials will show you how to create packages. Before you start the tutorials, you should already have
 installed :doc:`Miniconda <../install/index>` or Anaconda_.
 
 .. _Anaconda: https://docs.continuum.io/anaconda/install
