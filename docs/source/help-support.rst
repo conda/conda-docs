@@ -35,14 +35,13 @@ Contribute recipes to GitHub
 ===============================
 
 Submit new recipes to the GitHub repository at
-https://github.com/conda/conda-recipes. Building recipes is
-described in :doc:`user-guide/tasks/build-packages/index`.
-When you build a new conda recipe for a program not yet listed in
-the repository, use a GitHub pull request to submit it to the
-repository, so that others using that program in the future can
-reuse it. Recipes are welcome for programs that use any license,
-such as GPL, BSD, MIT or Apache, and all of the recipes in this
-repository are released into the public domain.
+https://github.com/conda/conda-recipes. When you build a new conda
+recipe for a program not yet listed in the repository, use a GitHub
+pull request to submit it to the repository, so that others using
+that program in the future can reuse it. Recipes are welcome for
+programs that use any license, such as GPL, BSD, MIT or Apache, and
+all of the recipes in thisrepository are released into the public
+domain.
 
 
 Report bugs
@@ -70,9 +69,9 @@ Conda announcements list
 ========================
 
 Conda Announcements is a low-traffic email list for news and
-updates directly from the conda core team. By providing your 
-email address below, you consent to join Conda Announcements. It 
-is not a marketing list. We never sell, give away or distribute 
+updates directly from the conda core team. By providing your
+email address below, you consent to join Conda Announcements. It
+is not a marketing list. We never sell, give away or distribute
 your email address to third parties.
 
 * No more than 1 email per week, usually less.

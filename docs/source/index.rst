@@ -38,8 +38,7 @@ as Travis CI and AppVeyor to provide frequent, automated testing
 of your code.
 
 The conda package and environment manager is included in all versions of
-:ref:`Anaconda <anaconda-glossary>`\ |reg|,
-:ref:`Miniconda <miniconda-glossary>` and
+Anaconda and Miniconda.
 `Anaconda Repository <https://docs.continuum.io/anaconda-repository/>`_.
 Conda is also included in `Anaconda Enterprise
 <https://www.anaconda.com/enterprise/>`_ , which provides on-site enterprise
@@ -51,11 +50,9 @@ that approach may not be as up to date.
    :hidden:
    :maxdepth: 1
 
-   user-guide/index
+   conda
+   conda-build
    help-support
-   release-notes
-   commands
-   glossary
    contributing
    license
 
