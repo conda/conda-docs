@@ -34,7 +34,7 @@ Miniconda
  +------+--------------------+--------------------+--------------------+
 
  `Installation
- instructions <https://conda.io/docs/user-guide/install/index.html>`__
+ instructions <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`__
 
  Other resources:
 
@@ -49,7 +49,7 @@ Miniconda
  -  `Archive and MD5 sums for the
     installers <https://repo.anaconda.com/miniconda/>`__
  -  `conda change
-    log <https://conda.io/projects/continuumio-conda/en/latest/release-notes.htmll>`__
+    log <https://conda.io/projects/continuumio-conda/en/latest/release-notes.html>`__
 
  These Miniconda installers contain the conda
  package manager and Python. Once Miniconda is
