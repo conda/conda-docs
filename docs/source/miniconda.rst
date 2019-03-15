@@ -79,7 +79,7 @@ Miniconda
  The other difference is that the Python 3 version
  of Miniconda will default to Python 3 when creating
  new environments and building packages. So for
- instance, the behavior of
+ instance, the behavior of:
 
  .. container:: highlight-bash notranslate
 
@@ -96,10 +96,12 @@ Miniconda
  also determines the default value of ``CONDA_PY``
  when using ``conda build``.
 
- **Note**: If you already have Miniconda or Anaconda
- installed, and you just want to upgrade, you should
- not use the installer. Just use ``conda update``.
- For instance
+ .. note:: 
+    If you already have Miniconda or Anaconda
+    installed, and you just want to upgrade, you should
+    not use the installer. Just use ``conda update``.
+ 
+ For instance:
 
  .. container:: highlight-bash notranslate
 
