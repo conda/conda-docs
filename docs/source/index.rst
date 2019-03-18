@@ -41,7 +41,7 @@ The conda package and environment manager is included in all versions of
 Anaconda and Miniconda.
 `Anaconda Repository <https://docs.continuum.io/anaconda-repository/>`_.
 Conda is also included in `Anaconda Enterprise
-<https://www.anaconda.com/enterprise/>`_ , which provides on-site enterprise
+<https://www.anaconda.com/enterprise/>`_, which provides on-site enterprise
 package and environment management for Python, R, Node.js, Java and other
 application stacks. Conda is also available on PyPI, although
 that approach may not be as up to date.
