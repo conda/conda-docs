@@ -191,6 +191,7 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'condadoc'
 
+html_style = 'css/custom.css'
 
 # -- Options for LaTeX output --------------------------------------------------
 
