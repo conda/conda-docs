@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# (c) 2012-2017 Anaconda, Inc. / https://www.anaconda.com
+# (c) 2012-2019 Anaconda, Inc. / https://www.anaconda.com
 # All Rights Reserved
 #
 # conda is distributed under the terms of the BSD 3-clause license.
@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Conda'
-copyright = u'2017, Anaconda, Inc.'
+copyright = u'2019, Anaconda, Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
