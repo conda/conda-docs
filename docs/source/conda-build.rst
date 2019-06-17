@@ -1,4 +1,4 @@
-Conda-build
+Conda build
 ===========
 
 .. raw:: html
