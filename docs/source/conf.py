@@ -118,6 +118,8 @@ html_context = {
     'source_suffix': '.rst',
     }
 
+html_favicon = 'conda-logo.png'
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
