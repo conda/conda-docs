@@ -10,9 +10,9 @@ Conda
 
 |
 
-:emphasis:`Package, dependency and environment management for any
+*Package, dependency and environment management for any
 language---Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++,
-FORTRAN, and more.
+FORTRAN, and more.*
 
 Conda is an open source package management system and environment
 management system that runs on Windows, macOS and Linux. Conda
@@ -43,8 +43,9 @@ Anaconda and Miniconda.
 Conda is also included in `Anaconda Enterprise
 <https://www.anaconda.com/enterprise/>`_, which provides on-site enterprise
 package and environment management for Python, R, Node.js, Java and other
-application stacks. Conda is also available on PyPI, although
-that approach may not be as up to date.
+application stacks. Conda is also available on `conda-forge <https://anaconda.org/conda-forge/conda>`_,
+a community channel. You may also get conda on `PyPI <https://pypi.org/>`_,
+but that approach may not be as up to date.
 
 .. toctree::
    :hidden:
