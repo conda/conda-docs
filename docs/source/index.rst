@@ -30,7 +30,7 @@ run that different version of Python, while continuing to run
 your usual version of Python in your normal environment.
 
 In its default configuration, conda can install and manage the
-thousand packages at repo.continuum.io that are built, reviewed
+thousand packages at `repo.anaconda.com <https://repo.anaconda.com/>`_ that are built, reviewed
 and maintained by Anaconda\ |reg|.
 
 Conda can be combined with continuous integration systems such
@@ -39,7 +39,7 @@ of your code.
 
 The conda package and environment manager is included in all versions of
 Anaconda and Miniconda.
-`Anaconda Repository <https://docs.continuum.io/anaconda-repository/>`_.
+`Anaconda Repository <https://docs.anaconda.com/anaconda-repository/>`_.
 Conda is also included in `Anaconda Enterprise
 <https://www.anaconda.com/enterprise/>`_, which provides on-site enterprise
 package and environment management for Python, R, Node.js, Java and other
