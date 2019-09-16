@@ -33,7 +33,7 @@ def main():
 
     # write file with hashes for all files
     f = open(OUT_FILENAME, "w")
-    title = "Miniconda Hash Information"
+    title = "Miniconda hash information"
     f.write("=" * len(title) + "\n" + title + "\n" + "=" * len(title) + "\n\n")
     f.write(
         "=" * FILENAME_LEN
