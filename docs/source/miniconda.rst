@@ -47,12 +47,15 @@ Linux installers
    Python 2.7,`Miniconda2 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh>`_,49.7 MiB,``9b1c7899f3bfcd520203eb7d51bfe456e25e5700dfa877c09bd2dbb028c305d8``
    ,`Miniconda2 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh>`_,39.0 MiB,``2e20ac4379ca5262e7612f84ad26b1a2f2782d0994facdecb28e0baf51749979``
 
-`Verify your installation <https://conda.io/projects/conda/en/latest/user-guide/install/download.html#cryptographic-hash-verification>`_.
+Installing
+==========
+- :doc:`See hashes for all Miniconda installers <../miniconda_hashes>`.
+- `Verify your installation <https://conda.io/projects/conda/en/latest/user-guide/install/download.html#cryptographic-hash-verification>`_.
+- `Installation
+  instructions <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`__.
 
-`Installation
-instructions <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`__
-
-Other resources:
+Other resources
+===============
 
  -  `Miniconda with Python 3.7 for Power8 &
     Power9 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`__
