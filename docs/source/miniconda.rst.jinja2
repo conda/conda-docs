@@ -1,0 +1,137 @@
+.. This page is generated from the create_miniconda_rst.py script.
+   To make changes edit the miniconda.rst.jinja2 file and execute the script
+   to re-generate miniconda.rst
+
+=========
+Miniconda
+=========
+
+Miniconda is a free minimal installer for conda. It is a small, bootstrap
+version of Anaconda that includes only conda, Python, the packages they depend
+on, and a small number of other useful packages, including pip, zlib and a
+few others. Use the ``conda install command`` to install 720+ additional conda
+packages from the Anaconda repository.
+
+`See if Miniconda is right for you <https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#anaconda-or-miniconda>`_.
+
+Windows installers
+==================
+
+.. csv-table:: Windows
+   :header: Python version,Name,Size,SHA256 hash
+   :widths: 5, 10, 5, 80
+
+   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,{{ win64_py3_size }},``{{ win64_py3_hash }}``
+   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,{{ win32_py3_size }},``{{ win32_py3_hash}}``
+   Python 2.7,`Miniconda2 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe>`_,{{ win64_py2_size }},``{{ win64_py2_hash }}``
+   ,`Miniconda2 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe>`_,{{ win32_py2_size }},``{{ win32_py2_hash }}``
+
+
+MacOSX installers
+=================
+
+.. csv-table:: MacOSX
+   :header: Python version,Name,Size,SHA256 hash
+   :widths: 5, 10, 5, 80
+
+   Python 3.7,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,{{ osx64_sh_py3_size }},``{{ osx64_sh_py3_hash }}``
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py3_size }},``{{ osx64_pkg_py3_hash }}``
+   Python 2.7,`Miniconda2 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh>`_,{{ osx64_sh_py2_size }},``{{ osx64_sh_py2_hash }}``
+   ,`Miniconda2 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py2_size }},``{{ osx64_pkg_py2_hash }}``
+
+Linux installers
+================
+
+.. csv-table:: Linux
+   :header: Python version,Name,Size,SHA256 hash
+   :widths: 5, 10, 5, 80
+
+   Python 3.7,`Miniconda Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,{{ linux64_py3_size}},``{{ linux64_py3_hash }}``
+   ,`Miniconda3 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh>`_,{{ linux32_py3_size }},``{{ linux32_py3_hash }}``
+   Python 2.7,`Miniconda2 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh>`_,{{ linux64_py2_size }},``{{ linux64_py2_hash }}``
+   ,`Miniconda2 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh>`_,{{ linux32_py2_size }},``{{ linux32_py2_hash }}``
+
+Installing
+==========
+- :doc:`See hashes for all Miniconda installers <../miniconda_hashes>`.
+- `Verify your installation <https://conda.io/projects/conda/en/latest/user-guide/install/download.html#cryptographic-hash-verification>`_.
+- `Installation
+  instructions <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`__.
+
+Other resources
+===============
+
+ -  `Miniconda with Python 3.7 for Power8 &
+    Power9 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`__
+ -  `Miniconda with Python 2.7 for Power8 &
+    Power9 <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`__
+ -  `Miniconda Docker
+    images <https://hub.docker.com/r/continuumio/>`__
+ -  `Miniconda AWS
+    images <https://aws.amazon.com/marketplace/seller-profile?id=29f81979-a535-4f44-9e9f-6800807ad996>`__
+ -  `Archive and MD5 sums for the
+    installers <https://repo.anaconda.com/miniconda/>`__
+ -  `conda change
+    log <https://conda.io/projects/continuumio-conda/en/latest/release-notes.html>`__
+
+ These Miniconda installers contain the conda
+ package manager and Python. Once Miniconda is
+ installed, you can use the conda command to install
+ any other packages and create environments, etc.
+ For example:
+
+ .. container:: highlight-bash notranslate
+
+    .. container:: highlight
+
+       ::
+
+          $ conda install numpy
+          ...
+          $ conda create -n py3k anaconda python=3
+          ...
+
+ There are two variants of the installer: Miniconda
+ is Python 2 based and Miniconda3 is Python 3 based.
+ Note that the choice of which Miniconda is
+ installed only affects the root environment.
+ Regardless of which version of Miniconda you
+ install, you can still install both Python 2.x and
+ Python 3.x environments.
+
+ The other difference is that the Python 3 version
+ of Miniconda will default to Python 3 when creating
+ new environments and building packages. So for
+ instance, the behavior of:
+
+ .. container:: highlight-bash notranslate
+
+    .. container:: highlight
+
+       ::
+
+          $ conda create -n myenv python
+
+ will be to install Python 2.7 with the Python 2
+ Miniconda and to install Python 3.7 with the Python
+ 3 Miniconda. You can override the default by
+ explicitly setting ``python=2`` or ``python=3``. It
+ also determines the default value of ``CONDA_PY``
+ when using ``conda build``.
+
+ .. note::
+    If you already have Miniconda or Anaconda
+    installed, and you just want to upgrade, you should
+    not use the installer. Just use ``conda update``.
+ 
+ For instance:
+
+ .. container:: highlight-bash notranslate
+
+    .. container:: highlight
+
+       ::
+
+          $ conda update conda
+
+ will update conda.
