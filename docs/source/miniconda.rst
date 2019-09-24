@@ -1,3 +1,7 @@
+.. This page is generated from the create_miniconda_rst.py script.
+   To make changes edit the miniconda.rst.jinja2 file and execute the script
+   to re-generate miniconda.rst
+
 =========
 Miniconda
 =========
@@ -18,7 +22,7 @@ Windows installers
    :widths: 5, 10, 5, 80
 
    Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,72.6 MiB,``a3a8921c2dec37f4ef37b9fa7b337dba237ccacec56bed3d8b8c300ed852c84f``
-   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,72.6 MiB,``789a0cafbc4c43fb53facced1a32203865bc1600e5baf70e97e0ce3d64aebd4b``
+   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,67.4 MiB,``789a0cafbc4c43fb53facced1a32203865bc1600e5baf70e97e0ce3d64aebd4b``
    Python 2.7,`Miniconda2 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe>`_,71.7 MiB,``9cf92cb336fd29c4fabbf22523d71a52623bf5ed7895d6cd079d569af5e4b7cd``
    ,`Miniconda2 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe>`_,66.3 MiB,``a90d5b689f8a57c0da85ad77d3efa683a23da9ddb19429587635d222d5d1005c``
 
