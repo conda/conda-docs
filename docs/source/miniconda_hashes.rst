@@ -1,5 +1,4 @@
 :orphan:
-
 ==========================
 Miniconda hash information
 ==========================
@@ -7,6 +6,18 @@ Miniconda hash information
 ========================================  =========  =================== ====================================================================
 Name                                      Size       Time modified        SHA256 hash                                                         
 ========================================  =========  =================== ====================================================================
+Miniconda2-4.7.12-Linux-ppc64le.sh        49.5 MiB   2019-10-16 14:11:26  ``20c87539b7ad638a45b6fa2dbc06caa610299f3e0d7e22b126573ec362e09253``
+Miniconda2-4.7.12-Linux-x86_64.sh         44.8 MiB   2019-10-16 14:11:26  ``2248d5f2eeeff69b142a6ccf3148357b8e42f9c4141ab97a17c9e27f6149c417``
+Miniconda2-4.7.12-MacOSX-x86_64.pkg       47.8 MiB   2019-10-16 14:11:26  ``7d113df5704aecbff25429410e22b2fc55cd729053b5c20edc7f7470d07b38fb``
+Miniconda2-4.7.12-MacOSX-x86_64.sh        38.1 MiB   2019-10-16 14:11:26  ``3159ea8f0ef8d394e17b2e363444e22b579e631675d468b8bce49047763ca435``
+Miniconda2-4.7.12-Windows-x86.exe         48.0 MiB   2019-10-16 14:11:27  ``a636f00fe9ff218825c8f256962ef7a108529936d1cb7ce9270192cabc542d3c``
+Miniconda2-4.7.12-Windows-x86_64.exe      50.0 MiB   2019-10-16 14:11:25  ``63b8220df057aa91bbb5ab71b3f8f7ea8489a5f0b46d49a36f7804b30683717b``
+Miniconda3-4.7.12-Linux-ppc64le.sh        76.8 MiB   2019-10-16 14:11:25  ``311bbf29c673c2cae705c21e9d957403e7b83d45af4b3ca6f4d2cb070c1a845a``
+Miniconda3-4.7.12-Linux-x86_64.sh         67.2 MiB   2019-10-16 14:11:26  ``a23fcffe97690d3bbcd34cda798c3a3318e0f35d863c5d4aca3fc983fe8450b7``
+Miniconda3-4.7.12-MacOSX-x86_64.pkg       59.8 MiB   2019-10-16 14:11:26  ``6636f7a41d54136f2623d1ff5be2543b142b5810d7734f57bf47d1931d7c0b03``
+Miniconda3-4.7.12-MacOSX-x86_64.sh        48.2 MiB   2019-10-16 14:11:27  ``a879d93f42bdc796a4b975a11d109dfacc11a7ba6c4106aedf657d5e1fd79410``
+Miniconda3-4.7.12-Windows-x86.exe         53.2 MiB   2019-10-16 14:11:26  ``ff851cfe7cb4c21adbed48cb7f74d7e2ec457d76c02269132e6093e0fe8838c4``
+Miniconda3-4.7.12-Windows-x86_64.exe      50.6 MiB   2019-10-16 14:11:26  ``6263b5c45038a624eb265341eae5180a87c0fe0a97f1ce4ff0b9b9d91807cfd3``
 Miniconda2-4.7.10-Linux-ppc64le.sh        58.9 MiB   2019-07-29 09:15:37  ``af569a405980b67a07afbd1d583b8e59346e9762ba68ea98836b3d129c6be276``
 Miniconda2-4.7.10-Linux-x86_64.sh         49.7 MiB   2019-07-29 09:15:39  ``9b1c7899f3bfcd520203eb7d51bfe456e25e5700dfa877c09bd2dbb028c305d8``
 Miniconda2-4.7.10-MacOSX-x86_64.pkg       56.4 MiB   2019-07-29 09:15:39  ``97de47ce5028d382d436997911138db2fa473644de549dc6d888bbc2f41a1a8f``
