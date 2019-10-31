@@ -1,4 +1,4 @@
-announcements
+Announcements
 =============
 
 .. raw:: html
