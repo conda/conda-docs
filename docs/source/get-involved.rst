@@ -1,4 +1,4 @@
-get-involved
+Get involved
 ============
 
 .. raw:: html
