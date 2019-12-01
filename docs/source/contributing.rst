@@ -74,6 +74,31 @@ To set up an environment to start developing on conda code, we recommend the fol
 
 
 
+Development Environment, ZSH
+----------------------------
+
+In ZSH just set an alias to to the ``conda`` install path, for example like this'
+1. Edit your .zshrc
+
+.. code-block :: console
+
+     nano ~/.zshrc
+       
+3. insert the alias to the current install path of the binary: (this example is for miniconda3
+
+.. code-block :: editor
+
+     alias conda="/home/user/miniconda3/condabin/conda"
+       
+4. Save the file
+5. source the .zshrc:
+
+.. code-block :: console
+
+     source ~/.zshrc
+alias conda="/home/anon/miniconda3/condabin/conda"
+
+
 Development Environment, Windows cmd.exe shell
 ----------------------------------------------
 
