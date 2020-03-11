@@ -6,6 +6,17 @@ Miniconda hash information
 ========================================  =========  =================== ====================================================================
 Name                                      Size       Time modified        SHA256 hash                                                         
 ========================================  =========  =================== ====================================================================
+Miniconda3-py37_4.8.2-Linux-ppc64le.sh    50.1 MiB   2020-03-11 10:37:04  ``8e854ef9dc66f47b309acbf7845cee7671fea1c7fde05471c0c82b9a79723825``
+Miniconda3-py37_4.8.2-Linux-x86_64.sh     81.1 MiB   2020-03-11 10:37:27  ``957d2f0f0701c3d1335e3b39f235d197837ad69a944fa6f5d8ad2c686b69df3b``
+Miniconda3-py37_4.8.2-MacOSX-x86_64.pkg   61.3 MiB   2020-03-11 10:39:17  ``f3ede3a58d82fb5dcbca52d291a9edb5cd962d84d823a20693dd4bb27506cdd0``
+Miniconda3-py37_4.8.2-MacOSX-x86_64.sh    50.3 MiB   2020-03-11 10:37:45  ``d1fca4f74f9971c27220122723843f6c879a5d13ff59c01fca17ef62a1576732``
+Miniconda3-py37_4.8.2-Windows-x86.exe     52.2 MiB   2020-03-11 10:38:51  ``ca74cb6eb0731db2b972c0fb512e29661a84c3f01ac6133121b4372eb1c41f46``
+Miniconda3-py37_4.8.2-Windows-x86_64.exe  51.6 MiB   2020-03-11 10:38:26  ``1701955cd637d1dad5a84958fd470649b79de973d1570541eb52857664b5056c``
+Miniconda3-py38_4.8.2-Linux-ppc64le.sh    50.5 MiB   2020-03-11 10:39:28  ``e9d8f15b598a65753329690479a288d209707d2326d3ec63cb7b00dbb96dea2d``
+Miniconda3-py38_4.8.2-Linux-x86_64.sh     85.7 MiB   2020-03-11 10:39:44  ``5bbb193fd201ebe25f4aeb3c58ba83feced6a25982ef4afa86d5506c3656c142``
+Miniconda3-py38_4.8.2-MacOSX-x86_64.pkg   62.3 MiB   2020-03-11 10:40:18  ``6c8cd328e74767d8633704bdd361e7eb10a37e32c2d3ff3dd2ab95b93d4f47d3``
+Miniconda3-py38_4.8.2-MacOSX-x86_64.sh    51.3 MiB   2020-03-11 10:39:58  ``443f6b9b5ff34b9b841203dd1168c6f9ffe507577d113f123ef9c36fca469228``
+Miniconda3-py38_4.8.2-Windows-x86_64.exe  52.7 MiB   2020-03-11 10:40:08  ``2eb98bb5b8f350934c2acbec9e7a5315f208869a41bda817835810018ba7ae55``
 Miniconda2-4.7.12.1-Linux-ppc64le.sh      50.9 MiB   2019-10-25 14:32:08  ``3567394a890435a7d2f95b7eff4356d4b0fc777274564dbfd421804c3273576e``
 Miniconda2-4.7.12.1-Linux-x86_64.sh       46.0 MiB   2019-10-25 14:32:08  ``383fe7b6c2574e425eee3c65533a5101e68a2d525e66356844a80aa02a556695``
 Miniconda2-4.7.12.1-MacOSX-x86_64.pkg     47.8 MiB   2019-10-25 14:32:09  ``fcc30b2e18f7a292b34b2e24ad855786a66423f860157fa2b77e48b6392f0abb``
