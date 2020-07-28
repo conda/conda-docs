@@ -21,8 +21,8 @@ Windows installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,54.6 MiB,``6003dbd4d1a9f0c9e64943468d00cf9f6dd2d34cfa0d00c58fe9d175d64c056c``
-   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,48.3 MiB,``e4b8fc4802c6481f37a409ac3099aa1016aa3abf68671036670c0ff6a1526b44``
+   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,55.7 MiB,``1f4ff67f051c815b6008f144fdc4c3092af2805301d248b56281c36c1f4333e5``
+   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,49.6 MiB,``415920293ae005a17afaef4c275bd910b06c07d8adf5e0cbc9c69f0f890df976``
    Python 2.7,`Miniconda2 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe>`_,54.1 MiB,``6973025404832944e074bf02bda8c4594980eeed4707bb51baa8fbdba4bf326c``
    ,`Miniconda2 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe>`_,47.7 MiB,``c8049d26f8b6b954b57bcd4e99ad72d1ffa13f4a6b218e64e641504437b2617b``
 
@@ -34,8 +34,8 @@ MacOSX installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.7,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,52.3 MiB,``ccc1bded923a790cd61cd17c83c3dcc374dc0415cfa7fb1f71e6a2438236543d``
-   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,60.4 MiB,``4a132568b095dfd728838af2dd0da5e27ea3ddb21bdfadaa89c9ffeda7786234``
+   Python 3.8,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,53.2 MiB,``9b9a353fadab6aa82ac0337c367c23ef842f97868dcbb2ff25ec3aa463afc871``
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,61.3 MiB,``2a0e87c353eba5f71b01bd379b3ce9a21855fa42fc3bb854a33f0ea37bfc0ec1``
    Python 2.7,`Miniconda2 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh>`_,40.3 MiB,``0e2961e20a2239c140766456388beba6630f0c869020d2bd1870c3d040980b45``
    ,`Miniconda2 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.pkg>`_,48.4 MiB,``9ca4313e8162a939c7a5a4f48d657722594f8db9a98472803d63c3a7f66fa1da``
 
@@ -46,7 +46,7 @@ Linux installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.7,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,84.8 MiB,``bb2e3cedd2e78a8bb6872ab3ab5b1266a90f8c7004a22d8dc2ea5effeb6a439a``
+   Python 3.8,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,88.7 MiB,``879457af6a0bf5b34b48c12de31d4df0ee2f06a8e68768e5758c3293b2daf688``
    ,`Miniconda3 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh>`_,62.7 MiB,``f387eded3fa4ddc3104b7775e62d59065b30205c2758a8b86b4c27144adafcc4``
    Python 2.7,`Miniconda2 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh>`_,48.7 MiB,``b820dde1a0ba868c4c948fe6ace7300a252b33b5befd078a15d4a017476b8979``
    ,`Miniconda2 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh>`_,39.0 MiB,``2e20ac4379ca5262e7612f84ad26b1a2f2782d0994facdecb28e0baf51749979``
@@ -61,7 +61,7 @@ Installing
 Other resources
 ===============
 
- -  `Miniconda with Python 3.7 for Power8 &
+ -  `Miniconda with Python 3.8 for Power8 &
     Power9 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`__
  -  `Miniconda with Python 2.7 for Power8 &
     Power9 <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`__
@@ -113,7 +113,7 @@ Other resources
           $ conda create -n myenv python
 
  will be to install Python 2.7 with the Python 2
- Miniconda and to install Python 3.7 with the Python
+ Miniconda and to install Python 3.8 with the Python
  3 Miniconda. You can override the default by
  explicitly setting ``python=2`` or ``python=3``. It
  also determines the default value of ``CONDA_PY``
