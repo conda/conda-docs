@@ -3,7 +3,7 @@ Help and support
 =================
 
 * Get free community support with our `Google group
-  <https://groups.google.com/a/anaconda.com/forum/#!forum/anaconda>`_.
+  <https://groups.google.com/a/continuum.io/forum/#!forum/anaconda>`_.
 
 * Paid `support <https://www.anaconda.com/support/>`_,
   `training <https://www.anaconda.com/training/>`_ and
@@ -24,9 +24,9 @@ Join the conda email group
 ===========================
 
 Join the mailing lists for both `Anaconda
-<https://groups.google.com/a/anaconda.com/forum/#!forum/anaconda>`_
+<https://groups.google.com/a/continuum.io/forum/#!forum/anaconda>`_
 and `conda
-<https://groups.google.com/a/anaconda.com/forum/#!forum/conda>`_.
+<https://groups.google.com/a/continuum.io/forum/#!forum/conda>`_.
 Ask questions, answer questions, discuss ways to use conda,
 request new features and submit any other comments you may have.
 
