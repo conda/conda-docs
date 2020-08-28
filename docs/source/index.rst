@@ -11,7 +11,7 @@ Conda
 |
 
 *Package, dependency and environment management for any
-language---Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++,
+language---Python, R, Ruby, Perl, Lua, Scala, Java, JavaScript, C/ C++,
 FORTRAN, and more.*
 
 Conda is an open source package management system and environment
