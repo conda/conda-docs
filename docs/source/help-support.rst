@@ -40,8 +40,7 @@ recipe for a program not yet listed in the repository, use a GitHub
 pull request to submit it to the repository, so that others using
 that program in the future can reuse it. Recipes are welcome for
 programs that use any license, such as GPL, BSD, MIT or Apache, and
-all of the recipes in thisrepository are released into the public
-domain.
+ domain.
 
 
 Report bugs
