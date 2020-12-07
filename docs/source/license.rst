@@ -1,6 +1,6 @@
-==============
+=============
 Conda license
-==============
+=============
 
 Conda is released under the 3-clause BSD license with the following terms:
 

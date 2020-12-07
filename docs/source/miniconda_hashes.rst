@@ -1,5 +1,4 @@
 :orphan:
-
 ==========================
 Miniconda hash information
 ==========================
@@ -7,6 +6,71 @@ Miniconda hash information
 ========================================  =========  =================== ====================================================================
 Name                                      Size       Time modified        SHA256 hash                                                         
 ========================================  =========  =================== ====================================================================
+Miniconda3-py37_4.9.2-Linux-ppc64le.sh    88.1 MiB   2020-11-23 13:06:12  ``eadf91afde193e6bee34a6272b418e5021e82e4002fb0717752b0bc669f54937``
+Miniconda3-py37_4.9.2-Linux-x86_64.sh     85.9 MiB   2020-11-23 13:06:13  ``79510c6e7bd9e012856e25dcb21b3e093aa4ac8113d9aa7e82a86987eabe1c31``
+Miniconda3-py37_4.9.2-MacOSX-x86_64.pkg   60.9 MiB   2020-11-23 13:06:13  ``ee46e102cd348dfcfd9705a1510ff29437114066b070865818628d9a8ea194bb``
+Miniconda3-py37_4.9.2-MacOSX-x86_64.sh    53.4 MiB   2020-11-23 13:06:13  ``93fff5577b548fb4a57cb7ea64975bd395f5224a6f90093e3798a352b09a46e7``
+Miniconda3-py37_4.9.2-Windows-x86.exe     52.9 MiB   2020-11-23 13:06:12  ``e2ccf83165f4b040b12fe302f6d853b91b741761fa6b1c3c1607b4a7afe1ff9b``
+Miniconda3-py37_4.9.2-Windows-x86_64.exe  55.8 MiB   2020-11-23 13:06:12  ``a31f6ce341a790aae3c509e6eb158e4b4efeece07a44988d21d54b07d9830af0``
+Miniconda3-py38_4.9.2-Linux-ppc64le.sh    91.9 MiB   2020-11-23 13:06:13  ``2b111dab4b72a34c969188aa7a91eca927a034b14a87f725fa8d295955364e71``
+Miniconda3-py38_4.9.2-Linux-x86_64.sh     89.9 MiB   2020-11-23 13:06:13  ``1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7``
+Miniconda3-py38_4.9.2-MacOSX-x86_64.pkg   62.0 MiB   2020-11-23 13:06:13  ``b06f3bf3cffa9b53695c9c3b8da05bf583bc7047d45b0d74492f154d85e317fa``
+Miniconda3-py38_4.9.2-MacOSX-x86_64.sh    54.5 MiB   2020-11-23 13:06:13  ``a9ea0afba55b5d872e01323d495b649eac8ff4ce2ea098fb4c357b6139fe6478``
+Miniconda3-py38_4.9.2-Windows-x86.exe     54.2 MiB   2020-11-23 13:06:12  ``9c2ef76bae97246c85c206733ca30fd1feb8a4b3f90a2a511fea681ce7ebc661``
+Miniconda3-py38_4.9.2-Windows-x86_64.exe  57.0 MiB   2020-11-23 13:06:12  ``4fa22bba0497babb5b6608cb8843545372a99f5331c8120099ae1d803f627c61``
+Miniconda2-py27_4.8.3-Linux-ppc64le.sh    51.9 MiB   2020-06-16 14:57:51  ``23473678afb15a6ed87045ce6490463420aed9c249607fb389a788e95335bb28``
+Miniconda2-py27_4.8.3-Linux-x86_64.sh     48.7 MiB   2020-06-16 14:57:45  ``b820dde1a0ba868c4c948fe6ace7300a252b33b5befd078a15d4a017476b8979``
+Miniconda2-py27_4.8.3-MacOSX-x86_64.pkg   48.4 MiB   2020-06-16 14:56:46  ``9ca4313e8162a939c7a5a4f48d657722594f8db9a98472803d63c3a7f66fa1da``
+Miniconda2-py27_4.8.3-MacOSX-x86_64.sh    40.3 MiB   2020-06-16 14:57:58  ``0e2961e20a2239c140766456388beba6630f0c869020d2bd1870c3d040980b45``
+Miniconda2-py27_4.8.3-Windows-x86.exe     47.7 MiB   2020-06-16 14:57:49  ``c8049d26f8b6b954b57bcd4e99ad72d1ffa13f4a6b218e64e641504437b2617b``
+Miniconda2-py27_4.8.3-Windows-x86_64.exe  54.1 MiB   2020-06-16 14:57:46  ``6973025404832944e074bf02bda8c4594980eeed4707bb51baa8fbdba4bf326c``
+Miniconda3-py37_4.8.3-Linux-ppc64le.sh    88.1 MiB   2020-06-16 14:57:45  ``bcd33ea9240e2720ec004af43194c3fe6d39581e4a957a26621e00c232ca5ca1``
+Miniconda3-py37_4.8.3-Linux-x86_64.sh     84.8 MiB   2020-06-16 14:57:55  ``bb2e3cedd2e78a8bb6872ab3ab5b1266a90f8c7004a22d8dc2ea5effeb6a439a``
+Miniconda3-py37_4.8.3-MacOSX-x86_64.pkg   60.4 MiB   2020-06-16 14:56:44  ``4a132568b095dfd728838af2dd0da5e27ea3ddb21bdfadaa89c9ffeda7786234``
+Miniconda3-py37_4.8.3-MacOSX-x86_64.sh    52.3 MiB   2020-06-16 14:57:52  ``ccc1bded923a790cd61cd17c83c3dcc374dc0415cfa7fb1f71e6a2438236543d``
+Miniconda3-py37_4.8.3-Windows-x86.exe     48.3 MiB   2020-06-16 14:57:48  ``e4b8fc4802c6481f37a409ac3099aa1016aa3abf68671036670c0ff6a1526b44``
+Miniconda3-py37_4.8.3-Windows-x86_64.exe  54.6 MiB   2020-06-16 14:57:48  ``6003dbd4d1a9f0c9e64943468d00cf9f6dd2d34cfa0d00c58fe9d175d64c056c``
+Miniconda3-py38_4.8.3-Linux-ppc64le.sh    92.1 MiB   2020-06-16 14:57:50  ``362705630a9e85faf29c471faa8b0a48eabfe2bf87c52e4c180825f9215d313c``
+Miniconda3-py38_4.8.3-Linux-x86_64.sh     88.7 MiB   2020-06-16 14:57:56  ``879457af6a0bf5b34b48c12de31d4df0ee2f06a8e68768e5758c3293b2daf688``
+Miniconda3-py38_4.8.3-MacOSX-x86_64.pkg   61.3 MiB   2020-06-16 14:56:45  ``2a0e87c353eba5f71b01bd379b3ce9a21855fa42fc3bb854a33f0ea37bfc0ec1``
+Miniconda3-py38_4.8.3-MacOSX-x86_64.sh    53.2 MiB   2020-06-16 14:57:53  ``9b9a353fadab6aa82ac0337c367c23ef842f97868dcbb2ff25ec3aa463afc871``
+Miniconda3-py38_4.8.3-Windows-x86.exe     49.6 MiB   2020-06-16 14:57:54  ``415920293ae005a17afaef4c275bd910b06c07d8adf5e0cbc9c69f0f890df976``
+Miniconda3-py38_4.8.3-Windows-x86_64.exe  55.7 MiB   2020-06-16 14:57:53  ``1f4ff67f051c815b6008f144fdc4c3092af2805301d248b56281c36c1f4333e5``
+Miniconda3-py37_4.8.2-Linux-ppc64le.sh    50.1 MiB   2020-03-11 10:37:04  ``8e854ef9dc66f47b309acbf7845cee7671fea1c7fde05471c0c82b9a79723825``
+Miniconda3-py37_4.8.2-Linux-x86_64.sh     81.1 MiB   2020-03-11 10:37:27  ``957d2f0f0701c3d1335e3b39f235d197837ad69a944fa6f5d8ad2c686b69df3b``
+Miniconda3-py37_4.8.2-MacOSX-x86_64.pkg   61.3 MiB   2020-03-11 10:39:17  ``f3ede3a58d82fb5dcbca52d291a9edb5cd962d84d823a20693dd4bb27506cdd0``
+Miniconda3-py37_4.8.2-MacOSX-x86_64.sh    50.3 MiB   2020-03-11 10:37:45  ``d1fca4f74f9971c27220122723843f6c879a5d13ff59c01fca17ef62a1576732``
+Miniconda3-py37_4.8.2-Windows-x86.exe     52.2 MiB   2020-03-11 10:38:51  ``ca74cb6eb0731db2b972c0fb512e29661a84c3f01ac6133121b4372eb1c41f46``
+Miniconda3-py37_4.8.2-Windows-x86_64.exe  51.6 MiB   2020-03-11 10:38:26  ``1701955cd637d1dad5a84958fd470649b79de973d1570541eb52857664b5056c``
+Miniconda3-py38_4.8.2-Linux-ppc64le.sh    50.5 MiB   2020-03-11 10:39:28  ``e9d8f15b598a65753329690479a288d209707d2326d3ec63cb7b00dbb96dea2d``
+Miniconda3-py38_4.8.2-Linux-x86_64.sh     85.7 MiB   2020-03-11 10:39:44  ``5bbb193fd201ebe25f4aeb3c58ba83feced6a25982ef4afa86d5506c3656c142``
+Miniconda3-py38_4.8.2-MacOSX-x86_64.pkg   62.3 MiB   2020-03-11 10:40:18  ``6c8cd328e74767d8633704bdd361e7eb10a37e32c2d3ff3dd2ab95b93d4f47d3``
+Miniconda3-py38_4.8.2-MacOSX-x86_64.sh    51.3 MiB   2020-03-11 10:39:58  ``443f6b9b5ff34b9b841203dd1168c6f9ffe507577d113f123ef9c36fca469228``
+Miniconda3-py38_4.8.2-Windows-x86_64.exe  52.7 MiB   2020-03-11 10:40:08  ``2eb98bb5b8f350934c2acbec9e7a5315f208869a41bda817835810018ba7ae55``
+Miniconda2-4.7.12.1-Linux-ppc64le.sh      50.9 MiB   2019-10-25 14:32:08  ``3567394a890435a7d2f95b7eff4356d4b0fc777274564dbfd421804c3273576e``
+Miniconda2-4.7.12.1-Linux-x86_64.sh       46.0 MiB   2019-10-25 14:32:08  ``383fe7b6c2574e425eee3c65533a5101e68a2d525e66356844a80aa02a556695``
+Miniconda2-4.7.12.1-MacOSX-x86_64.pkg     47.8 MiB   2019-10-25 14:32:09  ``fcc30b2e18f7a292b34b2e24ad855786a66423f860157fa2b77e48b6392f0abb``
+Miniconda2-4.7.12.1-MacOSX-x86_64.sh      39.4 MiB   2019-10-25 14:32:08  ``0db8f4037e40e13eb1d2adc89e054dfb165470cc77be45ef2bf9cb31c8b72f39``
+Miniconda2-4.7.12.1-Windows-x86.exe       48.7 MiB   2019-10-25 14:32:09  ``0d106228d6a4610b599df965dd6d9bb659329a17e3d693e3274b20291a7c6f94``
+Miniconda2-4.7.12.1-Windows-x86_64.exe    50.9 MiB   2019-10-25 14:32:08  ``8647c54058f11842c37854edeff4d20bc1fbdad8b88d9d34d76fda1630e64846``
+Miniconda3-4.7.12.1-Linux-ppc64le.sh      78.0 MiB   2019-10-25 14:32:09  ``f46c0cbd84031141b83fb89111d63b57e3bfaa5b68b8a8a98e1daa403090cafa``
+Miniconda3-4.7.12.1-Linux-x86_64.sh       68.5 MiB   2019-10-25 14:32:09  ``bfe34e1fa28d6d75a7ad05fd02fa5472275673d5f5621b77380898dee1be15d2``
+Miniconda3-4.7.12.1-MacOSX-x86_64.pkg     59.8 MiB   2019-10-25 14:32:08  ``9927f1de5151a1a6431b02846fbca089e8b97a55a244f02ffc3207522092907b``
+Miniconda3-4.7.12.1-MacOSX-x86_64.sh      49.4 MiB   2019-10-25 14:32:09  ``5cf91dde8f6024061c8b9239a1b4c34380238297adbdb9ef2061eb9d1a7f69bc``
+Miniconda3-4.7.12.1-Windows-x86.exe       54.0 MiB   2019-10-25 14:32:08  ``7c30778941d2bba03531ba269a78a108b01fa366530290376e7c3b467f3c66ba``
+Miniconda3-4.7.12.1-Windows-x86_64.exe    51.5 MiB   2019-10-25 14:32:08  ``f18060cc0bb50ae75e4d602b7ce35197c8e31e81288d069b758594f1bb46ab45``
+Miniconda2-4.7.12-Linux-ppc64le.sh        49.5 MiB   2019-10-16 14:11:26  ``20c87539b7ad638a45b6fa2dbc06caa610299f3e0d7e22b126573ec362e09253``
+Miniconda2-4.7.12-Linux-x86_64.sh         44.8 MiB   2019-10-16 14:11:26  ``2248d5f2eeeff69b142a6ccf3148357b8e42f9c4141ab97a17c9e27f6149c417``
+Miniconda2-4.7.12-MacOSX-x86_64.pkg       47.8 MiB   2019-10-16 14:11:26  ``7d113df5704aecbff25429410e22b2fc55cd729053b5c20edc7f7470d07b38fb``
+Miniconda2-4.7.12-MacOSX-x86_64.sh        38.1 MiB   2019-10-16 14:11:26  ``3159ea8f0ef8d394e17b2e363444e22b579e631675d468b8bce49047763ca435``
+Miniconda2-4.7.12-Windows-x86.exe         48.0 MiB   2019-10-16 14:11:27  ``a636f00fe9ff218825c8f256962ef7a108529936d1cb7ce9270192cabc542d3c``
+Miniconda2-4.7.12-Windows-x86_64.exe      50.0 MiB   2019-10-16 14:11:25  ``63b8220df057aa91bbb5ab71b3f8f7ea8489a5f0b46d49a36f7804b30683717b``
+Miniconda3-4.7.12-Linux-ppc64le.sh        76.8 MiB   2019-10-16 14:11:25  ``311bbf29c673c2cae705c21e9d957403e7b83d45af4b3ca6f4d2cb070c1a845a``
+Miniconda3-4.7.12-Linux-x86_64.sh         67.2 MiB   2019-10-16 14:11:26  ``a23fcffe97690d3bbcd34cda798c3a3318e0f35d863c5d4aca3fc983fe8450b7``
+Miniconda3-4.7.12-MacOSX-x86_64.pkg       59.8 MiB   2019-10-16 14:11:26  ``6636f7a41d54136f2623d1ff5be2543b142b5810d7734f57bf47d1931d7c0b03``
+Miniconda3-4.7.12-MacOSX-x86_64.sh        48.2 MiB   2019-10-16 14:11:27  ``a879d93f42bdc796a4b975a11d109dfacc11a7ba6c4106aedf657d5e1fd79410``
+Miniconda3-4.7.12-Windows-x86.exe         53.2 MiB   2019-10-16 14:11:26  ``ff851cfe7cb4c21adbed48cb7f74d7e2ec457d76c02269132e6093e0fe8838c4``
+Miniconda3-4.7.12-Windows-x86_64.exe      50.6 MiB   2019-10-16 14:11:26  ``6263b5c45038a624eb265341eae5180a87c0fe0a97f1ce4ff0b9b9d91807cfd3``
 Miniconda2-4.7.10-Linux-ppc64le.sh        58.9 MiB   2019-07-29 09:15:37  ``af569a405980b67a07afbd1d583b8e59346e9762ba68ea98836b3d129c6be276``
 Miniconda2-4.7.10-Linux-x86_64.sh         49.7 MiB   2019-07-29 09:15:39  ``9b1c7899f3bfcd520203eb7d51bfe456e25e5700dfa877c09bd2dbb028c305d8``
 Miniconda2-4.7.10-MacOSX-x86_64.pkg       56.4 MiB   2019-07-29 09:15:39  ``97de47ce5028d382d436997911138db2fa473644de549dc6d888bbc2f41a1a8f``

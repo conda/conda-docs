@@ -66,7 +66,13 @@ def main():
         + "=" * HASH_LEN
         + "\n"
     )
-    sorting_key = lambda x: LooseVersion(x.split("-")[1])
+    def sorting_key(filename):
+        # typically the filename is Miniconda{2,3}-version-platform.ext
+        version_str = filename.split("-")[1]
+        # cases where the filename is Miniconda3-py3X_version-platform.ext
+        if "_" in version_str:
+            version_str = version_str.split("_")[1]
+        return LooseVersion(version_str)
     for filename in sorted(data, reverse=True, key=sorting_key):
         last_modified = datetime.datetime.fromtimestamp(
             math.floor(data[filename]["mtime"])
