@@ -36,7 +36,7 @@ MacOSX installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.9,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-MacOSX-x86_64.sh>`_,42.2 MiB,``0658832393a50f5a578bcad825304886``
+   Python 3.9,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-MacOSX-x86_64.sh>`_,42.2 MiB,``b3bf77cbb81ee235ec6858146a2a84d20f8ecdeb614678030c39baacb5acbed1``
    ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-MacOSX-x86_64.pkg>`_,49.7 MiB,``b7b1628770656361c8b7fb367b30d17e``
    Python 3.8,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,54.5 MiB,``a9ea0afba55b5d872e01323d495b649eac8ff4ce2ea098fb4c357b6139fe6478``
    ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,62.0 MiB,``b06f3bf3cffa9b53695c9c3b8da05bf583bc7047d45b0d74492f154d85e317fa``
