@@ -33,7 +33,7 @@ MacOSX installers
 =================
 
 .. csv-table:: MacOSX
-   :header: Python version,Name,Size,SHA256 hash
+   :header: Python version,Name,Size,SHA256 hash (64 characters) or md5sum (32 characters)
    :widths: 5, 10, 5, 80
 
    Python 3.9,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-MacOSX-x86_64.sh>`_,42.2 MiB,``b3bf77cbb81ee235ec6858146a2a84d20f8ecdeb614678030c39baacb5acbed1``
@@ -47,7 +47,7 @@ Linux installers
 ================
 
 .. csv-table:: Linux
-   :header: Python version,Name,Size,SHA256 hash
+   :header: Python version,Name,Size,SHA256 hash (64 characters) or md5sum (32 characters)
    :widths: 5, 10, 5, 80
 
    Python 3.9,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh>`_,58.6 MiB,``b4e46fcc8029e2cfa731b788f25b1d36``
