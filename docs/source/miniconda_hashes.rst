@@ -6,18 +6,21 @@ Miniconda hash information
 ========================================  =========  =================== ====================================================================
 Name                                      Size       Time modified        SHA256 hash                                                         
 ========================================  =========  =================== ====================================================================
+Miniconda3-py37_4.9.2-Linux-aarch64.sh    105.3 MiB  2021-03-16 18:15:18  ``ccbac800a2d897218dde1df3711d26299a083ca0beb118edf62cf8f3d9516da8``
 Miniconda3-py37_4.9.2-Linux-ppc64le.sh    88.1 MiB   2020-11-23 13:06:12  ``eadf91afde193e6bee34a6272b418e5021e82e4002fb0717752b0bc669f54937``
 Miniconda3-py37_4.9.2-Linux-x86_64.sh     85.9 MiB   2020-11-23 13:06:13  ``79510c6e7bd9e012856e25dcb21b3e093aa4ac8113d9aa7e82a86987eabe1c31``
 Miniconda3-py37_4.9.2-MacOSX-x86_64.pkg   60.9 MiB   2020-11-23 13:06:13  ``ee46e102cd348dfcfd9705a1510ff29437114066b070865818628d9a8ea194bb``
 Miniconda3-py37_4.9.2-MacOSX-x86_64.sh    53.4 MiB   2020-11-23 13:06:13  ``93fff5577b548fb4a57cb7ea64975bd395f5224a6f90093e3798a352b09a46e7``
 Miniconda3-py37_4.9.2-Windows-x86.exe     52.9 MiB   2020-11-23 13:06:12  ``e2ccf83165f4b040b12fe302f6d853b91b741761fa6b1c3c1607b4a7afe1ff9b``
 Miniconda3-py37_4.9.2-Windows-x86_64.exe  55.8 MiB   2020-11-23 13:06:12  ``a31f6ce341a790aae3c509e6eb158e4b4efeece07a44988d21d54b07d9830af0``
+Miniconda3-py38_4.9.2-Linux-aarch64.sh    111.8 MiB  2021-03-16 18:15:18  ``b6fbba97d7cef35ebee8739536752cd8b8b414f88e237146b11ebf081c44618f``
 Miniconda3-py38_4.9.2-Linux-ppc64le.sh    91.9 MiB   2020-11-23 13:06:13  ``2b111dab4b72a34c969188aa7a91eca927a034b14a87f725fa8d295955364e71``
 Miniconda3-py38_4.9.2-Linux-x86_64.sh     89.9 MiB   2020-11-23 13:06:13  ``1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7``
 Miniconda3-py38_4.9.2-MacOSX-x86_64.pkg   62.0 MiB   2020-11-23 13:06:13  ``b06f3bf3cffa9b53695c9c3b8da05bf583bc7047d45b0d74492f154d85e317fa``
 Miniconda3-py38_4.9.2-MacOSX-x86_64.sh    54.5 MiB   2020-11-23 13:06:13  ``a9ea0afba55b5d872e01323d495b649eac8ff4ce2ea098fb4c357b6139fe6478``
 Miniconda3-py38_4.9.2-Windows-x86.exe     54.2 MiB   2020-11-23 13:06:12  ``9c2ef76bae97246c85c206733ca30fd1feb8a4b3f90a2a511fea681ce7ebc661``
 Miniconda3-py38_4.9.2-Windows-x86_64.exe  57.0 MiB   2020-11-23 13:06:12  ``4fa22bba0497babb5b6608cb8843545372a99f5331c8120099ae1d803f627c61``
+Miniconda3-py39_4.9.2-Linux-aarch64.sh    76.2 MiB   2021-03-16 18:15:18  ``45c5246f3e60dfce4d5ab0cd00c5d01cf39c8e59cefa1f053397f37fb13f4410``
 Miniconda3-py39_4.9.2-Linux-ppc64le.sh    60.3 MiB   2020-12-21 11:02:47  ``64616e57a8d86dbd5bbd14c1e5c60e2dc83c33e9b11a2815a1811394484534ab``
 Miniconda3-py39_4.9.2-Linux-x86_64.sh     58.6 MiB   2020-12-21 11:02:47  ``536817d1b14cb1ada88900f5be51ce0a5e042bae178b5550e62f61e223deae7c``
 Miniconda3-py39_4.9.2-MacOSX-x86_64.pkg   49.7 MiB   2020-12-21 11:02:47  ``298ff80803817921a98e21d81d60f93b44afce67aec8ae492d289b13741bcffe``
