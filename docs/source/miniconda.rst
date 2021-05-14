@@ -51,8 +51,11 @@ Linux installers
    :widths: 5, 10, 5, 80
 
    Python 3.9,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh>`_,58.6 MiB,``536817d1b14cb1ada88900f5be51ce0a5e042bae178b5550e62f61e223deae7c``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-aarch64.sh>`_,76.2 MiB,``45c5246f3e60dfce4d5ab0cd00c5d01cf39c8e59cefa1f053397f37fb13f4410``
    Python 3.8,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,89.9 MiB,``1314b90489f154602fd794accfc90446111514a5a72fe1f71ab83e07de9504a7``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,111.8 MiB,``b6fbba97d7cef35ebee8739536752cd8b8b414f88e237146b11ebf081c44618f``
    Python 3.7,`Miniconda3 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh>`_,62.7 MiB,``f387eded3fa4ddc3104b7775e62d59065b30205c2758a8b86b4c27144adafcc4``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-aarch64.sh>`_,105.3 MiB,``ccbac800a2d897218dde1df3711d26299a083ca0beb118edf62cf8f3d9516da8``
    Python 2.7,`Miniconda2 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh>`_,48.7 MiB,``b820dde1a0ba868c4c948fe6ace7300a252b33b5befd078a15d4a017476b8979``
    ,`Miniconda2 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh>`_,39.0 MiB,``2e20ac4379ca5262e7612f84ad26b1a2f2782d0994facdecb28e0baf51749979``
 
