@@ -6,6 +6,12 @@ Miniconda hash information
 ========================================  =========  =================== ====================================================================
 Name                                      Size       Time modified        SHA256 hash                                                         
 ========================================  =========  =================== ====================================================================
+Miniconda3-py37_4.10.1-Linux-aarch64.sh   104.5 MiB  2021-06-01 18:33:41  ``33d00488e14e8659a13bc21e78179dd996cbc7502f4c53c2f4037549c1da91d9``
+Miniconda3-py37_4.10.1-Linux-s390x.sh     84.1 MiB   2021-06-01 18:38:01  ``71957e590f6616096ef69c345f895603682305962d03889293ea937c3c56db94``
+Miniconda3-py38_4.10.1-Linux-aarch64.sh   111.1 MiB  2021-06-01 18:33:45  ``656998faeac584eac33abe90cbe3c7d0565a49031a4f5049d9e5311bb7b616fe``
+Miniconda3-py38_4.10.1-Linux-s390x.sh     89.0 MiB   2021-06-01 18:38:14  ``ebdff38ca1f8a6e994f78ab6108de09bb722633500980ab79c59ba9312443de5``
+Miniconda3-py39_4.10.1-Linux-aarch64.sh   69.8 MiB   2021-06-01 18:33:49  ``737687139c3e2aa43875b67f7d6915e412ac179f2e33e14f00e8b4e1f3d31dd7``
+Miniconda3-py39_4.10.1-Linux-s390x.sh     57.1 MiB   2021-06-01 18:38:17  ``afa5c587d2e9754a426da34ca032b41bee8fc5419881cc257ef7ee2e6e951c46``
 Miniconda3-py37_4.9.2-Linux-aarch64.sh    105.3 MiB  2021-03-16 18:15:18  ``ccbac800a2d897218dde1df3711d26299a083ca0beb118edf62cf8f3d9516da8``
 Miniconda3-py37_4.9.2-Linux-ppc64le.sh    88.1 MiB   2020-11-23 13:06:12  ``eadf91afde193e6bee34a6272b418e5021e82e4002fb0717752b0bc669f54937``
 Miniconda3-py37_4.9.2-Linux-s390x.sh      97.4 MiB   2021-05-14 10:11:19  ``a5d767c39016b635da50d88ca141e6c2fa554311c9a2af896644fcbe81f7ce82``
