@@ -21,10 +21,10 @@ Windows installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.9,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Windows-x86_64.exe>`_,57.7 MiB,``c3a43d6bc4c4fa92454dbfa636ccb859a045d875df602b31ae71b9e0c3fec2b8``
-   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Windows-x86.exe>`_,54.9 MiB,``5045fb9dc4405dbba21054262b7d104ba61a8739c1a56038ccb0258f233ad646``
-   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,57.0 MiB,``4fa22bba0497babb5b6608cb8843545372a99f5331c8120099ae1d803f627c61``
-   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,54.2 MiB,``9c2ef76bae97246c85c206733ca30fd1feb8a4b3f90a2a511fea681ce7ebc661``
+   Python 3.9,`Miniconda3 Windows 8.1+ 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Windows-x86_64.exe>`_,57.7 MiB,``c3a43d6bc4c4fa92454dbfa636ccb859a045d875df602b31ae71b9e0c3fec2b8``
+   ,`Miniconda3 Windows 8.1+ 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Windows-x86.exe>`_,54.9 MiB,``5045fb9dc4405dbba21054262b7d104ba61a8739c1a56038ccb0258f233ad646``
+   Python 3.8,`Miniconda3 Windows Vista+ 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,57.0 MiB,``4fa22bba0497babb5b6608cb8843545372a99f5331c8120099ae1d803f627c61``
+   ,`Miniconda3 Windows Vista+ 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,54.2 MiB,``9c2ef76bae97246c85c206733ca30fd1feb8a4b3f90a2a511fea681ce7ebc661``
    Python 2.7,`Miniconda2 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe>`_,54.1 MiB,``6973025404832944e074bf02bda8c4594980eeed4707bb51baa8fbdba4bf326c``
    ,`Miniconda2 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe>`_,47.7 MiB,``c8049d26f8b6b954b57bcd4e99ad72d1ffa13f4a6b218e64e641504437b2617b``
 
