@@ -14,6 +14,21 @@ packages from the Anaconda repository.
 
 `See if Miniconda is right for you <https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#anaconda-or-miniconda>`_.
 
+
+System requirements
+===================
+
+* License: Free use and redistribution under the terms of the `EULA for Anaconda Individual Edition <https://www.anaconda.com/end-user-license-agreement-miniconda>`_. 
+* Operating system: Windows 8 or newer, 64-bit macOS 10.13+, or Linux, including Ubuntu, RedHat, CentOS 7+, and others.
+* If your operating system is older than what is currently supported, you can find older versions of the Anaconda installers in our `archive <https://repo.anaconda.com/archive/>`_ that might work for you. See :ref:`Using Anaconda on older operating systems <old-os>` for version recommendations.
+* System architecture: Windows- 64-bit x86, 32-bit x86; MacOS- 64-bit x86; Linux- 64-bit x86, 64-bit aarch64 (AWS Graviton2 / arm64), 64-bit Power8/Power9, s390x (Linux on IBM Z & LinuxONE).
+* Minimum 300 MB disk space to download and install.
+
+On Windows, macOS, and Linux, it is best to install Miniconda for the local user,
+which does not require administrator permissions and is the most robust type of
+installation. However, if you need to, you can install Miniconda system wide,
+which does require administrator permissions.
+
 Windows installers
 ==================
 
