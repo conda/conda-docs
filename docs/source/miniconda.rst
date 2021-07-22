@@ -18,38 +18,50 @@ Windows installers
 ==================
 
 .. csv-table:: Windows
-   :header: Python version,Name,Size,SHA256 hash
+   :header: Python version,Name,Size,MD5 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,58.1 MiB,``b33797064593ab2229a0135dc69001bea05cb56a20c2f243b1231213642e260a``
-   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,55.3 MiB,``24f438e57ff2ef1ce1e93050d4e9d13f5050955f759f448d84a4018d3cd12d6b``
-   Python 2.7,`Miniconda2 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe>`_,54.1 MiB,``6973025404832944e074bf02bda8c4594980eeed4707bb51baa8fbdba4bf326c``
-   ,`Miniconda2 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe>`_,47.7 MiB,``c8049d26f8b6b954b57bcd4e99ad72d1ffa13f4a6b218e64e641504437b2617b``
+   Python 3.9,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Windows-x86_64.exe`_,58.1 MiB,``128f0ca2c55441bffdb68d1e98f5b481``
+   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Windows-x86_64.exe`_,57.3 MiB,``e36e656d8a7b9d1b04251507ca343fe0``
+   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Windows-x86_64.exe`_,55.8 MiB,``4bcb4a16e46b70649f9abebd62a3fa81``
+   Python 3.9,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Windows-x86.exe`_,55.3 MiB,``a082be7ef6dd4f14b974dab2d78c5693``
+   Python 3.8,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Windows-x86.exe`_,54.5 MiB,``7bffb32ca0fc59b9f8c54148b0532d59``
+   Python 3.7,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Windows-x86.exe>`_,55.3 MiB,``8766e4f15b505ef3306acff10877f503``
 
 
 MacOSX installers
 =================
 
 .. csv-table:: MacOSX
-   :header: Python version,Name,Size,SHA256 hash
+   :header: Python version,Name,Size,MD5 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.8,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,42.3 MiB,``786de9721f43e2c7d2803144c635f5f6e4823483536dc141ccd82dbb927cd508``
-   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,49.9 MiB,``8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816``
-   Python 2.7,`Miniconda2 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh>`_,40.3 MiB,``0e2961e20a2239c140766456388beba6630f0c869020d2bd1870c3d040980b45``
-   ,`Miniconda2 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.pkg>`_,48.4 MiB,``9ca4313e8162a939c7a5a4f48d657722594f8db9a98472803d63c3a7f66fa1da``
+   Python 3.9,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-MacOSX-x86_64.sh>`_,42.3 MiB,``09bb30a9204ced74ce3c06762cb442fc``
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-MacOSX-x86_64.pkg>`_,49.9 MiB,``aa5b8d244b0ad334bfe72f03a19ac9dd``
+   Python 3.8,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-MacOSX-x86_64.sh>`_,53.3 MiB,```cb609591c280423e999fc421cdb779d3`
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-MacOSX-x86_64.pkg>`_,60.8 MiB,``f8c3bf68f0ed7a1ae23126ba2904b102``
+   Python 3.7,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-MacOSX-x86_64.sh>`_,50.6 MiB,``b88a2eb66917c55a6bd1973fabaf05b3``
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-MacOSX-x86_64.pkg>`_,58.1 MiB,``c2e9804788d63bddc9df4fe712ea9743``
 
 Linux installers
 ================
 
 .. csv-table:: Linux
-   :header: Python version,Name,Size,SHA256 hash
+   :header: Python version,Name,Size,MD5 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.8,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,63.6 MiB,``1ea2f885b4dbc3098662845560bc64271eb17085387a70c2ba3f29fff6f8d52f``
-   Python 3.7,`Miniconda3 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh>`_,62.7 MiB,``f387eded3fa4ddc3104b7775e62d59065b30205c2758a8b86b4c27144adafcc4``
-   Python 2.7,`Miniconda2 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh>`_,48.7 MiB,``b820dde1a0ba868c4c948fe6ace7300a252b33b5befd078a15d4a017476b8979``
-   ,`Miniconda2 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh>`_,39.0 MiB,``2e20ac4379ca5262e7612f84ad26b1a2f2782d0994facdecb28e0baf51749979``
+   Python 3.9,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh>`_,63.6 MiB,``8c69f65a4ae27fb41df0fe552b4a8a3b``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-aarch64.sh>`_,62.6 MiB,``d4e7afa2783cd85532d59d7ccb9ec268``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-ppc64le.sh>`_,60.6 MiB,``07ea41c691bdcc7d9c71cae1a1a88151``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-s390x.sh>`_,57.1 MiB,``633ae4c5382ca883f1f38a7d8c472f85``
+   Python 3.8,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh>`_,98.8 MiB,``633ae4c5382ca883f1f38a7d8c472f85``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-aarch64.sh>`_,94.8 MiB,``1b84ae526853a0301d0c04b68b718ea8``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-ppc64le.sh>`_,93.3 MiB,``12ddb1b94f30f8fc633c3223b0398d2f``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-s390x.sh>`_,89.0 MiB,``44e34b6ee8a47db8c28834f86ada6d41``
+   Python 3.7,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-x86_64.sh>`_,84.9 MiB,``9f186c1d86c266acc47dbc1603f0e2ed``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-aarch64.sh>`_,89.2 MiB,``19815e497b045246307f9317bcb4fb93``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-ppc64le.sh>`_,88.1 MiB,``a926bbaf28d59ac1264799e3ca770a44``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-s390x.sh>`_,84.1 MiB,``a82215f8abf68e44a8666a658ac4cdf9``
 
 Installing
 ==========
