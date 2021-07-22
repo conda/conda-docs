@@ -21,11 +21,11 @@ Windows installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.9,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Windows-x86_64.exe`_,58.1 MiB,``b33797064593ab2229a0135dc69001bea05cb56a20c2f243b1231213642e260a``
-   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Windows-x86_64.exe`_,57.3 MiB,``8940cdd621557bc55743d6bb4518c6d343a4587127e76de808fb07e51df03fea``
-   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Windows-x86_64.exe`_,55.8 MiB,``9c031506bfcb0428a0ac46c9152f9bdd48d5bdaa83046691bf8e0a4480663c05``
-   Python 3.9,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Windows-x86.exe`_,55.3 MiB,``24f438e57ff2ef1ce1e93050d4e9d13f5050955f759f448d84a4018d3cd12d6b``
-   Python 3.8,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Windows-x86.exe`_,54.5 MiB,``f81c165384c18d1986e2ba2f86cef384bc62266c46b34cd3d274e751ff5d91ed``
+   Python 3.9,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Windows-x86_64.exe>`_,58.1 MiB,``b33797064593ab2229a0135dc69001bea05cb56a20c2f243b1231213642e260a``
+   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Windows-x86_64.exe>`_,57.3 MiB,``8940cdd621557bc55743d6bb4518c6d343a4587127e76de808fb07e51df03fea``
+   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Windows-x86_64.exe>`_,55.8 MiB,``9c031506bfcb0428a0ac46c9152f9bdd48d5bdaa83046691bf8e0a4480663c05``
+   Python 3.9,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Windows-x86.exe>`_,55.3 MiB,``24f438e57ff2ef1ce1e93050d4e9d13f5050955f759f448d84a4018d3cd12d6b``
+   Python 3.8,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Windows-x86.exe>`_,54.5 MiB,``f81c165384c18d1986e2ba2f86cef384bc62266c46b34cd3d274e751ff5d91ed``
    Python 3.7,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Windows-x86.exe>`_,55.3 MiB,``a1bb8338be12ee09dbd4cab9dcc2fbdc99f65d99281dd2c07d24ad0f23dd1f7c``
 
 
