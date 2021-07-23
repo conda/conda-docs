@@ -17,7 +17,7 @@ packages from the Anaconda repository.
 Latest Miniconda Installer Links
 ================================
 
-.. csv-table:: Latest Conda 4.10.3 Python 3.9.5 released July 21, 2021
+.. csv-table:: Latest - Conda 4.10.3 Python 3.9.5 released July 21, 2021
    :header: Platform,Name,SHA252 hash
    :widths: 5, 10, 80
 
