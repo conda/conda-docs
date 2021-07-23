@@ -17,7 +17,7 @@ packages from the Anaconda repository.
 Latest Miniconda Installer Links
 ================================
 
-.. csv-table:: Latest - Conda 4.10.3 Python 3.9.5
+.. csv-table:: Latest Conda 4.10.3 Python 3.9.5
    :header: Platform,Name,SHA252 hash
    :widths: 5, 10, 5, 80
 
