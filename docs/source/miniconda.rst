@@ -22,7 +22,7 @@ System requirements
 * Operating system: Windows 8 or newer, 64-bit macOS 10.13+, or Linux, including Ubuntu, RedHat, CentOS 7+, and others.
 * If your operating system is older than what is currently supported, you can find older versions of the Miniconda installers in our `archive <https://repo.anaconda.com/miniconda/>`_ that might work for you. 
 * System architecture: Windows- 64-bit x86, 32-bit x86; MacOS- 64-bit x86; Linux- 64-bit x86, 64-bit aarch64 (AWS Graviton2 / arm64), 64-bit Power8/Power9, s390x (Linux on IBM Z & LinuxONE).
-* Minimum 300 MB disk space to download and install.
+* Minimum 400 MB disk space to download and install.
 
 On Windows, macOS, and Linux, it is best to install Miniconda for the local user,
 which does not require administrator permissions and is the most robust type of
