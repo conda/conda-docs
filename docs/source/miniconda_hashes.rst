@@ -6,6 +6,30 @@ Miniconda hash information
 ========================================  =========  =================== ====================================================================
 Name                                      Size       Time modified        SHA256 hash                                                         
 ========================================  =========  =================== ====================================================================
+Miniconda3-py37_4.10.3-Linux-aarch64.sh   89.2 MiB   2021-07-21 11:05:07  ``65f400a906e3132ddbba35a38d619478be77d32210a2acab05133d92ba08f111``
+Miniconda3-py37_4.10.3-Linux-ppc64le.sh   88.1 MiB   2021-07-21 11:05:08  ``e4f8b4a5eb8da1badf0b0c91fd7ee25e39120d4d77443e7a1ef3661fd439a997``
+Miniconda3-py37_4.10.3-Linux-s390x.sh     84.1 MiB   2021-07-21 11:05:08  ``7ab9f813dd84cb0951a2d755cd84708263ce4e03c656e65e2fa79ed0f024f0f7``
+Miniconda3-py37_4.10.3-Linux-x86_64.sh    84.9 MiB   2021-07-21 11:05:08  ``a1a7285dea0edc430b2bc7951d89bb30a2a1b32026d2a7b02aacaaa95cf69c7c``
+Miniconda3-py37_4.10.3-MacOSX-x86_64.pkg  58.1 MiB   2021-07-21 11:05:07  ``c3710f25748884741ef8d97777ebb3541c992d51130298830b5b9ad449dbbf1e``
+Miniconda3-py37_4.10.3-MacOSX-x86_64.sh   50.6 MiB   2021-07-21 11:05:08  ``ca7492d456c319d15682b2d3845112a631365f293d38d1f62872c33a2e57e430``
+Miniconda3-py37_4.10.3-Windows-x86.exe    52.9 MiB   2021-07-21 11:05:08  ``a1bb8338be12ee09dbd4cab9dcc2fbdc99f65d99281dd2c07d24ad0f23dd1f7c``
+Miniconda3-py37_4.10.3-Windows-x86_64.exe  55.8 MiB   2021-07-21 11:05:08  ``9c031506bfcb0428a0ac46c9152f9bdd48d5bdaa83046691bf8e0a4480663c05``
+Miniconda3-py38_4.10.3-Linux-aarch64.sh   94.8 MiB   2021-07-21 11:05:08  ``19584b4fb5c0656e0cf9de72aaa0b0a7991fbd6f1254d12e2119048c9a47e5cc``
+Miniconda3-py38_4.10.3-Linux-ppc64le.sh   93.3 MiB   2021-07-21 11:05:08  ``c1ac79540cb77b2e0ca5b9f78b3bc367567d810118500a167dea4a0bcab5d063``
+Miniconda3-py38_4.10.3-Linux-s390x.sh     89.0 MiB   2021-07-21 11:05:08  ``55f514110a50e98549a68912cbb03e43a36193940a1889e1c8beb30009b4da19``
+Miniconda3-py38_4.10.3-Linux-x86_64.sh    98.8 MiB   2021-07-21 11:05:08  ``935d72deb16e42739d69644977290395561b7a6db059b316958d97939e9bdf3d``
+Miniconda3-py38_4.10.3-MacOSX-x86_64.pkg  60.8 MiB   2021-07-21 11:05:08  ``faab44cd21b4b09f5c032aa49a8a23d3c53ef629dc9322411348ce413e41df35``
+Miniconda3-py38_4.10.3-MacOSX-x86_64.sh   53.3 MiB   2021-07-21 11:05:08  ``93e514e01142866629175f5a9e2e1d0bac8bc705f61d1ed1da3c010b7225683a``
+Miniconda3-py38_4.10.3-Windows-x86.exe    54.5 MiB   2021-07-21 11:05:08  ``f81c165384c18d1986e2ba2f86cef384bc62266c46b34cd3d274e751ff5d91ed``
+Miniconda3-py38_4.10.3-Windows-x86_64.exe  57.3 MiB   2021-07-21 11:05:08  ``8940cdd621557bc55743d6bb4518c6d343a4587127e76de808fb07e51df03fea``
+Miniconda3-py39_4.10.3-Linux-aarch64.sh   62.6 MiB   2021-07-21 11:05:08  ``4879820a10718743f945d88ef142c3a4b30dfc8e448d1ca08e019586374b773f``
+Miniconda3-py39_4.10.3-Linux-ppc64le.sh   60.6 MiB   2021-07-21 11:05:07  ``fa92ee4773611f58ed9333f977d32bbb64769292f605d518732183be1f3321fa``
+Miniconda3-py39_4.10.3-Linux-s390x.sh     57.1 MiB   2021-07-21 11:05:08  ``1faed9abecf4a4ddd4e0d8891fc2cdaa3394c51e877af14ad6b9d4aadb4e90d8``
+Miniconda3-py39_4.10.3-Linux-x86_64.sh    63.6 MiB   2021-07-21 11:05:08  ``1ea2f885b4dbc3098662845560bc64271eb17085387a70c2ba3f29fff6f8d52f``
+Miniconda3-py39_4.10.3-MacOSX-x86_64.pkg  49.9 MiB   2021-07-21 11:05:08  ``8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816``
+Miniconda3-py39_4.10.3-MacOSX-x86_64.sh   42.3 MiB   2021-07-21 11:05:08  ``786de9721f43e2c7d2803144c635f5f6e4823483536dc141ccd82dbb927cd508``
+Miniconda3-py39_4.10.3-Windows-x86.exe    55.3 MiB   2021-07-21 11:05:08  ``24f438e57ff2ef1ce1e93050d4e9d13f5050955f759f448d84a4018d3cd12d6b``
+Miniconda3-py39_4.10.3-Windows-x86_64.exe  58.1 MiB   2021-07-21 11:05:08  ``b33797064593ab2229a0135dc69001bea05cb56a20c2f243b1231213642e260a``
 Miniconda3-py37_4.10.1-Linux-aarch64.sh   104.5 MiB  2021-06-01 18:33:41  ``33d00488e14e8659a13bc21e78179dd996cbc7502f4c53c2f4037549c1da91d9``
 Miniconda3-py37_4.10.1-Linux-s390x.sh     84.1 MiB   2021-06-01 18:38:01  ``71957e590f6616096ef69c345f895603682305962d03889293ea937c3c56db94``
 Miniconda3-py38_4.10.1-Linux-aarch64.sh   111.1 MiB  2021-06-01 18:33:45  ``656998faeac584eac33abe90cbe3c7d0565a49031a4f5049d9e5311bb7b616fe``
