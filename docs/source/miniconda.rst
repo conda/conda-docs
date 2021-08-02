@@ -32,7 +32,7 @@ Latest Miniconda Installer Links
 ================================
 
 .. csv-table:: Latest - Conda 4.10.3 Python 3.9.5 released July 21, 2021
-   :header: Platform,Name,SHA252 hash
+   :header: Platform,Name,SHA256 hash
    :widths: 5, 10, 80
 
    Windows,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,``b33797064593ab2229a0135dc69001bea05cb56a20c2f243b1231213642e260a``
