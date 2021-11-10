@@ -39,7 +39,7 @@ Latest Miniconda Installer Links
    ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,``24f438e57ff2ef1ce1e93050d4e9d13f5050955f759f448d84a4018d3cd12d6b``
    MacOSX,`Miniconda3 MaxOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``786de9721f43e2c7d2803144c635f5f6e4823483536dc141ccd82dbb927cd508``
    ,`Miniconda3 MaxOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816``
-   ,`Miniconda3 maxOS Apple M1 64-bit bash (Py38 conda 4.10.1 2021-11-08) <Miniconda3-latest-MacOSX-arm64.sh>`_,   
+   ,`Miniconda3 maxOS Apple M1 64-bit bash (Py38 conda 4.10.1 2021-11-08) <Miniconda3-latest-MacOSX-arm64.sh>`_,``4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58``   
    Linux,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,``1ea2f885b4dbc3098662845560bc64271eb17085387a70c2ba3f29fff6f8d52f``
    ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,``4879820a10718743f945d88ef142c3a4b30dfc8e448d1ca08e019586374b773f``
    ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_,``fa92ee4773611f58ed9333f977d32bbb64769292f605d518732183be1f3321fa``
@@ -71,7 +71,7 @@ macOS installers
    ,`Miniconda3 macOS 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-MacOSX-x86_64.pkg>`_,49.9 MiB,``8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816``
    Python 3.8,`Miniconda3 macOS 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-MacOSX-x86_64.sh>`_,53.3 MiB,``93e514e01142866629175f5a9e2e1d0bac8bc705f61d1ed1da3c010b7225683a``
    ,`Miniconda3 macOS 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-MacOSX-x86_64.pkg>`_,60.8 MiB,``faab44cd21b4b09f5c032aa49a8a23d3c53ef629dc9322411348ce413e41df35``
-   ,`Miniconda3 macOS Apple M1 ARM 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.1-MacOSX-arm64.sh>`_,44.9 MiB,   
+   ,`Miniconda3 macOS Apple M1 ARM 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.1-MacOSX-arm64.sh>`_,44.9 MiB,``4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58``   
    Python 3.7,`Miniconda3 macOS 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-MacOSX-x86_64.sh>`_,50.6 MiB,``ca7492d456c319d15682b2d3845112a631365f293d38d1f62872c33a2e57e430``
    ,`Miniconda3 macOS 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-MacOSX-x86_64.pkg>`_,58.1 MiB,``c3710f25748884741ef8d97777ebb3541c992d51130298830b5b9ad449dbbf1e``
 
