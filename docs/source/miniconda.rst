@@ -37,9 +37,9 @@ Latest Miniconda Installer Links
 
    Windows,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,``b33797064593ab2229a0135dc69001bea05cb56a20c2f243b1231213642e260a``
    ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,``24f438e57ff2ef1ce1e93050d4e9d13f5050955f759f448d84a4018d3cd12d6b``
-   MacOSX,`Miniconda3 MaxOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``786de9721f43e2c7d2803144c635f5f6e4823483536dc141ccd82dbb927cd508``
-   ,`Miniconda3 MaxOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816``
-   ,`Miniconda3 maxOS Apple M1 64-bit bash (Py38 conda 4.10.1 2021-11-08) <Miniconda3-latest-MacOSX-arm64.sh>`_,``4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58``   
+   MacOSX,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``786de9721f43e2c7d2803144c635f5f6e4823483536dc141ccd82dbb927cd508``
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816``
+   ,`Miniconda3 macOS Apple M1 64-bit bash (Py38 conda 4.10.1 2021-11-08) <Miniconda3-latest-MacOSX-arm64.sh>`_,``4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58``   
    Linux,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,``1ea2f885b4dbc3098662845560bc64271eb17085387a70c2ba3f29fff6f8d52f``
    ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,``4879820a10718743f945d88ef142c3a4b30dfc8e448d1ca08e019586374b773f``
    ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_,``fa92ee4773611f58ed9333f977d32bbb64769292f605d518732183be1f3321fa``
