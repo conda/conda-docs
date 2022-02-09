@@ -4,10 +4,12 @@ import urllib.request
 import json
 import datetime
 import math
+import os
+import time
 from distutils.version import LooseVersion
 
 # Column lengths
-FILENAME_LEN = 40
+FILENAME_LEN = 42
 SIZE_LEN = 9
 TIMEMOD_LEN = 19
 HASH_LEN = 68
@@ -33,24 +35,24 @@ def main():
 
     # write file with hashes for all files
     f = open(OUT_FILENAME, "w")
-    f.write(":orphan:\n")
+    f.write(":orphan:\n\n")
     title = "Miniconda hash information"
     f.write("=" * len(title) + "\n" + title + "\n" + "=" * len(title) + "\n\n")
     f.write(
         "=" * FILENAME_LEN
-        + "  "
+        + "   "
         + "=" * SIZE_LEN
-        + "  "
+        + "   "
         + "=" * TIMEMOD_LEN
-        + " "
+        + "  "
         + "=" * HASH_LEN
         + "\n"
     )
     f.write(
         "Name".ljust(FILENAME_LEN)
-        + "  "
+        + "   "
         + "Size".ljust(SIZE_LEN)
-        + "  "
+        + "   "
         + "Time modified".ljust(TIMEMOD_LEN)
         + "  "
         + "SHA256 hash".ljust(HASH_LEN)
@@ -58,11 +60,11 @@ def main():
     )
     f.write(
         "=" * FILENAME_LEN
-        + "  "
+        + "   "
         + "=" * SIZE_LEN
-        + "  "
+        + "   "
         + "=" * TIMEMOD_LEN
-        + " "
+        + "  "
         + "=" * HASH_LEN
         + "\n"
     )
@@ -73,6 +75,12 @@ def main():
         if "_" in version_str:
             version_str = version_str.split("_")[1]
         return LooseVersion(version_str)
+    # =================================================================
+    # the main hosting server is central time, so pretend we are too
+    # in order for anyone to be able to run this on Unix platforms.
+    os.environ['TZ'] = 'US/Central'
+    time.tzset()
+    # =================================================================
     for filename in sorted(data, reverse=True, key=sorting_key):
         last_modified = datetime.datetime.fromtimestamp(
             math.floor(data[filename]["mtime"])
@@ -85,9 +93,9 @@ def main():
             continue
         f.write(
             filename.ljust(FILENAME_LEN)
-            + "  "
-            + sizeof_fmt(data[filename]["size"]).ljust(SIZE_LEN)
-            + "  "
+            + "   "
+            + sizeof_fmt(data[filename]["size"]).rjust(SIZE_LEN)
+            + "   "
             + last_mod_str.ljust(TIMEMOD_LEN)
             + "  "
             + "``"
@@ -96,11 +104,11 @@ def main():
         )
     f.write(
         "=" * FILENAME_LEN
-        + "  "
+        + "   "
         + "=" * SIZE_LEN
-        + "  "
+        + "   "
         + "=" * TIMEMOD_LEN
-        + " "
+        + "  "
         + "=" * HASH_LEN
         + "\n"
     )

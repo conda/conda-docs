@@ -9,10 +9,42 @@ Miniconda
 Miniconda is a free minimal installer for conda. It is a small, bootstrap
 version of Anaconda that includes only conda, Python, the packages they depend
 on, and a small number of other useful packages, including pip, zlib and a
-few others. Use the ``conda install command`` to install 720+ additional conda
+few others. Use the ``conda install`` command to install 720+ additional conda
 packages from the Anaconda repository.
 
 `See if Miniconda is right for you <https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#anaconda-or-miniconda>`_.
+
+System requirements
+===================
+
+* License: Free use and redistribution under the terms of the `EULA for Miniconda <https://www.anaconda.com/end-user-license-agreement-miniconda>`_.
+* Operating system: Windows 8 or newer, 64-bit macOS 10.13+, or Linux, including Ubuntu, RedHat, CentOS 7+, and others.
+* If your operating system is older than what is currently supported, you can find older versions of the Miniconda installers in our `archive <https://repo.anaconda.com/miniconda/>`_ that might work for you.
+* System architecture: Windows- 64-bit x86, 32-bit x86; macOS- 64-bit x86 & Apple M1 (ARM64); Linux- 64-bit x86, 64-bit aarch64 (AWS Graviton2 / ARM64), 64-bit IBM Power8/Power9, s390x (Linux on IBM Z & LinuxONE).
+* The ``linux-aarch64`` Miniconda installer requires ``glibc >=2.26`` and thus will **not** work with CentOS 7, Ubuntu 16.04, or Debian 9 ("stretch").
+* Minimum 400 MB disk space to download and install.
+
+On Windows, macOS, and Linux, it is best to install Miniconda for the local user,
+which does not require administrator permissions and is the most robust type of
+installation. However, if you need to, you can install Miniconda system wide,
+which does require administrator permissions.
+
+Latest Miniconda Installer Links
+================================
+
+.. csv-table:: Latest - Conda {{ conda_version }} Python 3.9.5 released July 21, 2021
+   :header: Platform,Name,SHA256 hash
+   :widths: 5, 10, 80
+
+   Windows,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,``{{ win64_py3_latest_hash }}``
+   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,``{{ win32_py3_latest_hash }}``
+   MacOSX,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``{{ osx64_sh_py3_latest_hash }}``
+   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``{{ osx64_pkg_py3_latest_hash }}``
+   ,`Miniconda3 macOS Apple M1 64-bit bash (Py38 conda 4.10.1 2021-11-08) <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh>`_,``{{ osx_arm64_sh_py3_latest_hash }}``
+   Linux,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,``{{ linux64_py3_latest_hash }}``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,``{{ linux_aarch64_py3_latest_hash }}``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_,``{{ linux_ppc64le_py3_latest_hash }}``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-s390x.sh>`_,``{{ linux_s390x_py3_latest_hash }}``
 
 Windows installers
 ==================
@@ -21,23 +53,28 @@ Windows installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,{{ win64_py3_size }},``{{ win64_py3_hash }}``
-   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,{{ win32_py3_size }},``{{ win32_py3_hash}}``
-   Python 2.7,`Miniconda2 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe>`_,{{ win64_py2_size }},``{{ win64_py2_hash }}``
-   ,`Miniconda2 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe>`_,{{ win32_py2_size }},``{{ win32_py2_hash }}``
+   Python 3.9,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-Windows-x86_64.exe>`_,{{ win64_py39_size }},``{{ win64_py39_hash }}``
+   Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-Windows-x86_64.exe>`_,{{ win64_py38_size }},``{{ win64_py38_hash }}``
+   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-Windows-x86_64.exe>`_,{{ win64_py37_size }},``{{ win64_py37_hash }}``
+   Python 3.9,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-Windows-x86.exe>`_,{{ win32_py39_size }},``{{ win32_py39_hash }}``
+   Python 3.8,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-Windows-x86.exe>`_,{{ win32_py38_size }},``{{ win32_py38_hash }}``
+   Python 3.7,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-Windows-x86.exe>`_,{{ win32_py37_size }},``{{ win32_py37_hash }}``
 
 
-MacOSX installers
+macOS installers
 =================
 
-.. csv-table:: MacOSX
+.. csv-table:: macOS
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.8,`Miniconda3 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,{{ osx64_sh_py3_size }},``{{ osx64_sh_py3_hash }}``
-   ,`Miniconda3 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py3_size }},``{{ osx64_pkg_py3_hash }}``
-   Python 2.7,`Miniconda2 MacOSX 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh>`_,{{ osx64_sh_py2_size }},``{{ osx64_sh_py2_hash }}``
-   ,`Miniconda2 MacOSX 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py2_size }},``{{ osx64_pkg_py2_hash }}``
+   Python 3.9,`Miniconda3 macOS 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-MacOSX-x86_64.sh>`_,{{ osx64_sh_py39_size }},``{{ osx64_sh_py39_hash }}``
+   ,`Miniconda3 macOS 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py39_size }},``{{ osx64_pkg_py39_hash }}``
+   Python 3.8,`Miniconda3 macOS 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-MacOSX-x86_64.sh>`_,{{ osx64_sh_py38_size }},``{{ osx64_sh_py38_hash }}``
+   ,`Miniconda3 macOS 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py38_size }},``{{ osx64_pkg_py38_hash }}``
+   ,`Miniconda3 macOS Apple M1 ARM 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.1-MacOSX-arm64.sh>`_,44.9 MiB,``4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58``
+   Python 3.7,`Miniconda3 macOS 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-MacOSX-x86_64.sh>`_,{{ osx64_sh_py37_size }},``{{ osx64_sh_py37_hash }}``
+   ,`Miniconda3 macOS 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-MacOSX-x86_64.pkg>`_,{{ osx64_pkg_py37_size }},``{{ osx64_pkg_py37_hash }}``
 
 Linux installers
 ================
@@ -46,10 +83,18 @@ Linux installers
    :header: Python version,Name,Size,SHA256 hash
    :widths: 5, 10, 5, 80
 
-   Python 3.8,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,{{ linux64_py3_size}},``{{ linux64_py3_hash }}``
-   Python 3.7,`Miniconda3 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh>`_,{{ linux32_py3_size }},``{{ linux32_py3_hash }}``
-   Python 2.7,`Miniconda2 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh>`_,{{ linux64_py2_size }},``{{ linux64_py2_hash }}``
-   ,`Miniconda2 Linux 32-bit <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh>`_,{{ linux32_py2_size }},``{{ linux32_py2_hash }}``
+   Python 3.9,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-Linux-x86_64.sh>`_,{{ linux64_py39_size }},``{{ linux64_py39_hash }}``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-Linux-aarch64.sh>`_,{{ linux_aarch64_py39_size }},``{{ linux_aarch64_py39_hash }}``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-Linux-ppc64le.sh>`_,{{ linux_ppc64le_py39_size }},``{{ linux_ppc64le_py39_hash }}``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_{{ conda_version }}-Linux-s390x.sh>`_,{{ linux_s390x_py39_size }},``{{ linux_s390x_py39_hash }}``
+   Python 3.8,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-Linux-x86_64.sh>`_,{{ linux64_py38_size }},``{{ linux64_py38_hash }}``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-Linux-aarch64.sh>`_,{{ linux_aarch64_py38_size }},``{{ linux_aarch64_py38_hash }}``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-Linux-ppc64le.sh>`_,{{ linux_ppc64le_py38_size }},``{{ linux_ppc64le_py38_hash }}``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_{{ conda_version }}-Linux-s390x.sh>`_,{{ linux_s390x_py38_size }},``{{ linux_s390x_py38_hash }}``
+   Python 3.7,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-Linux-x86_64.sh>`_,{{ linux64_py37_size }},``{{ linux64_py37_hash }}``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-Linux-aarch64.sh>`_,{{ linux_aarch64_py37_size }},``{{ linux_aarch64_py37_hash }}``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-Linux-ppc64le.sh>`_,{{ linux_ppc64le_py37_size }},``{{ linux_ppc64le_py37_hash }}``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_{{ conda_version }}-Linux-s390x.sh>`_,{{ linux_s390x_py37_size }},``{{ linux_s390x_py37_hash }}``
 
 Installing
 ==========
@@ -61,10 +106,8 @@ Installing
 Other resources
 ===============
 
- -  `Miniconda with Python 3.8 for Power8 &
+ -  `Miniconda with Python 3.9 for Power8 &
     Power9 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`__
- -  `Miniconda with Python 2.7 for Power8 &
-    Power9 <https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-ppc64le.sh>`__
  -  `Miniconda Docker
     images <https://hub.docker.com/r/continuumio/>`__
  -  `Miniconda AWS
@@ -123,7 +166,7 @@ Other resources
     If you already have Miniconda or Anaconda
     installed, and you just want to upgrade, you should
     not use the installer. Just use ``conda update``.
- 
+
  For instance:
 
  .. container:: highlight-bash notranslate
@@ -135,3 +178,4 @@ Other resources
           $ conda update conda
 
  will update conda.
+
