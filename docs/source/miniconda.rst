@@ -106,8 +106,6 @@ Installing
 Other resources
 ===============
 
- -  `Miniconda with Python 3.9 for Power8 &
-    Power9 <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`__
  -  `Miniconda Docker
     images <https://hub.docker.com/r/continuumio/>`__
  -  `Miniconda AWS
