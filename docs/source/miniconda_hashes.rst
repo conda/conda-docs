@@ -7,6 +7,27 @@ Miniconda hash information
 ==========================================   =========   ===================  ====================================================================
 Name                                         Size        Time modified        SHA256 hash                                                         
 ==========================================   =========   ===================  ====================================================================
+Miniconda3-py37_4.11.0-Linux-aarch64.sh      100.9 MiB   2022-02-15 12:57:07  ``736bd228d336f4b2d16cdc94f2e08a5c80c18dc42b0edfc59fe3f66ffb93a87d``
+Miniconda3-py37_4.11.0-Linux-ppc64le.sh      101.0 MiB   2022-02-15 12:57:07  ``041ba0d993398200b3e7f88aee862a23a7cb4ca8ddafbc9d74f8aabb0a5747db``
+Miniconda3-py37_4.11.0-Linux-x86_64.sh        98.9 MiB   2022-02-15 12:57:08  ``745c99af2cb0d0e0f43c7ed1a3417ff4d5118eafb501518120ea30361f1bb8f6``
+Miniconda3-py37_4.11.0-MacOSX-x86_64.pkg      70.2 MiB   2022-02-15 12:57:07  ``e28d2edb8d79b884f9f35479d35635b2d3d415f3af634b39043aff4ed14a0458``
+Miniconda3-py37_4.11.0-MacOSX-x86_64.sh       63.5 MiB   2022-02-15 12:57:08  ``c3a863eb85ad7035e5578684509b0b8387e8eb93c022495ab987baac3df6ef41``
+Miniconda3-py37_4.11.0-Windows-x86.exe        64.2 MiB   2022-02-15 12:57:07  ``64a18114bc66aaa73f431ef8ca1edc7b16ad5564a16e18f13e1a69272d85ca5d``
+Miniconda3-py37_4.11.0-Windows-x86_64.exe     68.1 MiB   2022-02-15 12:57:07  ``0b4890b2b1782c91ae2de2f77a2f6c5cecb9b54729565771f5301c1fc60fa024``
+Miniconda3-py38_4.11.0-Linux-aarch64.sh       63.6 MiB   2022-02-15 12:57:08  ``607549f9f9c5c703be850fa3025e845656d275d8226b679faf3b1c1813c692ce``
+Miniconda3-py38_4.11.0-Linux-ppc64le.sh       65.2 MiB   2022-02-15 12:57:08  ``2f606bd65ffe76a7866bc445d96105d0a15b7447e59e4317d2e017f7786272d0``
+Miniconda3-py38_4.11.0-Linux-x86_64.sh        71.7 MiB   2022-02-15 12:57:08  ``4bb91089ecc5cc2538dece680bfe2e8192de1901e5e420f63d4e78eb26b0ac1a``
+Miniconda3-py38_4.11.0-MacOSX-x86_64.pkg      62.4 MiB   2022-02-15 12:57:07  ``3ca9720a2b47fbbff529057fd4ec8781a23cb825eec289b487dfa040b7ae8e25``
+Miniconda3-py38_4.11.0-MacOSX-x86_64.sh       55.7 MiB   2022-02-15 12:57:07  ``e13a4590879638197b0c506768438406b07de614911610e314f8c78133915b1c``
+Miniconda3-py38_4.11.0-Windows-x86.exe        65.6 MiB   2022-02-15 12:57:07  ``df115c77915519a9a4de9c04ca26f81703be6ac0344762023557fc7659659ac0``
+Miniconda3-py38_4.11.0-Windows-x86_64.exe     69.8 MiB   2022-02-15 12:57:07  ``29d8d1720034df262b079514e5f200140f7303b37bfe90ae8a2b40b8f294d2d8``
+Miniconda3-py39_4.11.0-Linux-aarch64.sh       74.4 MiB   2022-02-15 12:57:08  ``00c7127a8a8d3f4b9c2ab3391c661239d5b9a88eafe895fd0f3f2a8d9c0f4556``
+Miniconda3-py39_4.11.0-Linux-ppc64le.sh       73.5 MiB   2022-02-15 12:57:07  ``8ee1f8d17ef7c8cb08a85f7d858b1cb55866c06fcf7545b98c3b82e4d0277e66``
+Miniconda3-py39_4.11.0-Linux-x86_64.sh        72.2 MiB   2022-02-15 12:57:08  ``4ee9c3aa53329cd7a63b49877c0babb49b19b7e5af29807b793a76bdb1d362b4``
+Miniconda3-py39_4.11.0-MacOSX-x86_64.pkg      61.9 MiB   2022-02-15 12:57:07  ``d3e63d7e8aa3ffb7b095e0b984db47309bb1cb1ec2138f5e6a96a34173671451``
+Miniconda3-py39_4.11.0-MacOSX-x86_64.sh       55.2 MiB   2022-02-15 12:57:08  ``7717253055e7c09339cd3d0815a0b1986b9138dcfcb8ec33b9733df32dd40eaa``
+Miniconda3-py39_4.11.0-Windows-x86.exe        66.5 MiB   2022-02-15 12:57:07  ``12a3a7e8aab7a974705ea4ee5bfc44f7c733241dd1b022f8012cbd42309b8472``
+Miniconda3-py39_4.11.0-Windows-x86_64.exe     70.4 MiB   2022-02-15 12:57:08  ``6013152b169c2c2d4bcd75bb03a1b8bf208b8545d69116a59351af695d9a0081``
 Miniconda3-py37_4.10.3-Linux-aarch64.sh       89.2 MiB   2021-07-21 11:05:07  ``65f400a906e3132ddbba35a38d619478be77d32210a2acab05133d92ba08f111``
 Miniconda3-py37_4.10.3-Linux-ppc64le.sh       88.1 MiB   2021-07-21 11:05:08  ``e4f8b4a5eb8da1badf0b0c91fd7ee25e39120d4d77443e7a1ef3661fd439a997``
 Miniconda3-py37_4.10.3-Linux-s390x.sh         84.1 MiB   2021-07-21 11:05:08  ``7ab9f813dd84cb0951a2d755cd84708263ce4e03c656e65e2fa79ed0f024f0f7``
