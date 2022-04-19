@@ -56,7 +56,6 @@ Miniconda3-py37_4.10.1-Linux-aarch64.sh      104.5 MiB   2021-06-01 18:33:41  ``
 Miniconda3-py37_4.10.1-Linux-s390x.sh         84.1 MiB   2021-06-01 18:38:01  ``71957e590f6616096ef69c345f895603682305962d03889293ea937c3c56db94``
 Miniconda3-py38_4.10.1-Linux-aarch64.sh      111.1 MiB   2021-06-01 18:33:45  ``656998faeac584eac33abe90cbe3c7d0565a49031a4f5049d9e5311bb7b616fe``
 Miniconda3-py38_4.10.1-Linux-s390x.sh         89.0 MiB   2021-06-01 18:38:14  ``ebdff38ca1f8a6e994f78ab6108de09bb722633500980ab79c59ba9312443de5``
-Miniconda3-py38_4.10.1-MacOSX-arm64.sh        44.9 MiB   2021-11-08 08:57:47  ``4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58``
 Miniconda3-py39_4.10.1-Linux-aarch64.sh       69.8 MiB   2021-06-01 18:33:49  ``737687139c3e2aa43875b67f7d6915e412ac179f2e33e14f00e8b4e1f3d31dd7``
 Miniconda3-py39_4.10.1-Linux-s390x.sh         57.1 MiB   2021-06-01 18:38:17  ``afa5c587d2e9754a426da34ca032b41bee8fc5419881cc257ef7ee2e6e951c46``
 Miniconda3-py37_4.9.2-Linux-aarch64.sh       105.3 MiB   2021-03-16 18:15:18  ``ccbac800a2d897218dde1df3711d26299a083ca0beb118edf62cf8f3d9516da8``
