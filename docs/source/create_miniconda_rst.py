@@ -17,6 +17,7 @@ PLATFORM_MAP = {
     "osx64_sh": "MacOSX-x86_64.sh",
     "osx64_pkg": "MacOSX-x86_64.pkg",
     "osx_arm64_sh": "MacOSX-arm64.sh",
+    "osx_arm64_pkg": "MacOSX-arm64.pkg",
     "linux32": "Linux-x86.sh",
     "linux64": "Linux-x86_64.sh",
     "linux_aarch64": "Linux-aarch64.sh",
