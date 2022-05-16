@@ -6,7 +6,7 @@ import datetime
 import math
 import os
 import time
-from distutils.version import LooseVersion
+from packaging.version import Version
 
 # Column lengths
 FILENAME_LEN = 42
@@ -74,7 +74,7 @@ def main():
         # cases where the filename is Miniconda3-py3X_version-platform.ext
         if "_" in version_str:
             version_str = version_str.split("_")[1]
-        return LooseVersion(version_str)
+        return Version(version_str)
     # =================================================================
     # the main hosting server is central time, so pretend we are too
     # in order for anyone to be able to run this on Unix platforms.
