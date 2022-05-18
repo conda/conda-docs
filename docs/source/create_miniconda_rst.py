@@ -10,7 +10,7 @@ OUT_FILENAME = "miniconda.rst"
 TEMPLATE_FILENAME = "miniconda.rst.jinja2"
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
-CONDA_VERSION = "4.11.0"
+CONDA_VERSION = "4.12.0"
 PLATFORM_MAP = {
     "win32": "Windows-x86.exe",
     "win64": "Windows-x86_64.exe",
