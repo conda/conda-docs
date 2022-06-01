@@ -3,3 +3,8 @@ version: 2
 python:
   install:
   - requirements: requirements.txt
+
+# Additional (downloadable) formats of the documentation to be built, apart
+# from the default HTML.
+formats:
+- htmlzip
