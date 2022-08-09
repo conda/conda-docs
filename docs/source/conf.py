@@ -38,6 +38,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.inheritance_diagram',
     # 'sphinx.ext.napoleon',
+    "sphinx_sitemap",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -53,7 +54,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Conda'
+project = u'conda'
 copyright = u'2017, Anaconda, Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -119,6 +120,9 @@ html_context = {
     }
 
 html_favicon = 'conda-logo.png'
+
+# Serving the robots.txt since we want to point to the sitemap.xml file
+html_extra_path = ["robots.txt"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -189,6 +193,16 @@ html_static_path = ['_static']
 
 # This is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = None
+
+# Setting the prod URL of the site here as the base URL.
+html_baseurl = f"https://docs.conda.io/"
+
+# We don't have a locale set, so we can safely ignore that for the sitemaps.
+sitemap_locales = [None]
+
+# We're hard-coding latest here since that's what we want Google to point to
+# and we don't have stable for conda-docs at the moment (no releases)
+sitemap_url_scheme = "{lang}latest/{link}"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'condadoc'
