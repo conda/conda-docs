@@ -38,6 +38,7 @@ following options:
       The bootstrap script to install a minimal conda system on your computer.
 
    .. grid-item-card::  constructor
+      :link: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
       The project to create custom bootstrap scripts like miniconda.
 

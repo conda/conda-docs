@@ -162,17 +162,15 @@ html_extra_path = ["robots.txt"]
 html_theme_options = {
     "github_url": "https://github.com/conda",
     "twitter_url": "https://twitter.com/condaproject",
-    "header_links_before_dropdown": 4,
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    "announcement": "This is work in progress, please mind the gap.",
 }
 
 html_context = {
     "github_user": "conda",
     "github_repo": "docs",
-    "github_version": "main",
+    "github_version": "restructering",
     "doc_path": "docs",
 }
 
