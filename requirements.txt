@@ -22,3 +22,4 @@ pylint==2.11.1
 sphinx-autoapi
 pydata-sphinx-theme
 sphinxcontrib-autoprogram
+sphinx-design
