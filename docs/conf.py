@@ -48,6 +48,7 @@ extensions = [
     "autoapi.extension",
     "sphinxcontrib.autoprogram",
     "sphinx_design",
+    "sphinx_copybutton",
 ]
 
 myst_heading_anchors = 3
