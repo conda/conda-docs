@@ -114,7 +114,7 @@ Other resources
     images <https://hub.docker.com/r/continuumio/>`__
  -  `Miniconda AWS
     images <https://aws.amazon.com/marketplace/seller-profile?id=29f81979-a535-4f44-9e9f-6800807ad996>`__
- -  `Archive and SHA265 sums for the
+ -  `Archive and SHA256 sums for the
     installers <https://repo.anaconda.com/miniconda/>`__
  -  `conda change
     log <https://conda.io/projects/continuumio-conda/en/latest/release-notes.html>`__
