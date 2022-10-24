@@ -32,16 +32,23 @@ request new features and submit any other comments you may have.
 
 
 Contribute recipes to GitHub
-===============================
+============================
 
-Submit new recipes to the GitHub repository at
-https://github.com/conda/conda-recipes. When you build a new conda
-recipe for a program not yet listed in the repository, use a GitHub
-pull request to submit it to the repository, so that others using
-that program in the future can reuse it. Recipes are welcome for
-programs that use any license, such as GPL, BSD, MIT or Apache, and
-all of the recipes in thisrepository are released into the public
-domain.
+The conda organization has transitioned into using feedstocks, which 
+are repositories that contain package recipes and all of the necessary 
+configurations for building those recipes. This enables these packages
+to be automatically built using continuous integration (CI) services.
+
+You can clone or fork many package feedstocks from `Anaconda Recipes
+<https://github.com/AnacondaRecipes>`_, though you can't submit new
+feedstocks to that GitHub organization. To contribute new conda package
+feedstocks, submit them to `conda-forge 
+<https://github.com/conda-forge/staged-recipes>`_` or `bioconda 
+<https://github.com/bioconda/bioconda-recipes>`_ with a pull request.
+
+Feedstocks are welcome for programs that use any license, such as GPL, 
+BSD, MIT or Apache, and all of the recipes the conda-forge and 
+bioconda repositories are released into the public domain.
 
 
 Report bugs
