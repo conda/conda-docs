@@ -34,7 +34,7 @@ request new features and submit any other comments you may have.
 Contribute recipes to GitHub
 ============================
 
-The conda organization has transitioned into using feedstocks, which 
+The conda community has transitioned into using feedstocks, which 
 are repositories that contain package recipes and all of the necessary 
 configurations for building those recipes. This enables these packages
 to be automatically built using continuous integration (CI) services.
