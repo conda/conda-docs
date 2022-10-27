@@ -43,7 +43,7 @@ You can clone or fork many package feedstocks from `Anaconda Recipes
 <https://github.com/AnacondaRecipes>`_, though you can't submit new
 feedstocks to that GitHub organization. To contribute new conda package
 feedstocks, submit them to `conda-forge 
-<https://github.com/conda-forge/staged-recipes>`_` or `bioconda 
+<https://github.com/conda-forge/staged-recipes>`_ or `bioconda 
 <https://github.com/bioconda/bioconda-recipes>`_ with a pull request.
 
 Feedstocks are welcome for programs that use any license, such as GPL, 
