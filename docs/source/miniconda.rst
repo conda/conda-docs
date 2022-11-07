@@ -12,7 +12,7 @@ on, and a small number of other useful packages, including pip, zlib and a
 few others. Use the ``conda install`` command to install 720+ additional conda
 packages from the Anaconda repository.
 
-`See if Miniconda is right for you <https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html#anaconda-or-miniconda>`_.
+`See if Miniconda is right for you <https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#anaconda-or-miniconda>`_.
 
 System requirements
 ===================
@@ -103,9 +103,9 @@ Linux installers
 Installing
 ==========
 - :doc:`See hashes for all Miniconda installers <../miniconda_hashes>`.
-- `Verify your installation <https://conda.io/projects/conda/en/latest/user-guide/install/download.html#cryptographic-hash-verification>`_.
+- `Verify your installation <https://conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification>`_.
 - `Installation
-  instructions <https://conda.io/projects/conda/en/latest/user-guide/install/index.html>`__.
+  instructions <https://conda.io/projects/conda/en/stable/user-guide/install/index.html>`__.
 
 Other resources
 ===============
