@@ -1,5 +1,6 @@
+
 =====
-Conda
+::#: :'#"#':':'' ':":"'Dns'.'Python'.javascript'' ':'-'' 'with':'' 'AAconda'@:raku.i/slate.yml :
 =====
 
 .. figure::  /img/conda_logo.svg
