@@ -1,0 +1,2 @@
+- name: Publish Conda forge
+  uses: EtienneCmb/conda-publish-action@v1.1
