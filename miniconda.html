@@ -1,0 +1,287 @@
+<!--Copyright (c) 2011-2014 Ryan Roemer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.-->
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>Miniconda &mdash; Conda</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+<link rel="stylesheet" href="_static/css/basicstrap-base.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/bootswatch-spacelab.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="_static/css/font-awesome-ie7.min.css">
+<![endif]-->
+<style type="text/css">
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+</style>
+<link rel="stylesheet" href="_static/basicstrap.css" type="text/css" />
+<link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<link rel="stylesheet" href="_static/table_styling.css" type="text/css" />
+<link rel="stylesheet" href="_static/css/bootstrap-responsive.min.css" type="text/css" />
+    
+<script type="text/javascript">
+  var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:    './',
+            VERSION:     ' ',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE:  true
+  };
+</script>
+<script type="text/javascript" src="_static/js/jquery.min.js"></script>
+<script type="text/javascript" src="_static/underscore.js"></script>
+<script type="text/javascript" src="_static/doctools.js"></script>
+<script type="text/javascript" src="_static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.show-sidebar').click(function(e) {
+       e.preventDefault();
+       if ($(".show-sidebar").html() == "Open Table Of Contents") {
+          $('.for-mobile').removeClass('hidden-phone');
+          $(".show-sidebar").html("Close Table Of Contents");
+       } else {
+          $(".show-sidebar").html("Open Table Of Contents");
+       }
+    });
+  });
+</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Conda" href="index.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" /> 
+  </head>
+  <body>
+  
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Conda</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              
+                <li><a href="index.html"><i class="icon icon-double-angle-left"></i>&nbsp;&lt;no title&gt;</a></li>
+                <li><a class="uplink" href="index.html">Contents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<a href="https://github.com/conda/conda"
+   class="visible-desktop hidden-xs">
+  <img style="position: absolute; top: 30px;
+              right: -10px; border: 0;"
+       src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
+       id="gh-banner"
+       alt="Fork me on GitHub"
+       data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+  <script>
+    // Adjust banner height.
+    $(function () {
+      var navHeight = $(".navbar .container").css("height");
+      $("#gh-banner").css("top", navHeight);
+    });
+  </script>
+
+
+    <!-- container -->
+    <div class="container-fluid">
+
+
+      
+      <div class="row-fluid hidden-desktop hidden-tablet">
+      
+      </div>
+      
+
+      <!-- row -->
+      <div class="row-fluid">
+          
+        
+
+        <div class="span12">
+          <div class="document">
+            <div class="documentwrapper">
+                <div class="body">
+                  
+  <div class="section" id="miniconda">
+<span id="id1"></span><h1>Miniconda<a class="headerlink" href="#miniconda" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="colwidths-given styled-table docutils">
+<colgroup>
+<col width="10%" />
+<col width="30%" />
+<col width="30%" />
+<col width="30%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td class="center-align">&#160;</td>
+<td class="center-align"><p class="first"><span class="icon icon-windows icon-4x"></span></p>
+<p class="last">Windows</p>
+</td>
+<td class="center-align"><p class="first"><span class="icon icon-apple icon-4x"></span></p>
+<p class="last">Mac OS X</p>
+</td>
+<td class="center-align"><p class="first"><span class="icon icon-linux icon-4x"></span></p>
+<p class="last">Linux</p>
+</td>
+</tr>
+<tr class="row-even"><td class="center-align"><strong>Python
+3.7</strong></td>
+<td class="center-align"><p class="first"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe">64-bit (exe
+installer)</a></p>
+<p class="last"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe">32-bit (exe
+installer)</a></p>
+</td>
+<td class="center-align"><p class="first"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh">64-bit (bash
+installer)</a></p>
+<p class="last"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg">64-bit (.pkg
+installer)</a></p>
+</td>
+<td class="center-align"><p class="first"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh">64-bit (bash
+installer)</a></p>
+<p class="last"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86.sh">32-bit (bash
+installer)</a></p>
+</td>
+</tr>
+<tr class="row-odd"><td class="center-align"><strong>Python
+2.7</strong></td>
+<td class="center-align"><p class="first"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86_64.exe">64-bit (exe
+installer)</a></p>
+<p class="last"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-Windows-x86.exe">32-bit (exe
+installer)</a></p>
+</td>
+<td class="center-align"><p class="first"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh">64-bit (bash
+installer)</a></p>
+<p class="last"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.pkg">64-bit (.pkg
+installer)</a></p>
+</td>
+<td class="center-align"><p class="first"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh">64-bit (bash
+installer)</a></p>
+<p class="last"><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86.sh">32-bit (bash
+installer)</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://conda.io/docs/user-guide/install/index.html">Installation instructions</a></p>
+<p>Other resources:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh">Miniconda with Python 3.7 for Power8 &amp; Power9</a></li>
+<li><a class="reference external" href="https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-ppc64le.sh">Miniconda with Python 2.7 for Power8 &amp; Power9</a></li>
+<li><a class="reference external" href="https://hub.docker.com/r/continuumio/">Miniconda Docker images</a></li>
+<li><a class="reference external" href="https://aws.amazon.com/marketplace/seller-profile?id=29f81979-a535-4f44-9e9f-6800807ad996">Miniconda AWS images</a></li>
+<li><a class="reference external" href="https://repo.anaconda.com/miniconda/">Archive and MD5 sums for the installers</a></li>
+<li><a class="reference external" href="https://conda.io/docs/release-notes.html">conda change log</a></li>
+</ul>
+<p>These Miniconda installers contain the conda package manager and Python. Once
+Miniconda is installed, you can use the conda command to install any other
+packages and create environments, etc. For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda install numpy
+...
+$ conda create -n py3k anaconda <span class="nv">python</span><span class="o">=</span><span class="m">3</span>
+...
+</pre></div>
+</div>
+<p>There are two variants of the installer: Miniconda is Python 2 based and Miniconda3 is Python 3 based. Note that the choice of which Miniconda is installed only affects the root environment. Regardless of which version of Miniconda you install, you can still install both Python 2.x and Python 3.x environments.</p>
+<p>The other difference is that the Python 3 version of Miniconda will default to
+Python 3 when creating new environments and building packages. So for
+instance, the behavior of</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda create -n myenv python
+</pre></div>
+</div>
+<p>will be to install Python 2.7 with the Python 2 Miniconda and to install
+Python 3.7 with the Python 3 Miniconda. You can override the default by
+explicitly setting <code class="docutils literal notranslate"><span class="pre">python=2</span></code> or <code class="docutils literal notranslate"><span class="pre">python=3</span></code>. It also determines the
+default value of <code class="docutils literal notranslate"><span class="pre">CONDA_PY</span></code> when using <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">build</span></code>.</p>
+<p><strong>Note</strong>: If you already have Miniconda or Anaconda installed, and you just
+want to upgrade, you should not use the installer. Just use <code class="docutils literal notranslate"><span class="pre">conda</span>
+<span class="pre">update</span></code>. For instance</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ conda update conda
+</pre></div>
+</div>
+<p>will update conda.</p>
+<span class="target" id="images"></span></div>
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div><!-- /row -->
+
+      <!-- row -->
+      <div class="row-fluid">
+<div class="related navbar ">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      
+        <li><a href="index.html"><i class="icon icon-double-angle-left"></i>&nbsp;&lt;no title&gt;</a></li>
+        <li><a class="uplink" href="index.html">Contents</a></li>
+    </ul>
+  </div>
+</div>
+      </div><!-- /row -->
+
+      <!-- footer -->
+  
+      <footer>
+          &copy; Copyright 2017, Anaconda, Inc..
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.7.9.
+      </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27761864-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  
+      <!-- /footer -->
+
+    </div>
+    <!-- /container -->
+
+  </body>
+</html>
