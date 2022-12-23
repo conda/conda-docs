@@ -45,7 +45,7 @@ def get_latest_miniconda_sizes_and_hashes():
         latest_installer = 'Miniconda3-latest-{}'.format(installer_suffix)
         info["{}_py3_latest_size".format(platform_id)] = sizeof_fmt(data[latest_installer]['size'])
         info["{}_py3_latest_hash".format(platform_id)] = data[latest_installer]['sha256']
-        for py_version in ("37", "38", "39"):
+        for py_version in ("37", "38", "39", "310"):
             full_installer = 'Miniconda3-py{}_{}-{}'.format(py_version, CONDA_VERSION, installer_suffix)
             if full_installer not in data:
                 continue
