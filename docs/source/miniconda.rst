@@ -32,7 +32,7 @@ which does require administrator permissions.
 Latest Miniconda Installer Links
 ================================
 
-.. csv-table:: Latest - Conda 22.11.1-1 Python 3.10.8 released December 22, 2022
+.. csv-table:: Latest - Conda 22.11.1 Python 3.10.8 released December 22, 2022
    :header: Platform,Name,SHA256 hash
    :widths: 5, 10, 80
 
