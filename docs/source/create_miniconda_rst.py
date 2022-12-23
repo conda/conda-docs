@@ -10,15 +10,13 @@ OUT_FILENAME = "miniconda.rst"
 TEMPLATE_FILENAME = "miniconda.rst.jinja2"
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
-CONDA_VERSION = "4.12.0"
+CONDA_VERSION = "22.11.1-1"
 PLATFORM_MAP = {
-    "win32": "Windows-x86.exe",
     "win64": "Windows-x86_64.exe",
     "osx64_sh": "MacOSX-x86_64.sh",
     "osx64_pkg": "MacOSX-x86_64.pkg",
     "osx_arm64_sh": "MacOSX-arm64.sh",
     "osx_arm64_pkg": "MacOSX-arm64.pkg",
-    "linux32": "Linux-x86.sh",
     "linux64": "Linux-x86_64.sh",
     "linux_aarch64": "Linux-aarch64.sh",
     "linux_ppc64le": "Linux-ppc64le.sh",
@@ -45,7 +43,7 @@ def get_latest_miniconda_sizes_and_hashes():
         latest_installer = 'Miniconda3-latest-{}'.format(installer_suffix)
         info["{}_py3_latest_size".format(platform_id)] = sizeof_fmt(data[latest_installer]['size'])
         info["{}_py3_latest_hash".format(platform_id)] = data[latest_installer]['sha256']
-        for py_version in ("37", "38", "39"):
+        for py_version in ("37", "38", "39", "310"):
             full_installer = 'Miniconda3-py{}_{}-{}'.format(py_version, CONDA_VERSION, installer_suffix)
             if full_installer not in data:
                 continue
