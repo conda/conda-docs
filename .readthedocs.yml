@@ -5,6 +5,9 @@ python:
   install:
   - requirements: requirements.txt
 
+sphinx:
+  fail_on_warning: true
+
 # Additional (downloadable) formats of the documentation to be built, apart
 # from the default HTML.
 formats:
