@@ -54,7 +54,6 @@ but that approach may not be as up to date.
    conda
    conda-build
    miniconda
-   miniconda_hashes
    help-support
    contributing
    license
