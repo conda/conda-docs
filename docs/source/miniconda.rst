@@ -167,7 +167,7 @@ Other resources
           $ conda create -n myenv python
 
  will be to install Python 2.7 with the Python 2
- Miniconda and to install Python 3.8 with the Python
+ Miniconda and to install Python 3.10 with the Python
  3 Miniconda. You can override the default by
  explicitly setting ``python=2`` or ``python=3``. It
  also determines the default value of ``CONDA_PY``
