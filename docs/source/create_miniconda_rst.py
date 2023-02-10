@@ -9,6 +9,9 @@ NOTE: Please make sure to update the global variables below:
 - RELEASE_DATE
 
 NOTE: Also confirm the PLATFORM_MAP is up-to-date.
+
+NOTE: If a new Python variant has been built out, please update the tuple
+below for 'py_version'.
 """
 
 import urllib.request
