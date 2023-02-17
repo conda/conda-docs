@@ -10,7 +10,6 @@ import datetime
 import math
 import os
 import time
-from operator import itemgetter
 from packaging.version import Version
 
 # Column lengths
@@ -84,16 +83,18 @@ def main():
     def sorting_key(filename):
         """
         Sort by:
-          conda_version
-          miniconda_prefix
-          py_version
+          conda_version_platform_ext (e.g. "23.1.0-1-Linux-x86_64.sh")
+          miniconda_prefix (e.g. "Miniconda3")
+          py_version (e.g. the "310" from "py310")
         """
-        # 1. conda_version
+        # 1. conda_version_platform_ext
         version_str = filename.split("-")[1]
-        # cases where the filename is Miniconda3-py3X_version-platform.ext
+        # Starting with v4.8.2 in 2020, we release Miniconda variants for each 
+        # python version we support: Miniconda3-py3XX_<version>-<platform>.<ext>
+        # So we need to split that off.
         if "_" in version_str:
             version_str = version_str.split("_")[1]
-        conda_version = version_str
+        conda_version_platform_ext = version_str
 
         # 2. miniconda_prefix
         miniconda_prefix = filename.split("-")[0]
@@ -105,7 +106,7 @@ def main():
         else:
             py_version = ""
 
-        return (Version(conda_version), miniconda_prefix, py_version)
+        return (Version(conda_version_platform_ext), miniconda_prefix, py_version)
 
     # We sort the 'data' dict by our special sorting_key() function,
     # which accounts for all the ways our Miniconda installers have

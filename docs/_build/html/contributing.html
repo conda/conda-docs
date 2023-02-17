@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributing &mdash; conda   documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/conda-logo.png"/>
+    <link rel="canonical" href="https://docs.conda.io/contributing.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Conda license" href="license.html" />
+    <link rel="prev" title="Help and support" href="help-support.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> conda
+          </a>
+              <div class="version">
+                 
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda-build.html">Conda-build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniconda.html">Miniconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniconda_hashes.html">Miniconda hash information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help-support.html">Help and support</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#new-issues">New Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-environment-bash">Development Environment, Bash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-environment-windows-cmd-exe-shell">Development Environment, Windows cmd.exe shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conda-contributor-license-agreement">Conda Contributor License Agreement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Conda license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">conda</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Contributing</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/conda/conda-docs/blob/master/docs/source/contributing.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading"></a></h1>
+<div class="section" id="new-issues">
+<span id="id1"></span><h2>New Issues<a class="headerlink" href="#new-issues" title="Permalink to this heading"></a></h2>
+<p>If your issue is a bug report or feature request for:</p>
+<ul class="simple">
+<li><p><strong>a specific conda package</strong>: please file it at <a class="reference external" href="https://github.com/ContinuumIO/anaconda-issues/issues">https://github.com/ContinuumIO/anaconda-issues/issues</a></p></li>
+<li><p><strong>anaconda.org</strong>: please file it at <a class="reference external" href="https://github.com/Anaconda-Platform/support/issues">https://github.com/Anaconda-Platform/support/issues</a></p></li>
+<li><p><strong>repo.anaconda.com</strong>: please file it at <a class="reference external" href="https://github.com/ContinuumIO/anaconda-issues/issues">https://github.com/ContinuumIO/anaconda-issues/issues</a></p></li>
+<li><p><strong>commands under</strong> <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">build</span></code>: please file it at <a class="reference external" href="https://github.com/conda/conda-build/issues">https://github.com/conda/conda-build/issues</a></p></li>
+<li><p><strong>commands under</strong> <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span></code>: please file it at <a class="reference external" href="https://github.com/conda/conda/issues">https://github.com/conda/conda/issues</a></p></li>
+<li><p><strong>all other conda commands</strong>: please file it at <a class="reference external" href="https://github.com/conda/conda/issues">https://github.com/conda/conda/issues</a></p></li>
+</ul>
+</div>
+<div class="section" id="development-environment-bash">
+<h2>Development Environment, Bash<a class="headerlink" href="#development-environment-bash" title="Permalink to this heading"></a></h2>
+<p>To set up an environment to start developing on conda code, we recommend the following steps:</p>
+<ol class="arabic simple">
+<li><p>Fork the conda/conda repository, clone it locally anywhere you choose (an isolation miniconda
+will be set up within the clone directory), and set up <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span></code> to point to upstream
+and fork. For detailed directions, see below.</p></li>
+</ol>
+<blockquote>
+<div><p>1a. Choose where you want the repository located (not location of existing conda)</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">CONDA_PROJECT_ROOT=&quot;$HOME/conda&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>1b. Clone the project, with <code class="docutils literal notranslate"><span class="pre">upstream</span></code> being the main repository. Make sure to click the <code class="docutils literal notranslate"><span class="pre">Fork</span></code>
+button above so you have your own copy of this repo.</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">GITHUB_USERNAME=kalefranz</span>
+<span class="go">git clone git@github.com:$GITHUB_USERNAME/conda &quot;$CONDA_PROJECT_ROOT&quot;</span>
+<span class="go">cd &quot;$CONDA_PROJECT_ROOT&quot;</span>
+<span class="go">git remote add upstream git@github.com:conda/conda</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Create a local development environment, and activate that environment</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">. dev/start</span>
+</pre></div>
+</div>
+<p>This command will create a project-specific base environment at <code class="docutils literal notranslate"><span class="pre">./devenv</span></code>. If
+the environment already exists, this command will just quickly activate the
+already-created <code class="docutils literal notranslate"><span class="pre">./devenv</span></code> environment.</p>
+<p>To be sure that the conda code being interpreted is the code in the project directory,
+look at the value of <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">location:</span></code> in the output of <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--all</span></code>.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Run conda’s unit tests using GNU make</p></li>
+</ol>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">make unit</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>or alternately with pytest</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">py.test -m &quot;not integration and not installed&quot; conda tests</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>or you can use pytest to focus on one specific test</p>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">py.test tests/test_create.py -k create_install_update_remove_smoketest</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="development-environment-windows-cmd-exe-shell">
+<h2>Development Environment, Windows cmd.exe shell<a class="headerlink" href="#development-environment-windows-cmd-exe-shell" title="Permalink to this heading"></a></h2>
+<p>In these steps, we assume <code class="docutils literal notranslate"><span class="pre">git</span></code> is installed and available on <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
+<ol class="arabic simple">
+<li><p>Choose where you want the project located</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">set &quot;CONDA_PROJECT_ROOT=%HOMEPATH%\conda&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Clone the project, with <code class="docutils literal notranslate"><span class="pre">origin</span></code> being the main repository. Make sure to click the <code class="docutils literal notranslate"><span class="pre">Fork</span></code>
+button above so you have your own copy of this repo.</p></li>
+</ol>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">set GITHUB_USERNAME=kalefranz</span>
+<span class="go">git clone git@github.com:conda/conda &quot;%CONDA_PROJECT_ROOT%&quot;</span>
+<span class="go">cd &quot;%CONDA_PROJECT_ROOT%&quot;</span>
+<span class="go">git remote add %GITHUB_USERNAME% git@github.com:%GITHUB_USERNAME%/conda</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>To be sure that the conda code being interpreted is the code in the project directory,
+look at the value of <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">location:</span></code> in the output of <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--all</span></code>.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Create a local development environment, and activate that environment</p></li>
+</ol>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">.\dev\start</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This command will create a project-specific base environment at <code class="docutils literal notranslate"><span class="pre">.\devenv</span></code>. If
+the environment already exists, this command will just quickly activate the
+already-created <code class="docutils literal notranslate"><span class="pre">.\devenv</span></code> environment.</p>
+</div></blockquote>
+</div>
+<div class="section" id="conda-contributor-license-agreement">
+<h2>Conda Contributor License Agreement<a class="headerlink" href="#conda-contributor-license-agreement" title="Permalink to this heading"></a></h2>
+<p>In case you’re new to CLAs, this is rather standard procedure for larger projects.
+<a class="reference external" href="https://www.djangoproject.com/foundation/cla/">Django</a> and even
+<a class="reference external" href="https://www.python.org/psf/contrib/contrib-form/">Python</a> itself both use something similar.</p>
+<iframe src="https://anaconda.na2.echosign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhAzPD8JNseGxXBNSY55tQ9ZE65FLEa2B-rUNAEYEjfxph-KGE3uSbu0fvR5cTRRCnY*&hosted=false" width="100%" height="100%" frameborder="0" style="border: 0; overflow: hidden; min-height: 500px; min-width: 600px;"></iframe></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="help-support.html" class="btn btn-neutral float-left" title="Help and support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license.html" class="btn btn-neutral float-right" title="Conda license" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017, Anaconda, Inc..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27761864-11', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
