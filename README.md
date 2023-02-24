@@ -15,7 +15,7 @@ You can build this docs repo on your local machine to preview changes in your br
 
 NOTE: These steps have only been tested on MacOS
 
-### Setup and activate a `sphinx` environment
+### Set up and activate a `sphinx` environment
 
 1. If you haven't already, create a conda environment with `sphinx` installed.
     ```
