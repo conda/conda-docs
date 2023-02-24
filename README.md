@@ -13,7 +13,7 @@ Please file issues, comments, and PRs at the appropriate repo.
 
 You can build this docs repo on your local machine to preview changes in your browser.
 
-NOTE: These steps have only been tested on MacOS
+NOTE: These steps have only been tested on MacOS.
 
 ### Set up and activate a `sphinx` environment
 
