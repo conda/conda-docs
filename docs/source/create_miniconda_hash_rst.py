@@ -1,4 +1,8 @@
-""" create rst file with size, date and sha256 for miniconda installers """
+#! /usr/bin/env python
+"""
+Create rst file with size, date and sha256 for miniconda installers.
+
+"""
 
 import urllib.request
 import json
@@ -9,7 +13,7 @@ import time
 from packaging.version import Version
 
 # Column lengths
-FILENAME_LEN = 42
+FILENAME_LEN = 47
 SIZE_LEN = 9
 TIMEMOD_LEN = 19
 HASH_LEN = 68
@@ -26,6 +30,13 @@ def sizeof_fmt(num, suffix="B"):
 
 
 def main():
+    # =================================================================
+    # The main hosting server is central time, so pretend we are too
+    # in order for anyone to be able to run this on Unix platforms.
+    os.environ['TZ'] = 'US/Central'
+    time.tzset()
+    # =================================================================
+
     FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
     with urllib.request.urlopen(urllib.request.Request(url=FILES_URL)) as f:
         data = json.loads(f.read().decode("utf-8"))
@@ -68,19 +79,38 @@ def main():
         + "=" * HASH_LEN
         + "\n"
     )
+
     def sorting_key(filename):
-        # typically the filename is Miniconda{2,3}-version-platform.ext
+        """
+        Sort by:
+          conda_version_platform_ext (e.g. "23.1.0-1-Linux-x86_64.sh")
+          miniconda_prefix (e.g. "Miniconda3")
+          py_version (e.g. the "310" from "py310")
+        """
+        # 1. conda_version_platform_ext
         version_str = filename.split("-")[1]
-        # cases where the filename is Miniconda3-py3X_version-platform.ext
+        # Starting with v4.8.2 in 2020, we release Miniconda variants for each 
+        # python version we support: Miniconda3-py3XX_<version>-<platform>.<ext>
+        # So we need to split that off.
         if "_" in version_str:
             version_str = version_str.split("_")[1]
-        return Version(version_str)
-    # =================================================================
-    # the main hosting server is central time, so pretend we are too
-    # in order for anyone to be able to run this on Unix platforms.
-    os.environ['TZ'] = 'US/Central'
-    time.tzset()
-    # =================================================================
+        conda_version_platform_ext = version_str
+
+        # 2. miniconda_prefix
+        miniconda_prefix = filename.split("-")[0]
+
+        # 3. py_version
+        if "py" in filename:
+            py_intermediate = filename.split("py")[1]
+            py_version = int(py_intermediate.split("_")[0])
+        else:
+            py_version = ""
+
+        return (Version(conda_version_platform_ext), miniconda_prefix, py_version)
+
+    # We sort the 'data' dict by our special sorting_key() function,
+    # which accounts for all the ways our Miniconda installers have
+    # changed their naming format over the years.
     for filename in sorted(data, reverse=True, key=sorting_key):
         last_modified = datetime.datetime.fromtimestamp(
             math.floor(data[filename]["mtime"])
