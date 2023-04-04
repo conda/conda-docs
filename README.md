@@ -19,7 +19,7 @@ You can find information on how to capitalize and talk about conda in the [conda
 
 ### Creating new pages
 
-If you create any new documentation files in this repo, please update the table of contents with the name of your new file. Otherwise, your page will not appear in the table of contents tree on the left-hand side of the documentation. The `toctree` directive for the conda-docs repo exists in the `index.rst` file. If you are in the `conda` or `conda-build` repos, there are many `toctree` directives on many `index` files, so make sure you edit the correct one.
+If you create any new documentation files in this repo, please update the table of contents with the name of your new file. Otherwise, your page will not appear in the table of contents tree on the left-hand side of the documentation. The `toctree` directive for the `conda-docs` repo exists in the `index.rst` file. If you are in the `conda` or `conda-build` repos, there are many `toctree` directives on many `index` files, so make sure you edit the correct one.
 
 ## Local builds
 
@@ -29,7 +29,7 @@ NOTE: These steps have only been tested on MacOS.
 
 ### Set up and activate a doc build environment
 
-1. Create a conda environment using the supplied requirements file in the conda-docs repo.
+1. Create a conda environment using the supplied requirements file in the `conda-docs` repo.
     ```
     conda create -n conda-docs pip -y
     conda activate conda-docs
@@ -48,4 +48,4 @@ NOTE: These steps have only been tested on MacOS.
     make html
     ```
 
-1. Open the `conda-docs/_build/html` directory in Finder, locate the desired `.html` file you want to preview, and double-click it to open it in your browser. (You can also drag and drop the file into an open browser).
+1. Open the `conda-docs/_build/html` directory in your file manager, locate the desired `.html` file you want to preview, and double-click it to open it in your browser. (You can also drag and drop the file into an open browser.)
