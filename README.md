@@ -15,7 +15,9 @@ Please file issues, comments, and pull requests at the appropriate repo.
 
 ### Conda capitalization
 
-You can find information on how to capitalize and talk about conda in the [conda contributing guide](https://github.com/conda/conda/blob/main/CONTRIBUTING.md#conda-capitalization-standards).
+The word "conda" should be lowercase, except when starting a sentence or header. Use code formatting when talking about the `conda` command. 
+
+For more detailed information on conda capitalization standards, see the [conda contributing guide](https://github.com/conda/conda/blob/main/CONTRIBUTING.md#conda-capitalization-standards).
 
 ### Creating new pages
 
