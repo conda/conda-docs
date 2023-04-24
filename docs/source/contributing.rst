@@ -116,6 +116,9 @@ In case you're new to CLAs, this is rather standard procedure for larger project
 `Django <https://www.djangoproject.com/foundation/cla/>`_ and even
 `Python <https://www.python.org/psf/contrib/contrib-form/>`_ itself both use something similar.
 
+> CLA agreements are ultimately approved by a person and are not fully automatic, so it 
+> may take some time for the CLA checks on your PRs to run successfully.
+
 .. raw:: html
 
     <iframe src="https://anaconda.na2.echosign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhAzPD8JNseGxXBNSY55tQ9ZE65FLEa2B-rUNAEYEjfxph-KGE3uSbu0fvR5cTRRCnY*&hosted=false" width="100%" height="100%" frameborder="0" style="border: 0; overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
