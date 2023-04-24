@@ -70,7 +70,7 @@ def get_latest_miniconda_sizes_and_hashes():
         latest_installer = f"Miniconda3-latest-{installer_suffix}"
         info[f"{platform_id}_py3_latest_size"] = sizeof_fmt(data[latest_installer]["size"])
         info[f"{platform_id}_py3_latest_hash"] = data[latest_installer]["sha256"]
-        for py_version in ("37", "38", "39", "310"):
+        for py_version in ("38", "39", "310"):
             full_installer = f"Miniconda3-py{py_version}_{MINICONDA_VERSION}-{installer_suffix}"
 
             # win-32 is and will remain at "frozen" at v4.12.0 
