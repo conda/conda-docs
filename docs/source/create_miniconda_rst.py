@@ -24,9 +24,9 @@ TEMPLATE_FILENAME = "miniconda.rst.jinja2"
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
 # Update these!
-MINICONDA_VERSION = "23.1.0-1"
-PYTHON_VERSION = "3.10.9"  # This is the version of Python that's bundled into the Miniconda installers.
-RELEASE_DATE = "February 7, 2023"
+MINICONDA_VERSION = "23.3.1-0"
+PYTHON_VERSION = "3.10.10"  # This is the version of Python that's bundled into the Miniconda installers.
+RELEASE_DATE = "April 24, 2023"
 
 # Confirm these are up-to-date.
 PLATFORM_MAP = {
@@ -70,7 +70,7 @@ def get_latest_miniconda_sizes_and_hashes():
         latest_installer = f"Miniconda3-latest-{installer_suffix}"
         info[f"{platform_id}_py3_latest_size"] = sizeof_fmt(data[latest_installer]["size"])
         info[f"{platform_id}_py3_latest_hash"] = data[latest_installer]["sha256"]
-        for py_version in ("37", "38", "39", "310"):
+        for py_version in ("38", "39", "310"):
             full_installer = f"Miniconda3-py{py_version}_{MINICONDA_VERSION}-{installer_suffix}"
 
             # win-32 is and will remain at "frozen" at v4.12.0 
