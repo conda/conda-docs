@@ -24,9 +24,9 @@ TEMPLATE_FILENAME = "miniconda.rst.jinja2"
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
 # Update these!
-MINICONDA_VERSION = "23.1.0-1"
-PYTHON_VERSION = "3.10.9"  # This is the version of Python that's bundled into the Miniconda installers.
-RELEASE_DATE = "February 7, 2023"
+MINICONDA_VERSION = "23.3.1-0"
+PYTHON_VERSION = "3.10.10"  # This is the version of Python that's bundled into the Miniconda installers.
+RELEASE_DATE = "April 24, 2023"
 
 # Confirm these are up-to-date.
 PLATFORM_MAP = {
