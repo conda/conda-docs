@@ -17,7 +17,7 @@ packages from the Anaconda repository.
 System requirements
 ===================
 
-* License: Free use and redistribution under the terms of the `EULA for Miniconda <https://www.anaconda.com/end-user-license-agreement-miniconda>`_.
+* License: Free use and redistribution under the terms of the `EULA for Miniconda <https://legal.anaconda.com/policies/en?name=offering-specific-terms#miniconda>`_.
 * Operating system: Windows 8 or newer, 64-bit macOS 10.13+, or Linux, including Ubuntu, RedHat, CentOS 7+, and others.
 * If your operating system is older than what is currently supported, you can find older versions of the Miniconda installers in our `archive <https://repo.anaconda.com/miniconda/>`_ that might work for you.
 * System architecture: Windows- 64-bit x86, 32-bit x86; macOS- 64-bit x86 & Apple M1 (ARM64); Linux- 64-bit x86, 64-bit aarch64 (AWS Graviton2), 64-bit IBM Power8/Power9, s390x (Linux on IBM Z & LinuxONE).
@@ -57,8 +57,11 @@ Windows installers
    Python 3.10,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Windows-x86_64.exe>`_,53.9 MiB,``307194e1f12bbeb52b083634e89cc67db4f7980bd542254b43d3309eaf7cb358``
    Python 3.9,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_23.3.1-0-Windows-x86_64.exe>`_,53.7 MiB,``155958e7922d8b7aa6cb3115aeb66d2efcdae1237a6f1c11e23ca75ea96d291a``
    Python 3.8,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Windows-x86_64.exe>`_,53.1 MiB,``f567b46b2312af5e60ec8f45daf9be626295b7716651e6e7434c447feea9123a``
+   Python 3.7,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-Windows-x86_64.exe>`_,,````
    Python 3.9,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Windows-x86.exe>`_,67.8 MiB,``4fb64e6c9c28b88beab16994bfba4829110ea3145baa60bda5344174ab65d462``
    Python 3.8,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_4.12.0-Windows-x86.exe>`_,66.8 MiB,``60cc5874b3cce9d80a38fb2b28df96d880e8e95d1b5848b15c20f1181e2807db``
+   Python 3.7,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Windows-x86.exe>`_,,````
+
 
 macOS installers
 =================
@@ -79,6 +82,8 @@ macOS installers
    ,`Miniconda3 macOS Intel x86 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-MacOSX-x86_64.pkg>`_,43.9 MiB,``23d6fa672be46632abd0bbed1f12ce9542a6cb4a38922dab503d9a6096d186d3``
    ,`Miniconda3 macOS Apple M1 ARM 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-MacOSX-arm64.sh>`_,42.9 MiB,``e0151c68f6a11a38b29c2f4a775bf6a22187fa2c8ca0f31930d69f2f013c0810``
    ,`Miniconda3 macOS Apple M1 ARM 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-MacOSX-arm64.pkg>`_,42.6 MiB,``6714fdefd12e1a65c7fd344f3829a4b054ae42d3d1368b07ceeab9dcc41ad48b``
+   Python 3.7,`Miniconda3 macOS Intel x86 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-MacOSX-x86_64.sh>`_,,````
+   ,`Miniconda3 macOS Intel x86 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-MacOSX-x86_64.pkg>`_,,````
 
 Linux installers
 ================
@@ -99,6 +104,10 @@ Linux installers
    ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-aarch64.sh>`_,48.8 MiB,``ad491ebad6efec7470fe2139c8b407a895cb2c828b3233b97da6e4f22cae0cde``
    ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-ppc64le.sh>`_,49.3 MiB,``8aa819800ba3ec88ad8518a9e4fc71ada8087547300fc53527c4ecc8072a4d50``
    ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-s390x.sh>`_,62.0 MiB,``e4d83bb9f0900c9128504f7e3c4d3b9e5eaf3b87c4bb5190a3086947e92bd3fa``
+   Python 3.7,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-Linux-x86_64.sh>`_,,````
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-Linux-aarch64.sh>`_,,````
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-Linux-ppc64le.sh>`_,,````
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py37_23.3.1-0-Linux-s390x.sh>`_,,````
 
 Installing
 ==========
