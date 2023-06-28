@@ -6,7 +6,6 @@ See the miniconda.rst.jinja2 for the template that is ultimately rendered.
 NOTE: Please make sure to update the global variables below:
 - MINICONDA_VERSION
 - PYTHON_VERSION
-- RELEASE_DATE
 
 NOTE: Also confirm the PLATFORM_MAP is up-to-date.
 
@@ -14,6 +13,7 @@ NOTE: If a new Python variant has been built out, please update the tuple
 below for 'py_version'.
 """
 
+import datetime
 import urllib.request
 import json
 
@@ -26,7 +26,6 @@ FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 # Update these!
 MINICONDA_VERSION = "23.3.1-0"
 PYTHON_VERSION = "3.10.10"  # This is the version of Python that's bundled into the Miniconda installers.
-RELEASE_DATE = "April 24, 2023"
 
 # Confirm these are up-to-date.
 PLATFORM_MAP = {
@@ -63,11 +62,14 @@ def get_latest_miniconda_sizes_and_hashes():
         "miniconda_version": MINICONDA_VERSION,
         "conda_version": MINICONDA_VERSION.split("-")[0],
         "python_version": PYTHON_VERSION,
-        "release_date": RELEASE_DATE
     }
 
     for platform_id, installer_suffix in PLATFORM_MAP.items():
         latest_installer = f"Miniconda3-latest-{installer_suffix}"
+        if "release_date" not in info:
+            mtime = data[latest_installer]["mtime"]
+            mdate = datetime.date.fromtimestamp(mtime)
+            info["release_date"] = mdate.strftime("%B %-d, %Y")
         info[f"{platform_id}_py3_latest_size"] = sizeof_fmt(data[latest_installer]["size"])
         info[f"{platform_id}_py3_latest_hash"] = data[latest_installer]["sha256"]
         for py_version in ("38", "39", "310"):
