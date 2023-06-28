@@ -47,7 +47,7 @@ NOTE: These steps have only been tested on MacOS.
 
 1. Build the HTML docs using the `make` command. The commands used for this are defined in the `docs/Makefile` file.
     ```
-    make html
+    make html PYTHON=python
     ```
 
 1. Open the `conda-docs/_build/html` directory in your file manager, locate the desired `.html` file you want to preview, and double-click it to open it in your browser. (You can also drag and drop the file into an open browser.)
