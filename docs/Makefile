@@ -2,9 +2,8 @@
 #
 
 # You can set these variables from the command line.
-PYTHON        = python3
 SPHINXOPTS    =
-SPHINXBUILD   = $(PYTHON) -msphinx
+SPHINXBUILD   = python3 -msphinx
 SPHINXPROJ    = conda
 SOURCEDIR     = source
 BUILDDIR      = build
