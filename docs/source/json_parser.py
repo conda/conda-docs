@@ -3,45 +3,31 @@ import json
 
 ROOT_DIR = os.getcwd()
 SOURCE_DIR = os.path.join(ROOT_DIR, "docs/source/")
-OUT_FILEPATH = os.path.join(SOURCE_DIR, "release_notes.rst.jinja2")
-
-# def get_info_json():
+OUT_FILEPATH = os.path.join(SOURCE_DIR, "parsed_info.json")
 info_json_file_path = os.path.join(SOURCE_DIR, "_tmp/", "info.json")
-info_json_dict = {}
-pkg_list = []
-pkg_dict = {}
+
 with open(info_json_file_path) as f:
     info_json_raw = json.load(f)
-    info_json_dict["name"] = info_json_raw["name"]
-    info_json_dict["version"] = info_json_raw["version"]
-    info_json_dict["installer_type"] = info_json_raw["installer_type"]
-    info_json_dict["platform"] = info_json_raw["_platform"]
-    # info_json_dict[pkg_list]["pkgs"] = info_json_raw["_dists"]
 
-for dist in info_json_raw["_dists"]:
-    separator = '-'
-    pkg = dist.rsplit(separator, 1)[0]
-    # pkg_split = pkg.rsplit(separator, 1)
-    # pkg_list.append(pkg)
+def dist_str_to_dict(dist: str) -> dict:
+        pkg = dist.rsplit('-', 2)
+        pkg_split = pkg[2].split('_')
 
-    # pkg_name_list = []
-    # pkg_version_list = []
+        pkg_name = pkg[0]
+        pkg_version = pkg[1]
+        pkg_hash = pkg_split[0]
+        pkg_build_num = pkg_split[1].split('.')[0]
+        pkg_ext = pkg_split[1].split('.')[1]
+    
+        return {"name": pkg_name, "version": pkg_version, "hash": pkg_hash, "build_num": pkg_build_num, "ext": pkg_ext}
 
-    pkg_name = pkg.rsplit(separator, 1)[0]
-    pkg_version = pkg.rsplit(separator, 1)[1]
+def dict_to_list_of_dicts(dists: list) -> list:
+    pkg_list_infos = [dist_str_to_dict(x) for x in dists]
+    return pkg_list_infos
 
-    # pkg_name_list.append(pkg_name)
-    # pkg_version_list.append(pkg_version)
+def main():
+     with open(OUT_FILEPATH, 'w') as f:
+        f.write(str(dict_to_list_of_dicts(info_json_raw["_dists"])))
 
-    pkg_list.append(pkg_name + " " + pkg_version)
-
-for pkg in pkg_list:
-    print("* " + pkg)
-
-
-
-# get_info_json()
-# print(new_pkg_list)
-print(pkg_name_list)
-print(pkg_version_list)
-breakpoint()
+if __name__ == '__main__':
+     main()
