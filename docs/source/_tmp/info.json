@@ -1,0 +1,276 @@
+{
+  "name": "MinicondaX",
+  "version": "X",
+  "installer_type": "pkg",
+  "build_outputs": [
+    "pkgs_list",
+    "info.json"
+  ],
+  "channels": [
+    "http://repo.anaconda.com/pkgs/main/"
+  ],
+  "specs": [
+    "python",
+    "conda"
+  ],
+  "CONSTRUCTOR_VERSION": "3.4.3",
+  "_input_dir": "miniconda",
+  "_output_dir": "/Users/paulyim/codebase/constructor/examples",
+  "_platform": "osx-arm64",
+  "_download_dir": "/Users/paulyim/.conda/constructor/osx-arm64",
+  "_conda_exe": "/Users/paulyim/miniconda3/envs/constructor/standalone_conda/conda.exe",
+  "welcome_image_text": "MinicondaX",
+  "header_image_text": "MinicondaX",
+  "extra_files": [],
+  "temp_extra_files": [],
+  "_all_pkg_records": [
+    "PackageCacheRecord(_hash=-7442736922714423579, name='bzip2', version='1.0.8', build='h620ffc9_4', build_number=4, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='bzip2-1.0.8-h620ffc9_4.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/bzip2-1.0.8-h620ffc9_4.conda', sha256='84446bdf2af2838e413339d846218f16e9bc2ad4b8b701986f93fd65fb0e1c2c', depends=(), constrains=(), track_features=(), features=(), license='bzip2-1.0.6', timestamp=1624215191.0, size=111712, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/bzip2-1.0.8-h620ffc9_4.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/bzip2-1.0.8-h620ffc9_4', md5='e5b4ef8ae5b3b5f0e3c9ca4bcf1a3b2f')",
+    "PackageCacheRecord(_hash=7354283390968677773, name='ca-certificates', version='2023.01.10', build='hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='ca-certificates-2023.01.10-hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/ca-certificates-2023.01.10-hca03da5_0.conda', sha256='82d32acd95fa99fc33ca491b0bc2139154e3a9ef066d0438ffb143c2093e1597', depends=(), constrains=(), track_features=(), features=(), license='MPL-2.0', timestamp=1674218474.0, size=124314, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/ca-certificates-2023.01.10-hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/ca-certificates-2023.01.10-hca03da5_0', md5='aff8b6f97d46960a126aab99a60e04e2')",
+    "PackageCacheRecord(_hash=-1121409574950507627, name='libffi', version='3.4.4', build='hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='libffi-3.4.4-hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/libffi-3.4.4-hca03da5_0.conda', sha256='e20a0155be2f8f11258b2d2c47d4c7f4746c4592e62ad61138b93357a75d9a4e', depends=(), constrains=(), track_features=(), features=(), license='MIT', timestamp=1683716579.0, size=123015, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/libffi-3.4.4-hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/libffi-3.4.4-hca03da5_0', md5='0279cc7c6cb46a948c6312e490f2c04e')",
+    "PackageCacheRecord(_hash=-4312409245602276515, name='ncurses', version='6.4', build='h313beb8_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='ncurses-6.4-h313beb8_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/ncurses-6.4-h313beb8_0.conda', sha256='fe2b87be65e21d3cd3b73659e61d670901c3f8b593444dbea3e80a4c4359d7b6', depends=(), constrains=(), track_features=(), features=(), license='MIT AND X11', timestamp=1674734099.0, size=905632, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/ncurses-6.4-h313beb8_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/ncurses-6.4-h313beb8_0', md5='08038fd388dbbda4ed8e0206fc8706a7')",
+    "PackageCacheRecord(_hash=-912904441204378742, name='tzdata', version='2023c', build='h04d1e81_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='tzdata-2023c-h04d1e81_0.conda', url='http://repo.anaconda.com/pkgs/main/noarch/tzdata-2023c-h04d1e81_0.conda', sha256='aa653896749686eb15c28c719a57df597bced46f983b1fdbcc9db3e2db9cc795', depends=(), constrains=(), track_features=(), features=(), license='CC-PDDC OR BSD-3-Clause', timestamp=1680170368.0, size=118328, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/tzdata-2023c-h04d1e81_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/tzdata-2023c-h04d1e81_0', md5='29db02adf8808f7c64642cead3e28acd')",
+    "PackageCacheRecord(_hash=5896964689152294894, name='xz', version='5.4.2', build='h80987f9_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='xz-5.4.2-h80987f9_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/xz-5.4.2-h80987f9_0.conda', sha256='ba8f7052585fb648bac1a78e9550ce31731ab44a81beb1019524ce1649e0894e', depends=(), constrains=(), track_features=(), features=(), license='LGPL-2.1-or-later and GPL-2.0-or-later', timestamp=1683113019.0, size=377866, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/xz-5.4.2-h80987f9_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/xz-5.4.2-h80987f9_0', md5='4f0a282d2f583900877fdfc832c0070a')",
+    "PackageCacheRecord(_hash=7059896293310166435, name='zlib', version='1.2.13', build='h5a0b063_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='zlib-1.2.13-h5a0b063_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/zlib-1.2.13-h5a0b063_0.conda', sha256='af480f1788595a311d33bfc59f6c841dd1532d0dd7945d5b0bd12c52be6d55cd', depends=(), constrains=(), track_features=(), features=(), license='Zlib', timestamp=1666595022.0, size=83843, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/zlib-1.2.13-h5a0b063_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/zlib-1.2.13-h5a0b063_0', md5='f37216c0dea34741707510529ef366bf')",
+    "PackageCacheRecord(_hash=-98094294118537034, name='openssl', version='1.1.1t', build='h1a28f6b_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='openssl-1.1.1t-h1a28f6b_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/openssl-1.1.1t-h1a28f6b_0.conda', sha256='efd60382661e566d37b447f9dbdae8cc7a3a057bee8a2528b5ce70ff450bd275', depends=('ca-certificates',), constrains=(), track_features=(), features=(), license='OpenSSL', timestamp=1676330784.0, size=2710946, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/openssl-1.1.1t-h1a28f6b_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/openssl-1.1.1t-h1a28f6b_0', md5='8e24ed0228f91fbf6b8d01ef102df5fe')",
+    "PackageCacheRecord(_hash=9141036976443387121, name='readline', version='8.2', build='h1a28f6b_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='readline-8.2-h1a28f6b_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/readline-8.2-h1a28f6b_0.conda', sha256='0399187fd09fc52bfac1b67b3cdef33faa76a75213ff932d9fcb079238dd8584', depends=('ncurses >=6.3,<7.0a0',), constrains=(), track_features=(), features=(), license='GPL-3.0-only', timestamp=1666648067.0, size=361268, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/readline-8.2-h1a28f6b_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/readline-8.2-h1a28f6b_0', md5='8e3d8eb62e32065d41fad9a83a901254')",
+    "PackageCacheRecord(_hash=4649852824730010719, name='tk', version='8.6.12', build='hb8d0fd4_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='tk-8.6.12-hb8d0fd4_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/tk-8.6.12-hb8d0fd4_0.conda', sha256='e6d42d1bfd6dec2b263ece2c3b6b6a815aee8b7eeeaa7ce3dc61393588af70da', depends=('zlib >=1.2.12,<1.3.0a0',), constrains=(), track_features=(), features=(), license='TCL', timestamp=1654088929.0, size=3073996, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/tk-8.6.12-hb8d0fd4_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/tk-8.6.12-hb8d0fd4_0', md5='012a1790e696759768ea3dd5ed84fdfb')",
+    "PackageCacheRecord(_hash=1130695842292090267, name='sqlite', version='3.41.2', build='h80987f9_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='sqlite-3.41.2-h80987f9_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/sqlite-3.41.2-h80987f9_0.conda', sha256='3a4b5bebba9578fbfe4cc94af740f740a8945ae6d9b9e1772e387082cfae4343', depends=('ncurses >=6.4,<7.0a0', 'readline >=8.1.2,<9.0a0', 'zlib >=1.2.13,<1.3.0a0', 'zlib >=1.2.13,<2.0a0'), constrains=(), track_features=(), features=(), license='blessing', timestamp=1681394762.0, size=1177856, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/sqlite-3.41.2-h80987f9_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/sqlite-3.41.2-h80987f9_0', md5='31674bcba2e09766717f0d7d1ecee30a')",
+    "PackageCacheRecord(_hash=1261796390741727061, name='python', version='3.11.3', build='hc0d8a6c_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='python-3.11.3-hc0d8a6c_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/python-3.11.3-hc0d8a6c_0.conda', sha256='bed4500a451edef1f440c0f4b284b7cb32440f911724b57dc50cbfca67a2e1f4', depends=('pip', 'tzdata', 'zlib >=1.2.13,<1.3.0a0', 'bzip2 >=1.0.8,<2.0a0', 'openssl >=1.1.1t,<1.1.2a', 'readline >=8.1.2,<9.0a0', 'libffi >=3.4,<4.0a0', 'libffi >=3.4,<3.5', 'tk >=8.6.12,<8.7.0a0', 'xz >=5.2.10,<6.0a0', 'ncurses >=6.4,<7.0a0', 'sqlite >=3.41.2,<4.0a0'), constrains=(), track_features=(), features=(), license='PSF-2.0', timestamp=1681948617.0, size=16034510, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/python-3.11.3-hc0d8a6c_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/python-3.11.3-hc0d8a6c_0', md5='2fde54a2c622f9574e2fb47d20e92502')",
+    "PackageCacheRecord(_hash=3376807557270855184, name='boltons', version='23.0.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='boltons-23.0.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/boltons-23.0.0-py311hca03da5_0.conda', sha256='57f3a3d3ff3c03ac5255735b01b2515d2719b71bdd07ef813f2f8c10b2f177dd', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', timestamp=1677965159.0, size=492559, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/boltons-23.0.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/boltons-23.0.0-py311hca03da5_0', md5='72ec168d66e0b9cc59005897bbbfc56e')",
+    "PackageCacheRecord(_hash=2198740604632212256, name='certifi', version='2023.5.7', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='certifi-2023.5.7-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/certifi-2023.5.7-py311hca03da5_0.conda', sha256='a4b8816cd25f6357998c24076a4cf91707f723842529acd4a1dfc88da5273120', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='MPL-2.0', timestamp=1683875419.0, size=157817, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/certifi-2023.5.7-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/certifi-2023.5.7-py311hca03da5_0', md5='4c01501e445672eb4cdc2b3307345855')",
+    "PackageCacheRecord(_hash=-3392724942153783741, name='charset-normalizer', version='2.0.4', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='charset-normalizer-2.0.4-pyhd3eb1b0_0.conda', url='http://repo.anaconda.com/pkgs/main/noarch/charset-normalizer-2.0.4-pyhd3eb1b0_0.conda', sha256='b39aea12bf02654cdd0094c79bfa6edbc8d054787f6e2d0b96d403cd4ba4cc0d', depends=('python >=3.5',), constrains=(), track_features=(), features=(), license='MIT', timestamp=1630003259.0, size=35372, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/charset-normalizer-2.0.4-pyhd3eb1b0_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/charset-normalizer-2.0.4-pyhd3eb1b0_0', md5='e7a441d94234b2b5fafee06e25dbf076')",
+    "PackageCacheRecord(_hash=1582039217451890616, name='idna', version='3.4', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='idna-3.4-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/idna-3.4-py311hca03da5_0.conda', sha256='0be252828ec4d9a7c9fe33b6ec973936498bebac0d74a262ec11e6bb0439e889', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', timestamp=1677906184.0, size=98640, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/idna-3.4-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/idna-3.4-py311hca03da5_0', md5='a6011ce11309e4daa98c8e515734d6e4')",
+    "PackageCacheRecord(_hash=8606782344818266078, name='jsonpointer', version='2.1', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='jsonpointer-2.1-pyhd3eb1b0_0.conda', url='http://repo.anaconda.com/pkgs/main/noarch/jsonpointer-2.1-pyhd3eb1b0_0.conda', sha256='739af990230fb811bc0c03a7393ccb361d371d85246c4ef1d5185e7e0a1c2810', depends=('python',), constrains=(), track_features=(), features=(), license='BSD 3-Clause', timestamp=1615660585.0, size=9495, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/jsonpointer-2.1-pyhd3eb1b0_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/jsonpointer-2.1-pyhd3eb1b0_0', md5='298ff809e733cb04366e4e629c65aa8d')",
+    "PackageCacheRecord(_hash=-7747063967621167188, name='packaging', version='23.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='packaging-23.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/packaging-23.0-py311hca03da5_0.conda', sha256='b3d64f139690968795bf17b0db0fef76af8157f74999703e5990bcfffe445be8', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='Apache-2.0 or BSD-2-Clause', timestamp=1678965395.0, size=93568, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/packaging-23.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/packaging-23.0-py311hca03da5_0', md5='d07191394cde35ec95d24ef2b6335905')",
+    "PackageCacheRecord(_hash=-3011056211039040670, name='pluggy', version='1.0.0', build='py311hca03da5_1', build_number=1, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='pluggy-1.0.0-py311hca03da5_1.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/pluggy-1.0.0-py311hca03da5_1.conda', sha256='32ffcfd7817ec9d6254bb0a835dee3d6ae3ef8ec7660e05696f355524e33ae41', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='MIT', timestamp=1677907087.0, size=34316, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/pluggy-1.0.0-py311hca03da5_1.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/pluggy-1.0.0-py311hca03da5_1', md5='2b5d6b7e31fdba7fe831fd4a7250da5f')",
+    "PackageCacheRecord(_hash=5194356488465002401, name='pycosat', version='0.6.4', build='py311h80987f9_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='pycosat-0.6.4-py311h80987f9_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/pycosat-0.6.4-py311h80987f9_0.conda', sha256='30010362ade1d2174d54d164cc9f3102833197fa5668614c3909f1e510580b05', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='MIT', timestamp=1677933593.0, size=81962, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/pycosat-0.6.4-py311h80987f9_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/pycosat-0.6.4-py311h80987f9_0', md5='2c2d7e2719e33bbe06e29d1e87183af1')",
+    "PackageCacheRecord(_hash=-1293773966445876945, name='pycparser', version='2.21', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='pycparser-2.21-pyhd3eb1b0_0.conda', url='http://repo.anaconda.com/pkgs/main/noarch/pycparser-2.21-pyhd3eb1b0_0.conda', sha256='4405b5aeff26863972c82e8b54d09f88cd084f70e01e4343107b2676ffbeab57', depends=('python >=3.6',), constrains=(), track_features=(), features=(), license='BSD-3-clause', timestamp=1636541382.0, size=96617, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/pycparser-2.21-pyhd3eb1b0_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/pycparser-2.21-pyhd3eb1b0_0', md5='135a72ff2a31150a3a3ff0b1edd41ca9')",
+    "PackageCacheRecord(_hash=4172756642334259483, name='pysocks', version='1.7.1', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='pysocks-1.7.1-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/pysocks-1.7.1-py311hca03da5_0.conda', sha256='0011b4c7d5588f0dd08fa3d6cab0568a90b9496c709533945389041e922a926f', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='BSD 3-Clause', timestamp=1677906514.0, size=37167, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/pysocks-1.7.1-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/pysocks-1.7.1-py311hca03da5_0', md5='dd1105b41c76f0aec712db271d00a601')",
+    "PackageCacheRecord(_hash=8894592569209138077, name='ruamel.yaml', version='0.17.21', build='py311h80987f9_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='ruamel.yaml-0.17.21-py311h80987f9_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/ruamel.yaml-0.17.21-py311h80987f9_0.conda', sha256='f048a9f6641083dc6595c6a71f39757cb5a2aed9ddbe5199aa87efc30642d856', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='MIT', timestamp=1677934868.0, size=254940, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/ruamel.yaml-0.17.21-py311h80987f9_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/ruamel.yaml-0.17.21-py311h80987f9_0', md5='c14d31a2f66af3f6e153d490485dd557')",
+    "PackageCacheRecord(_hash=-4795340664259933180, name='setuptools', version='67.8.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='setuptools-67.8.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/setuptools-67.8.0-py311hca03da5_0.conda', sha256='ee05411729618c25d240e05762aefcdaed79ff689aa0774b43597843aa88683f', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='MIT', timestamp=1685372876.0, size=1428847, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/setuptools-67.8.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/setuptools-67.8.0-py311hca03da5_0', md5='95f48e869144abc484b0dd2d92403110')",
+    "PackageCacheRecord(_hash=4367304813992767687, name='toolz', version='0.12.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='toolz-0.12.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/toolz-0.12.0-py311hca03da5_0.conda', sha256='d63c6ddfa8772bf12ff7dd754ea1ae5d948a21e23700e33e7487ff9933a1f98f', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', timestamp=1677925889.0, size=139044, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/toolz-0.12.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/toolz-0.12.0-py311hca03da5_0', md5='6b59f132fcf4750e6f00b96050ac3ebc')",
+    "PackageCacheRecord(_hash=-697027378745124039, name='tqdm', version='4.65.0', build='py311hb6e6a13_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='tqdm-4.65.0-py311hb6e6a13_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/tqdm-4.65.0-py311hb6e6a13_0.conda', sha256='b283f0f609c5b9c0557201279f071fee6b058e8b3a1332d46c524965a212ca59', depends=('python >=3.11,<3.12.0a0',), constrains=('ipywidgets >=6', 'slack-sdk', 'requests'), track_features=(), features=(), license='MPL-2.0 AND MIT', timestamp=1679562052.0, size=165369, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/tqdm-4.65.0-py311hb6e6a13_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/tqdm-4.65.0-py311hb6e6a13_0', md5='6eef4006731087c8e69af7d98cc26f0e')",
+    "PackageCacheRecord(_hash=7027185422661092243, name='wheel', version='0.38.4', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='wheel-0.38.4-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/wheel-0.38.4-py311hca03da5_0.conda', sha256='e97b672f1c3b1fcf8eee7675d07bbbe6154e8a3e7ed20322a8fe9895b037375e', depends=('python >=3.11,<3.12.0a0',), constrains=(), track_features=(), features=(), license='MIT', timestamp=1677942912.0, size=81860, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/wheel-0.38.4-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/wheel-0.38.4-py311hca03da5_0', md5='4d9dbaff322c666a7e223cf2669c629c')",
+    "PackageCacheRecord(_hash=1935993465472916434, name='cffi', version='1.15.1', build='py311h80987f9_3', build_number=3, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='cffi-1.15.1-py311h80987f9_3.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/cffi-1.15.1-py311h80987f9_3.conda', sha256='3ae972616e08464dcf2b2e23f56fb2e185fe02afaf8e09c6fe452d7763763993', depends=('libffi >=3.4,<3.5', 'pycparser', 'python >=3.11,<3.12.0a0'), constrains=(), track_features=(), features=(), license='MIT', timestamp=1677903743.0, size=279629, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/cffi-1.15.1-py311h80987f9_3.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/cffi-1.15.1-py311h80987f9_3', md5='d3e4f96b79b26ad09e05c9bd59bbd1e1')",
+    "PackageCacheRecord(_hash=-6285671821117593118, name='jsonpatch', version='1.32', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='jsonpatch-1.32-pyhd3eb1b0_0.conda', url='http://repo.anaconda.com/pkgs/main/noarch/jsonpatch-1.32-pyhd3eb1b0_0.conda', sha256='dcd5fe09150f6e1b327369bc837df2159c32406981be9943b0cfcf8107203e66', depends=('jsonpointer >=1.9', 'python'), constrains=(), track_features=(), features=(), license='BSD 3-Clause', timestamp=1615747661.0, size=14901, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/jsonpatch-1.32-pyhd3eb1b0_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/jsonpatch-1.32-pyhd3eb1b0_0', md5='ce3c2233a0823c4c25aba6843b05d19d')",
+    "PackageCacheRecord(_hash=-4421950002586824310, name='pip', version='23.0.1', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='pip-23.0.1-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/pip-23.0.1-py311hca03da5_0.conda', sha256='ecac80ad22e9532b076d47e75d40483f4eca7696a1a19ba365f4b1dd51a60bb4', depends=('python >=3.11,<3.12.0a0', 'setuptools', 'wheel'), constrains=(), track_features=(), features=(), license='MIT', timestamp=1678995681.0, size=2880913, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/pip-23.0.1-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/pip-23.0.1-py311hca03da5_0', md5='652f152552aa544a27db2e3d78585382')",
+    "PackageCacheRecord(_hash=211813691306102466, name='brotlipy', version='0.7.0', build='py311h80987f9_1002', build_number=1002, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='brotlipy-0.7.0-py311h80987f9_1002.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/brotlipy-0.7.0-py311h80987f9_1002.conda', sha256='641fdb9d93b0cceb9d3a7860e8e609e2885c86ba39617f3f49c08f532d8494ab', depends=('cffi >=1.0.0', 'python >=3.11,<3.12.0a0'), constrains=(), track_features=(), features=(), license='MIT', timestamp=1677906043.0, size=317244, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/brotlipy-0.7.0-py311h80987f9_1002.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/brotlipy-0.7.0-py311h80987f9_1002', md5='4328824982787293cf5be5a80c71382f')",
+    "PackageCacheRecord(_hash=-3332468818927863496, name='cryptography', version='39.0.1', build='py311h834c97f_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='cryptography-39.0.1-py311h834c97f_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/cryptography-39.0.1-py311h834c97f_0.conda', sha256='87114aa9b1e5bce0f746ca4f8a7750e114b0993c8fc066d7fb2002412b0ff138', depends=('cffi >=1.12', 'openssl <1.1.2a', 'python >=3.11,<3.12.0a0'), constrains=('pyopenssl >=23.0.0',), track_features=(), features=(), license='(BSD-3-Clause OR Apache-2.0) AND PSF-2.0 AND MIT', timestamp=1678994590.0, size=1112394, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/cryptography-39.0.1-py311h834c97f_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/cryptography-39.0.1-py311h834c97f_0', md5='232a85823bf1203af49ee889b2793ea0')",
+    "PackageCacheRecord(_hash=5506447572363685561, name='zstandard', version='0.19.0', build='py311h80987f9_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='zstandard-0.19.0-py311h80987f9_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/zstandard-0.19.0-py311h80987f9_0.conda', sha256='853428a60d886fe2ce89f99f916b2ff204c22f26aba5b066c92013edf80cbc38', depends=('cffi >=1.11', 'python >=3.11,<3.12.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', timestamp=1678996236.0, size=350817, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/zstandard-0.19.0-py311h80987f9_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/zstandard-0.19.0-py311h80987f9_0', md5='a5651a841bd976c60db32807f8515d13')",
+    "PackageCacheRecord(_hash=8762939274212536253, name='conda-package-streaming', version='0.8.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='conda-package-streaming-0.8.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/conda-package-streaming-0.8.0-py311hca03da5_0.conda', sha256='7bd874e3522d66c2964ad44063b8e4328c44ada8d732653e34112dcb935cfffd', depends=('python >=3.11,<3.12.0a0', 'zstandard >=0.15'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', timestamp=1685019729.0, size=36280, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/conda-package-streaming-0.8.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/conda-package-streaming-0.8.0-py311hca03da5_0', md5='8249044547139a2eac4da92fb88b7eb4')",
+    "PackageCacheRecord(_hash=-9133526940614165253, name='pyopenssl', version='23.0.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='pyopenssl-23.0.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/pyopenssl-23.0.0-py311hca03da5_0.conda', sha256='26755edaf88198684a343884bc03270828fe2784e267f4888cb5ce26a9609812', depends=('cryptography >=38.0.0,<40', 'python >=3.11,<3.12.0a0'), constrains=(), track_features=(), features=(), license='Apache-2.0', timestamp=1678965336.0, size=126099, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/pyopenssl-23.0.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/pyopenssl-23.0.0-py311hca03da5_0', md5='c3d870a6cc01e21587097512d6c6dadd')",
+    "PackageCacheRecord(_hash=884361127126050044, name='conda-package-handling', version='2.1.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='conda-package-handling-2.1.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/conda-package-handling-2.1.0-py311hca03da5_0.conda', sha256='5da157dbe62ec39d73f1cea05a07203bf9f3c7d08ee6442b118309ceb19601bf', depends=('conda-package-streaming >=0.7.0', 'python >=3.11,<3.12.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', timestamp=1685024942.0, size=287366, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/conda-package-handling-2.1.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/conda-package-handling-2.1.0-py311hca03da5_0', md5='40a7f2545d1fcfcf9b0f74aea9f3fd7f')",
+    "PackageCacheRecord(_hash=-6311782766501431892, name='urllib3', version='1.26.15', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='urllib3-1.26.15-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/urllib3-1.26.15-py311hca03da5_0.conda', sha256='92a1d8d88c58525fe7427a22463e7d6273524f94c9f793435376fc38790eda85', depends=('brotlipy >=0.6.0', 'certifi', 'cryptography >=1.3.4', 'idna >=2.0.0', 'pyopenssl >=0.14', 'pysocks >=1.5.6,<2.0,!=1.5.7', 'python >=3.11,<3.12.0a0'), constrains=(), track_features=(), features=(), license='MIT', timestamp=1680254768.0, size=259521, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/urllib3-1.26.15-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/urllib3-1.26.15-py311hca03da5_0', md5='9ea7b840415abb9ba9e75253d0eeba2e')",
+    "PackageCacheRecord(_hash=-8659351271930534508, name='requests', version='2.29.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='requests-2.29.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/requests-2.29.0-py311hca03da5_0.conda', sha256='f1365396244bf4fa39187ad14d7fc6adef45e2c46400010399a3842a5551ddd9', depends=('certifi >=2017.4.17', 'charset-normalizer >=2,<4', 'idna >=2.5,<4', 'python >=3.11,<3.12.0a0', 'urllib3 >=1.21.1,<1.27'), constrains=('chardet >=3.0.2,<6',), track_features=(), features=(), license='Apache-2.0', timestamp=1682607715.0, size=130591, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/requests-2.29.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/requests-2.29.0-py311hca03da5_0', md5='08948017861015ca1827cd5f208e5b68')",
+    "PackageCacheRecord(_hash=-4575707793524037104, name='conda', version='23.5.0', build='py311hca03da5_0', build_number=0, channel=Channel(\"pkgs/main/osx-arm64\"), subdir='osx-arm64', fn='conda-23.5.0-py311hca03da5_0.conda', url='http://repo.anaconda.com/pkgs/main/osx-arm64/conda-23.5.0-py311hca03da5_0.conda', sha256='2300c2d35f7d4b0d94301320de3362fc8f94ff4b08125284df47e95f92a4edb4', depends=('boltons >=23.0.0', 'conda-package-handling >=1.3.0', 'jsonpatch >=1.32', 'packaging >=23.0', 'pluggy >=1.0.0', 'pycosat >=0.6.3', 'pyopenssl >=16.2.0', 'python >=3.11,<3.12.0a0', 'requests >=2.20.1,<3', 'ruamel.yaml >=0.11.14,<0.18', 'setuptools >=31.0.1', 'toolz >=0.8.1', 'tqdm >=4'), constrains=('conda-build >=3.18.3', 'conda-content-trust >=0.1.1', 'conda-libmamba-solver >=22.12.0', 'conda-env >=2.6', 'cytoolz >=0.8.1'), track_features=(), features=(), license='BSD-3-Clause', timestamp=1685025327.0, size=1408941, package_tarball_full_path='/Users/paulyim/.conda/constructor/osx-arm64/conda-23.5.0-py311hca03da5_0.conda', extracted_package_dir='/Users/paulyim/.conda/constructor/osx-arm64/conda-23.5.0-py311hca03da5_0', md5='e936aaa7c03ab878a3a4e42dccd6eb3a')"
+  ],
+  "_urls": [
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/bzip2-1.0.8-h620ffc9_4.conda",
+      "e5b4ef8ae5b3b5f0e3c9ca4bcf1a3b2f"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/ca-certificates-2023.01.10-hca03da5_0.conda",
+      "aff8b6f97d46960a126aab99a60e04e2"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/libffi-3.4.4-hca03da5_0.conda",
+      "0279cc7c6cb46a948c6312e490f2c04e"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/ncurses-6.4-h313beb8_0.conda",
+      "08038fd388dbbda4ed8e0206fc8706a7"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/noarch/tzdata-2023c-h04d1e81_0.conda",
+      "29db02adf8808f7c64642cead3e28acd"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/xz-5.4.2-h80987f9_0.conda",
+      "4f0a282d2f583900877fdfc832c0070a"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/zlib-1.2.13-h5a0b063_0.conda",
+      "f37216c0dea34741707510529ef366bf"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/openssl-1.1.1t-h1a28f6b_0.conda",
+      "8e24ed0228f91fbf6b8d01ef102df5fe"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/readline-8.2-h1a28f6b_0.conda",
+      "8e3d8eb62e32065d41fad9a83a901254"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/tk-8.6.12-hb8d0fd4_0.conda",
+      "012a1790e696759768ea3dd5ed84fdfb"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/sqlite-3.41.2-h80987f9_0.conda",
+      "31674bcba2e09766717f0d7d1ecee30a"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/python-3.11.3-hc0d8a6c_0.conda",
+      "2fde54a2c622f9574e2fb47d20e92502"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/boltons-23.0.0-py311hca03da5_0.conda",
+      "72ec168d66e0b9cc59005897bbbfc56e"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/certifi-2023.5.7-py311hca03da5_0.conda",
+      "4c01501e445672eb4cdc2b3307345855"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/noarch/charset-normalizer-2.0.4-pyhd3eb1b0_0.conda",
+      "e7a441d94234b2b5fafee06e25dbf076"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/idna-3.4-py311hca03da5_0.conda",
+      "a6011ce11309e4daa98c8e515734d6e4"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/noarch/jsonpointer-2.1-pyhd3eb1b0_0.conda",
+      "298ff809e733cb04366e4e629c65aa8d"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/packaging-23.0-py311hca03da5_0.conda",
+      "d07191394cde35ec95d24ef2b6335905"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/pluggy-1.0.0-py311hca03da5_1.conda",
+      "2b5d6b7e31fdba7fe831fd4a7250da5f"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/pycosat-0.6.4-py311h80987f9_0.conda",
+      "2c2d7e2719e33bbe06e29d1e87183af1"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/noarch/pycparser-2.21-pyhd3eb1b0_0.conda",
+      "135a72ff2a31150a3a3ff0b1edd41ca9"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/pysocks-1.7.1-py311hca03da5_0.conda",
+      "dd1105b41c76f0aec712db271d00a601"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/ruamel.yaml-0.17.21-py311h80987f9_0.conda",
+      "c14d31a2f66af3f6e153d490485dd557"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/setuptools-67.8.0-py311hca03da5_0.conda",
+      "95f48e869144abc484b0dd2d92403110"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/toolz-0.12.0-py311hca03da5_0.conda",
+      "6b59f132fcf4750e6f00b96050ac3ebc"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/tqdm-4.65.0-py311hb6e6a13_0.conda",
+      "6eef4006731087c8e69af7d98cc26f0e"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/wheel-0.38.4-py311hca03da5_0.conda",
+      "4d9dbaff322c666a7e223cf2669c629c"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/cffi-1.15.1-py311h80987f9_3.conda",
+      "d3e4f96b79b26ad09e05c9bd59bbd1e1"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/noarch/jsonpatch-1.32-pyhd3eb1b0_0.conda",
+      "ce3c2233a0823c4c25aba6843b05d19d"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/pip-23.0.1-py311hca03da5_0.conda",
+      "652f152552aa544a27db2e3d78585382"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/brotlipy-0.7.0-py311h80987f9_1002.conda",
+      "4328824982787293cf5be5a80c71382f"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/cryptography-39.0.1-py311h834c97f_0.conda",
+      "232a85823bf1203af49ee889b2793ea0"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/zstandard-0.19.0-py311h80987f9_0.conda",
+      "a5651a841bd976c60db32807f8515d13"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/conda-package-streaming-0.8.0-py311hca03da5_0.conda",
+      "8249044547139a2eac4da92fb88b7eb4"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/pyopenssl-23.0.0-py311hca03da5_0.conda",
+      "c3d870a6cc01e21587097512d6c6dadd"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/conda-package-handling-2.1.0-py311hca03da5_0.conda",
+      "40a7f2545d1fcfcf9b0f74aea9f3fd7f"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/urllib3-1.26.15-py311hca03da5_0.conda",
+      "9ea7b840415abb9ba9e75253d0eeba2e"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/requests-2.29.0-py311hca03da5_0.conda",
+      "08948017861015ca1827cd5f208e5b68"
+    ],
+    [
+      "http://repo.anaconda.com/pkgs/main/osx-arm64/conda-23.5.0-py311hca03da5_0.conda",
+      "e936aaa7c03ab878a3a4e42dccd6eb3a"
+    ]
+  ],
+  "_dists": [
+    "python-3.11.3-hc0d8a6c_0.conda",
+    "bzip2-1.0.8-h620ffc9_4.conda",
+    "ca-certificates-2023.01.10-hca03da5_0.conda",
+    "libffi-3.4.4-hca03da5_0.conda",
+    "ncurses-6.4-h313beb8_0.conda",
+    "tzdata-2023c-h04d1e81_0.conda",
+    "xz-5.4.2-h80987f9_0.conda",
+    "zlib-1.2.13-h5a0b063_0.conda",
+    "openssl-1.1.1t-h1a28f6b_0.conda",
+    "readline-8.2-h1a28f6b_0.conda",
+    "tk-8.6.12-hb8d0fd4_0.conda",
+    "sqlite-3.41.2-h80987f9_0.conda",
+    "boltons-23.0.0-py311hca03da5_0.conda",
+    "certifi-2023.5.7-py311hca03da5_0.conda",
+    "charset-normalizer-2.0.4-pyhd3eb1b0_0.conda",
+    "idna-3.4-py311hca03da5_0.conda",
+    "jsonpointer-2.1-pyhd3eb1b0_0.conda",
+    "packaging-23.0-py311hca03da5_0.conda",
+    "pluggy-1.0.0-py311hca03da5_1.conda",
+    "pycosat-0.6.4-py311h80987f9_0.conda",
+    "pycparser-2.21-pyhd3eb1b0_0.conda",
+    "pysocks-1.7.1-py311hca03da5_0.conda",
+    "ruamel.yaml-0.17.21-py311h80987f9_0.conda",
+    "setuptools-67.8.0-py311hca03da5_0.conda",
+    "toolz-0.12.0-py311hca03da5_0.conda",
+    "tqdm-4.65.0-py311hb6e6a13_0.conda",
+    "wheel-0.38.4-py311hca03da5_0.conda",
+    "cffi-1.15.1-py311h80987f9_3.conda",
+    "jsonpatch-1.32-pyhd3eb1b0_0.conda",
+    "pip-23.0.1-py311hca03da5_0.conda",
+    "brotlipy-0.7.0-py311h80987f9_1002.conda",
+    "cryptography-39.0.1-py311h834c97f_0.conda",
+    "zstandard-0.19.0-py311h80987f9_0.conda",
+    "conda-package-streaming-0.8.0-py311hca03da5_0.conda",
+    "pyopenssl-23.0.0-py311hca03da5_0.conda",
+    "conda-package-handling-2.1.0-py311hca03da5_0.conda",
+    "urllib3-1.26.15-py311hca03da5_0.conda",
+    "requests-2.29.0-py311hca03da5_0.conda",
+    "conda-23.5.0-py311hca03da5_0.conda"
+  ],
+  "_approx_tarballs_size": 88044355,
+  "_approx_pkgs_size": 215858691,
+  "_has_conda": true,
+  "_extra_envs_info": {},
+  "_outpath": "/Users/paulyim/codebase/constructor/examples/MinicondaX-X-MacOSX-arm64.pkg",
+  "_color": [
+    51,
+    102,
+    153
+  ]
+}
