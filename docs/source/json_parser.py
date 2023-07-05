@@ -13,10 +13,8 @@ def get_installer_info(info_json_file_path: Path) -> dict:
     Process _info.json file output by constructor to get installer information,
     including the list of delivered packages
     """
-    info_json_raw = json.loads(info_json_file_path.read_text())
-    info_dict = {key: info_json_raw[key] for key in info_json_raw.keys()}
-    
-    info_dict["pkgs_list_infos"] = [dist_str_to_dict(x) for x in info_json_raw["_dists"]]
+    info_dict = json.loads(info_json_file_path.read_text())    
+    info_dict["packages"] = [dist_str_to_dict(x) for x in info_dict["_dists"]]
 
     return info_dict
 
@@ -24,9 +22,9 @@ def get_installer_info(info_json_file_path: Path) -> dict:
 def dist_str_to_dict(dist: str) -> dict:
         #  The `dist` strings are of the format "<name>-<version>-<hash>_<build_num>.conda"
 
-        pkg_name, pkg_version, pkg_split = dist.rsplit("-", 2)
+        pkg_name, pkg_version, pkg_split = dist[:-6].rsplit("-", 2)
         pkg_hash = pkg_split.split("_")[0]
-        pkg_build_num = pkg_split.split("_")[1][0]
+        pkg_build_num = pkg_split.split("_")[1]
 
         return {
             "name": pkg_name,
