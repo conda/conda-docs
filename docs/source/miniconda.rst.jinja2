@@ -36,7 +36,7 @@ Latest Miniconda Installer Links
    :header: Platform,Name,SHA256 hash
    :widths: 5, 10, 80
 {% for os in operating_systems %}
-  {%- for platform in platforms[os]['latest'] %}
+  {%- for platform in platforms[os,'latest'] %}
    {% set first_column = os if loop.first else "" -%}
    {{ first_column }},`Miniconda3 {{ platform['description'] }} <https://repo.anaconda.com/miniconda/Miniconda3-latest-{{ platform['suffix'] }}>`_,``{{ platform['hash'] }}``
   {%- endfor -%}
@@ -52,7 +52,7 @@ Latest Miniconda Installer Links
    :widths: 5, 10, 5, 80
 {% for py_version in py_versions %}
   {%- set py = py_version|replace(".", "") -%}
-  {%- for platform in platforms[os][py_version] %}
+  {%- for platform in platforms[os,py_version] %}
    {% set first_column = "Python {}".format(py_version) if loop.first else "" -%}
    {{ first_column }},`Miniconda3 {{ platform['description'] }} <https://repo.anaconda.com/miniconda/Miniconda3-py{{ py }}_{{ miniconda_version}}-{{ platform['suffix'] }}>`_,{{ platform['size'] }},``{{ platform['hash'] }}``
   {%- endfor -%}

@@ -108,7 +108,7 @@ def get_latest_miniconda_sizes_and_hashes():
         "operating_systems": OPERATING_SYSTEMS,
         "py_versions": PY_VERSIONS,
     }
-    info["platforms"] = {os: {"latest": []} for os in info["operating_systems"]}
+    info["platforms"] = {(os,"latest"): [] for os in info["operating_systems"]}
 
     for platform_id, installer_data in PLATFORM_MAP.items():
         latest_installer = f"Miniconda3-latest-{installer_data['suffix']}"
@@ -117,8 +117,8 @@ def get_latest_miniconda_sizes_and_hashes():
             mdate = datetime.date.fromtimestamp(mtime)
             info["release_date"] = mdate.strftime("%B %-d, %Y")
         os = installer_data["operating_system"]
-        info["platforms"][os]["latest"].append(installer_data.copy())
-        info["platforms"][os]["latest"][-1]["hash"] = data[latest_installer]["sha256"]
+        info["platforms"][os,"latest"].append(installer_data.copy())
+        info["platforms"][os,"latest"][-1]["hash"] = data[latest_installer]["sha256"]
         for py_version in info["py_versions"]:
             py = py_version.replace(".", "")
             full_installer = (
@@ -132,11 +132,11 @@ def get_latest_miniconda_sizes_and_hashes():
 
             if full_installer not in data:
                 continue
-            if py_version not in info["platforms"][os]:
-                info["platforms"][os][py_version] = [installer_data.copy()]
+            if (os, py_version) not in info["platforms"]:
+                info["platforms"][os,py_version] = [installer_data.copy()]
             else:
-                info["platforms"][os][py_version].append(installer_data.copy())
-            installer = info["platforms"][os][py_version][-1]
+                info["platforms"][os,py_version].append(installer_data.copy())
+            installer = info["platforms"][os,py_version][-1]
             installer["size"] = sizeof_fmt(data[full_installer]["size"])
             installer["hash"] = data[full_installer]["sha256"]
 
