@@ -54,7 +54,7 @@ Latest Miniconda Installer Links
   {%- set py = py_version|replace(".", "") -%}
   {%- for platform in platforms[os,py_version] %}
    {% set first_column = "Python {}".format(py_version) if loop.first else "" -%}
-   {{ first_column }},`Miniconda3 {{ platform['description'] }} <https://repo.anaconda.com/miniconda/Miniconda3-py{{ py }}_{{ miniconda_version}}-{{ platform['suffix'] }}>`_,{{ platform['size'] }},``{{ platform['hash'] }}``
+   {{ first_column }},`Miniconda3 {{ platform['description'] }} <https://repo.anaconda.com/miniconda/{{ platform['full_installer'] }}>`_,{{ platform['size'] }},``{{ platform['hash'] }}``
   {%- endfor -%}
 {%- endfor %}
 {%- endfor %}

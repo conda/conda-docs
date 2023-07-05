@@ -139,6 +139,8 @@ def get_latest_miniconda_sizes_and_hashes():
             installer = info["platforms"][os,py_version][-1]
             installer["size"] = sizeof_fmt(data[full_installer]["size"])
             installer["hash"] = data[full_installer]["sha256"]
+            # full_installer item is needed until win-32 is removed
+            installer["full_installer"] = full_installer
 
     return info
 
