@@ -1,33 +1,42 @@
-import os
 import json
+from pathlib import Path
 
-ROOT_DIR = os.getcwd()
-SOURCE_DIR = os.path.join(ROOT_DIR, "docs/source/")
-OUT_FILEPATH = os.path.join(SOURCE_DIR, "parsed_info.json")
-info_json_file_path = os.path.join(SOURCE_DIR, "_tmp/", "info.json")
+SOURCE_DIR = Path(__file__).parent
+info_json_file_path = SOURCE_DIR / "_tmp/" / "info.json"
 
-with open(info_json_file_path) as f:
-    info_json_raw = json.load(f)
+# To get all data needed for the release notes of one release,
+# we need to call `get_installer_information` for every _info.json
+# inside the release directory
+
+def get_installer_info(info_json_file_path: Path) -> dict:
+    """
+    Process _info.json file output by constructor to get installer information,
+    including the list of delivered packages
+    """
+    info_json_raw = json.loads(info_json_file_path.read_text())
+    info_dict = {key: info_json_raw[key] for key in info_json_raw.keys()}
+    
+    info_dict["pkgs_list_infos"] = [dist_str_to_dict(x) for x in info_json_raw["_dists"]]
+
+    return info_dict
+
 
 def dist_str_to_dict(dist: str) -> dict:
-        pkg = dist.rsplit('-', 2)
-        pkg_split = pkg[2].split('_')
+        #  The `dist` strings are of the format "<name>-<version>-<hash>_<build_num>.conda"
 
-        pkg_name = pkg[0]
-        pkg_version = pkg[1]
-        pkg_hash = pkg_split[0]
-        pkg_build_num = pkg_split[1].split('.')[0]
-        pkg_ext = pkg_split[1].split('.')[1]
-    
-        return {"name": pkg_name, "version": pkg_version, "hash": pkg_hash, "build_num": pkg_build_num, "ext": pkg_ext}
+        pkg_name, pkg_version, pkg_split = dist.rsplit("-", 2)
+        pkg_hash = pkg_split.split("_")[0]
+        pkg_build_num = pkg_split.split("_")[1][0]
 
-def dict_to_list_of_dicts(dists: list) -> list:
-    pkg_list_infos = [dist_str_to_dict(x) for x in dists]
-    return pkg_list_infos
+        return {
+            "name": pkg_name,
+            "version": pkg_version,
+            "hash": pkg_hash,
+            "build_num": pkg_build_num
+        }
 
 def main():
-     with open(OUT_FILEPATH, 'w') as f:
-        f.write(str(dict_to_list_of_dicts(info_json_raw["_dists"])))
+    print(get_installer_info(info_json_file_path))
 
-if __name__ == '__main__':
+if __name__ == "__main__":
      main()
