@@ -36,9 +36,8 @@ def get_installer_info(release: Path) -> dict:
         info_dict = json.loads(info_json.read_text())
         info_dict["packages"] = get_package_list(info_dict["_dists"])
         platform = info_dict["_platform"]
-        py_version = info_dict["version"].split("_")[0]
         installer_type = info_dict["installer_type"]
-        installer_info[platform,py_version,installer_type] = info_dict
+        installer_info[platform,installer_type] = info_dict
 
     return installer_info
 
