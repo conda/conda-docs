@@ -1,0 +1,446 @@
+{
+  "name": "Miniconda3",
+  "version": "py310_23.5.0-1",
+  "company": "Anaconda, Inc.",
+  "keep_pkgs": true,
+  "write_condarc": false,
+  "ignore_duplicate_files": true,
+  "installer_type": "exe",
+  "license_file": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3\\EULA.txt",
+  "welcome_image": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3\\welcome.png",
+  "header_image": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3\\header.png",
+  "icon_image": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3\\icon.ico",
+  "check_path_length": false,
+  "check_path_spaces": false,
+  "conclusion_file": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3\\custom_conclusion.nsi",
+  "signing_certificate": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3\\certificate.pfx",
+  "initialize_conda": true,
+  "initialize_by_default": false,
+  "channels": [
+    "https://repo.anaconda.com/pkgs/main",
+    "https://repo.anaconda.com/pkgs/r",
+    "https://repo.anaconda.com/pkgs/msys2"
+  ],
+  "build_outputs": [
+    "info.json"
+  ],
+  "specs": [
+    "python 3.10.*",
+    "conda 23.5.0",
+    "setuptools",
+    "pip",
+    "wheel",
+    "conda-content-trust",
+    "conda-libmamba-solver",
+    "menuinst",
+    "console_shortcut_miniconda",
+    "powershell_shortcut_miniconda"
+  ],
+  "CONSTRUCTOR_VERSION": "3.4.3",
+  "_input_dir": "C:/Users/RUNNER~1/AppData/Local/Temp/tmp.rPbSjPBrH3/Miniconda3/",
+  "_output_dir": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3",
+  "_platform": "win-64",
+  "_download_dir": "C:\\Users\\runneradmin\\.conda\\constructor\\win-64",
+  "_conda_exe": "C:\\Miniconda3\\standalone_conda\\conda.exe",
+  "welcome_image_text": "Miniconda3",
+  "header_image_text": "Miniconda3",
+  "extra_files": [],
+  "temp_extra_files": [],
+  "_all_pkg_records": [
+    "PackageCacheRecord(_hash=7113979625754966618, name='ca-certificates', version='2023.05.30', build='haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='ca-certificates-2023.05.30-haa95532_0.conda', legacy_bz2_md5='84d5de9a1bd8d4319cff87164d8c0db9', legacy_bz2_size=161207, url='https://repo.anaconda.com/pkgs/main/win-64/ca-certificates-2023.05.30-haa95532_0.conda', sha256='0dec48abaded64ccd17c701de9b48af8729efe7ac3d03674acce9875a381f096', metadata_signature_status='', depends=(), constrains=(), track_features=(), features=(), license='MPL-2.0', license_family='Other', timestamp=1686154806.924, size=123360, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\ca-certificates-2023.05.30-haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\ca-certificates-2023.05.30-haa95532_0', md5='b448927cdddc2177eb8b55a82ca9623f')",
+    "PackageCacheRecord(_hash=-5683843144159417749, name='pybind11-abi', version='4', build='hd3eb1b0_1', build_number=1, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='pybind11-abi-4-hd3eb1b0_1.conda', legacy_bz2_md5='2948a98ef4de5decb7e5eb888eae68ba', legacy_bz2_size=13056, url='https://repo.anaconda.com/pkgs/main/noarch/pybind11-abi-4-hd3eb1b0_1.conda', sha256='efcd78fff9f39d8d0dc5db753ba1b523f997768f9688ed6d6dcf8e9951484cc1', metadata_signature_status='', depends=(), constrains=(), track_features=(), features=(), noarch='generic', license='BSD-3-Clause', license_family='BSD', package_type='noarch_generic', timestamp=1682965564.63, size=13977, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pybind11-abi-4-hd3eb1b0_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pybind11-abi-4-hd3eb1b0_1', md5='4e440592a9fb70c880b74621aee6c967')",
+    "PackageCacheRecord(_hash=6801128576151050509, name='tzdata', version='2023c', build='h04d1e81_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='tzdata-2023c-h04d1e81_0.conda', legacy_bz2_md5='a815d3bdb160bcc71687f2dda70d3ca4', legacy_bz2_size=122218, url='https://repo.anaconda.com/pkgs/main/noarch/tzdata-2023c-h04d1e81_0.conda', sha256='aa653896749686eb15c28c719a57df597bced46f983b1fdbcc9db3e2db9cc795', metadata_signature_status='', depends=(), constrains=(), track_features=(), features=(), noarch='generic', license='CC-PDDC OR BSD-3-Clause', license_family='BSD', package_type='noarch_generic', timestamp=1680170368.293, size=118328, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\tzdata-2023c-h04d1e81_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\tzdata-2023c-h04d1e81_0', md5='29db02adf8808f7c64642cead3e28acd')",
+    "PackageCacheRecord(_hash=6554209975252938999, name='vs2015_runtime', version='14.27.29016', build='h5e58377_2', build_number=2, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='vs2015_runtime-14.27.29016-h5e58377_2.conda', legacy_bz2_md5='4daaceb6cfc1af6274509081d8018ef1', legacy_bz2_size=2316783, url='https://repo.anaconda.com/pkgs/main/win-64/vs2015_runtime-14.27.29016-h5e58377_2.conda', sha256='1c1051419804770f513610d2d4fd4db4e7902591b803e9babb3358d16a1e1b2e', metadata_signature_status='', depends=(), constrains=(), track_features=(), features=(), timestamp=1605602872.095, size=1031188, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\vs2015_runtime-14.27.29016-h5e58377_2.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\vs2015_runtime-14.27.29016-h5e58377_2', md5='9e3f8ea1096e174541ac86f5fc73fc3d')",
+    "PackageCacheRecord(_hash=-132266864007670622, name='vc', version='14.2', build='h21ff451_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='vc-14.2-h21ff451_1.conda', legacy_bz2_md5='45ef24c486a484f079faf1dc90e4c7e9', legacy_bz2_size=8277, url='https://repo.anaconda.com/pkgs/main/win-64/vc-14.2-h21ff451_1.conda', sha256='023b5cee28e68c6e85bbdd023d98412dfc23c8e02cccc5d2aacf32c33e9b96d5', metadata_signature_status='', depends=('vs2015_runtime >=14.27.29016',), constrains=(), track_features=('vc14',), features=(), license='Modified BSD License (3-clause)', license_family='BSD', timestamp=1605602889.18, size=8533, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\vc-14.2-h21ff451_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\vc-14.2-h21ff451_1', md5='a8c870bfc2551c262800527f2107d0f3')",
+    "PackageCacheRecord(_hash=-3882469633955395723, name='bzip2', version='1.0.8', build='he774522_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='bzip2-1.0.8-he774522_0.conda', legacy_bz2_md5='8f8069ce8c9eff1b0f124de2c0a63b86', legacy_bz2_size=154105, url='https://repo.anaconda.com/pkgs/main/win-64/bzip2-1.0.8-he774522_0.conda', sha256='01bd8a4eba9a7962e6d446e98e089ee4beb5de7db89a11f1249ec173f392cc61', metadata_signature_status='', depends=('vc >=14.1,<15.0a0',), constrains=(), track_features=(), features=(), license='bzip2', license_family='BSD', timestamp=1563219293.348, size=115376, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\bzip2-1.0.8-he774522_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\bzip2-1.0.8-he774522_0', md5='acfdd6cfa52a831a43b88126e68b0cf9')",
+    "PackageCacheRecord(_hash=5213318439340629787, name='fmt', version='9.1.0', build='h6d14046_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='fmt-9.1.0-h6d14046_0.conda', legacy_bz2_md5='36774b11d3a002d2080111a95f772c88', legacy_bz2_size=188008, url='https://repo.anaconda.com/pkgs/main/win-64/fmt-9.1.0-h6d14046_0.conda', sha256='c4d83d09ba86f286eb0b1da27cae79202b97a30d827999e04d1c073ea678f213', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1676360398.654, size=195961, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\fmt-9.1.0-h6d14046_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\fmt-9.1.0-h6d14046_0', md5='fff794057ba79828b0279e76a11f88ef')",
+    "PackageCacheRecord(_hash=4565709877800090935, name='libffi', version='3.4.4', build='hd77b12b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libffi-3.4.4-hd77b12b_0.conda', legacy_bz2_md5='5cdcd99f18d9dedb772d272088e72b4c', legacy_bz2_size=116942, url='https://repo.anaconda.com/pkgs/main/win-64/libffi-3.4.4-hd77b12b_0.conda', sha256='e794277146eedbce79b23dbc3cee877e9222bac756a9bbfec971a14a667d10cb', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1683716620.23, size=115307, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libffi-3.4.4-hd77b12b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libffi-3.4.4-hd77b12b_0', md5='0a01fe57e6261e7c574e43f2b1385f48')",
+    "PackageCacheRecord(_hash=338203513825479765, name='libiconv', version='1.16', build='h2bbff1b_2', build_number=2, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libiconv-1.16-h2bbff1b_2.conda', legacy_bz2_md5='b812bc5d9c76242e2bb2ac87afe7d39b', legacy_bz2_size=730280, url='https://repo.anaconda.com/pkgs/main/win-64/libiconv-1.16-h2bbff1b_2.conda', sha256='0da856533545004bec1f05cea102de1c1d4243f9ec13036b379d8cb7160a40a0', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='GPL-3.0-or-later', license_family='GPL3', timestamp=1650983734.373, size=666760, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libiconv-1.16-h2bbff1b_2.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libiconv-1.16-h2bbff1b_2', md5='c02693cc6777cb959e3ecee275d8f0ec')",
+    "PackageCacheRecord(_hash=241673690125843774, name='lz4-c', version='1.9.4', build='h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='lz4-c-1.9.4-h2bbff1b_0.conda', legacy_bz2_md5='6970c7f46b0164cad1d210e7a1419959', legacy_bz2_size=143434, url='https://repo.anaconda.com/pkgs/main/win-64/lz4-c-1.9.4-h2bbff1b_0.conda', sha256='b0e1ff7c14b5e022b287b2211c2d469d7bd053d09d5fa57cba22f23b883a4303', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='BSD-2-Clause', license_family='BSD', timestamp=1670944902.624, size=146107, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\lz4-c-1.9.4-h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\lz4-c-1.9.4-h2bbff1b_0', md5='3f22ad4062b3087c6842f54bf88a1f4c')",
+    "PackageCacheRecord(_hash=-3042650585489069388, name='openssl', version='3.0.9', build='h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='openssl-3.0.9-h2bbff1b_0.conda', legacy_bz2_md5='0ceafd49332459df02611b883a30c4dd', legacy_bz2_size=8027528, url='https://repo.anaconda.com/pkgs/main/win-64/openssl-3.0.9-h2bbff1b_0.conda', sha256='90dc5d75853ef8387b3a264214b2f2ac518339f0ff00054ad844751a028ce733', metadata_signature_status='', depends=('ca-certificates', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='Apache-2.0', license_family='Apache', timestamp=1687385049.227, size=7777251, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\openssl-3.0.9-h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\openssl-3.0.9-h2bbff1b_0', md5='505cbc6e3bc42051fd146ecf5a18ae34')",
+    "PackageCacheRecord(_hash=-5994942830981696587, name='reproc', version='14.2.4', build='hd77b12b_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='reproc-14.2.4-hd77b12b_1.conda', legacy_bz2_md5='28133d914f1b00c32ac3d7e3d6ff28f8', legacy_bz2_size=34332, url='https://repo.anaconda.com/pkgs/main/win-64/reproc-14.2.4-hd77b12b_1.conda', sha256='f94b77f666ab83d13f0830adcdc16908321a2de8ab954ff1761a0943961e63b5', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1647442028.405, size=33415, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\reproc-14.2.4-hd77b12b_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\reproc-14.2.4-hd77b12b_1', md5='03a71ee6290cc184b4068aec88b23f61')",
+    "PackageCacheRecord(_hash=86575049433077679, name='sqlite', version='3.41.2', build='h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='sqlite-3.41.2-h2bbff1b_0.conda', legacy_bz2_md5='32f95c4ef7dfbf22fd35292ff8bd51a5', legacy_bz2_size=1311308, url='https://repo.anaconda.com/pkgs/main/win-64/sqlite-3.41.2-h2bbff1b_0.conda', sha256='c57645efa4272ad1563a8a5e2e52c5d89f470d59dfc28b55ccb5db67250ad293', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='blessing', license_family='Other', timestamp=1681402905.668, size=915400, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\sqlite-3.41.2-h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\sqlite-3.41.2-h2bbff1b_0', md5='eefb61a5b27aeb8c00f642290fd3375f')",
+    "PackageCacheRecord(_hash=-4958516218827796458, name='tk', version='8.6.12', build='h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='tk-8.6.12-h2bbff1b_0.conda', legacy_bz2_md5='52cdcdb96383c010ca833a7c24b3935b', legacy_bz2_size=3690152, url='https://repo.anaconda.com/pkgs/main/win-64/tk-8.6.12-h2bbff1b_0.conda', sha256='d66e336b291afef281c6e320380313f10d396df392f169f5bbcea04dfcbf9e1b', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='Tcl/Tk', license_family='BSD', timestamp=1654036853.71, size=3229518, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\tk-8.6.12-h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\tk-8.6.12-h2bbff1b_0', md5='3e6f2cd798aea9f886970b61dad14304')",
+    "PackageCacheRecord(_hash=2392312906022577671, name='xz', version='5.4.2', build='h8cc25b3_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='xz-5.4.2-h8cc25b3_0.conda', legacy_bz2_md5='c3f7871e9a33adeccee1b1e8e216918e', legacy_bz2_size=1332571, url='https://repo.anaconda.com/pkgs/main/win-64/xz-5.4.2-h8cc25b3_0.conda', sha256='7be69f77c06d1da13d1d2d57dca61017b098bb85df0dfd16c81392c24946907e', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='LGPL-2.1-or-later and GPL-2.0-or-later', license_family='GPL2', timestamp=1683113347.814, size=606433, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\xz-5.4.2-h8cc25b3_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\xz-5.4.2-h8cc25b3_0', md5='7a2a89bb445ccef64e92bb003500380b')",
+    "PackageCacheRecord(_hash=-8085675799255677227, name='yaml-cpp', version='0.7.0', build='hd77b12b_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='yaml-cpp-0.7.0-hd77b12b_1.conda', legacy_bz2_md5='beea36ac340f303913fc1f941ddea0cf', legacy_bz2_size=5014217, url='https://repo.anaconda.com/pkgs/main/win-64/yaml-cpp-0.7.0-hd77b12b_1.conda', sha256='1a272d146e979beab917ba932af73ffe2e9a4aeeb6cdd0083d268347d9197f56', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1646755584.887, size=1863193, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\yaml-cpp-0.7.0-hd77b12b_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\yaml-cpp-0.7.0-hd77b12b_1', md5='06c84e3c6988ee7877d3471a4397cc8b')",
+    "PackageCacheRecord(_hash=-2753872835933007941, name='zlib', version='1.2.13', build='h8cc25b3_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='zlib-1.2.13-h8cc25b3_0.conda', legacy_bz2_md5='05f29aa81cd3a3b38ebaccfa5a0d0e17', legacy_bz2_size=148931, url='https://repo.anaconda.com/pkgs/main/win-64/zlib-1.2.13-h8cc25b3_0.conda', sha256='af28437d7bbce2beaa058d7882c3e4b6b264a1e0ce9b9aa604e21cf5e57f09d3', metadata_signature_status='', depends=('vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='Zlib', license_family='Other', timestamp=1666595229.032, size=116215, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\zlib-1.2.13-h8cc25b3_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\zlib-1.2.13-h8cc25b3_0', md5='93432f34cf66a0153947825ed4fbd69f')",
+    "PackageCacheRecord(_hash=6011193763434479949, name='libssh2', version='1.10.0', build='he2ea4bf_2', build_number=2, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libssh2-1.10.0-he2ea4bf_2.conda', legacy_bz2_md5='5f67893563dfc1dd0e45d3b2abf2e3f4', legacy_bz2_size=230596, url='https://repo.anaconda.com/pkgs/main/win-64/libssh2-1.10.0-he2ea4bf_2.conda', sha256='e8bd542a1d0b960ba5faecbf22ff9678b3741087506cfa5088805ebfac0765bd', metadata_signature_status='', depends=('openssl >=3.0.8,<4.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1686933095.919, size=241231, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libssh2-1.10.0-he2ea4bf_2.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libssh2-1.10.0-he2ea4bf_2', md5='b038b8e7c34d1872b672e1f1075b18f4')",
+    "PackageCacheRecord(_hash=8709328053675186234, name='libxml2', version='2.10.3', build='h0ad7f3c_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libxml2-2.10.3-h0ad7f3c_0.conda', legacy_bz2_md5='74c9acfa64fb5f83921b6e4489faeeae', legacy_bz2_size=3539333, url='https://repo.anaconda.com/pkgs/main/win-64/libxml2-2.10.3-h0ad7f3c_0.conda', sha256='0141ce8d4725c9c64b21598e0c7939273f283b9da3ceb35c7bb3cafd244b2f63', metadata_signature_status='', depends=('libiconv >=1.16,<2.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0', 'zlib >=1.2.13,<1.3.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1678468461.622, size=3021365, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libxml2-2.10.3-h0ad7f3c_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libxml2-2.10.3-h0ad7f3c_0', md5='31056dbe7753280409cc5179a2b2490d')",
+    "PackageCacheRecord(_hash=8489551228591108313, name='pcre2', version='10.37', build='h0ff8eda_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='pcre2-10.37-h0ff8eda_1.conda', legacy_bz2_md5='1f4f9e2b96b1b1eb957b385de97c1d29', legacy_bz2_size=636679, url='https://repo.anaconda.com/pkgs/main/win-64/pcre2-10.37-h0ff8eda_1.conda', sha256='73f8107ffa6763b4aca88e725b4a9101f43baa230ed1cc87e1dd0ab3fc283624', metadata_signature_status='', depends=('bzip2 >=1.0.8,<2.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0', 'zlib >=1.2.11,<1.3.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1641404048.934, size=502302, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pcre2-10.37-h0ff8eda_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pcre2-10.37-h0ff8eda_1', md5='c64c2462b009d47c2a542cceb8ccc48e')",
+    "PackageCacheRecord(_hash=-5910888074765722438, name='python', version='3.10.11', build='he1021f5_3', build_number=3, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='python-3.10.11-he1021f5_3.conda', legacy_bz2_md5='a9408845e0b692cd59a90856d9a4c4b4', legacy_bz2_size=17058165, url='https://repo.anaconda.com/pkgs/main/win-64/python-3.10.11-he1021f5_3.conda', sha256='b79453436b2671709ceefff35d3a17d4d00cd972a4f91426409493ea1e083fe7', depends=('bzip2 >=1.0.8,<2.0a0', 'libffi >=3.4,<3.5', 'libffi >=3.4,<4.0a0', 'openssl >=3.0.8,<4.0a0', 'sqlite >=3.41.2,<4.0a0', 'tk >=8.6.12,<8.7.0a0', 'tzdata', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0', 'xz >=5.4.2,<6.0a0', 'zlib >=1.2.13,<1.3.0a0', 'pip'), constrains=(), track_features=(), features=(), license='PSF-2.0', license_family='PSF', timestamp=1684198780.427, size=16544349, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\python-3.10.11-he1021f5_3.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\python-3.10.11-he1021f5_3', md5='f7793e406f876b32bc0306df386f09a0')",
+    "PackageCacheRecord(_hash=-7228252275829565447, name='reproc-cpp', version='14.2.4', build='hd77b12b_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='reproc-cpp-14.2.4-hd77b12b_1.conda', legacy_bz2_md5='b9d06a250a857b1e5c052acde9359351', legacy_bz2_size=28598, url='https://repo.anaconda.com/pkgs/main/win-64/reproc-cpp-14.2.4-hd77b12b_1.conda', sha256='ad4413805fa36342d03d2ee3ed2d9db470e24dcbf60b6d23d25dd77b7dcdb900', metadata_signature_status='', depends=('reproc 14.2.4 hd77b12b_1', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1647442079.543, size=27569, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\reproc-cpp-14.2.4-hd77b12b_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\reproc-cpp-14.2.4-hd77b12b_1', md5='57d3bd61e70e40d0dfeb2b8e8b3554a6')",
+    "PackageCacheRecord(_hash=6239372958599640924, name='zstd', version='1.5.5', build='hd43e919_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='zstd-1.5.5-hd43e919_0.conda', legacy_bz2_md5='8d6a1e767775fe0eb617cd6e22edc2ff', legacy_bz2_size=1871867, url='https://repo.anaconda.com/pkgs/main/win-64/zstd-1.5.5-hd43e919_0.conda', sha256='1d539b73b97a659a1c87e575093c6150f49b216fff7e101122de696b90548d9e', metadata_signature_status='', depends=('lz4-c >=1.9.4,<1.10.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0', 'xz >=5.2.10,<6.0a0', 'zlib >=1.2.13,<1.3.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause AND GPL-2.0-or-later', license_family='BSD', timestamp=1681304638.261, size=698782, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\zstd-1.5.5-hd43e919_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\zstd-1.5.5-hd43e919_0', md5='61b09dfb209667f7558f7c3cd92c1367')",
+    "PackageCacheRecord(_hash=7901299832438941864, name='libarchive', version='3.6.2', build='hb62f4d4_2', build_number=2, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libarchive-3.6.2-hb62f4d4_2.conda', legacy_bz2_md5='a6089cc42fc8b83e9ca6398c0bd25d96', legacy_bz2_size=2682200, url='https://repo.anaconda.com/pkgs/main/win-64/libarchive-3.6.2-hb62f4d4_2.conda', sha256='2526e98c21c3baa2f9461574228a7e66341e5f196f41bd7e2ffbe2edcb598204', metadata_signature_status='', depends=('bzip2 >=1.0.8,<2.0a0', 'libiconv >=1.16,<2.0a0', 'libxml2 >=2.10.3,<2.11.0a0', 'lz4-c >=1.9.4,<1.10.0a0', 'openssl 3.*', 'openssl >=3.0.8,<4.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0', 'xz >=5.4.2,<6.0a0', 'zlib >=1.2.13,<1.3.0a0', 'zstd >=1.5.2,<1.6.0a0'), constrains=(), track_features=(), features=(), license='BSD-2-Clause', license_family='BSD', timestamp=1685747992.384, size=1878773, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libarchive-3.6.2-hb62f4d4_2.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libarchive-3.6.2-hb62f4d4_2', md5='d2c4edab37335709e240b479f109c597')",
+    "PackageCacheRecord(_hash=8210723508296236402, name='libcurl', version='8.1.1', build='h86230a5_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libcurl-8.1.1-h86230a5_0.conda', legacy_bz2_md5='cc1f82beb7d4c258263c12785caae23e', legacy_bz2_size=326718, url='https://repo.anaconda.com/pkgs/main/win-64/libcurl-8.1.1-h86230a5_0.conda', sha256='9011f385e79a8f590cf7bde90202862744acc5b6b4272e00a86f3cb7e8ef3b43', metadata_signature_status='', depends=('libssh2 >=1.10.0', 'libssh2 >=1.10.0,<2.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0', 'zlib >=1.2.13,<1.3.0a0'), constrains=(), track_features=(), features=(), license='curl', license_family='MIT', timestamp=1685433002.097, size=340068, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libcurl-8.1.1-h86230a5_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libcurl-8.1.1-h86230a5_0', md5='f59ed07e6fedd81fc30134be1a03ef31')",
+    "PackageCacheRecord(_hash=-476201282584167137, name='libsolv', version='0.7.22', build='h23ce68f_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libsolv-0.7.22-h23ce68f_0.conda', legacy_bz2_md5='01f9325290d767c311d18149cd73d5f6', legacy_bz2_size=426767, url='https://repo.anaconda.com/pkgs/main/win-64/libsolv-0.7.22-h23ce68f_0.conda', sha256='13b50966bd313d89ceaf8f87b7662eda5e1ceead06cb5da09dfd5aa2b0ddc88b', metadata_signature_status='', depends=('pcre2 >=10.37,<10.38.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1666283679.51, size=405473, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libsolv-0.7.22-h23ce68f_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libsolv-0.7.22-h23ce68f_0', md5='2c186fb07d2627eae6803773265ea16d')",
+    "PackageCacheRecord(_hash=6123873406410611723, name='menuinst', version='1.4.19', build='py310h59b6b97_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='menuinst-1.4.19-py310h59b6b97_0.conda', legacy_bz2_md5='ebf9f939268a0336bf9c410e35aa06d6', legacy_bz2_size=99757, url='https://repo.anaconda.com/pkgs/main/win-64/menuinst-1.4.19-py310h59b6b97_0.conda', sha256='be9bf05a4d15d700a66509cac1be5ef64b1448b5e31fd556e3204af3223a9eb2', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1661806205.087, size=96521, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\menuinst-1.4.19-py310h59b6b97_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\menuinst-1.4.19-py310h59b6b97_0', md5='bf8ef5102d1ab2bc4740f442940d7599')",
+    "PackageCacheRecord(_hash=-7506310353110512928, name='boltons', version='23.0.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='boltons-23.0.0-py310haa95532_0.conda', legacy_bz2_md5='32fa22ae9b65efc7e9735975182f5288', legacy_bz2_size=434875, url='https://repo.anaconda.com/pkgs/main/win-64/boltons-23.0.0-py310haa95532_0.conda', sha256='9afab1ccf5a7e43e4008ac2c1454a77b910b06c0d2988779b67c94ce4964c2e5', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1677629031.089, size=434767, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\boltons-23.0.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\boltons-23.0.0-py310haa95532_0', md5='01079f2ee441661ed98e03a1e9c2ed0c')",
+    "PackageCacheRecord(_hash=-3482989920353292645, name='certifi', version='2023.5.7', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='certifi-2023.5.7-py310haa95532_0.conda', legacy_bz2_md5='7787c0c106cf9104aa1d54b00c9141b2', legacy_bz2_size=157594, url='https://repo.anaconda.com/pkgs/main/win-64/certifi-2023.5.7-py310haa95532_0.conda', sha256='6d7c546865eb442ceda38d735d7e81475cb7137970d4f93642c11c6cb53f100b', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='MPL-2.0', license_family='Other', timestamp=1683875533.254, size=156541, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\certifi-2023.5.7-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\certifi-2023.5.7-py310haa95532_0', md5='1878773530a09a1d6d232d80f341f6ee')",
+    "PackageCacheRecord(_hash=5760244951157206352, name='colorama', version='0.4.6', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='colorama-0.4.6-py310haa95532_0.conda', legacy_bz2_md5='269703fa9499eb42cfd7b9fd349ecd22', legacy_bz2_size=30646, url='https://repo.anaconda.com/pkgs/main/win-64/colorama-0.4.6-py310haa95532_0.conda', sha256='b2e6933d57c8ff4ac4b0044213841ce26bcc836db03c47254bd964c32dad2f6c', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1672387329.696, size=33145, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\colorama-0.4.6-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\colorama-0.4.6-py310haa95532_0', md5='0506a41d13bdee3167429de13ce3257a')",
+    "PackageCacheRecord(_hash=3741988986052312926, name='console_shortcut_miniconda', version='0.1.1', build='haa95532_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='console_shortcut_miniconda-0.1.1-haa95532_1.conda', legacy_bz2_md5='7b2f01436218449b991148ba01c9c282', legacy_bz2_size=62220, url='https://repo.anaconda.com/pkgs/main/win-64/console_shortcut_miniconda-0.1.1-haa95532_1.conda', sha256='4d7e13663f6ac6a4595f85490494c681ff0c37de6c50ff7e232305de454791c3', metadata_signature_status='', depends=('python',), constrains=('anaconda-navigator >=1.9.8',), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1674500931.723, size=130726, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\console_shortcut_miniconda-0.1.1-haa95532_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\console_shortcut_miniconda-0.1.1-haa95532_1', md5='2e81cf921b089eca9e3a3ac683f80e46')",
+    "PackageCacheRecord(_hash=7654601121544186862, name='idna', version='3.4', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='idna-3.4-py310haa95532_0.conda', legacy_bz2_md5='407278e6cde931bab12b6b228233c12b', legacy_bz2_size=116780, url='https://repo.anaconda.com/pkgs/main/win-64/idna-3.4-py310haa95532_0.conda', sha256='2c856a9fe1777d6ed2d465be5f45c623eaf73b67c0fbd5d3a781974b58984372', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1666125624.542, size=99664, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\idna-3.4-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\idna-3.4-py310haa95532_0', md5='1a432c58b06f9f5836a0bfa277a6daeb')",
+    "PackageCacheRecord(_hash=4055987956719663808, name='libmamba', version='1.4.1', build='h77c03ed_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libmamba-1.4.1-h77c03ed_1.conda', legacy_bz2_md5='de7944b6d5c5d54390d23ccf753c60fe', legacy_bz2_size=3685192, url='https://repo.anaconda.com/pkgs/main/win-64/libmamba-1.4.1-h77c03ed_1.conda', sha256='eb71b4af02d1c580c91fd583ade8586415492a6f80bec288a69e4c4eb6abbd8c', metadata_signature_status='', depends=('bzip2 >=1.0.8,<2.0a0', 'fmt >=9.1.0,<10.0a0', 'libarchive >=3.6.2,<3.7.0a0', 'libcurl >=7.88.1,<9.0a0', 'libsolv >=0.7.22,<0.8.0a0', 'openssl >=3.0.8,<4.0a0', 'reproc >=14.2,<15.0a0', 'reproc >=14.2.4,<15.0a0', 'reproc-cpp >=14.2,<15.0a0', 'reproc-cpp >=14.2.4,<15.0a0', 'vc >=14.2,<15.0a0', 'vs2015_runtime >=14.27.29016,<15.0a0', 'yaml-cpp >=0.7.0,<0.8.0a0', 'zstd >=1.5.4,<1.6.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1685993545.908, size=3729271, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libmamba-1.4.1-h77c03ed_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libmamba-1.4.1-h77c03ed_1', md5='5f535515b0ad53db1a23f8b76f36fef6')",
+    "PackageCacheRecord(_hash=7545379698106298346, name='packaging', version='23.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='packaging-23.0-py310haa95532_0.conda', legacy_bz2_md5='fc45eba9d69389848117021846eb4978', legacy_bz2_size=66333, url='https://repo.anaconda.com/pkgs/main/win-64/packaging-23.0-py310haa95532_0.conda', sha256='86c326abcdd67f37fc0fe8ed428abb6dfbf949a1f84bd872062ec0922d83b585', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='Apache-2.0 or BSD-2-Clause', license_family='Apache', timestamp=1678965570.374, size=71791, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\packaging-23.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\packaging-23.0-py310haa95532_0', md5='9e320fdbe1232841d4f44931aceb3d57')",
+    "PackageCacheRecord(_hash=546116831489258015, name='pluggy', version='1.0.0', build='py310haa95532_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='pluggy-1.0.0-py310haa95532_1.conda', legacy_bz2_md5='4277b320ed5c3bf15df998b8ba4dbffc', legacy_bz2_size=29509, url='https://repo.anaconda.com/pkgs/main/win-64/pluggy-1.0.0-py310haa95532_1.conda', sha256='0392b610e2a46b01f81ebd40e05f4a1408caf3cec23e247e925f4e97914b6c93', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1648042816.794, size=29823, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pluggy-1.0.0-py310haa95532_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pluggy-1.0.0-py310haa95532_1', md5='e02bc0bbe91a0747e64faa631500b107')",
+    "PackageCacheRecord(_hash=-4651525775679319445, name='powershell_shortcut_miniconda', version='0.0.1', build='haa95532_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='powershell_shortcut_miniconda-0.0.1-haa95532_1.conda', legacy_bz2_md5='1469cc99e03c2a9116b3c250788ed99a', legacy_bz2_size=62366, url='https://repo.anaconda.com/pkgs/main/win-64/powershell_shortcut_miniconda-0.0.1-haa95532_1.conda', sha256='cef38de4a2f8a921bafc09b6edf9a6bbfd61a34c6604d23aa6481c36d21f7631', metadata_signature_status='', depends=('python',), constrains=('anaconda-navigator >=1.9.8',), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1674501034.26, size=130909, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\powershell_shortcut_miniconda-0.0.1-haa95532_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\powershell_shortcut_miniconda-0.0.1-haa95532_1', md5='19b6facebf1a84f97fcfdc7f7c0dab6a')",
+    "PackageCacheRecord(_hash=-7060149610905484095, name='pycosat', version='0.6.4', build='py310h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='pycosat-0.6.4-py310h2bbff1b_0.conda', legacy_bz2_md5='30bbf8404b92ef4b56be9b2a83bec08e', legacy_bz2_size=103230, url='https://repo.anaconda.com/pkgs/main/win-64/pycosat-0.6.4-py310h2bbff1b_0.conda', sha256='4c792403ebd7509b7e7f325c1369da44929dda1f31201452ed2a4633891e51b1', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1666813698.157, size=76292, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pycosat-0.6.4-py310h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pycosat-0.6.4-py310h2bbff1b_0', md5='32573473105612deaf05616b397a8f5e')",
+    "PackageCacheRecord(_hash=-3227188130040574207, name='ruamel.yaml.clib', version='0.2.6', build='py310h2bbff1b_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='ruamel.yaml.clib-0.2.6-py310h2bbff1b_1.conda', legacy_bz2_md5='215bea65f6e28d4c2d7dd3a51572e7cb', legacy_bz2_size=115106, url='https://repo.anaconda.com/pkgs/main/win-64/ruamel.yaml.clib-0.2.6-py310h2bbff1b_1.conda', sha256='d146b2d79ec795f27dce5d924a174947186d5c531b954d10e7913b534c16a77d', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1666303098.236, size=103348, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\ruamel.yaml.clib-0.2.6-py310h2bbff1b_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\ruamel.yaml.clib-0.2.6-py310h2bbff1b_1', md5='55d725d89b2e302c0121951810e4ca75')",
+    "PackageCacheRecord(_hash=789903199388968900, name='setuptools', version='67.8.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='setuptools-67.8.0-py310haa95532_0.conda', legacy_bz2_md5='00ccf447cc3d953df858974f4be74747', legacy_bz2_size=1258979, url='https://repo.anaconda.com/pkgs/main/win-64/setuptools-67.8.0-py310haa95532_0.conda', sha256='50166bd8d72725b90ca9cb087894f8d276a4a0dd04d45ca15907470300e646bb', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1685373191.047, size=1102874, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\setuptools-67.8.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\setuptools-67.8.0-py310haa95532_0', md5='a73a8b72759743520893fb0038dfb0b6')",
+    "PackageCacheRecord(_hash=8680385554035393389, name='toolz', version='0.12.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='toolz-0.12.0-py310haa95532_0.conda', legacy_bz2_md5='2a762291f7c22ce1721560de68a8210a', legacy_bz2_size=104573, url='https://repo.anaconda.com/pkgs/main/win-64/toolz-0.12.0-py310haa95532_0.conda', sha256='4077c1adcb7a0227941affc737ecc582cd7d09a72496a69b55feb720139cc3c0', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1667464143.397, size=111078, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\toolz-0.12.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\toolz-0.12.0-py310haa95532_0', md5='9e2e6627d733e19369ae97746868d8c8')",
+    "PackageCacheRecord(_hash=2199123265207068023, name='wheel', version='0.38.4', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='wheel-0.38.4-py310haa95532_0.conda', legacy_bz2_md5='29f5b2a9bcef4f85617d35b3824b2f9d', legacy_bz2_size=79107, url='https://repo.anaconda.com/pkgs/main/win-64/wheel-0.38.4-py310haa95532_0.conda', sha256='f58b9d9ff7a3b3b43579e2a2332d41da83ece60ba70e8e220fa01aecb3b602d7', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1676622138.427, size=85282, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\wheel-0.38.4-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\wheel-0.38.4-py310haa95532_0', md5='5f9ccfc66e77d7eec3ace5d193cd9776')",
+    "PackageCacheRecord(_hash=5467494626731574281, name='win_inet_pton', version='1.1.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='win_inet_pton-1.1.0-py310haa95532_0.conda', legacy_bz2_md5='43afdf809d6ddf58af49fb1fc5230808', legacy_bz2_size=8531, url='https://repo.anaconda.com/pkgs/main/win-64/win_inet_pton-1.1.0-py310haa95532_0.conda', sha256='6bbdb2e6edc2617ce4484afcb46b5b8e2c922db2a2124d305c86232b7dc0cd70', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0',), constrains=(), track_features=(), features=(), license='PUBLIC-DOMAIN', timestamp=1642658494.153, size=8789, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\win_inet_pton-1.1.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\win_inet_pton-1.1.0-py310haa95532_0', md5='ca5e415dc1ed0238d3cbbcfec402c729')",
+    "PackageCacheRecord(_hash=5861098787497012055, name='libmambapy', version='1.4.1', build='py310h77c03ed_1', build_number=1, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='libmambapy-1.4.1-py310h77c03ed_1.conda', legacy_bz2_md5='fa9301917645a0a717b36eb0a33fc9c2', legacy_bz2_size=460519, url='https://repo.anaconda.com/pkgs/main/win-64/libmambapy-1.4.1-py310h77c03ed_1.conda', sha256='f5d1fd897b54fceec1ecce85eef877a112c0245c6e803700f9d7beb1d587e4d5', metadata_signature_status='', depends=('fmt >=9.1.0,<10.0a0', 'libmamba 1.4.1 h77c03ed_1', 'openssl >=3.0.8,<4.0a0', 'pybind11-abi 4', 'python >=3.10,<3.11.0a0', 'vc >=14.2,<15.0a0', 'vs2015_runtime >=14.27.29016,<15.0a0', 'yaml-cpp >=0.7.0,<0.8.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1685993769.937, size=304787, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libmambapy-1.4.1-py310h77c03ed_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\libmambapy-1.4.1-py310h77c03ed_1', md5='351a722be5e57220964a1afe521933b7')",
+    "PackageCacheRecord(_hash=-6147403940148531603, name='pip', version='23.1.2', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='pip-23.1.2-py310haa95532_0.conda', legacy_bz2_md5='d3854d2e0acd393543d31327d3aea99b', legacy_bz2_size=2960494, url='https://repo.anaconda.com/pkgs/main/win-64/pip-23.1.2-py310haa95532_0.conda', sha256='0d155e2bf456626b5e7e28611d55c3fde8794630f0e9d640b4c33569d54602df', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'setuptools', 'wheel'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1686601230.164, size=2954925, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pip-23.1.2-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pip-23.1.2-py310haa95532_0', md5='abd269e9c669fb8962636aed7e62183c')",
+    "PackageCacheRecord(_hash=2941131126081382322, name='pysocks', version='1.7.1', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='pysocks-1.7.1-py310haa95532_0.conda', legacy_bz2_md5='8eb51a59b8c2d264f072b9686f08554b', legacy_bz2_size=28442, url='https://repo.anaconda.com/pkgs/main/win-64/pysocks-1.7.1-py310haa95532_0.conda', sha256='287b774f7fc4b1463dddf3853b2796cbca2753127a7b0a6bfd2f0fbc3da66df5', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'win_inet_pton'), constrains=(), track_features=(), features=(), license='BSD 3-Clause', license_family='BSD', timestamp=1642089401.419, size=28980, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pysocks-1.7.1-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pysocks-1.7.1-py310haa95532_0', md5='2aaf72b1a08819e072b0a1522dd4ff52')",
+    "PackageCacheRecord(_hash=462883918122589227, name='ruamel.yaml', version='0.17.21', build='py310h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='ruamel.yaml-0.17.21-py310h2bbff1b_0.conda', legacy_bz2_md5='a0206afa9154fcf60abdcf14459287e1', legacy_bz2_size=175464, url='https://repo.anaconda.com/pkgs/main/win-64/ruamel.yaml-0.17.21-py310h2bbff1b_0.conda', sha256='8f239d4dc243de6598821038ab9eab53bbd794c579ffb3f802e90e278a50e46d', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'ruamel.yaml.clib >=0.2.6', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1666304672.008, size=180864, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\ruamel.yaml-0.17.21-py310h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\ruamel.yaml-0.17.21-py310h2bbff1b_0', md5='853f4239cb16c5b621b8d1505e8883c6')",
+    "PackageCacheRecord(_hash=7469571718061050150, name='tqdm', version='4.65.0', build='py310h9909e9c_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='tqdm-4.65.0-py310h9909e9c_0.conda', legacy_bz2_md5='c9a498cdb375d5e877d3fa823236f523', legacy_bz2_size=144538, url='https://repo.anaconda.com/pkgs/main/win-64/tqdm-4.65.0-py310h9909e9c_0.conda', sha256='ce6a9ac9b887bbf2f10ae81ed744c86ab376fcc49c7def6f548fe889751fb155', metadata_signature_status='', depends=('colorama', 'python >=3.10,<3.11.0a0'), constrains=('slack-sdk', 'requests', 'ipywidgets >=6'), track_features=(), features=(), license='MPL-2.0 AND MIT', license_family='MOZILLA', timestamp=1679561959.497, size=153031, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\tqdm-4.65.0-py310h9909e9c_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\tqdm-4.65.0-py310h9909e9c_0', md5='0799788671ca5540a099c5721f772e82')",
+    "PackageCacheRecord(_hash=-3814117012388227452, name='charset-normalizer', version='2.0.4', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='charset-normalizer-2.0.4-pyhd3eb1b0_0.conda', legacy_bz2_md5='544adf2677c47c9b9c891aea720678f1', legacy_bz2_size=33999, url='https://repo.anaconda.com/pkgs/main/noarch/charset-normalizer-2.0.4-pyhd3eb1b0_0.conda', sha256='b39aea12bf02654cdd0094c79bfa6edbc8d054787f6e2d0b96d403cd4ba4cc0d', metadata_signature_status='', depends=('python >=3.5',), constrains=(), track_features=(), features=(), noarch='python', license='MIT', package_type='noarch_python', timestamp=1630003259.346, size=35372, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\charset-normalizer-2.0.4-pyhd3eb1b0_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\charset-normalizer-2.0.4-pyhd3eb1b0_0', md5='e7a441d94234b2b5fafee06e25dbf076')",
+    "PackageCacheRecord(_hash=8278828710388146690, name='jsonpatch', version='1.32', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='jsonpatch-1.32-pyhd3eb1b0_0.conda', legacy_bz2_md5='933be63c7b1aba7b9990f42ada8bc833', legacy_bz2_size=14805, url='https://repo.anaconda.com/pkgs/main/noarch/jsonpatch-1.32-pyhd3eb1b0_0.conda', sha256='dcd5fe09150f6e1b327369bc837df2159c32406981be9943b0cfcf8107203e66', metadata_signature_status='', depends=('jsonpointer >=1.9', 'python'), constrains=(), track_features=(), features=(), noarch='python', license='BSD 3-Clause', license_family='BSD', package_type='noarch_python', timestamp=1615747661.494, size=14901, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\jsonpatch-1.32-pyhd3eb1b0_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\jsonpatch-1.32-pyhd3eb1b0_0', md5='ce3c2233a0823c4c25aba6843b05d19d')",
+    "PackageCacheRecord(_hash=6871000345131495409, name='jsonpointer', version='2.1', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='jsonpointer-2.1-pyhd3eb1b0_0.conda', legacy_bz2_md5='f4129d80d8832a5520403970ca2a1103', legacy_bz2_size=9237, url='https://repo.anaconda.com/pkgs/main/noarch/jsonpointer-2.1-pyhd3eb1b0_0.conda', sha256='739af990230fb811bc0c03a7393ccb361d371d85246c4ef1d5185e7e0a1c2810', metadata_signature_status='', depends=('python',), constrains=(), track_features=(), features=(), noarch='python', license='BSD 3-Clause', license_family='BSD', package_type='noarch_python', timestamp=1615660585.436, size=9495, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\jsonpointer-2.1-pyhd3eb1b0_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\jsonpointer-2.1-pyhd3eb1b0_0', md5='298ff809e733cb04366e4e629c65aa8d')",
+    "PackageCacheRecord(_hash=1214239887418373329, name='pycparser', version='2.21', build='pyhd3eb1b0_0', build_number=0, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='pycparser-2.21-pyhd3eb1b0_0.conda', legacy_bz2_md5='e70944ff53d19af4f65073a4f21c7b05', legacy_bz2_size=96720, url='https://repo.anaconda.com/pkgs/main/noarch/pycparser-2.21-pyhd3eb1b0_0.conda', sha256='4405b5aeff26863972c82e8b54d09f88cd084f70e01e4343107b2676ffbeab57', metadata_signature_status='', depends=('python >=3.6',), constrains=(), track_features=(), features=(), noarch='python', license='BSD-3-clause', license_family='BSD', package_type='noarch_python', timestamp=1636541382.349, size=96617, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pycparser-2.21-pyhd3eb1b0_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pycparser-2.21-pyhd3eb1b0_0', md5='135a72ff2a31150a3a3ff0b1edd41ca9')",
+    "PackageCacheRecord(_hash=-9123239953364466933, name='cffi', version='1.15.1', build='py310h2bbff1b_3', build_number=3, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='cffi-1.15.1-py310h2bbff1b_3.conda', legacy_bz2_md5='133c206236d294bb655c080030e57952', legacy_bz2_size=230624, url='https://repo.anaconda.com/pkgs/main/win-64/cffi-1.15.1-py310h2bbff1b_3.conda', sha256='4f16177e5781a167205e7cc29887b5da5bfcb3290c6325f626494d0b28267bf1', metadata_signature_status='', depends=('pycparser', 'python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1670423542.69, size=245174, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\cffi-1.15.1-py310h2bbff1b_3.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\cffi-1.15.1-py310h2bbff1b_3', md5='cf341ccfe4fd5ade242f6ed205c38a3a')",
+    "PackageCacheRecord(_hash=-693046083741220578, name='brotlipy', version='0.7.0', build='py310h2bbff1b_1002', build_number=1002, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='brotlipy-0.7.0-py310h2bbff1b_1002.conda', legacy_bz2_md5='0469496eda34ebbc999b983c460947fd', legacy_bz2_size=377496, url='https://repo.anaconda.com/pkgs/main/win-64/brotlipy-0.7.0-py310h2bbff1b_1002.conda', sha256='c5b0ae97ac11317f28afa0d59d923802d41d4905497d542e098f00309e0ea000', metadata_signature_status='', depends=('cffi >=1.0.0', 'python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1642108574.216, size=343334, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\brotlipy-0.7.0-py310h2bbff1b_1002.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\brotlipy-0.7.0-py310h2bbff1b_1002', md5='d7b62e5003e694dc2f6dcca6d3889eb8')",
+    "PackageCacheRecord(_hash=-4195064381385767805, name='cryptography', version='39.0.1', build='py310h21b164f_2', build_number=2, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='cryptography-39.0.1-py310h21b164f_2.conda', legacy_bz2_md5='1692e4ca5928e6f3e4f2fd51d013a3c6', legacy_bz2_size=1152193, url='https://repo.anaconda.com/pkgs/main/win-64/cryptography-39.0.1-py310h21b164f_2.conda', sha256='703e42001d8a8d206faa7d65177ae78e34d6ee741eab332e8f5a14a0584b66cc', metadata_signature_status='', depends=('cffi >=1.12', 'openssl 3.*', 'python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=('pyopenssl >=23.0.0',), track_features=(), features=(), license='(BSD-3-Clause OR Apache-2.0) AND PSF-2.0 AND MIT', license_family='BSD', timestamp=1686613597.222, size=1092393, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\cryptography-39.0.1-py310h21b164f_2.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\cryptography-39.0.1-py310h21b164f_2', md5='685a669d757726f307dfba69e3d108c3')",
+    "PackageCacheRecord(_hash=-7307022262119506425, name='zstandard', version='0.19.0', build='py310h2bbff1b_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='zstandard-0.19.0-py310h2bbff1b_0.conda', legacy_bz2_md5='c7e568191b4311eab6fe44a23047e8b0', legacy_bz2_size=478885, url='https://repo.anaconda.com/pkgs/main/win-64/zstandard-0.19.0-py310h2bbff1b_0.conda', sha256='6fb0bde98b3f3c9af9641a2e837a7c92d34345c8b20d59d715c2b615c9db39a2', metadata_signature_status='', depends=('cffi >=1.11', 'python >=3.10,<3.11.0a0', 'vc >=14.1,<15.0a0', 'vs2015_runtime >=14.16.27012,<15.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1677015326.704, size=348084, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\zstandard-0.19.0-py310h2bbff1b_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\zstandard-0.19.0-py310h2bbff1b_0', md5='295ff611ba7015ce07e1b1375bdce905')",
+    "PackageCacheRecord(_hash=440664350361567434, name='conda-package-streaming', version='0.8.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='conda-package-streaming-0.8.0-py310haa95532_0.conda', legacy_bz2_md5='7c350993d47e88c1bda7798c306fa0a1', legacy_bz2_size=27116, url='https://repo.anaconda.com/pkgs/main/win-64/conda-package-streaming-0.8.0-py310haa95532_0.conda', sha256='f75c09498a1aa1ebf2b3d9f1611f995903389d7729ac7ec79619e5ca625a8bbe', metadata_signature_status='', depends=('python >=3.10,<3.11.0a0', 'zstandard >=0.15'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1685019809.352, size=28806, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-package-streaming-0.8.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-package-streaming-0.8.0-py310haa95532_0', md5='f32b9271b6e4773c8a28dee3b4067ed7')",
+    "PackageCacheRecord(_hash=-2159678563636135064, name='pyopenssl', version='23.0.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='pyopenssl-23.0.0-py310haa95532_0.conda', legacy_bz2_md5='a25930a600295fc32883e84376ef343a', legacy_bz2_size=92722, url='https://repo.anaconda.com/pkgs/main/win-64/pyopenssl-23.0.0-py310haa95532_0.conda', sha256='c54067b92595e150ccb8a18e927c9d2902066ff52bcbd139ac267bea4ca061a1', metadata_signature_status='', depends=('cryptography >=38.0.0,<40', 'python >=3.10,<3.11.0a0'), constrains=(), track_features=(), features=(), license='Apache-2.0', license_family='Apache', timestamp=1677607885.883, size=100214, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pyopenssl-23.0.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\pyopenssl-23.0.0-py310haa95532_0', md5='2fabe216b64bba65b12e4800d0912248')",
+    "PackageCacheRecord(_hash=-2543481451943494389, name='conda-package-handling', version='2.1.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='conda-package-handling-2.1.0-py310haa95532_0.conda', legacy_bz2_md5='e39ff2b285c017af093a678661ab4e87', legacy_bz2_size=297129, url='https://repo.anaconda.com/pkgs/main/win-64/conda-package-handling-2.1.0-py310haa95532_0.conda', sha256='de502c54416dd966cd4a6f76832f5816e897cb7ad8ca634d8d3f71d871797fa8', metadata_signature_status='', depends=('conda-package-streaming >=0.7.0', 'python >=3.10,<3.11.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1685024980.673, size=293676, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-package-handling-2.1.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-package-handling-2.1.0-py310haa95532_0', md5='fae3b2c85b9a8bd26ca7bb5e3958b6fe')",
+    "PackageCacheRecord(_hash=-5544181639817477274, name='urllib3', version='1.26.16', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='urllib3-1.26.16-py310haa95532_0.conda', legacy_bz2_md5='f0074a77ec56d2587e56118e8afbd9c8', legacy_bz2_size=189315, url='https://repo.anaconda.com/pkgs/main/win-64/urllib3-1.26.16-py310haa95532_0.conda', sha256='faca9239d322b038971bfaa8ab4a7ad5b2b6f4c6c2f7bf6c2057303f60090dbc', metadata_signature_status='', depends=('brotlipy >=0.6.0', 'certifi', 'cryptography >=1.3.4', 'idna >=2.0.0', 'pyopenssl >=0.14', 'pysocks >=1.5.6,<2.0,!=1.5.7', 'python >=3.10,<3.11.0a0'), constrains=(), track_features=(), features=(), license='MIT', license_family='MIT', timestamp=1686163401.593, size=207058, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\urllib3-1.26.16-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\urllib3-1.26.16-py310haa95532_0', md5='16455537aea5ab15d78c17b745f46834')",
+    "PackageCacheRecord(_hash=5371056662125014454, name='requests', version='2.29.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='requests-2.29.0-py310haa95532_0.conda', legacy_bz2_md5='4b69d0d47708a9d45037a24192187be1', legacy_bz2_size=95477, url='https://repo.anaconda.com/pkgs/main/win-64/requests-2.29.0-py310haa95532_0.conda', sha256='4532fd7ae5a531ec6b412e251c895f9a02aa460b55c0f33864647c1b5babc2ee', metadata_signature_status='', depends=('certifi >=2017.4.17', 'charset-normalizer >=2,<4', 'idna >=2.5,<4', 'python >=3.10,<3.11.0a0', 'urllib3 >=1.21.1,<1.27'), constrains=('chardet >=3.0.2,<6',), track_features=(), features=(), license='Apache-2.0', license_family='Apache', timestamp=1682607794.892, size=100016, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\requests-2.29.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\requests-2.29.0-py310haa95532_0', md5='355b08e358398617a5418ad3a01582a9')",
+    "PackageCacheRecord(_hash=-3706442378522949310, name='conda', version='23.5.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='conda-23.5.0-py310haa95532_0.conda', legacy_bz2_md5='fbec3b20bef6fcabb9029a822ef5af6c', legacy_bz2_size=1113534, url='https://repo.anaconda.com/pkgs/main/win-64/conda-23.5.0-py310haa95532_0.conda', sha256='27721330c7de147bf5920b86dfb69d4079915820926beaa4f04137f8588c122f', metadata_signature_status='', depends=('boltons >=23.0.0', 'conda-package-handling >=1.3.0', 'jsonpatch >=1.32', 'menuinst >=1.4.11,<2', 'packaging >=23.0', 'pluggy >=1.0.0', 'pycosat >=0.6.3', 'pyopenssl >=16.2.0', 'python >=3.10,<3.11.0a0', 'requests >=2.20.1,<3', 'ruamel.yaml >=0.11.14,<0.18', 'setuptools >=31.0.1', 'toolz >=0.8.1', 'tqdm >=4'), constrains=('conda-libmamba-solver >=22.12.0', 'conda-env >=2.6', 'cytoolz >=0.8.1', 'conda-content-trust >=0.1.1', 'conda-build >=3.18.3'), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1685025365.678, size=1058457, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-23.5.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-23.5.0-py310haa95532_0', md5='9fa7639b8f92a032415b4fe255f3de91')",
+    "PackageCacheRecord(_hash=2542234991588431526, name='conda-libmamba-solver', version='23.5.0', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='conda-libmamba-solver-23.5.0-py310haa95532_0.conda', legacy_bz2_md5='2c6125dc658e5a9a00d7fa639c0f8740', legacy_bz2_size=63259, url='https://repo.anaconda.com/pkgs/main/win-64/conda-libmamba-solver-23.5.0-py310haa95532_0.conda', sha256='cc21e020c92e21ecaa8d686e775963e60df75d1a774872286eca1268a90a2637', metadata_signature_status='', depends=('boltons >=23.0.0', 'conda >=23.5.0', 'libmambapy >=1.4.1', 'python >=3.10,<3.11.0a0'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1685032581.39, size=66989, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-libmamba-solver-23.5.0-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-libmamba-solver-23.5.0-py310haa95532_0', md5='3e2a053dea53e116d976fdeb164cf790')",
+    "PackageCacheRecord(_hash=-6390749928545569430, name='six', version='1.16.0', build='pyhd3eb1b0_1', build_number=1, channel=Channel(\"pkgs/main/noarch\"), subdir='noarch', fn='six-1.16.0-pyhd3eb1b0_1.conda', legacy_bz2_md5='0a3ab834ba49016e183e715bff48a2b6', legacy_bz2_size=19160, url='https://repo.anaconda.com/pkgs/main/noarch/six-1.16.0-pyhd3eb1b0_1.conda', sha256='71c97b4ddc3d19ed41bfa1a2d40f620f96b4d46f097dc48ab115b36640f7df0a', metadata_signature_status='', depends=('python',), constrains=(), track_features=(), features=(), noarch='python', license='MIT', license_family='MIT', package_type='noarch_python', timestamp=1644875974.931, size=18894, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\six-1.16.0-pyhd3eb1b0_1.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\six-1.16.0-pyhd3eb1b0_1', md5='34586824d411d36af2fa40e799c172d0')",
+    "PackageCacheRecord(_hash=-3708030482922028167, name='conda-content-trust', version='0.1.3', build='py310haa95532_0', build_number=0, channel=Channel(\"pkgs/main/win-64\"), subdir='win-64', fn='conda-content-trust-0.1.3-py310haa95532_0.conda', legacy_bz2_md5='3a7d881a4ca4cb2688c73e8d9f051834', legacy_bz2_size=92551, url='https://repo.anaconda.com/pkgs/main/win-64/conda-content-trust-0.1.3-py310haa95532_0.conda', sha256='74ac98fc4c7a9d0010dda07161148c7dd63998d77d374f9de9e353ddf32117ec', metadata_signature_status='', depends=('cryptography', 'python >=3.10,<3.11.0a0', 'six'), constrains=(), track_features=(), features=(), license='BSD-3-Clause', license_family='BSD', timestamp=1658126505.846, size=88637, package_tarball_full_path='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-content-trust-0.1.3-py310haa95532_0.conda', extracted_package_dir='C:\\\\Users\\\\runneradmin\\\\.conda\\\\constructor\\\\win-64\\\\conda-content-trust-0.1.3-py310haa95532_0', md5='38cde562a66902c2fcaefcd0e9529e15')"
+  ],
+  "_urls": [
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/ca-certificates-2023.05.30-haa95532_0.conda",
+      "b448927cdddc2177eb8b55a82ca9623f"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/pybind11-abi-4-hd3eb1b0_1.conda",
+      "4e440592a9fb70c880b74621aee6c967"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/tzdata-2023c-h04d1e81_0.conda",
+      "29db02adf8808f7c64642cead3e28acd"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/vs2015_runtime-14.27.29016-h5e58377_2.conda",
+      "9e3f8ea1096e174541ac86f5fc73fc3d"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/vc-14.2-h21ff451_1.conda",
+      "a8c870bfc2551c262800527f2107d0f3"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/bzip2-1.0.8-he774522_0.conda",
+      "acfdd6cfa52a831a43b88126e68b0cf9"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/fmt-9.1.0-h6d14046_0.conda",
+      "fff794057ba79828b0279e76a11f88ef"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libffi-3.4.4-hd77b12b_0.conda",
+      "0a01fe57e6261e7c574e43f2b1385f48"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libiconv-1.16-h2bbff1b_2.conda",
+      "c02693cc6777cb959e3ecee275d8f0ec"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/lz4-c-1.9.4-h2bbff1b_0.conda",
+      "3f22ad4062b3087c6842f54bf88a1f4c"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/openssl-3.0.9-h2bbff1b_0.conda",
+      "505cbc6e3bc42051fd146ecf5a18ae34"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/reproc-14.2.4-hd77b12b_1.conda",
+      "03a71ee6290cc184b4068aec88b23f61"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/sqlite-3.41.2-h2bbff1b_0.conda",
+      "eefb61a5b27aeb8c00f642290fd3375f"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/tk-8.6.12-h2bbff1b_0.conda",
+      "3e6f2cd798aea9f886970b61dad14304"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/xz-5.4.2-h8cc25b3_0.conda",
+      "7a2a89bb445ccef64e92bb003500380b"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/yaml-cpp-0.7.0-hd77b12b_1.conda",
+      "06c84e3c6988ee7877d3471a4397cc8b"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/zlib-1.2.13-h8cc25b3_0.conda",
+      "93432f34cf66a0153947825ed4fbd69f"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libssh2-1.10.0-he2ea4bf_2.conda",
+      "b038b8e7c34d1872b672e1f1075b18f4"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libxml2-2.10.3-h0ad7f3c_0.conda",
+      "31056dbe7753280409cc5179a2b2490d"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/pcre2-10.37-h0ff8eda_1.conda",
+      "c64c2462b009d47c2a542cceb8ccc48e"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/python-3.10.11-he1021f5_3.conda",
+      "f7793e406f876b32bc0306df386f09a0"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/reproc-cpp-14.2.4-hd77b12b_1.conda",
+      "57d3bd61e70e40d0dfeb2b8e8b3554a6"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/zstd-1.5.5-hd43e919_0.conda",
+      "61b09dfb209667f7558f7c3cd92c1367"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libarchive-3.6.2-hb62f4d4_2.conda",
+      "d2c4edab37335709e240b479f109c597"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libcurl-8.1.1-h86230a5_0.conda",
+      "f59ed07e6fedd81fc30134be1a03ef31"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libsolv-0.7.22-h23ce68f_0.conda",
+      "2c186fb07d2627eae6803773265ea16d"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/menuinst-1.4.19-py310h59b6b97_0.conda",
+      "bf8ef5102d1ab2bc4740f442940d7599"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/boltons-23.0.0-py310haa95532_0.conda",
+      "01079f2ee441661ed98e03a1e9c2ed0c"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/certifi-2023.5.7-py310haa95532_0.conda",
+      "1878773530a09a1d6d232d80f341f6ee"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/colorama-0.4.6-py310haa95532_0.conda",
+      "0506a41d13bdee3167429de13ce3257a"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/console_shortcut_miniconda-0.1.1-haa95532_1.conda",
+      "2e81cf921b089eca9e3a3ac683f80e46"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/idna-3.4-py310haa95532_0.conda",
+      "1a432c58b06f9f5836a0bfa277a6daeb"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libmamba-1.4.1-h77c03ed_1.conda",
+      "5f535515b0ad53db1a23f8b76f36fef6"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/packaging-23.0-py310haa95532_0.conda",
+      "9e320fdbe1232841d4f44931aceb3d57"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/pluggy-1.0.0-py310haa95532_1.conda",
+      "e02bc0bbe91a0747e64faa631500b107"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/powershell_shortcut_miniconda-0.0.1-haa95532_1.conda",
+      "19b6facebf1a84f97fcfdc7f7c0dab6a"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/pycosat-0.6.4-py310h2bbff1b_0.conda",
+      "32573473105612deaf05616b397a8f5e"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/ruamel.yaml.clib-0.2.6-py310h2bbff1b_1.conda",
+      "55d725d89b2e302c0121951810e4ca75"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/setuptools-67.8.0-py310haa95532_0.conda",
+      "a73a8b72759743520893fb0038dfb0b6"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/toolz-0.12.0-py310haa95532_0.conda",
+      "9e2e6627d733e19369ae97746868d8c8"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/wheel-0.38.4-py310haa95532_0.conda",
+      "5f9ccfc66e77d7eec3ace5d193cd9776"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/win_inet_pton-1.1.0-py310haa95532_0.conda",
+      "ca5e415dc1ed0238d3cbbcfec402c729"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/libmambapy-1.4.1-py310h77c03ed_1.conda",
+      "351a722be5e57220964a1afe521933b7"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/pip-23.1.2-py310haa95532_0.conda",
+      "abd269e9c669fb8962636aed7e62183c"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/pysocks-1.7.1-py310haa95532_0.conda",
+      "2aaf72b1a08819e072b0a1522dd4ff52"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/ruamel.yaml-0.17.21-py310h2bbff1b_0.conda",
+      "853f4239cb16c5b621b8d1505e8883c6"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/tqdm-4.65.0-py310h9909e9c_0.conda",
+      "0799788671ca5540a099c5721f772e82"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/charset-normalizer-2.0.4-pyhd3eb1b0_0.conda",
+      "e7a441d94234b2b5fafee06e25dbf076"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/jsonpatch-1.32-pyhd3eb1b0_0.conda",
+      "ce3c2233a0823c4c25aba6843b05d19d"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/jsonpointer-2.1-pyhd3eb1b0_0.conda",
+      "298ff809e733cb04366e4e629c65aa8d"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/pycparser-2.21-pyhd3eb1b0_0.conda",
+      "135a72ff2a31150a3a3ff0b1edd41ca9"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/cffi-1.15.1-py310h2bbff1b_3.conda",
+      "cf341ccfe4fd5ade242f6ed205c38a3a"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/brotlipy-0.7.0-py310h2bbff1b_1002.conda",
+      "d7b62e5003e694dc2f6dcca6d3889eb8"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/cryptography-39.0.1-py310h21b164f_2.conda",
+      "685a669d757726f307dfba69e3d108c3"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/zstandard-0.19.0-py310h2bbff1b_0.conda",
+      "295ff611ba7015ce07e1b1375bdce905"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/conda-package-streaming-0.8.0-py310haa95532_0.conda",
+      "f32b9271b6e4773c8a28dee3b4067ed7"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/pyopenssl-23.0.0-py310haa95532_0.conda",
+      "2fabe216b64bba65b12e4800d0912248"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/conda-package-handling-2.1.0-py310haa95532_0.conda",
+      "fae3b2c85b9a8bd26ca7bb5e3958b6fe"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/urllib3-1.26.16-py310haa95532_0.conda",
+      "16455537aea5ab15d78c17b745f46834"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/requests-2.29.0-py310haa95532_0.conda",
+      "355b08e358398617a5418ad3a01582a9"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/conda-23.5.0-py310haa95532_0.conda",
+      "9fa7639b8f92a032415b4fe255f3de91"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/conda-libmamba-solver-23.5.0-py310haa95532_0.conda",
+      "3e2a053dea53e116d976fdeb164cf790"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/noarch/six-1.16.0-pyhd3eb1b0_1.conda",
+      "34586824d411d36af2fa40e799c172d0"
+    ],
+    [
+      "https://repo.anaconda.com/pkgs/main/win-64/conda-content-trust-0.1.3-py310haa95532_0.conda",
+      "38cde562a66902c2fcaefcd0e9529e15"
+    ]
+  ],
+  "_dists": [
+    "python-3.10.11-he1021f5_3.conda",
+    "ca-certificates-2023.05.30-haa95532_0.conda",
+    "pybind11-abi-4-hd3eb1b0_1.conda",
+    "tzdata-2023c-h04d1e81_0.conda",
+    "vs2015_runtime-14.27.29016-h5e58377_2.conda",
+    "vc-14.2-h21ff451_1.conda",
+    "bzip2-1.0.8-he774522_0.conda",
+    "fmt-9.1.0-h6d14046_0.conda",
+    "libffi-3.4.4-hd77b12b_0.conda",
+    "libiconv-1.16-h2bbff1b_2.conda",
+    "lz4-c-1.9.4-h2bbff1b_0.conda",
+    "openssl-3.0.9-h2bbff1b_0.conda",
+    "reproc-14.2.4-hd77b12b_1.conda",
+    "sqlite-3.41.2-h2bbff1b_0.conda",
+    "tk-8.6.12-h2bbff1b_0.conda",
+    "xz-5.4.2-h8cc25b3_0.conda",
+    "yaml-cpp-0.7.0-hd77b12b_1.conda",
+    "zlib-1.2.13-h8cc25b3_0.conda",
+    "libssh2-1.10.0-he2ea4bf_2.conda",
+    "libxml2-2.10.3-h0ad7f3c_0.conda",
+    "pcre2-10.37-h0ff8eda_1.conda",
+    "reproc-cpp-14.2.4-hd77b12b_1.conda",
+    "zstd-1.5.5-hd43e919_0.conda",
+    "libarchive-3.6.2-hb62f4d4_2.conda",
+    "libcurl-8.1.1-h86230a5_0.conda",
+    "libsolv-0.7.22-h23ce68f_0.conda",
+    "menuinst-1.4.19-py310h59b6b97_0.conda",
+    "boltons-23.0.0-py310haa95532_0.conda",
+    "certifi-2023.5.7-py310haa95532_0.conda",
+    "colorama-0.4.6-py310haa95532_0.conda",
+    "console_shortcut_miniconda-0.1.1-haa95532_1.conda",
+    "idna-3.4-py310haa95532_0.conda",
+    "libmamba-1.4.1-h77c03ed_1.conda",
+    "packaging-23.0-py310haa95532_0.conda",
+    "pluggy-1.0.0-py310haa95532_1.conda",
+    "powershell_shortcut_miniconda-0.0.1-haa95532_1.conda",
+    "pycosat-0.6.4-py310h2bbff1b_0.conda",
+    "ruamel.yaml.clib-0.2.6-py310h2bbff1b_1.conda",
+    "setuptools-67.8.0-py310haa95532_0.conda",
+    "toolz-0.12.0-py310haa95532_0.conda",
+    "wheel-0.38.4-py310haa95532_0.conda",
+    "win_inet_pton-1.1.0-py310haa95532_0.conda",
+    "libmambapy-1.4.1-py310h77c03ed_1.conda",
+    "pip-23.1.2-py310haa95532_0.conda",
+    "pysocks-1.7.1-py310haa95532_0.conda",
+    "ruamel.yaml-0.17.21-py310h2bbff1b_0.conda",
+    "tqdm-4.65.0-py310h9909e9c_0.conda",
+    "charset-normalizer-2.0.4-pyhd3eb1b0_0.conda",
+    "jsonpatch-1.32-pyhd3eb1b0_0.conda",
+    "jsonpointer-2.1-pyhd3eb1b0_0.conda",
+    "pycparser-2.21-pyhd3eb1b0_0.conda",
+    "cffi-1.15.1-py310h2bbff1b_3.conda",
+    "brotlipy-0.7.0-py310h2bbff1b_1002.conda",
+    "cryptography-39.0.1-py310h21b164f_2.conda",
+    "zstandard-0.19.0-py310h2bbff1b_0.conda",
+    "conda-package-streaming-0.8.0-py310haa95532_0.conda",
+    "pyopenssl-23.0.0-py310haa95532_0.conda",
+    "conda-package-handling-2.1.0-py310haa95532_0.conda",
+    "urllib3-1.26.16-py310haa95532_0.conda",
+    "requests-2.29.0-py310haa95532_0.conda",
+    "conda-23.5.0-py310haa95532_0.conda",
+    "conda-libmamba-solver-23.5.0-py310haa95532_0.conda",
+    "six-1.16.0-pyhd3eb1b0_1.conda",
+    "conda-content-trust-0.1.3-py310haa95532_0.conda"
+  ],
+  "_approx_tarballs_size": 107336559,
+  "_approx_pkgs_size": 328295100,
+  "_has_conda": true,
+  "_extra_envs_info": {},
+  "_outpath": "C:\\Users\\RUNNER~1\\AppData\\Local\\Temp\\tmp.rPbSjPBrH3\\Miniconda3-py310_23.5.0-1-Windows-x86_64.exe",
+  "pre_install_desc": "",
+  "post_install_desc": ""
+}
