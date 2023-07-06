@@ -1,9 +1,11 @@
 import json
 from pathlib import Path
+from jinja2 import Template
 
 SOURCE_DIR = Path(__file__).parent
 RELEASE_DIR = SOURCE_DIR / "miniconda_releases"
-
+RELEASE_NOTES_TEMPLATE = SOURCE_DIR / "miniconda_release_notes.rst.jinja2"
+RELEASE_NOTES_RST = SOURCE_DIR / "miniconda_release_notes.rst"
 
 def get_installer_info(release: Path) -> dict:
     """
@@ -14,10 +16,10 @@ def get_installer_info(release: Path) -> dict:
         #  The `dist` strings are of the format "<name>-<version>-<hash>_<build_num>.conda"
         packages = []
         for dist in dists:
+            if dist.startswith("_"):
+                continue
             pkg_name, pkg_version, pkg_split = dist[:-6].rsplit("-", 2)
-            pkg_hash = pkg_split.split("_")[0]
-            pkg_build_num = pkg_split.split("_")[1]
-    
+            pkg_hash, pkg_build_num = pkg_split.split("_")
             package = {
                 "name": pkg_name,
                 "version": pkg_version,
@@ -45,7 +47,14 @@ def main():
     release_info = {}
     for release in RELEASE_DIR.iterdir():
         release_info[release.name] = get_installer_info(release)
-    print(release_info)
+
+    with open(RELEASE_NOTES_TEMPLATE) as f:
+        template_text = f.read()
+    
+    template = Template(template_text)
+    rst_text = template.render(**release_info)
+    with open(RELEASE_NOTES_RST, "w") as f:
+        f.write(rst_text)
 
 if __name__ == "__main__":
      main()
