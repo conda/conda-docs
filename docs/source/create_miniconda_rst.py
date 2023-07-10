@@ -18,7 +18,7 @@ import urllib.request
 import json
 
 from jinja2 import Template
-from packaging import Version
+from packaging:version import Version
 
 OUT_FILENAME = "miniconda.rst"
 TEMPLATE_FILENAME = "miniconda.rst.jinja2"
