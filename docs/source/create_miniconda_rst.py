@@ -18,10 +18,12 @@ import urllib.request
 import json
 
 from jinja2 import Template
-from packaging:version import Version
+from packaging.version import Version
+from pathlib import Path
 
-OUT_FILENAME = "miniconda.rst"
-TEMPLATE_FILENAME = "miniconda.rst.jinja2"
+HERE = Path(__file__).parent
+OUT_FILENAME = HERE / "miniconda.rst"
+TEMPLATE_FILENAME = HERE / "miniconda.rst.jinja2"
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
 # Update these!
