@@ -29,6 +29,13 @@ which does not require administrator permissions and is the most robust type of
 installation. However, if you need to, you can install Miniconda system wide,
 which does require administrator permissions.
 
+Installing
+==========
+- :doc:`See hashes for all Miniconda installers <../miniconda_hashes>`.
+- `Verify your installation <https://conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification>`_.
+- `Installation
+  instructions <https://conda.io/projects/conda/en/stable/user-guide/install/index.html>`__.
+
 Latest Miniconda Installer Links
 ================================
 
@@ -99,13 +106,6 @@ Linux installers
    ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-aarch64.sh>`_,48.8 MiB,``ad491ebad6efec7470fe2139c8b407a895cb2c828b3233b97da6e4f22cae0cde``
    ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-ppc64le.sh>`_,49.3 MiB,``8aa819800ba3ec88ad8518a9e4fc71ada8087547300fc53527c4ecc8072a4d50``
    ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-s390x.sh>`_,62.0 MiB,``e4d83bb9f0900c9128504f7e3c4d3b9e5eaf3b87c4bb5190a3086947e92bd3fa``
-
-Installing
-==========
-- :doc:`See hashes for all Miniconda installers <../miniconda_hashes>`.
-- `Verify your installation <https://conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification>`_.
-- `Installation
-  instructions <https://conda.io/projects/conda/en/stable/user-guide/install/index.html>`__.
 
 Other resources
 ===============
