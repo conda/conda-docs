@@ -9,7 +9,7 @@ User-facing changes
 Bug fixes
 ^^^^^^^^^
 
-* Address bug that can cause accidental file deletion with Windows uninstallers (see our `blog post <https://www.anaconda.com/blog/windows-installer-security-fix>`_)
+* Address a bug that can cause accidental file deletion with Windows uninstallers (see our `blog post <https://www.anaconda.com/blog/windows-installer-security-fix>`_). A `security patch <https://repo.anaconda.com/miniconda/Miniconda3-uninstaller-patch-win-64-2023.07-0.exe>`_ is available for older versions.
 
 
 Known issues
