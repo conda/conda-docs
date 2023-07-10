@@ -18,6 +18,7 @@ import urllib.request
 import json
 
 from jinja2 import Template
+from packaging import Version
 
 OUT_FILENAME = "miniconda.rst"
 TEMPLATE_FILENAME = "miniconda.rst.jinja2"
@@ -106,7 +107,7 @@ def get_latest_miniconda_sizes_and_hashes():
         "conda_version": MINICONDA_VERSION.split("-")[0],
         "python_version": PYTHON_VERSION,
         "operating_systems": OPERATING_SYSTEMS,
-        "py_versions": PY_VERSIONS,
+        "py_versions": sorted(PY_VERSIONS, reverse=True, key=Version),
     }
     info["platforms"] = {(os,"latest"): [] for os in info["operating_systems"]}
 
