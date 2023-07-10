@@ -27,9 +27,10 @@ FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 # Update these!
 MINICONDA_VERSION = "23.5.0-2"
 PYTHON_VERSION = "3.11.3"  # This is the version of Python that's bundled into the Miniconda installers.
+PY_VERSIONS = ("3.11", "3.10", "3.9", "3.8")
+
 # Must be sorted in the order in which they appear on the Miniconda page
 OPERATING_SYSTEMS = ("Windows", "macOS", "Linux")
-PY_VERSIONS = ("3.11", "3.10", "3.9", "3.8")
 
 # Confirm these are up-to-date.
 PLATFORM_MAP = {
