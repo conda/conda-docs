@@ -11,6 +11,7 @@ import math
 import os
 import time
 from packaging.version import Version
+from pathlib import Path
 
 # Column lengths
 FILENAME_LEN = 47
@@ -18,7 +19,8 @@ SIZE_LEN = 9
 TIMEMOD_LEN = 19
 HASH_LEN = 68
 
-OUT_FILENAME = "miniconda_hashes.rst"
+HERE = Path(__file__).parent
+OUT_FILENAME = HERE / "miniconda_hashes.rst"
 
 
 def sizeof_fmt(num, suffix="B"):
