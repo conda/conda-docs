@@ -530,15 +530,4 @@ Packages:
 * yaml-cpp 0.7.0
 * zlib 1.2.13
 * zstandard 0.19.0
-* zstd 1.5.5Miniconda 23.5.0-1 ()
-^^^^^^^^^^^^^^^^^^^^^ 
-
-
-
-Available Python Versions:
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Packages:
-^^^^^^^^^
+* zstd 1.5.5
