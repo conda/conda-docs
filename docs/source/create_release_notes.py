@@ -99,7 +99,7 @@ def main():
     for release in releases:
         release_info.append(get_installer_info(RELEASE_DIR / release, files_info))
     
-    with open(RELEASE_NOTES_TEMPLATE, "r") as f:
+    with open(RELEASE_NOTES_TEMPLATE) as f:
         template_text = f.read()
     
     template = Template(template_text)
