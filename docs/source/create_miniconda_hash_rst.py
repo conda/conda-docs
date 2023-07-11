@@ -44,7 +44,7 @@ def main():
         data = json.loads(f.read().decode("utf-8"))
     # remove index.json and 'latest' entries
     data.pop("index.json")
-    data = {k: v for k, v in data.items() if "latest" not in k}
+    data = {k: v for k, v in data.items() if "latest" not in k and "uninstaller" not in k}
 
     # write file with hashes for all files
     f = open(OUT_FILENAME, "w")
