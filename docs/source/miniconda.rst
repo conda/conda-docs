@@ -107,6 +107,12 @@ Installing
 - `Installation
   instructions <https://conda.io/projects/conda/en/stable/user-guide/install/index.html>`__.
 
+Release Notes
+=============
+
+:doc:`Release Notes for Miniconda <../miniconda_release_notes>`_
+
+
 Other resources
 ===============
 
