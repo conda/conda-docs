@@ -34,8 +34,8 @@ Available Python Versions:
 * 3.8
 
 
-Packages:
-^^^^^^^^^
+Packages
+--------
 
 **linux-64**
 
