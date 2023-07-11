@@ -1,0 +1,36 @@
+=======================
+Miniconda Release Notes
+=======================
+
+{% for release in release_info %}
+
+{%- set heading = "Miniconda {} ({})".format(release.version, release.release_date) -%}
+{{ heading }}
+{{ "-" * heading|length }} 
+
+{% if not release.notes -%}
+{%- else -%}
+{{ release.notes }}
+{%- endif %}
+
+Available Python Versions:
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+{% for py_version in release.python_versions -%}
+* {{ py_version }}
+{% endfor %}
+
+Packages:
+---------
+
+{%- for platform, packages in release.package_lists|dictsort %}
+
+**{{ platform.title() }}**
+{{ "^" * (platform.title()|length + 4) }}
+
+{%- for package in packages|sort(attribute="name") %}
+* {{ package.name }} {{ package.version }}
+{%- endfor -%}
+
+{%- endfor -%}
+{% endfor %}
