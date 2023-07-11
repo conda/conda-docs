@@ -39,20 +39,20 @@ Installing
 Latest Miniconda Installer Links
 ================================
 
-.. csv-table:: Latest - Conda 23.3.1 Python 3.10.10 released April 24, 2023
+.. csv-table:: Latest - Conda 23.5.0 Python 3.11.3 released July 11, 2023
    :header: Platform,Name,SHA256 hash
    :widths: 5, 10, 80
 
-   Windows,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,``307194e1f12bbeb52b083634e89cc67db4f7980bd542254b43d3309eaf7cb358``
+   Windows,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,``51a50e2997bc4ec9361733f90cb1ed343910fbc73e8a2b01b86e514921f1c026``
    ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,``4fb64e6c9c28b88beab16994bfba4829110ea3145baa60bda5344174ab65d462``
-   macOS,`Miniconda3 macOS Intel x86 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``5abc78b664b7da9d14ade330534cc98283bb838c6b10ad9cfd8b9cc4153f8104``
-   ,`Miniconda3 macOS Intel x86 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``cca31a0f1e5394f2b739726dc22551c2a19afdf689c13a25668887ba706cba58``
-   ,`Miniconda3 macOS Apple M1 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh>`_,``9d1d12573339c49050b0d5a840af0ff6c32d33c3de1b3db478c01878eb003d64``
-   ,`Miniconda3 macOS Apple M1 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg>`_,``6997472c5ff90a772eb77e6397f4e3e227736c83a7f7b839da33d6cc7facb75d``
-   Linux,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,``aef279d6baea7f67940f16aad17ebe5f6aac97487c7c03466ff01f4819e5a651``
-   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,``6950c7b1f4f65ce9b87ee1a2d684837771ae7b2e6044e0da9e915d1dee6c924c``
-   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_,``b3de538cd542bc4f5a2f2d2a79386288d6e04f0e1459755f3cefe64763e51d16``
-   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-s390x.sh>`_,``ed4f51afc967e921ff5721151f567a4c43c4288ac93ec2393c6238b8c4891de8``
+   macOS,`Miniconda3 macOS Intel x86 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``2503d9e852fcaf85adca825bde84bdc297b118fd2c14316e4f27a93a190a7bdd``
+   ,`Miniconda3 macOS Intel x86 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``2f9a3ccb69c146a748c1270a625a481f73c49d714a35c5ea84399e32892af830``
+   ,`Miniconda3 macOS Apple M1 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh>`_,``c4ce7311d2d1c729bf8d98e6d5aa2581ce0b08a1480985e63efaf8529b2fc6ca``
+   ,`Miniconda3 macOS Apple M1 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg>`_,``b0eba1878ce8d4f0c36bead75e849a5f513055756d794344ff6b371e47b66cbe``
+   Linux,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,``61a5c087893f6210176045931b89ee6e8760c17abd9c862b2cab4c1b7d00f7c8``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,``6e3e60e7093194b3435fde19efc54d0dd78be393bf5b7487cc28cd1039ebed4d``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_,``c1ab8b5d629f66a1609e456a0d6a83a2896af6dc0b2b702025cb19456030eacd``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-s390x.sh>`_,``42e7cc490fc81d9b1dc56cf8bd951e084e804824d60aca3a4b15d35c57ad373e``
 
 Windows installers
 ==================
