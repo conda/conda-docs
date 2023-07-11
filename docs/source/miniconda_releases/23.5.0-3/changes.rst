@@ -1,9 +1,9 @@
 User-Facing Changes
 -------------------
 
-* Conda has been updated to v23.5.0
-* OpenSSL has been updated to version 3
-* The default installer uses python-3.11.3
+* Conda has been updated to v23.5.0.
+* OpenSSL has been updated to version 3.
+* The default installer uses python-3.11.3.
 
 
 Bug Fixes
