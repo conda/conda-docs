@@ -15,4 +15,4 @@ Bug fixes
 Known issues
 ^^^^^^^^^^^^
 
-* The .pkg installers may skip the "Destination Select" page after accepting the license agreement (see our `Anaconda installation instructions<https://docs.anaconda.com/free/anaconda/install/mac-os/>`_ for details)
+* The .pkg installers may skip the "Destination Select" page after accepting the license agreement. See our `Anaconda installation instructions <https://docs.anaconda.com/free/anaconda/install/mac-os/>`_ for details.
