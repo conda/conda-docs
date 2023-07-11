@@ -37,7 +37,7 @@ Available Python Versions:
 Packages:
 ^^^^^^^^^
 
-**LINUX-64**
+**linux-64**
 
 
 * boltons 23.0.0
@@ -109,7 +109,7 @@ Packages:
 * zstandard 0.19.0
 * zstd 1.5.5
 
-**LINUX-AARCH64**
+**linux-aarch64**
 
 
 * boltons 23.0.0
@@ -181,7 +181,7 @@ Packages:
 * zstandard 0.19.0
 * zstd 1.5.5
 
-**LINUX-PPC64LE**
+**linux-ppc64le**
 
 
 * boltons 23.0.0
@@ -253,7 +253,7 @@ Packages:
 * zstandard 0.19.0
 * zstd 1.5.5
 
-**LINUX-S390X**
+**linux-s390x**
 
 
 * boltons 23.0.0
@@ -325,7 +325,7 @@ Packages:
 * zstandard 0.19.0
 * zstd 1.5.5
 
-**OSX-64**
+**osx-64**
 
 
 * boltons 23.0.0
@@ -395,7 +395,7 @@ Packages:
 * zstandard 0.19.0
 * zstd 1.5.5
 
-**OSX-ARM64**
+**osx-arm64**
 
 
 * boltons 23.0.0
@@ -465,7 +465,7 @@ Packages:
 * zstandard 0.19.0
 * zstd 1.5.5
 
-**WIN-64**
+**win-64**
 
 
 * boltons 23.0.0
