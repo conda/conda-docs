@@ -25,8 +25,8 @@ Known Issues
 * The .pkg installers may skip the "Destination Select" page after accepting the license agreement. See our `Anaconda installation instructions <https://docs.anaconda.com/free/anaconda/install/mac-os/>`_ for details.
 
 
-Available Python Versions:
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Available Python Versions
+--------------------------
 
 * 3.11
 * 3.10
