@@ -18,17 +18,21 @@ import urllib.request
 import json
 
 from jinja2 import Template
+from packaging.version import Version
+from pathlib import Path
 
-OUT_FILENAME = "miniconda.rst"
-TEMPLATE_FILENAME = "miniconda.rst.jinja2"
+HERE = Path(__file__).parent
+OUT_FILENAME = HERE / "miniconda.rst"
+TEMPLATE_FILENAME = HERE / "miniconda.rst.jinja2"
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
 # Update these!
-MINICONDA_VERSION = "23.3.1-0"
-PYTHON_VERSION = "3.10.10"  # This is the version of Python that's bundled into the Miniconda installers.
+MINICONDA_VERSION = "23.5.0-3"
+PYTHON_VERSION = "3.11.3"  # This is the version of Python that's bundled into the Miniconda installers.
+PY_VERSIONS = ("3.11", "3.10", "3.9", "3.8")
+
 # Must be sorted in the order in which they appear on the Miniconda page
 OPERATING_SYSTEMS = ("Windows", "macOS", "Linux")
-PY_VERSIONS = ("3.10", "3.9", "3.8")
 
 # Confirm these are up-to-date.
 PLATFORM_MAP = {
@@ -106,7 +110,7 @@ def get_latest_miniconda_sizes_and_hashes():
         "conda_version": MINICONDA_VERSION.split("-")[0],
         "python_version": PYTHON_VERSION,
         "operating_systems": OPERATING_SYSTEMS,
-        "py_versions": PY_VERSIONS,
+        "py_versions": sorted(PY_VERSIONS, reverse=True, key=Version),
     }
     info["platforms"] = {(os,"latest"): [] for os in info["operating_systems"]}
 
