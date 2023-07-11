@@ -116,6 +116,12 @@ Linux installers
    ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.5.0-3-Linux-ppc64le.sh>`_,74.1 MiB,``5bef0b71b9c9c6a27e534894e913e47e545793a549a8815bb4a66a8c9d793d45``
    ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.5.0-3-Linux-s390x.sh>`_,85.8 MiB,``e0271bc3af023053258cfe01059d53769bbd32dc5542b5c96280d29dcd8568f6``
 
+Release Notes
+=============
+
+:doc:`Release Notes for Miniconda <../miniconda_release_notes>`
+
+
 Other resources
 ===============
 
