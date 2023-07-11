@@ -11,6 +11,7 @@ import math
 import os
 import time
 from packaging.version import Version
+from pathlib import Path
 
 # Column lengths
 FILENAME_LEN = 47
@@ -18,7 +19,8 @@ SIZE_LEN = 9
 TIMEMOD_LEN = 19
 HASH_LEN = 68
 
-OUT_FILENAME = "miniconda_hashes.rst"
+HERE = Path(__file__).parent
+OUT_FILENAME = HERE / "miniconda_hashes.rst"
 
 
 def sizeof_fmt(num, suffix="B"):
@@ -42,7 +44,7 @@ def main():
         data = json.loads(f.read().decode("utf-8"))
     # remove index.json and 'latest' entries
     data.pop("index.json")
-    data = {k: v for k, v in data.items() if "latest" not in k}
+    data = {k: v for k, v in data.items() if "latest" not in k and "uninstaller" not in k}
 
     # write file with hashes for all files
     f = open(OUT_FILENAME, "w")
