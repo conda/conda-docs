@@ -110,7 +110,7 @@ Installing
 Release Notes
 =============
 
-:doc:`Release Notes for Miniconda<../miniconda_release_notes>`
+:doc:`Release Notes for Miniconda <../miniconda_release_notes>`_
 
 
 Other resources
