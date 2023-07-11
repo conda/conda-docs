@@ -6,7 +6,7 @@ Miniconda Release Notes
 
 {%- set heading = "Miniconda {} ({})".format(release.version, release.release_date) -%}
 {{ heading }}
-{{ "-" * heading|length }} 
+{{ "^" * heading|length }} 
 
 {% if not release.notes -%}
 {%- else -%}
@@ -21,14 +21,13 @@ Available Python Versions:
 {% endfor %}
 
 Packages:
----------
+^^^^^^^^^
 
 {%- for platform, packages in release.package_lists|dictsort %}
 
-**{{ platform.title() }}**
-{{ "^" * (platform.title()|length + 4) }}
+**{{ platform }}**
 
-{%- for package in packages|sort(attribute="name") %}
+{% for package in packages|sort(attribute="name") %}
 * {{ package.name }} {{ package.version }}
 {%- endfor -%}
 

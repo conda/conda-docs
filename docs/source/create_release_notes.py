@@ -57,17 +57,17 @@ def get_installer_info(release: Path, files_info: dict) -> dict:
     including the list of delivered packages
     """
 
-    NOTES_FILE = release / "changes.rst"
-    notes_text = NOTES_FILE.read_text(encoding="utf-8")
-
     miniconda_version = release.name
     installer_info = {
         "version": miniconda_version,
         "python_versions": get_supported_python_versions(miniconda_version, files_info),
         "package_lists": {},
         "release_date": "",
-        "notes": notes_text, # user-facing changes, bug fixes, known issues
     }
+
+    NOTES_FILE = release / "changes.rst"
+    if NOTES_FILE.exists():
+        installer_info["notes"] = NOTES_FILE.read_text(encoding="utf-8")
 
     # Get list of packages
     for info_json in release.iterdir():
