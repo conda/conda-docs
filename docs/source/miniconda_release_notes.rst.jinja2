@@ -25,7 +25,7 @@ Available Python Versions
 Packages
 --------
 
-{% for platform, packages in release.package_lists|dictsort %}
+{%- for platform, packages in release.package_lists|dictsort %}
 
 **{{ platform }}**
 
@@ -35,5 +35,4 @@ Packages
 
 {%- endfor -%}
 {%- endif %}
-
 {% endfor %}

@@ -20,7 +20,6 @@ Available Python Versions
 
 
 
-
 Miniconda 23.5.1 (July 12, 2023)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 
@@ -36,7 +35,6 @@ Available Python Versions
 * 3.10
 * 3.9
 * 3.8
-
 
 
 
@@ -74,8 +72,6 @@ Available Python Versions
 
 Packages
 --------
-
-
 
 **linux-64**
 
@@ -571,4 +567,3 @@ Packages
 * zlib 1.2.13
 * zstandard 0.19.0
 * zstd 1.5.5
-
