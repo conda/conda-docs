@@ -20,10 +20,12 @@ Available Python Versions
 * {{ py_version }}
 {% endfor %}
 
+{% if release.package_lists -%}
+
 Packages
 --------
 
-{%- for platform, packages in release.package_lists|dictsort %}
+{% for platform, packages in release.package_lists|dictsort %}
 
 **{{ platform }}**
 
@@ -32,4 +34,6 @@ Packages
 {%- endfor -%}
 
 {%- endfor -%}
+{%- endif %}
+
 {% endfor %}
