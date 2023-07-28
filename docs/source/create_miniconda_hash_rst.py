@@ -20,7 +20,7 @@ TIMEMOD_LEN = 19
 HASH_LEN = 68
 
 HERE = Path(__file__).parent
-OUT_FILENAME = HERE / "miniconda_hashes.rst"
+OUT_FILENAME = HERE / "miniconda-hashes.rst"
 
 
 def sizeof_fmt(num, suffix="B"):

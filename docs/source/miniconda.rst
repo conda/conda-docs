@@ -6,38 +6,56 @@
 Miniconda
 =========
 
-Miniconda is a free minimal installer for conda. It is a small, bootstrap
-version of Anaconda that includes only conda, Python, the packages they depend
-on, and a small number of other useful packages, including pip, zlib and a
-few others. Use the ``conda install`` command to install 720+ additional conda
-packages from the Anaconda repository.
+Miniconda is a free minimal installer for conda. It is a small bootstrap version of Anaconda that includes only conda, Python, the packages they 
+both depend on, and a small number of other useful packages (like pip, zlib, and a few others). If you need more packages, use the ``conda install`` 
+command to install from thousands of packages available by default in Anaconda’s public repo, or from other channels, like conda-forge or bioconda.
 
-`See if Miniconda is right for you <https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#anaconda-or-miniconda>`_.
+**Is Miniconda the right conda install for you?** The `Anaconda or Miniconda <https://docs.conda.io/projects/conda/en/stable/user-guide/install/download.html#anaconda-or-miniconda>`_ page lists some reasons why you might 
+want one installation over the other.
 
-System requirements
-===================
+Quick command line install
+==========================
 
-* License: Free use and redistribution under the terms of the `EULA for Miniconda <https://legal.anaconda.com/policies/en?name=offering-specific-terms#miniconda>`_.
-* Operating system: Windows 10 or newer, 64-bit macOS 10.13+, or Linux, including Ubuntu, RedHat, CentOS 7+, and others.
-* If your operating system is older than what is currently supported, you can find older versions of the Miniconda installers in our `archive <https://repo.anaconda.com/miniconda/>`_ that might work for you.
-* System architecture: Windows- 64-bit x86, 32-bit x86; macOS- 64-bit x86 & Apple M1 (ARM64); Linux- 64-bit x86, 64-bit aarch64 (AWS Graviton2), 64-bit IBM Power8/Power9, s390x (Linux on IBM Z & LinuxONE).
-* The ``linux-aarch64`` Miniconda installer requires ``glibc >=2.26`` and thus will **not** work with CentOS 7, Ubuntu 16.04, or Debian 9 ("stretch").
-* Minimum 400 MB disk space to download and install.
+.. tab-set::
 
-On Windows, macOS, and Linux, it is best to install Miniconda for the local user,
-which does not require administrator permissions and is the most robust type of
-installation. However, if you need to, you can install Miniconda system wide,
-which does require administrator permissions.
+   .. tab-item:: macOS 
 
-Installing
-==========
-- :doc:`See hashes for all Miniconda installers <../miniconda_hashes>`.
-- `Verify your installation <https://conda.io/projects/conda/en/stable/user-guide/install/download.html#cryptographic-hash-verification>`_.
-- `Installation
-  instructions <https://conda.io/projects/conda/en/stable/user-guide/install/index.html>`__.
+      .. code-block:: bash
+
+         mkdir -p ~/miniconda3
+         curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh ~/miniconda3/miniconda.sh
+         bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+         rm -rf ~miniconda3/miniconda.sh
+         ~/miniconda3/bin/conda init bash
+         ~/miniconda3/bin/conda init zsh
+
+      If necessary, replace the installer name with the one you want to install.
+
+   .. tab-item:: Linux
+
+      .. code-block:: bash
+
+         mkdir -p ~/miniconda3
+         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+         bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+         rm -rf ~/miniconda3/miniconda.sh
+         ~/miniconda3/bin/conda init bash
+         ~/miniconda3/bin/conda init zsh
+
+      If necessary, replace the installer name with the one you want to install.
+
+.. toctree::
+   :maxdepth: 1
+
+   miniconda-system-requirements
+   miniconda-install
+   miniconda-release-notes
+   miniconda-other-resources
 
 Latest Miniconda Installer Links
 ================================
+
+This list of installers is for the latest release of Python: 3.11.3. For installers for older versions of Python, see the sections below. For an archive of Miniconda versions, see https://repo.anaconda.com/miniconda/.
 
 .. csv-table:: Latest - Conda 23.5.2 Python 3.11.3 released July 13, 2023
    :header: Platform,Name,SHA256 hash
@@ -116,80 +134,4 @@ Linux installers
    ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.5.2-0-Linux-ppc64le.sh>`_,74.1 MiB,``6fc3bf00d4fe0c724fab884d93b981acbc22bb8fc41c144df6d2fc080ff80e25``
    ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-py38_23.5.2-0-Linux-s390x.sh>`_,85.8 MiB,``b840fd5a8474a3e6831cd50a64eadf73239c6ad7deeebf2c3d3fe366220b2722``
 
-Release Notes
-=============
-- :doc:`Release Notes for Miniconda <../miniconda_release_notes>`
 
-Other resources
-===============
-
- -  `Miniconda Docker
-    images <https://hub.docker.com/r/continuumio/>`__
- -  `Miniconda AWS
-    images <https://aws.amazon.com/marketplace/seller-profile?id=29f81979-a535-4f44-9e9f-6800807ad996>`__
- -  `Archive and SHA256 sums for the
-    installers <https://repo.anaconda.com/miniconda/>`__
- -  `conda change
-    log <https://conda.io/projects/continuumio-conda/en/latest/release-notes.html>`__
-
- These Miniconda installers contain the conda
- package manager and Python. Once Miniconda is
- installed, you can use the conda command to install
- any other packages and create environments, etc.
- For example:
-
- .. container:: highlight-bash notranslate
-
-    .. container:: highlight
-
-       ::
-
-          $ conda install numpy
-          ...
-          $ conda create -n py3k anaconda python=3
-          ...
-
- There are two variants of the installer: Miniconda
- is Python 2 based and Miniconda3 is Python 3 based.
- Note that the choice of which Miniconda is
- installed only affects the root environment.
- Regardless of which version of Miniconda you
- install, you can still install both Python 2.x and
- Python 3.x environments.
-
- The other difference is that the Python 3 version
- of Miniconda will default to Python 3 when creating
- new environments and building packages. So for
- instance, the behavior of:
-
- .. container:: highlight-bash notranslate
-
-    .. container:: highlight
-
-       ::
-
-          $ conda create -n myenv python
-
- will be to install Python 2.7 with the Python 2
- Miniconda and to install Python 3.10 with the Python
- 3 Miniconda. You can override the default by
- explicitly setting ``python=2`` or ``python=3``. It
- also determines the default value of ``CONDA_PY``
- when using ``conda build``.
-
- .. note::
-    If you already have Miniconda or Anaconda
-    installed, and you just want to upgrade, you should
-    not use the installer. Just use ``conda update``.
-
- For instance:
-
- .. container:: highlight-bash notranslate
-
-    .. container:: highlight
-
-       ::
-
-          $ conda update conda
-
- will update conda.
