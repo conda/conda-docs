@@ -1,5 +1,5 @@
 =======================
-Miniconda Release Notes
+Miniconda release notes
 =======================
 
 Miniconda 23.5.2 (July 13, 2023)

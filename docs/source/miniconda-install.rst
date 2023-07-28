@@ -16,7 +16,7 @@ Installing Miniconda
 
                  Get-FileHash filename -Algorithm SHA256
 
-           c. Check the hash that appears against the hash listed next to the installer you downloaded. See :doc:`all Miniconda installer hashes here <miniconda-hashes>`.
+           c. Check the hash that appears against the hash listed next to the installer you downloaded. See :doc:`all Miniconda installer hashes here <miniconda_hashes>`.
 
         #. Double-click the `.exe` file.
         #. Follow the instructions on the screen. If you are unsure about any setting, accept the defaults. You can change them later.
@@ -37,7 +37,7 @@ Installing Miniconda
 
                  shasum -a 256 filename
 
-           c. Check the hash that appears against the hash listed next to the installer you downloaded. See :doc:`all Miniconda installer hashes here <miniconda-hashes>`.
+           c. Check the hash that appears against the hash listed next to the installer you downloaded. See :doc:`all Miniconda installer hashes here <miniconda_hashes>`.
         
         #. Double-click the `.pkg` file.
         #. Follow the instructions on the screen. If you are unsure about any setting, accept the defaults. You can change them later.
