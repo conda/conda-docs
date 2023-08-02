@@ -24,6 +24,18 @@ These quick command line instructions will get you set up quickly with the lates
 
 .. tab-set::
 
+   .. tab-item:: Windows
+
+      These three commands quickly and quietly install the latest 64-bit version of the installer and then clean up after themselves. To install a different version or architecture of Miniconda for Windows, change the name of the ``.exe`` installer in the ``curl`` command.
+
+      .. code-block:: none
+
+         curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+         start /wait "" miniconda.exe /S
+         del miniconda.exe
+
+      After installing, open the Anaconda Prompt (miniconda3) program to use Miniconda3.
+
    .. tab-item:: macOS
 
       These four commands quickly and quietly install the latest M1 macOS version of the installer and then clean up after themselves. To install a different version or architecture of Miniconda for macOS, change the name of the ``.sh`` installer in the ``curl`` command.
