@@ -17,6 +17,8 @@ command to install from thousands of packages available by default in Anacondaâ€
    miniconda_release_notes
    miniconda-other-resources
 
+.. _quick-command-line-install:
+
 Quick command line install
 ==========================
 
