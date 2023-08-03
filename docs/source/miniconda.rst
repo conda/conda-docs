@@ -34,7 +34,12 @@ These quick command line instructions will get you set up quickly with the lates
          start /wait "" miniconda.exe /S
          del miniconda.exe
 
-      After installing, open the Anaconda Prompt (miniconda3) program to use Miniconda3.
+      After installing, open the Anaconda Prompt (miniconda3) program to use Miniconda3. The following commands initialize conda for the cmd.exe and Powershell shells:
+
+      .. code-block:: none
+
+         conda init cmd.exe
+         conda init powershell
 
    .. tab-item:: macOS
 
