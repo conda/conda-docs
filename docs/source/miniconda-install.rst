@@ -64,25 +64,25 @@ This page contains more complex installation instructions for the major operatin
            a. Open your terminal.
            b. Run the following command, replacing ``filename`` with the path to your installer.
 
-           .. code-block:: shell
+              .. code-block:: shell
 
-              sha256sum filename
+                 sha256sum filename
 
            c. Check the hash that appears against the hash listed next to the installer you downloaded. See :doc:`all Miniconda installer hashes here <miniconda_hashes>`.
 
-         #. In your terminal, run the following command, replacing ``filename`` with the path to your installer.
+        #. In your terminal, run the following command, replacing ``filename`` with the path to your installer.
 
             .. code-block:: shell
 
                bash filename
 
-         #. Follow the prompts on the installer screens.
+        #. Follow the prompts on the installer screens.
 
-            If you are unsure about any setting, accept the defaults. You can change them later.
+           If you are unsure about any setting, accept the defaults. You can change them later.
 
-         #. To make the changes take effect, close and then re-open your terminal window.
+        #. To make the changes take effect, close and then re-open your terminal window.
 
-         #. Test your installation by running ``conda list``. If conda has been installed correctly, a list of installed packages appears.
+        #. Test your installation by running ``conda list``. If conda has been installed correctly, a list of installed packages appears.
 
-         `For more information on installing in silent mode, see the macOS instructions in the conda project documentation <conda-macos-install>`_.
+       `For more information on installing in silent mode, see the macOS instructions in the conda project documentation <conda-macos-install>`_.
        

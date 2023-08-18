@@ -12,10 +12,32 @@ command to install from thousands of packages available by default in Anacondaâ€
    :maxdepth: 1
 
    miniconda-system-requirements
-   miniconda-installer-links
+   miniconda-other-installer-links
    miniconda-install
    miniconda_release_notes
    miniconda-other-resources
+
+.. _miniconda-latest-installer-links:
+
+Latest Miniconda installer links
+================================
+
+This list of installers is for the latest release of Python: 3.11.3. For installers for older versions of Python, see :doc:`Other installer links <miniconda-other-installer-links>`. For an archive of Miniconda versions, see https://repo.anaconda.com/miniconda/.
+
+.. csv-table:: Latest - Conda 23.5.2 Python 3.11.3 released July 13, 2023
+   :header: Platform,Name,SHA256 hash
+   :widths: 5, 10, 80
+
+   Windows,`Miniconda3 Windows 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`_,``00e8370542836862d4c790aa8966f1d7344a8addd4b766004febcb23f40e2914``
+   ,`Miniconda3 Windows 32-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86.exe>`_,``4fb64e6c9c28b88beab16994bfba4829110ea3145baa60bda5344174ab65d462``
+   macOS,`Miniconda3 macOS Intel x86 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh>`_,``1622e7a0fa60a7d3d892c2d8153b54cd6ffe3e6b979d931320ba56bd52581d4b``
+   ,`Miniconda3 macOS Intel x86 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`_,``2236a243b6cbe6f16ec324ecc9e631102494c031d41791b44612bbb6a7a1a6b4``
+   ,`Miniconda3 macOS Apple M1 64-bit bash <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh>`_,``c8f436dbde130f171d39dd7b4fca669c223f130ba7789b83959adc1611a35644``
+   ,`Miniconda3 macOS Apple M1 64-bit pkg <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg>`_,``837371f3b6e8ae2b65bdfc8370e6be812b564ff9f40bcd4eb0b22f84bf9b4fe5``
+   Linux,`Miniconda3 Linux 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh>`_,``634d76df5e489c44ade4085552b97bebc786d49245ed1a830022b0b406de5817``
+   ,`Miniconda3 Linux-aarch64 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh>`_,``3962738cfac270ae4ff30da0e382aecf6b3305a12064b196457747b157749a7a``
+   ,`Miniconda3 Linux-ppc64le 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-ppc64le.sh>`_,``92237cb2a443dd15005ec004f2f744b14de02cd5513a00983c2f191eb43d1b29``
+   ,`Miniconda3 Linux-s390x 64-bit <https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-s390x.sh>`_,``221a4cd7f0a9275c3263efa07fa37385746de884f4306bb5d1fe5733ca770550``
 
 .. _quick-command-line-install:
 
