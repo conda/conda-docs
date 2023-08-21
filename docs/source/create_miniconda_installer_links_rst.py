@@ -22,8 +22,10 @@ from packaging.version import Version
 from pathlib import Path
 
 HERE = Path(__file__).parent
-OUT_FILENAME = HERE / "miniconda-installer-links.rst"
-TEMPLATE_FILENAME = HERE / "miniconda-installer-links.rst.jinja2"
+OUTFILES = (
+    "miniconda.rst",
+    "miniconda-other-installer-links.rst",
+)
 FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
 # Update these!
@@ -152,13 +154,13 @@ def get_latest_miniconda_sizes_and_hashes():
 def main():
     rst_vars = get_latest_miniconda_sizes_and_hashes()
 
-    with open(TEMPLATE_FILENAME) as f:
-        template_text = f.read()
+    for outfile_name in OUTFILES:
+        template_file = HERE / f"{outfile_name}.jinja2"
+        template = Template(template_file.read_text())
 
-    template = Template(template_text)
-    rst_text = template.render(**rst_vars)
-    with open(OUT_FILENAME, "w") as f:
-        f.write(rst_text)
+        rst_text = template.render(**rst_vars)
+        outfile = HERE / outfile_name
+        outfile.write_text(rst_text)
 
 
 if __name__ == "__main__":
