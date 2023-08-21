@@ -6,17 +6,7 @@
 Latest Miniconda installer links
 ================================
 
-This list of installers is for the latest release of Python: {{ python_version}}. For installers for older versions of Python, see the sections below. For an archive of Miniconda versions, see https://repo.anaconda.com/miniconda/.
-
-.. csv-table:: Latest - Conda {{ conda_version }} Python {{ python_version }} released {{ release_date }}
-   :header: Platform,Name,SHA256 hash
-   :widths: 5, 10, 80
-{% for os in operating_systems %}
-  {%- for platform in platforms[os,'latest'] %}
-   {% set first_column = os if loop.first else "" -%}
-   {{ first_column }},`Miniconda3 {{ platform['description'] }} <https://repo.anaconda.com/miniconda/Miniconda3-latest-{{ platform['suffix'] }}>`_,``{{ platform['hash'] }}``
-  {%- endfor -%}
-{%- endfor -%}
+This list of Miniconda installers is for all supported versions of Python, separated by operating system. For an archive of Miniconda versions, see https://repo.anaconda.com/miniconda/.
 
 {%- for os in operating_systems %}
 {% set heading = "{} installers".format(os) %}

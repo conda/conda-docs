@@ -3,7 +3,7 @@
    to re-generate miniconda-other-installer-links.rst
 
 ================================
-Other Miniconda installer links
+Latest Miniconda installer links
 ================================
 
 This list of Miniconda installers is for all supported versions of Python, separated by operating system. For an archive of Miniconda versions, see https://repo.anaconda.com/miniconda/.
