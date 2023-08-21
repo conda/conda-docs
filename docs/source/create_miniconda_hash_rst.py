@@ -4,14 +4,15 @@ Create rst file with size, date and sha256 for miniconda installers.
 
 """
 
-import urllib.request
-import json
 import datetime
+import json
 import math
 import os
 import time
-from packaging.version import Version
+import urllib.request
 from pathlib import Path
+
+from packaging.version import Version
 
 # Column lengths
 FILENAME_LEN = 47
@@ -26,16 +27,16 @@ OUT_FILENAME = HERE / "miniconda_hashes.rst"
 def sizeof_fmt(num, suffix="B"):
     for unit in ["", "Ki", "Mi", "Gi"]:
         if abs(num) < 1024.0:
-            return "%3.1f %s%s" % (num, unit, suffix)
+            return f"{num:3.1f} {unit}{suffix}"
         num /= 1024.0
-    return "%.1f %s%s" % (num, "Yi", suffix)
+    return "{:.1f} {}{}".format(num, "Yi", suffix)
 
 
 def main():
     # =================================================================
     # The main hosting server is central time, so pretend we are too
     # in order for anyone to be able to run this on Unix platforms.
-    os.environ['TZ'] = 'US/Central'
+    os.environ["TZ"] = "US/Central"
     time.tzset()
     # =================================================================
 
@@ -44,7 +45,9 @@ def main():
         data = json.loads(f.read().decode("utf-8"))
     # remove index.json and 'latest' entries
     data.pop("index.json")
-    data = {k: v for k, v in data.items() if "latest" not in k and "uninstaller" not in k}
+    data = {
+        k: v for k, v in data.items() if "latest" not in k and "uninstaller" not in k
+    }
 
     # write file with hashes for all files
     f = open(OUT_FILENAME, "w")
@@ -91,7 +94,7 @@ def main():
         """
         # 1. conda_version_platform_ext
         version_str = filename.split("-")[1]
-        # Starting with v4.8.2 in 2020, we release Miniconda variants for each 
+        # Starting with v4.8.2 in 2020, we release Miniconda variants for each
         # python version we support: Miniconda3-py3XX_<version>-<platform>.<ext>
         # So we need to split that off.
         if "_" in version_str:
