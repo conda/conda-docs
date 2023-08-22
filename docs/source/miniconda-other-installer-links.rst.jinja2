@@ -2,9 +2,9 @@
    To make changes, edit the miniconda-other-installer-links.rst.jinja2 file and execute the script
    to re-generate miniconda-other-installer-links.rst
 
-================================
-Latest Miniconda installer links
-================================
+==================================================
+Latest Miniconda installer links by Python version
+==================================================
 
 This list of Miniconda installers is for all supported versions of Python, separated by operating system. For an archive of Miniconda versions, see https://repo.anaconda.com/miniconda/.
 
