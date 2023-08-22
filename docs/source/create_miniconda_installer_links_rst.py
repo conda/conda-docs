@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-""" 
+"""
 Create miniconda.rst file with size and sha256 for latest installers.
 See the miniconda.rst.jinja2 for the template that is ultimately rendered.
 
@@ -14,12 +14,12 @@ below for 'py_version'.
 """
 
 import datetime
-import urllib.request
 import json
+import urllib.request
+from pathlib import Path
 
 from jinja2 import Template
 from packaging.version import Version
-from pathlib import Path
 
 HERE = Path(__file__).parent
 OUTFILES = (
@@ -30,7 +30,9 @@ FILES_URL = "https://repo.anaconda.com/miniconda/.files.json"
 
 # Update these!
 MINICONDA_VERSION = "23.5.2-0"
-PYTHON_VERSION = "3.11.3"  # This is the version of Python that's bundled into the Miniconda installers.
+PYTHON_VERSION = (
+    "3.11.3"  # the version of Python that's bundled into the Miniconda installers.
+)
 PY_VERSIONS = ("3.11", "3.10", "3.9", "3.8")
 
 # Must be sorted in the order in which they appear on the Miniconda page
@@ -94,9 +96,9 @@ PLATFORM_MAP = {
 def sizeof_fmt(num, suffix="B"):
     for unit in ["", "Ki", "Mi", "Gi"]:
         if abs(num) < 1024.0:
-            return "%3.1f %s%s" % (num, unit, suffix)
+            return f"{num:3.1f} {unit}{suffix}"
         num /= 1024.0
-    return "%.1f %s%s" % (num, "Yi", suffix)
+    return "{:.1f} {}{}".format(num, "Yi", suffix)
 
 
 def get_latest_miniconda_sizes_and_hashes():
@@ -114,7 +116,7 @@ def get_latest_miniconda_sizes_and_hashes():
         "operating_systems": OPERATING_SYSTEMS,
         "py_versions": sorted(PY_VERSIONS, reverse=True, key=Version),
     }
-    info["platforms"] = {(os,"latest"): [] for os in info["operating_systems"]}
+    info["platforms"] = {(os, "latest"): [] for os in info["operating_systems"]}
 
     for platform_id, installer_data in PLATFORM_MAP.items():
         latest_installer = f"Miniconda3-latest-{installer_data['suffix']}"
@@ -123,8 +125,8 @@ def get_latest_miniconda_sizes_and_hashes():
             mdate = datetime.date.fromtimestamp(mtime)
             info["release_date"] = mdate.strftime("%B %-d, %Y")
         os = installer_data["operating_system"]
-        info["platforms"][os,"latest"].append(installer_data.copy())
-        info["platforms"][os,"latest"][-1]["hash"] = data[latest_installer]["sha256"]
+        info["platforms"][os, "latest"].append(installer_data.copy())
+        info["platforms"][os, "latest"][-1]["hash"] = data[latest_installer]["sha256"]
         for py_version in info["py_versions"]:
             py = py_version.replace(".", "")
             full_installer = (
@@ -139,10 +141,10 @@ def get_latest_miniconda_sizes_and_hashes():
             if full_installer not in data:
                 continue
             if (os, py_version) not in info["platforms"]:
-                info["platforms"][os,py_version] = [installer_data.copy()]
+                info["platforms"][os, py_version] = [installer_data.copy()]
             else:
-                info["platforms"][os,py_version].append(installer_data.copy())
-            installer = info["platforms"][os,py_version][-1]
+                info["platforms"][os, py_version].append(installer_data.copy())
+            installer = info["platforms"][os, py_version][-1]
             installer["size"] = sizeof_fmt(data[full_installer]["size"])
             installer["hash"] = data[full_installer]["sha256"]
             # full_installer item is needed until win-32 is removed

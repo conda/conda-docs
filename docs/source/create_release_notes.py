@@ -1,11 +1,10 @@
 import datetime
-import urllib.request
 import json
-
+import urllib.request
 from pathlib import Path
-from packaging.version import Version
-from jinja2 import Template
 
+from jinja2 import Template
+from packaging.version import Version
 
 SOURCE_DIR = Path(__file__).parent
 RELEASE_DIR = SOURCE_DIR / "miniconda_releases"
@@ -23,7 +22,7 @@ def get_supported_python_versions(miniconda_version, files_info):
     """
     py_versions = []
     for filename in files_info:
-        if not f"_{miniconda_version}-" in filename or "py" not in filename:
+        if f"_{miniconda_version}-" not in filename or "py" not in filename:
             continue
         py_intermediate = filename.split("py")[1]
         py_version = py_intermediate.split("_")[0]
@@ -45,7 +44,7 @@ def get_package_list(dists: list[str]) -> list[dict[str, str]]:
             "name": pkg_name,
             "version": pkg_version,
             "hash": pkg_hash,
-            "build_num": pkg_build_num
+            "build_num": pkg_build_num,
         }
         packages.append(package)
     return packages
@@ -77,7 +76,9 @@ def get_installer_info(release: Path, files_info: dict) -> dict:
         platform = info_dict["_platform"]
         if platform in installer_info:
             continue
-        installer_info["package_lists"][platform] = get_package_list(info_dict["_dists"])
+        installer_info["package_lists"][platform] = get_package_list(
+            info_dict["_dists"]
+        )
 
     # Get release date
     for filename, data in files_info.items():
@@ -95,20 +96,21 @@ def main():
         files_info = json.loads(f.read().decode("utf-8"))
 
     release_info = []
-    releases = sorted([release.name for release in RELEASE_DIR.iterdir()], reverse=True, key=Version)
+    releases = sorted(
+        [release.name for release in RELEASE_DIR.iterdir()], reverse=True, key=Version
+    )
     for release in releases:
         release_info.append(get_installer_info(RELEASE_DIR / release, files_info))
-    
+
     with open(RELEASE_NOTES_TEMPLATE) as f:
         template_text = f.read()
-    
+
     template = Template(template_text)
     rst_text = template.render(release_info=release_info)
 
     with open(RELEASE_NOTES_RST, "w") as f:
         f.write(rst_text)
-    
+
 
 if __name__ == "__main__":
-     main()
-
+    main()
