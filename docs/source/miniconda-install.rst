@@ -21,8 +21,8 @@ This page contains more complex installation instructions for the major operatin
 
            a. Open PowerShell version 4.0 or later. For instructions for using Windows PowerShell 3.0 or older, see the `Cryptographic hash verification <cryptographic-hash-verification>`_ instructions in the conda project documentation.
            b. Run the following command, replacing ``filename`` with the path to your installer.
-         
-              .. code-block:: powershell 
+
+              .. code-block:: powershell
 
                  Get-FileHash filename -Algorithm SHA256
 
@@ -34,7 +34,7 @@ This page contains more complex installation instructions for the major operatin
         #. Test your installation by running ``conda list``. If conda has been installed correctly, a list of installed packages appears.
 
         `More information on installing in silent mode on Windows is in the conda project documentation <conda-windows-install>`_.
-    
+
     .. tab-item:: macOS graphical installer
 
         #. :doc:`Download the installer. <miniconda>`
@@ -48,7 +48,7 @@ This page contains more complex installation instructions for the major operatin
                  shasum -a 256 filename
 
            c. Check the hash that appears against the hash listed next to the installer you downloaded. See :doc:`all Miniconda installer hashes here <miniconda_hashes>`.
-        
+
         #. Double-click the ``.pkg`` file.
         #. Follow the instructions on the screen. If you are unsure about any setting, accept the defaults. You can change them later.
         #. When the installation finishes, open your terminal application.
@@ -57,7 +57,7 @@ This page contains more complex installation instructions for the major operatin
         `More information on installing in silent mode on macOS is in the conda project documentation <conda-macos-install>`_.
 
     .. tab-item:: Linux installer
-          
+
         #. :doc:`Download the installer. <miniconda>`
         #. (Optional) Verify your installer's SHA-256 checksum. This check proves that the installer you downloaded is the original one.
 
@@ -85,4 +85,4 @@ This page contains more complex installation instructions for the major operatin
         #. Test your installation by running ``conda list``. If conda has been installed correctly, a list of installed packages appears.
 
         `For more information on installing in silent mode, see the macOS instructions in the conda project documentation <conda-macos-install>`_.
-       
+

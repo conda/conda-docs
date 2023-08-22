@@ -27,7 +27,7 @@ There are two variants of the installer: Miniconda is Python 2 based, while Mini
 Which Miniconda is installed only affects the root environment. Regardless of which version of Miniconda you
 install, you can still use conda to install both Python 2.x and Python 3.x environments.
 
-However, Miniconda3 (the Python 3 version of Miniconda) will default to Python 3 when creating new environments 
+However, Miniconda3 (the Python 3 version of Miniconda) will default to Python 3 when creating new environments
 and building packages.
 
 For example, take the command below:
