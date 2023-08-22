@@ -85,3 +85,5 @@ This page contains more complex installation instructions for the major operatin
         #. Test your installation by running ``conda list``. If conda has been installed correctly, a list of installed packages appears.
 
         `For more information on installing in silent mode, see the macOS instructions in the conda project documentation <conda-macos-install>`_.
+        
+
