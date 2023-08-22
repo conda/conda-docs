@@ -1,3 +1,4 @@
 Sphinx
 sphinx-sitemap==2.2.0
+sphinx-rtd-theme
 sphinx-design
