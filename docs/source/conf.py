@@ -40,6 +40,7 @@ extensions = [
     # 'sphinx.ext.napoleon',
     "sphinx_sitemap",
     "sphinx_design",
+    "sphinx_reredirects",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -283,3 +284,12 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 # texinfo_show_urls = 'footnote'
+
+# -- For sphinx-reredirects ------------------------------------
+
+redirects = {
+    # External redirects
+    "conda": "https://docs.conda.io/projects/conda/en/stable",
+    "conda-build": "https://docs.conda.io/projects/conda-build/en/stable",
+    "miniconda": "https://docs.conda.io/projects/miniconda/en/latest",
+}
