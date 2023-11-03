@@ -105,7 +105,7 @@ modindex_common_prefix = ["conda."]
 
 # -- Options for HTML output ---------------------------------------------------
 
-html_additional_pages = {'index': 'index.html'}
+html_additional_pages = {"index": "index.html"}
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -130,9 +130,7 @@ html_extra_path = ["robots.txt"]
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "logo": {
-        "text": ""
-    },
+    "logo": {"text": ""},
     # logo is installed by mpl-sphinx-theme as:
     # "logo": {"link": "https://matplotlib.org/stable/",
     #         "image_light": "_static/logo_light.svg",
@@ -147,7 +145,6 @@ html_theme_options = {
     # - internal: Links point to the internal files as expanded by the `pathto`
     #   template function in Sphinx.
     "navbar_links": "absolute",
-
     # Navbar icon links
     "icon_links": [
         {
@@ -169,10 +166,9 @@ html_theme_options = {
             "type": "fontawesome",
         },
     ],
-
     # Template settings
     "navbar_center": ["navbar_center"],
-    "navbar_align": "left"
+    "navbar_align": "left",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
