@@ -12,4 +12,4 @@ python:
 # Additional (downloadable) formats of the documentation to be built, apart
 # from the default HTML.
 formats:
-- htmldir
+- htmlzip
