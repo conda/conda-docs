@@ -13,3 +13,6 @@ python:
 # from the default HTML.
 formats:
 - htmlzip
+
+sphinx:
+  builder: dirhtml
