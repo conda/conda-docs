@@ -105,12 +105,14 @@ modindex_common_prefix = ["conda."]
 
 # -- Options for HTML output ---------------------------------------------------
 
+html_additional_pages = {'index': 'index.html'}
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 # extensions += ['sphinxjp.themes.basicstrap']
 # html_theme = 'basicstrap'
 
-html_theme = "sphinx_rtd_theme"
+html_theme = "conda_sphinx_theme"
 
 html_context = {
     "github_user": "conda",
@@ -121,15 +123,57 @@ html_context = {
     "source_suffix": ".rst",
 }
 
-html_favicon = "conda-logo.png"
-
 # Serving the robots.txt since we want to point to the sitemap.xml file
 html_extra_path = ["robots.txt"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-# html_theme_options = {}
+html_theme_options = {
+    "logo": {
+        "text": ""
+    },
+    # logo is installed by mpl-sphinx-theme as:
+    # "logo": {"link": "https://matplotlib.org/stable/",
+    #         "image_light": "_static/logo_light.svg",
+    #         "image_dark": "_static/logo_dark.svg"},
+    # if this default is OK, then no need to modify "logo"
+    # collapse_navigation in pydata-sphinx-theme is slow, so skipped for local
+    # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
+    "show_prev_next": False,
+    # Determines the type of links produced in the navigation header:
+    # - absolute: Links point to the URL https://matplotlib.org/...
+    # - server-stable: Links point to top-level of the server /stable/...
+    # - internal: Links point to the internal files as expanded by the `pathto`
+    #   template function in Sphinx.
+    "navbar_links": "absolute",
+
+    # Navbar icon links
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/conda-incubator/conda-sphinx-theme",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Element",
+            "url": "http://bit.ly/conda-chat-room",
+            "icon": "_static/element_logo.svg",
+            "type": "local",
+        },
+        {
+            "name": "Discourse",
+            "url": "https://conda.discourse.group/",
+            "icon": "fa-brands fa-discourse",
+            "type": "fontawesome",
+        },
+    ],
+
+    # Template settings
+    "navbar_center": ["navbar_center"],
+    "navbar_align": "left"
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -208,8 +252,6 @@ sitemap_url_scheme = "{lang}latest/{link}"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "condadoc"
-
-html_style = "css/custom.css"
 
 # -- Options for LaTeX output --------------------------------------------------
 

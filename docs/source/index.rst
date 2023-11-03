@@ -1,12 +1,24 @@
 =====
-Conda
+conda
 =====
+
 
 .. figure::  /img/conda_logo.svg
    :align: center
    :width: 50%
 
    ..
+
+.. grid::
+
+    .. grid-item-card:: A card with a dropdown menu
+
+        .. dropdown:: :fa:`eye me-1` Click to expand dropdown
+
+            Hidden content
+
+    .. grid-item-card:: A clickable card
+        :link: https://example.com
 
 |
 
