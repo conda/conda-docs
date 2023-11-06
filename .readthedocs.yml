@@ -1,7 +1,13 @@
 version: 2
 
+# Set build image and Python version
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3"
+
 python:
-  version: "3"
   install:
   - requirements: requirements.txt
 
