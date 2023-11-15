@@ -105,7 +105,7 @@ modindex_common_prefix = ["conda."]
 
 # -- Options for HTML output ---------------------------------------------------
 
-html_additional_pages = {"index": "index.html"}
+# html_additional_pages = {"index": "index.html"}
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -117,10 +117,10 @@ html_theme = "conda_sphinx_theme"
 html_context = {
     "github_user": "conda",
     "github_repo": "conda-docs",
-    "github_version": "master/",
+    "github_version": "main",
     "display_github": True,
-    "conf_py_path": "docs/source/",
     "source_suffix": ".rst",
+    "doc_path": "docs/source",
 }
 
 # Serving the robots.txt since we want to point to the sitemap.xml file
@@ -131,8 +131,28 @@ html_extra_path = ["robots.txt"]
 # documentation.
 html_theme_options = {
     "show_prev_next": False,
-    "navbar_links": "absolute",
+    "use_edit_page_button": True,
     "primary_sidebar_end": [],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/conda/conda-docs",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Element",
+            "url": "https://matrix.to/#/#conda:matrix.org",
+            "icon": "_static/element_logo.svg",
+            "type": "local",
+        },
+        {
+            "name": "Discourse",
+            "url": "https://conda.discourse.group/",
+            "icon": "fa-brands fa-discourse",
+            "type": "fontawesome",
+        },
+    ],
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -158,6 +178,10 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+html_css_files = [
+    "css/custom.css",
+]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
