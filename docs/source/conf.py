@@ -133,13 +133,8 @@ html_theme_options = {
     "show_prev_next": False,
     "use_edit_page_button": True,
     "primary_sidebar_end": [],
+    "github_url": "https://github.com/conda/conda-docs",
     "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/conda/conda-docs",
-            "icon": "fa-brands fa-square-github",
-            "type": "fontawesome",
-        },
         {
             "name": "Element",
             "url": "https://matrix.to/#/#conda:matrix.org",

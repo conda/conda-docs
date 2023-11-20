@@ -1,4 +1,4 @@
--e git+https://github.com/conda-incubator/conda-sphinx-theme.git@main#egg=conda_sphinx_theme
+conda-sphinx-theme
 sphinx-sitemap==2.2.0
 sphinx-design
 sphinx-reredirects
