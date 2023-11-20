@@ -2,11 +2,11 @@
 Conda Documentation
 ===================
 
-Conda provides package, dependency and environment management for any language.
+Conda provides package, dependency, and environment management for any language.
 The following documentation site provides all you need to get started with
 leveraging the power of conda.
 
-Install  :octicon:`download;1em;sd-text-primary`
+Install :octicon:`download;1em;sd-text-primary`
 ================================================
 
 We recommend the following methods to install conda:
@@ -90,7 +90,7 @@ Learn
         .. card:: Getting started :octicon:`rocket;1em;sd-text-primary`
             :link: https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html
 
-            Learn how to get started using conda with a tutorials and quick start guides
+            Learn how to get started using conda with tutorials and quick start guides
 
     .. grid-item::
 
