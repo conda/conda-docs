@@ -56,7 +56,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "conda"
+project = "conda-docs"
 copyright = "2017, Anaconda, Inc."
 
 # The version info for the project you're documenting, acts as replacement for
@@ -105,23 +105,23 @@ modindex_common_prefix = ["conda."]
 
 # -- Options for HTML output ---------------------------------------------------
 
+# html_additional_pages = {"index": "index.html"}
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 # extensions += ['sphinxjp.themes.basicstrap']
 # html_theme = 'basicstrap'
 
-html_theme = "sphinx_rtd_theme"
+html_theme = "conda_sphinx_theme"
 
 html_context = {
     "github_user": "conda",
     "github_repo": "conda-docs",
-    "github_version": "master/",
+    "github_version": "main",
     "display_github": True,
-    "conf_py_path": "docs/source/",
     "source_suffix": ".rst",
+    "doc_path": "docs/source",
 }
-
-html_favicon = "conda-logo.png"
 
 # Serving the robots.txt since we want to point to the sitemap.xml file
 html_extra_path = ["robots.txt"]
@@ -129,7 +129,26 @@ html_extra_path = ["robots.txt"]
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-# html_theme_options = {}
+html_theme_options = {
+    "show_prev_next": False,
+    "use_edit_page_button": True,
+    "primary_sidebar_end": [],
+    "github_url": "https://github.com/conda/conda-docs",
+    "icon_links": [
+        {
+            "name": "Element",
+            "url": "https://matrix.to/#/#conda:matrix.org",
+            "icon": "_static/element_logo.svg",
+            "type": "local",
+        },
+        {
+            "name": "Discourse",
+            "url": "https://conda.discourse.group/",
+            "icon": "fa-brands fa-discourse",
+            "type": "fontawesome",
+        },
+    ],
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -154,6 +173,10 @@ html_extra_path = ["robots.txt"]
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+html_css_files = [
+    "css/custom.css",
+]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -208,8 +231,6 @@ sitemap_url_scheme = "{lang}latest/{link}"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "condadoc"
-
-html_style = "css/custom.css"
 
 # -- Options for LaTeX output --------------------------------------------------
 
