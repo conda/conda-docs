@@ -83,6 +83,19 @@ Projects
 
             Conda lock generates fully reproducible lock files for conda environments
 
+    .. grid-item::
+
+        .. card:: constructor :octicon:`package-dependents;1em;sd-text-primary`
+            :link: https://conda.github.io/constructor/
+
+            Constructor builds OS-specific installers for conda packages
+
+    .. grid-item::
+
+        .. card:: conda pack :octicon:`file-submodule;1em;sd-text-primary`
+            :link: https://conda.github.io/conda-pack/
+
+            Conda pack creates distributable archives of conda environments
 
 .. toctree::
    :hidden:
