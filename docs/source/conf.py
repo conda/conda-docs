@@ -121,6 +121,7 @@ html_context = {
     "display_github": True,
     "source_suffix": ".rst",
     "doc_path": "docs/source",
+    "use_analytics": "conda.io" in os.getenv("READTHEDOCS_CANONICAL_URL", ""),
 }
 
 # Serving the robots.txt since we want to point to the sitemap.xml file
