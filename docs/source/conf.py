@@ -134,6 +134,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "primary_sidebar_end": [],
     "github_url": "https://github.com/conda/conda-docs",
+    "footer_center": ["footer_center"],
     "icon_links": [
         {
             "name": "Element",
