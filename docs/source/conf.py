@@ -121,6 +121,7 @@ html_context = {
     "display_github": True,
     "source_suffix": ".rst",
     "doc_path": "docs/source",
+    "goatcounter_dashboard_url": "https://docs-conda-io.goatcounter.com",
 }
 
 # Serving the robots.txt since we want to point to the sitemap.xml file
@@ -134,6 +135,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "primary_sidebar_end": [],
     "github_url": "https://github.com/conda/conda-docs",
+    "goatcounter_url": "https://docs-conda-io.goatcounter.com/count",
     "icon_links": [
         {
             "name": "Element",
