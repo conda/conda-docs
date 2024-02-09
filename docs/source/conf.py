@@ -314,5 +314,5 @@ redirects = {
     # External redirects
     "conda": "https://docs.conda.io/projects/conda/en/stable",
     "conda-build": "https://docs.conda.io/projects/conda-build/en/stable",
-    "miniconda": "https://docs.conda.io/projects/miniconda/en/latest",
+    "miniconda": "https://docs.anaconda.com/free/miniconda/",
 }

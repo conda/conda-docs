@@ -72,7 +72,7 @@ Projects
     .. grid-item::
 
         .. card:: Miniconda :octicon:`database;1em;sd-text-primary`
-            :link: https://docs.conda.io/projects/miniconda/en/latest/
+            :link: https://docs.anaconda.com/free/miniconda/
 
             Miniconda is a conda installer provided by Anaconda
 
