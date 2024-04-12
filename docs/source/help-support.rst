@@ -34,15 +34,15 @@ request new features, and submit any other comments you might have.
 Paid support
 ============
 
-The conda organization does not directly offer paid support, training, or 
-consultation on conda package management or creation. However, this section 
-lists organizations that do provide such services. If your organization would 
+The conda organization does not directly offer paid support, training, or
+consultation on conda package management or creation. However, this section
+lists organizations that do provide such services. If your organization would
 like to be added to this list, please open a pull request against the conda-docs repository.
 
 Anaconda
 --------
 
-See Anaconda's `Help and Support page <https://docs.anaconda.com/reference/help-support/>`_ 
+See Anaconda's `Help and Support page <https://docs.anaconda.com/reference/help-support/>`_
 for information on its paid support and consultation programs.
 
 Contribute recipes to GitHub
@@ -67,8 +67,8 @@ and then report it if no one else has.
 Issues with the conda documentation are tracked on GitHub at
 https://github.com/conda/conda-docs/issues.
 
-.. note:: 
-  
+.. note::
+
    The conda-docs repository includes documentation that is common for conda
    and conda-build, as well as landing pages for those projects.
 
@@ -76,13 +76,13 @@ https://github.com/conda/conda-docs/issues.
    projects can be found in their respective repositories.
 
    To create issues for conda, conda-build, repo.anaconda.com, anaconda.org,
-   and specific conda packages, please see the individual repo 
+   and specific conda packages, please see the individual repo
    links in the :ref:`New issues <new-issues>` section of the Contributing guide.
 
 Conda Announce mailing list
 ===========================
 
-Conda Announce (`announce@lists.conda.org <https://lists.conda.org/wws/info/announce>`_) 
+Conda Announce (`announce@lists.conda.org <https://lists.conda.org/wws/info/announce>`_)
 is a low-traffic email list for news and
 updates directly from the conda core team. It
 is not a marketing list. We never sell, give away, or distribute
