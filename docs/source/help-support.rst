@@ -34,18 +34,16 @@ request new features, and submit any other comments you might have.
 Paid support
 ============
 
-Paid `support <https://anaconda.cloud/support-center>`_,
-`courses <https://learning.anaconda.cloud/>`_, and
-`consulting <https://www.anaconda.com/professional-services>`_
-options are available. Our teaching philosophy is that the best
-way to learn is with hands-on experience addressing real-world
-problems. Courses are available to individuals online, at
-numerous sites, or in-house at your place of business. We also
-offer consulting services for the analysis, management and
-visualization of scientific and business data or optimizing
-your processing workflows on modern hardware and GPUs.
+The conda organization does not directly offer paid support, training, or 
+consultation on conda package management or creation. However, this section 
+lists organizations that do provide such services. If your organization would 
+like to be added to this list, please open a pull request against the conda-docs repository.
 
-Support is included in purchases of `Anaconda's Enterprise tier <https://www.anaconda.com/enterprise/>`_.
+Anaconda
+--------
+
+See Anaconda's `Help and Support page <https://docs.anaconda.com/reference/help-support/>`_ 
+for information on its paid support and consultation programs.
 
 Contribute recipes to GitHub
 ============================
@@ -63,18 +61,36 @@ feedstocks, submit them to `conda-forge
 <https://github.com/bioconda/bioconda-recipes>`_ with a pull request.
 
 Feedstocks are welcome for programs that use any license, such as GPL,
-BSD, MIT or Apache, and all of the recipes the conda-forge and
-bioconda repositories are released into the public domain.
-
-Report bugs
-===========
-
-If you find a bug, search to see if it has already been reported,
+BSD, MIT or Apache, and all of the rt has already been reported,
 and then report it if no one else has.
 
 Issues with the conda documentation are tracked on GitHub at
 https://github.com/conda/conda-docs/issues.
 
-For issues with conda, conda-build, repo.anaconda.com, anaconda.org,
-and specific conda packages, please see :ref:`new-issues`.
+.. note:: 
+  
+   The conda-docs repository includes documentation that is common for conda
+   and conda-build, as well as landing pages for those projects.
 
+   The documentation for conda, conda-build, and other conda-related
+   projects can be found in their respective repositories.
+
+   To create issues for conda, conda-build, repo.anaconda.com, anaconda.org,
+   and specific conda packages, please see the individual repo 
+   links in the :ref:`New issues <new-issues>` section of the Contributing guide.
+
+Conda Announce mailing list
+===========================
+
+Conda Announce (`announce@lists.conda.org <https://lists.conda.org/wws/info/announce>`_) 
+is a low-traffic email list for news and
+updates directly from the conda core team. It
+is not a marketing list. We never sell, give away, or distribute
+your email address to third parties.
+
+* No more than 1 email per week, usually less.
+* Project announcements relevant to all conda users.
+* No corporate marketing hype.
+* No spam.
+
+Subscribe `here <https://lists.conda.org/wws/subscribe/announce>`__.
