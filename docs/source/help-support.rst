@@ -2,10 +2,10 @@
 Help and support
 ================
 
-Free community support
+Community support
 ======================
 
-Ask and answer questions, discuss ways to use conda,
+Use the following tools to ask and answer questions, discuss ways to use conda,
 request new features, and submit any other comments you might have.
 
 .. grid:: 1 2 2 2
