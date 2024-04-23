@@ -37,7 +37,7 @@ Paid support
 The conda organization does not directly offer paid support, training, or
 consultation on conda package management or creation. However, this section
 lists organizations that do provide such services. If your organization would
-like to be added to this list, please open a pull request against the conda-docs repository.
+like to be added to this list, please open a pull request against the `conda-docs repository <https://github.com/conda/conda-docs>`_.
 
 Anaconda
 --------
