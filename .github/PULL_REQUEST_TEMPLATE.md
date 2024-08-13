@@ -8,6 +8,8 @@
        - any noteworthy (or hacky) choices to be aware of,
        - or what the problem resolved here looked like. -->
 
+
+
 <!-- Just as a reminder, everyone in all conda org spaces (including PRs)
      must follow the Conda Org Code of Conduct (link below).
 
@@ -16,5 +18,5 @@
      let us know!
 
      Helpful links:
-       - Conda Org COC: https://github.com/conda-incubator/governance/blob/main/CODE_OF_CONDUCT.md
-       - Contributing docs: ../blob/main/CONTRIBUTING.md -->
+       - Conda Org COC: https://github.com/conda/conda-docs/blob/main/CODE_OF_CONDUCT.md
+       - Contributing docs: https://github.com/conda/conda-docs/blob/main/CONTRIBUTING.md -->
