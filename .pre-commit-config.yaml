@@ -4,7 +4,7 @@
 #   pre-commit autoupdate
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       # standard end of line/end of file cleanup
       - id: mixed-line-ending
@@ -15,7 +15,7 @@ repos:
       # catch git merge/rebase problems
       - id: check-merge-conflict
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.17.0
+    rev: v3.18.0
     hooks:
       - id: pyupgrade
         args: [--py38-plus]
@@ -24,7 +24,7 @@ repos:
     hooks:
       - id: isort
   - repo: https://github.com/psf/black
-    rev: 24.8.0
+    rev: 24.10.0
     hooks:
       - id: black
   - repo: https://github.com/pycqa/flake8
@@ -37,7 +37,7 @@ repos:
       - id: codespell
         args: [--write]
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.29.3
+    rev: 0.29.4
     hooks:
       - id: check-github-workflows
   - repo: meta
