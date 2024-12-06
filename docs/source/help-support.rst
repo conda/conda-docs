@@ -19,8 +19,8 @@ request new features, and submit any other comments you might have.
 
   .. grid-item::
 
-     .. card:: Conda Matrix chat
-        :link: https://matrix.to/#/#conda:matrix.org
+     .. card:: Conda Zulip chat
+        :link: https://conda.zulipchat.com
 
         Chat about conda issues and projects with other users
 
