@@ -138,9 +138,9 @@ html_theme_options = {
     "goatcounter_url": "https://docs-conda-io.goatcounter.com/count",
     "icon_links": [
         {
-            "name": "Zulip",
-            "url": "https://conda.zulipchat.com",
-            "icon": "_static/zulip_logo.svg",
+            "name": "Element",
+            "url": "https://matrix.to/#/#conda:matrix.org",
+            "icon": "_static/element_logo.svg",
             "type": "local",
         },
         {
