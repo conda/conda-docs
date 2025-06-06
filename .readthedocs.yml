@@ -14,9 +14,6 @@ python:
   install:
   - requirements: requirements.txt
 
-sphinx:
-  configuration: docs/conf.py
-
 # Additional (downloadable) formats of the documentation to be built, apart
 # from the default HTML.
 formats:
