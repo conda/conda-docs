@@ -50,8 +50,100 @@ leveraging the power of conda.
 
             Take deep dives into advanced topics on the internal workings of conda
 
-Projects
-========
+Install  :octicon:`download;1em;sd-text-primary`
+================================================
+
+We recommend the following conda distributions to install conda:
+
+.. grid:: 2
+
+    .. grid-item-card:: Miniconda
+
+        `Miniconda <https://docs.anaconda.com/miniconda>`__ is an installer
+        by `Anaconda <https://anaconda.com/>`__ that comes
+        preconfigured for use with the Anaconda Repository. See the
+        notes about Anaconda's :ref:`Terms of Service <anaconda-tos_notes>`.
+
+        .. button-link:: https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+            :color: primary
+
+            :fab:`windows` Windows :bdg-light-line:`x86_64` :octicon:`download`
+
+        .. button-link:: https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg
+            :color: primary
+
+            :fab:`apple` macOS :bdg-light-line:`arm64 (Apple Silicon)` :octicon:`download`
+
+        .. button-link:: https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg
+            :color: primary
+
+            :fab:`apple` macOS :bdg-light-line:`x86_64 (Intel)` :octicon:`download`
+
+        .. button-link:: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+            :color: primary
+
+            :fab:`linux` Linux :bdg-light-line:`x86_64 (amd64)` :octicon:`download`
+
+        .. button-link:: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+            :color: primary
+
+            :fab:`linux` Linux :bdg-light-line:`aarch64 (arm64)` :octicon:`download`
+
+        ++++
+
+        Or with :fa:`beer-mug-empty` `Homebrew <https://brew.sh/>`__:
+
+        .. code-block:: bash
+
+            brew install miniconda
+
+    .. grid-item-card:: Miniforge
+
+        Miniforge is an installer maintained by the `conda-forge community <https://
+        conda-forge.org>`__ that comes preconfigured for use with the conda-forge
+        channel.
+
+        .. button-link:: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe
+            :color: primary
+
+            :fab:`windows` Windows :bdg-light-line:`x86_64` :octicon:`download`
+
+        .. button-link:: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+            :color: primary
+
+            :fab:`apple` macOS :bdg-light-line:`arm64 (Apple Silicon)` :octicon:`download`
+
+        .. button-link:: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh
+            :color: primary
+
+            :fab:`apple` macOS :bdg-light-line:`x86_64 (Intel)` :octicon:`download`
+
+        .. button-link:: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+            :color: primary
+
+            :fab:`linux` Linux :bdg-light-line:`x86_64 (amd64)` :octicon:`download`
+
+        .. button-link:: https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
+            :color: primary
+
+            :fab:`linux` Linux :bdg-light-line:`aarch64 (arm64)` :octicon:`download`
+
+        +++
+
+        Or with :fa:`beer-mug-empty` `Homebrew <https://brew.sh/>`__:
+
+        .. code-block:: bash
+
+            brew install miniforge
+
+
+.. raw:: html
+
+    <p class="text-small">For more detailed instructions, see <a href="https://docs.anaconda.com/miniconda/" target="_blank">Miniconda's installation guide</a> and
+    <a href="https://conda-forge.org/download/" target="_blank">conda-forge's download site</a>.</p>
+
+Projects :octicon:`package;1em;sd-text-primary`
+===============================================
 
 .. grid:: 1 2 2 2
 
