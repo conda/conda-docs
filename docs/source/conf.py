@@ -136,20 +136,6 @@ html_theme_options = {
     "primary_sidebar_end": [],
     "github_url": "https://github.com/conda/conda-docs",
     "goatcounter_url": "https://docs-conda-io.goatcounter.com/count",
-    "icon_links": [
-        {
-            "name": "Element",
-            "url": "https://matrix.to/#/#conda:matrix.org",
-            "icon": "_static/element_logo.svg",
-            "type": "local",
-        },
-        {
-            "name": "Discourse",
-            "url": "https://conda.discourse.group/",
-            "icon": "fa-brands fa-discourse",
-            "type": "fontawesome",
-        },
-    ],
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
