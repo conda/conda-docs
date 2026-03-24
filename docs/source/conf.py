@@ -138,15 +138,9 @@ html_theme_options = {
     "goatcounter_url": "https://docs-conda-io.goatcounter.com/count",
     "icon_links": [
         {
-            "name": "Element",
-            "url": "https://matrix.to/#/#conda:matrix.org",
-            "icon": "_static/element_logo.svg",
-            "type": "local",
-        },
-        {
-            "name": "Discourse",
-            "url": "https://conda.discourse.group/",
-            "icon": "fa-brands fa-discourse",
+            "name": "Zulip",
+            "url": "https://conda.zulipchat.com",
+            "icon": "fa-custom fa-zulip",
             "type": "fontawesome",
         },
     ],
