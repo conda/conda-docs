@@ -110,9 +110,34 @@ In these steps, we assume ``git`` is installed and available on ``PATH``.
 
 
 Conda Contributor License Agreement
------------------------------------
 
 In case you're new to CLAs, this is rather standard procedure for larger projects.
+[3 lines of post-context]
+
+Conda Environment Variables
+--------------------------
+
+Conda can be configured using environment variables, which override configuration settings from files and command-line options. Most configuration keys can be set as environment variables by converting the key to uppercase and prefixing it with ``CONDA_``. For example, the configuration key ``safety_checks`` becomes ``CONDA_SAFETY_CHECKS``.
+
+**How to use:**
+
+.. code-block:: bash
+
+     export CONDA_SAFETY_CHECKS=warn
+     export CONDA_SSL_VERIFY=false
+     export CONDA_PKGS_DIRS="/custom/path"
+
+**Common environment variables:**
+
+- ``CONDA_SAFETY_CHECKS``: Controls package safety checks (e.g., ``warn``, ``enabled``, ``disabled``)
+- ``CONDA_SSL_VERIFY``: Enables or disables SSL verification (``true`` or ``false``)
+- ``CONDA_PKGS_DIRS``: Sets custom package cache directories
+- ``CONDA_CHANNELS``: Specifies default channels
+- ``CONDA_ALWAYS_YES``: Automatically confirms all actions (``true`` or ``false``)
+- ``CONDA_PREFIX``: The path to the currently active environment
+- ``CONDA_DEFAULT_ENV``: The name of the currently active environment
+
+For a full list of configuration options, see the `conda configuration documentation <https://docs.conda.io/projects/conda/en/stable/configuration.html>`_. Most options can be set as environment variables using the pattern described above.
 `Django <https://www.djangoproject.com/foundation/cla/>`_ and even
 `Python <https://www.python.org/psf/contrib/contrib-form/>`_ itself both use something similar.
 
