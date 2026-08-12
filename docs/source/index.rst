@@ -59,7 +59,7 @@ We recommend the following conda distributions to install conda:
 
     .. grid-item-card:: Miniconda
 
-        `Miniconda <https://www.anaconda.com/download>`__ is an installer
+        `Miniconda <https://www.anaconda.com/docs/getting-started/concepts/anaconda-or-miniconda>`__ is an installer
         by `Anaconda <https://anaconda.com/>`__ that comes
         preconfigured for use with the Anaconda Repository. See the
         notes about Anaconda's :ref:`Terms of Service <anaconda-tos_notes>`.
