@@ -59,7 +59,7 @@ We recommend the following conda distributions to install conda:
 
     .. grid-item-card:: Miniconda
 
-        `Miniconda <https://docs.anaconda.com/miniconda>`__ is an installer
+        `Miniconda <https://www.anaconda.com/download>`__ is an installer
         by `Anaconda <https://anaconda.com/>`__ that comes
         preconfigured for use with the Anaconda Repository. See the
         notes about Anaconda's :ref:`Terms of Service <anaconda-tos_notes>`.
@@ -139,7 +139,7 @@ We recommend the following conda distributions to install conda:
 
 .. raw:: html
 
-    <p class="text-small">For more detailed instructions, see <a href="https://docs.anaconda.com/miniconda/" target="_blank">Miniconda's installation guide</a> and
+    <p class="text-small">For more detailed instructions, see <a href="https://www.anaconda.com/docs/getting-started/installation" target="_blank">Miniconda's installation guide</a> and
     <a href="https://conda-forge.org/download/" target="_blank">conda-forge's download site</a>.</p>
 
 Projects :octicon:`package;1em;sd-text-primary`
