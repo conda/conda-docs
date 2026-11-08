@@ -40,7 +40,7 @@ jobs:
             days-before-issue-stale: 90
             days-before-issue-close: 21
     steps:
-      - uses: conda/actions/read-file@d88418cd4e36358ba51e7c88f2d2d5edb9ac49e7 # v26.8.1
+      - uses: conda/actions/read-file@8153f7f73472ac36d654d5111be19abaecc48cc6 # v26.10.0
         id: read_messages
         with:
           path: https://raw.githubusercontent.com/conda/infra/main/.github/messages.yml
@@ -85,7 +85,7 @@ jobs:
           labels-to-remove-when-unstale: stale,stale::closed
 
           # Max number of operations per run
-          operations-per-run: ${{ secrets.STALE_OPERATIONS_PER_RUN || 100 }}
+          operations-per-run: ${{ secrets.STALE_OPERATIONS_PER_RUN || 100 }}  # zizmor: ignore[secrets-outside-env] Repo secret for stale bot automation; environment policy unchanged.
           # Dry-run
           debug-only: ${{ github.event.inputs.dryrun || false }}
           # Order to get issues/PRs
@@ -103,4 +103,4 @@ jobs:
           exempt-assignees: mingwandroid
 
       - name: Print outputs
-        run: echo ${{ join(steps.stale.outputs.*, ',') }}
+        run: echo ${{ join(steps.stale.outputs.*, ',') }}  # zizmor: ignore[template-injection] Outputs come from the stale action, not attacker-controlled input.
